@@ -1,5 +1,45 @@
 "Nick Neat-Trick-Treat" by Andrew Schultz
 
+volume big picture stuff
+
+the story description is "Fall Fest Tall Test".
+
+the story headline is "Prime Pro-Rhyme Row entry 9".
+
+[release along with cover art.]
+
+release along with a website.
+
+release along with the "parchment" interpreter.
+
+the release number is 1.
+
+Use memory economy.
+
+chapter general headers
+
+include Trivial Niceties by Andrew Schultz.
+
+include Intro Restore Skip by Andrew Schultz.
+
+include Old School Verb Total Carnage by Andrew Schultz.
+
+include Punctuation Stripper by Andrew Schultz.
+
+chapter series-specfic headers
+
+include Prime Pro Rhyme Row Universal  by Andrew Schultz.
+
+include Prime Pro Rhyme Row Common by Andrew Schultz.
+
+include Prime Pro Rhyme Row E34 by Andrew Schultz.
+
+chapter game-specific headers
+
+include Nick Neat Trick Treat Globals by Andrew Schultz.
+
+include Nick Neat Trick Treat Tables by Andrew Schultz.
+
 volume rooms
 
 book sick seat
