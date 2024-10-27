@@ -37,6 +37,22 @@ this is the vr-pick-pete rule:
 	now sco-pick-pete is true;
 	say "Hooray! You figured what to do! You get a point!";
 
+volume misc tables
+
+table of noways
+noway-rm	noway-txt
+Sick Seat	"You'll get to move once [if sco-ick-eat is false]you've eaten your vegetables[else]you choose the friend who'll most help with adventure[end if]."
+
+volume homonyms
+
+table of thing homonyms
+mything	hom-rule (a rule)	myhom (topic)	custom-msg (text)
+Nick	--	--	--
+
+table of room homonyms
+loc	hom-rule (a rule)	myhom (topic)	custom-msg (text)
+Sick Seat	--	--	--
+
 Nick Neat Trick Treat Tables ends here.
 
 ---- DOCUMENTATION ----
