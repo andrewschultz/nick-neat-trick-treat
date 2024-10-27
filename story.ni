@@ -44,6 +44,10 @@ include Nick Neat Trick Treat Definitions by Andrew Schultz.
 
 include Nick Neat Trick Treat Tables by Andrew Schultz.
 
+section testing
+
+include Nick Neat Trick Treat Tests by Andrew Schultz.
+
 volume rooms
 
 book sick seat
