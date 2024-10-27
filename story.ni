@@ -28,7 +28,7 @@ include Punctuation Stripper by Andrew Schultz.
 
 chapter series-specfic headers
 
-include Prime Pro Rhyme Row Universal  by Andrew Schultz.
+include Prime Pro Rhyme Row Universal by Andrew Schultz.
 
 include Prime Pro Rhyme Row Common by Andrew Schultz.
 
@@ -56,15 +56,20 @@ Sick Seat is a room. printed name is "On your sick seat". "[one of]You're on you
 check going in Sick Seat:
 	if sco-ick-eat is false, say "Need to finish those vegetables first. Force yourself, with a pep talk." instead;
 	if sco-pick-pete is false, say "Need to decide who to go with." instead;
-	if noun is not outside, say "You can only go outside, to get going." instead;
+	if noun is not outside, say "You don't want to go wandering through your house. It's Halloween. You want to go out!" instead;
+	say "You will automatically go outside once you're prepared." instead;
 
 chapter Nick
 
 Nick Neat Trick Treat is a person in Sick Seat. the player is Nick Neat Trick Treat. printed name is "Nick Neat-Trick-Treat".
 
+chapter the note
+
+Meet Me Pete P is a thing.
+
 book Strick Street
 
-Strick Street is inside of Sick Seat. "[if honer house is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now. You can visit a hun-home to the left, a rank ring to the north, or woods to the south. It's quite scary to the east[end if]."
+Strick Street is inside of Sick Seat. "[one of]Hmm. You're not sure if strick is a word, but you figure if you badgered any of the denizens about it, they'd be ... upset. So, maybe it's short for stricken? [or][stopping][if honer house is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now. You can visit a hun-home to the left, a rank ring to the north, or woods to the south. It's quite scary to the east[end if]."
 
 [becomes stray street?]
 

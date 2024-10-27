@@ -6,6 +6,7 @@ table of verb checks [the order of things to solve is roughly alphabetical, so t
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "ick"	"eat"	--	--	false	true	true	false	sick seat	vc-ick-eat rule	vr-ick-eat rule	--	--
 "pick"	"pete"	--	--	false	true	true	false	sick seat	vc-pick-pete rule	vr-pick-pete rule	--	--
+"treat"	"tree"	--	--	false	true	true	false	sick seat	vc-treat-tree rule	vr-treat-tree rule	--	--
 "donor"	"douse"	--	--	false	true	false	false	honer house	vc-donor-douse rule	vr-donor-douse rule	--	--
 "loner"	"louse"	--	--	false	true	true	false	honer house	vc-loner-louse rule	vr-loner-louse rule	--	--
 "moaner"	"mouse"	--	--	false	true	true	false	honer house	vc-moaner-mouse rule	vr-moaner-mouse rule	--	--
@@ -45,6 +46,19 @@ this is the vr-pick-pete rule:
 	say "You message Pete on your phone. Pete P. He has a long name nobody can quite pronounce. Well, some kids do, and they get called show-offs. He's not ashamed of his long name. He just understands. You know how to spell it and pronounce it.";
 	say "[line break]The message back: 'Meet me. -- Pete P.'";
 	say "[line break]But where?";
+	now player has meet me pete p;
+
+a goodrhyme rule (this is the vc-treat-tree rule):
+	if player does not have meet me pete p, unavailable;
+	if sco-treat-tree is true:
+		vcal "You already met Pete!";
+		already-done;
+	ready;
+
+this is the vr-treat-tree rule:
+	now sco-treat-tree is true;
+	say "Meeting by thr treat tree should be easy but oh no it doesn't work out! There's another tree, much sadder. It pushes you to somewhere dark...";
+	move player to Strick Street;
 
 chapter honer house scoring
 
