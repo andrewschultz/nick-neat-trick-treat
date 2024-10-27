@@ -6,6 +6,9 @@ table of verb checks [the order of things to solve is roughly alphabetical, so t
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "ick"	"eat"	--	--	false	true	true	false	sick seat	vc-ick-eat rule	vr-ick-eat rule	--	--
 "pick"	"pete"	--	--	false	true	true	false	sick seat	vc-pick-pete rule	vr-pick-pete rule	--	--
+"fair"	"fine"	--	--	false	true	true	false	Lair Line	vc-fair-fine rule	vr-fair-fine rule	--	--
+"theyre|their"	"thine"	--	--	false	true	false	false	Lair Line	vc-theyre-thine rule	vr-theyre-thine rule	--	--
+"dare"	"dine"	--	--	false	true	true	false	Lair Line	vc-dare-dine rule	vr-dare-dine rule	--	--
 
 chapter sick seat scoring
 
@@ -35,6 +38,46 @@ this is the vr-pick-pete rule:
 	say "You message Pete on your phone. Pete P. He has a long name nobody can quite pronounce. Well, some kids do, and they get called show-offs. He's not ashamed of his long name. He just understands. You know how to spell it and pronounce it.";
 	say "[line break]The message back: 'Meet me. -- Pete P.'";
 	say "[line break]But where?";
+
+chapter Lair Line scoring
+
+a goodrhyme rule (this is the vc-fair-fine rule):
+	if player is not in Lair Line, unavailable;
+	if sco-fair-fine is true:
+		vcal "You already divided things equitably!";
+		already-done;
+	ready;
+
+this is the vr-fair-fine rule:
+	now sco-fair-fine is true;
+	say "You at first almost spit it out -- then you realize, everyone else deserves it, too. You can't eat ALL that.";
+
+a goodrhyme rule (this is the vc-theyre-thine rule):
+	if player is not in Lair Line, unavailable;
+	if sco-theyre-thine is true:
+		vcal "You decide not to overdo the role-playing.";
+		already-done;
+	ready;
+
+this is the vr-theyre-thine rule:
+	now sco-theyre-thine is true;
+	say "With a small flourish, you hand a few candies to kids dressed in medieval costumes[if sco-fair-fine is false], but really, you still have a lot[else], makihg things even fairer[end if]."
+
+a goodrhyme rule (this is the vc-dare-dine rule):
+	if player is not in Lair Line, unavailable;
+	if sco-fair-fine is false:
+		vcp "But the dining is not equitable yet! Claire Cline would like you to try to spread the wealth.";
+		not-yet;
+	if sco-dare-dine is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-dare-dine rule:
+	now sco-dare-dine is true;
+	say "Good. Let's get going.";
+	end the story saying "Why wait? My, mate, I ATE!";
+	follow the shutdown rules;
 
 volume misc tables
 

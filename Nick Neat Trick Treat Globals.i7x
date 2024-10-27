@@ -19,10 +19,15 @@ chapter Tree Trolled variables
 
 chapter Leaky Ley variables
 
-chapter Fair Fine variables
+chapter Lair Line variables
+
+sco-dare-dine is a truth state that varies.
 
 chapter unsorted globals
 
+
+sco-fair-fine is a truth state that varies.
+sco-theyre-thine is a truth state that varies.
 
 Nick Neat Trick Treat Globals ends here.
 

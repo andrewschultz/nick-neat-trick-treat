@@ -66,6 +66,8 @@ book Strick Street
 
 Strick Street is outside of Sick Seat. "[if honer house is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now. You can visit a hun-home to the left, a rank ring to the north, or woods to the south. It's quite scary to the east[end if]."
 
+[becomes stray street?]
+
 check going in Strick Street when honer house is unvisited:
 	if noun is not inside, say "The honer house looks like it could help you before you really get started." instead;
 
@@ -92,14 +94,17 @@ chapter Freaky Fey
 
 Freaky Fey is a thing in Leaky Ley.
 
+check going in Freaky Fey: say "But it is the final fight!" instead;
+
 [streaky stray / creaky cray / weakie way ] [geeky gay / meeky may / peaky pay / reeky ray / kiki k / seek eee say / eeky eh / beaky bay ]
 
+chapter Lair Line
+
+Lair Line is south of Leaky Ley. [this is just to get internal automap to work] "The Spare Spine is in the background here."
+
+Claire Cline is a person in Lair Line.
+
 volume unsorted
-
-Stray Street is a room.
-
-every turn when 0 is 1:
-	end the story saying "Why wait? My, mate, I ATE!";
 
 volume endgame
 
