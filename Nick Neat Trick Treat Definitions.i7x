@@ -2,6 +2,10 @@ Version 1/241026 of Nick Neat Trick Treat Definitions by Andrew Schultz begins h
 
 "This encompasses small stubs, particularly <to decide which> and <definition> that would clutter up the main code and be hard to find otherwise. You can see what could or should be sent here with def.py."
 
+volume types
+
+a plateitem is a kind of thing.
+
 volume game specific
 
 to say adjtext of (ru - a rule): say "[ru]"

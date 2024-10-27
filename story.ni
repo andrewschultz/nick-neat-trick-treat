@@ -90,7 +90,14 @@ check going east in Strick Street:
 
 chapter bait base plate place
 
-the bait base plate place is a thing. [rate race / mate mace / late lace]
+the bait base plate place is a thing. [rate race / mate mace / late lace] "A bait base plate place blocks your way east. It is solid and smooth, except for three indentations.". description is "It appears the indentations can fit a key, a book, and some jewelry.".
+
+after examining plate place:
+	let ncp be number of carried plateitems;
+	if ncp > 0, say "You have [the list of carried plateitems], which is [if ncp is 1]a good start[else if ncp is 2]so close[else]good enough for passage east[end if].";
+	continue the action;
+
+understand "indentations" as plate place.
 
 the great grace fate face is a thing.
 
@@ -110,11 +117,19 @@ to say house-left:
 
 book Rank Ring
 
-Rank Ring is north of Strick Street.
+Rank Ring is north of Strick Street. "It's too misty any way but back south."
+
+chapter jewel
+
+the yet youll jet jewel is a plateitem. printed name is "yet-you'll-jet jewel". description is "You're dazzled by its beauty but you know you'll have to use it to get somewhere."
 
 book Hun Home
 
-Hun Home is west of Strick Street.
+Hun Home is west of Strick Street. "No secret doors here. Just back east."
+
+chapter book
+
+Love Look Bove Book is a plateitem. printed name is "Love-Look-[']Bove Book". description is "Mushy love stuff. But hey, if it makes the baddies puke more than you, BET.". [at least it isn't a biography of someone important.]
 
 book Tree Trolled
 
@@ -123,6 +138,10 @@ Tree Trolled is south of Strick Street. printed name of Tree Trolled is "Tree, T
 after printing the locale description when player is in tree trolled and sco-be-bold is false:
 	say "Ugh. You're just scared. Tough to pep yourself up.";
 	continue the action;
+
+chapter cold key
+
+the cold key is a plateitem. description is "It warmed up quickly in your pocket. Technically it's a key, cold, but switching words like that reminds you of poetry adults tell you you should enjoy. Ugh."
 
 book Leaky Ley
 
