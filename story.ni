@@ -48,7 +48,7 @@ volume rooms
 
 book sick seat
 
-Sick Seat is a room. printed name is "On your sick seat".
+Sick Seat is a room. printed name is "On your sick seat". "[one of]You're on your sick seat, sick in a positive way, though right now you are sort of sick of the vegtables you have to eat before trick-or-treating[or]You're still on your seat here, not ready to move along until there's adventure[stopping]."
 
  [bad bid, dad did]
  [mom, more? Bomb, bore!]
@@ -56,6 +56,7 @@ Sick Seat is a room. printed name is "On your sick seat".
 check going in Sick Seat:
 	if sco-ick-eat is false, say "Need to finish those vegetables first. Force yourself, with a pep talk." instead;
 	if sco-pick-pete is false, say "Need to decide who to go with." instead;
+	if noun is not outside, say "You can only go outside, to get going." instead;
 
 chapter Nick
 
@@ -63,7 +64,7 @@ Nick Neat Trick Treat is a person in Sick Seat. the player is Nick Neat Trick Tr
 
 book Strick Street
 
-Strick Street is a room. "[if honer house is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now. You can visit a hun-home to the left, a rank ring to the north, or woods to the south. It's quite scary to the east[end if]."
+Strick Street is outside of Sick Seat. "[if honer house is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now. You can visit a hun-home to the left, a rank ring to the north, or woods to the south. It's quite scary to the east[end if]."
 
 check going in Strick Street when honer house is unvisited:
 	if noun is not inside, say "The honer house looks like it could help you before you really get started." instead;
@@ -73,11 +74,19 @@ check going in Strick Street when honer house is visited:
 
 book Honer House
 
-Honer House is a room.
+Honer House is north of Strick Street.
+
+book Hun Home
+
+Hun Home is west of Strick Street.
+
+book Tree Trolled
+
+Tree Trolled is south of Strick Street. printed name of Tree Trolled is "Tree, Trolled".
 
 book Leaky Ley
 
-Leaky Ley is a room.
+Leaky Ley is east of Strick Street.
 
 chapter Freaky Fey
 
