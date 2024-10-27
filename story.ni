@@ -77,16 +77,30 @@ Strick Street is inside of Sick Seat. "[one of]Hmm. You're not sure if strick is
 
 [becomes stray street?]
 
+after printing the locale description for Strick Street when number of carried plateitems is 3 and plate place is not moot:
+	say "You place all three items in [the plate]. It shatters to reveal a [face].";
+	moot plate;
+	move fate face to strick street;
+	continue the action;
+
+chapter check going rules
+
 the honer house first rule is listed first in the check going rulebook.
 
 check going in Strick Street when honer house is unvisited (this is the honer house first rule):
 	if noun is not inside, say "The honer house looks like it could help you before you really get started." instead;
 
-check going inside in Strick Street when honer house is visited:
-	if noun is inside, say "You built up enough confidence in Honer House." instead;
+check going north in Strick Street:
+	if house-crit-score is 2, say "You built up enough confidence in Honer House." instead;
+
+check going south in Strick Street:
+	if player has cold key, say "You got the cold key. That's enough." instead;
+
+check going west in Strick Street:
+	if player has bove book, say "You got the book from there. That's enough." instead;
 
 check going east in Strick Street:
-	say "That way's the final boss." instead;
+	if plate place is not moot, say "You don't have what you need to get by [the base]." instead;
 
 chapter bait base plate place
 
@@ -147,17 +161,23 @@ book Leaky Ley
 
 Leaky Ley is east of Strick Street.
 
+chapter Streaky Stray
+
+the Streaky Stray is a thing in Leaky Ley.
+
 chapter Freaky Fey
 
-Freaky Fey is a thing in Leaky Ley.
+Freaky Fray is a thing in Leaky Ley.
 
-check going in Freaky Fey: say "But it is the final fight!" instead;
+the reeky ray is a thing in Leaky Ley.
+
+check going in Freaky Fray: say "But it is the final fight!" instead;
 
 [streaky stray / creaky cray / weakie way ] [geeky gay / meeky may / peaky pay / reeky ray / kiki k / seek eee say / eeky eh / beaky bay ]
 
 chapter Lair Line
 
-Lair Line is south of Leaky Ley. [this is just to get internal automap to work] "The Spare Spine is in the background here."
+Lair Line is north of Leaky Ley. [this is just to get internal automap to work] "The Spare Spine is in the background here."
 
 Claire Cline is a person in Lair Line.
 

@@ -62,7 +62,7 @@ a goodrhyme rule (this is the vc-treat-tree rule):
 
 this is the vr-treat-tree rule:
 	now sco-treat-tree is true;
-	say "Meeting by thr treat tree should be easy but oh no it doesn't work out! There's another tree, much sadder. It pushes you to somewhere dark...";
+	say "Meeting by the treat tree should be easy but oh no it doesn't work out! There's another tree, much sadder. It pushes you to somewhere dark...";
 	move player to Strick Street;
 
 chapter honer house scoring
