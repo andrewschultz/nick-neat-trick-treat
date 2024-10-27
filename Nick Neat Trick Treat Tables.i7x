@@ -283,7 +283,7 @@ a goodrhyme rule (this is the vc-me-mold rule):
 
 this is the vr-me-mold rule:
 	now sco-me-mold is true;
-	say "Ah, there we go! It looks ... vaguely like you, you guess. Sadly, Mart Made-Art-Aid isn't here to give pointers.";
+	say "Ah, there we go! It looks ... vaguely like you, you guess. Sadly, Mart Made-Art-Aid, that cool summer camp counselor (as you called him,) isn't here to give pointers.";
 
 a goodrhyme rule (this is the vc-see-sold rule):
 	if player is not in tree trolled, unavailable;

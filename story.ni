@@ -67,9 +67,13 @@ chapter Nick
 
 Nick Neat Trick Treat is a person in Sick Seat. the player is Nick Neat Trick Treat. printed name is "Nick Neat-Trick-Treat".
 
+chapter the phone
+
+Nick carries the phone. description is "You don't want to be gazing at it when you walk around. If there's a message, you'll get it."
+
 chapter the note
 
-Meet Me Pete P is a thing.
+Meet Me Pete P is a thing. "It's just the message on your phone. [if sco-treat-tree is false]There must be a common, yet secret, place to meet him[else]You figured you could meet at the Treat Tree[end if]."
 
 book Strick Street
 
@@ -193,6 +197,12 @@ Lair Line is north of Leaky Ley. [this is just to get internal automap to work] 
 Claire Cline is a person in Lair Line.
 
 volume unsorted
+
+volume verb modification
+
+check taking inventory:
+	say "Other than your costume, and your phone under it (which has the Meet Me Pete P message) ...";
+	if number of carried plateitems > 0, say "[The list of plateitems] should be useful for [the plate].";
 
 volume endgame
 

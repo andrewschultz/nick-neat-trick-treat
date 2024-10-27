@@ -11,6 +11,7 @@ volume general
 
 table of first check rhymes
 mist-1	mist-2	mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
+"chick"	"cheat"	--	--	--	--	"That's a word you shouldn't use and a thing you shouldn't do, and two wrongs don't make a right."
 "lick"	"leet"	--	--	--	--	"You aren't big on lollipops, even the purportedly top-shelf ones."
 
 table of general good guesses
