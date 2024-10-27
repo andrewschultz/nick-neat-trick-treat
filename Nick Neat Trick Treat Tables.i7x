@@ -9,6 +9,10 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "donor"	"douse"	--	--	false	true	false	false	honer house	vc-donor-douse rule	vr-donor-douse rule	--	--
 "loner"	"louse"	--	--	false	true	true	false	honer house	vc-loner-louse rule	vr-loner-louse rule	--	--
 "moaner"	"mouse"	--	--	false	true	true	false	honer house	vc-moaner-mouse rule	vr-moaner-mouse rule	--	--
+"plank"	"pling"	--	--	false	true	true	false	rank ring	vc-plank-pling rule	vr-plank-pling rule	--	--
+"blank"	"bling"	--	--	false	true	true	false	rank ring	vc-blank-bling rule	vr-blank-bling rule	--	--
+"thank"	"thing"	--	--	false	true	true	false	rank ring	vc-thank-thing rule	vr-thank-thing rule	--	--
+"sank"	"sing"	--	--	false	true	true	false	rank ring	vc-sank-sing rule	vr-sank-sing rule	--	--
 "fair"	"fine"	--	--	false	true	true	false	Lair Line	vc-fair-fine rule	vr-fair-fine rule	--	--
 "theyre|their"	"thine"	--	--	false	true	false	false	Lair Line	vc-theyre-thine rule	vr-theyre-thine rule	--	--
 "dare"	"dine"	--	--	false	true	true	false	Lair Line	vc-dare-dine rule	vr-dare-dine rule	--	--
@@ -76,6 +80,59 @@ a goodrhyme rule (this is the vc-moaner-mouse rule):
 this is the vr-moaner-mouse rule:
 	now sco-moaner-mouse is true;
 	say "Hooray! You figured what to do! You get a point!";
+
+chapter rank ring scoring
+
+a goodrhyme rule (this is the vc-plank-pling rule):
+	if player is not in rank ring, unavailable;
+	if sco-plank-pling is true:
+		vcal "You already found the odd-sounding plank and what was behind it!";
+		already-done;
+	ready;
+
+this is the vr-plank-pling rule:
+	now sco-plank-pling is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-blank-bling rule):
+	if player is not in rank ring, unavailable;
+	if sco-plank-pling is false:
+		vcp "Nothing will materialise just because you want it to! Search for it first.";
+		not-yet;
+	if sco-blank-bling is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-blank-bling rule:
+	now sco-blank-bling is true;
+	say "Hooray! You found some blank bling! Gut you feel guilty just taking it. Who or what left it for you?";
+
+a goodrhyme rule (this is the vc-thank-thing rule):
+	if player is not in rank ring, unavailable;
+	if sco-blank-bling is false:
+		vcp "You have found nothing to be grateful for, yet.";
+		not-yet;
+	if sco-thank-thing is true:
+		vcal "You've ben taught to be polite, but that'd be overkill.";
+		already-done;
+	ready;
+
+this is the vr-thank-thing rule:
+	now sco-thank-thing is true;
+	say "A weird wraith sighs. You feel like you have earned it";
+	if sco-sank-sing is true, say "[line break]It also appreciates your 'Sank? Sing!' advice."
+
+a goodrhyme rule (this is the vc-sank-sing rule):
+	if player is not in rank ring, unavailable;
+	if sco-sank-sing is true:
+		vcal "More than once is too cheery!";
+		already-done;
+	ready;
+
+this is the vr-sank-sing rule:
+	now sco-sank-sing is true;
+	say "Well, whatever works. You engage in some harmless positivity. [if sco-thank-thing is false]There's no audience yet, but when there is, you'll be ready[else]The thing seems to appreciate it[end if].";
 
 chapter Lair Line scoring
 

@@ -99,6 +99,10 @@ to say house-left:
 	else:
 		say "still hear [if sco-loner-louse is false]a person[else]an animal[end if] whine, still trying to make themselves out to be tougher than they mean to be. You're halfway there"
 
+book Rank Ring
+
+Rank Ring is north of Strick Street.
+
 book Hun Home
 
 Hun Home is west of Strick Street.

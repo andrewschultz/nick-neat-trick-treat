@@ -33,6 +33,11 @@ sco-donor-douse is a truth state that varies.
 sco-loner-louse is a truth state that varies.
 sco-moaner-mouse is a truth state that varies.
 
+sco-plank-pling is a truth state that varies.
+sco-blank-bling is a truth state that varies.
+sco-thank-thing is a truth state that varies.
+sco-sank-sing is a truth state that varies.
+
 Nick Neat Trick Treat Globals ends here.
 
 ---- DOCUMENTATION ----
