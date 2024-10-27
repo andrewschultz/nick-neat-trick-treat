@@ -15,7 +15,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "thank"	"thing"	--	--	false	true	true	false	rank ring	vc-thank-thing rule	vr-thank-thing rule	--	--
 "sank"	"sing"	--	--	false	true	true	false	rank ring	vc-sank-sing rule	vr-sank-sing rule	--	--
 "be"	"bold"	--	--	false	true	true	false	tree trolled	vc-be-bold rule	vr-be-bold rule	--	--
-"re"	"rolled"	--	--	false	true	true	false	tree trolled	vc-re-rolled rule	vr-re-rolled rule	--	--
+"re"	"rolled"	--	--	false	true	true	false	tree trolled	vc-re-rolled rule	vr-re-rolled rule	"re rolled" or "rerolled"	--
 "me"	"mold"	--	--	false	true	true	false	tree trolled	vc-me-mold rule	vr-me-mold rule	--	--
 "see"	"sold"	--	--	false	true	true	false	tree trolled	vc-see-sold rule	vr-see-sold rule	--	--
 "wee"	"wold"	--	--	false	true	true	false	tree trolled	vc-wee-wold rule	vr-wee-wold rule	--	--
@@ -206,7 +206,8 @@ a goodrhyme rule (this is the vc-see-sold rule):
 
 this is the vr-see-sold rule:
 	now sco-see-sold is true;
-	say "The tree is impressed by your confidence. It swaps: the key, cold, for the me-mold.";
+	say "The tree is impressed by your confidence. It swaps: the key, cold, for the me-mold. Perhaps you have a future career as an artist! Or just a side hustle.";
+	now player has cold key;
 
 a goodrhyme rule (this is the vc-wee-wold rule):
 	if player is not in tree trolled, unavailable;
