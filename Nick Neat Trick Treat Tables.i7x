@@ -6,6 +6,9 @@ table of verb checks [the order of things to solve is roughly alphabetical, so t
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "ick"	"eat"	--	--	false	true	true	false	sick seat	vc-ick-eat rule	vr-ick-eat rule	--	--
 "pick"	"pete"	--	--	false	true	true	false	sick seat	vc-pick-pete rule	vr-pick-pete rule	--	--
+"donor"	"douse"	--	--	false	true	false	false	honer house	vc-donor-douse rule	vr-donor-douse rule	--	--
+"loner"	"louse"	--	--	false	true	true	false	honer house	vc-loner-louse rule	vr-loner-louse rule	--	--
+"moaner"	"mouse"	--	--	false	true	true	false	honer house	vc-moaner-mouse rule	vr-moaner-mouse rule	--	--
 "fair"	"fine"	--	--	false	true	true	false	Lair Line	vc-fair-fine rule	vr-fair-fine rule	--	--
 "theyre|their"	"thine"	--	--	false	true	false	false	Lair Line	vc-theyre-thine rule	vr-theyre-thine rule	--	--
 "dare"	"dine"	--	--	false	true	true	false	Lair Line	vc-dare-dine rule	vr-dare-dine rule	--	--
@@ -38,6 +41,50 @@ this is the vr-pick-pete rule:
 	say "You message Pete on your phone. Pete P. He has a long name nobody can quite pronounce. Well, some kids do, and they get called show-offs. He's not ashamed of his long name. He just understands. You know how to spell it and pronounce it.";
 	say "[line break]The message back: 'Meet me. -- Pete P.'";
 	say "[line break]But where?";
+
+chapter honer house scoring
+
+a goodrhyme rule (this is the vc-donor-douse rule):
+	if player is not in honer house, unavailable;
+	if sco-donor-douse is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-donor-douse is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-donor-douse rule:
+	now sco-donor-douse is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-loner-louse rule):
+	if player is not in honer house, unavailable;
+	if sco-loner-louse is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-loner-louse is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-loner-louse rule:
+	now sco-loner-louse is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-moaner-mouse rule):
+	if player is not in honer house, unavailable;
+	if sco-moaner-mouse is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-moaner-mouse is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-moaner-mouse rule:
+	now sco-moaner-mouse is true;
+	say "Hooray! You figured what to do! You get a point!";
 
 chapter Lair Line scoring
 

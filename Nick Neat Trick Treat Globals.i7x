@@ -29,6 +29,10 @@ chapter unsorted globals
 sco-fair-fine is a truth state that varies.
 sco-theyre-thine is a truth state that varies.
 
+sco-donor-douse is a truth state that varies.
+sco-loner-louse is a truth state that varies.
+sco-moaner-mouse is a truth state that varies.
+
 Nick Neat Trick Treat Globals ends here.
 
 ---- DOCUMENTATION ----
