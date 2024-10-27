@@ -19,6 +19,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pun"	"poem"	--	--	false	true	true	false	hun home	vc-pun-poem rule	vr-pun-poem rule	--	--
 "run"	"roam"	--	--	false	true	true	false	hun home	vc-run-roam rule	vr-run-roam rule	--	--
 "done"	"dome"	--	--	false	true	true	false	hun home	vc-done-dome rule	vr-done-dome rule	--	--
+"a"	"gnome"	--	--	false	true	false	false	hun home	vc-a-gnome rule	vr-a-gnome rule	--	--
 "be"	"bold"	--	--	false	true	true	false	tree trolled	vc-be-bold rule	vr-be-bold rule	--	--
 "re"	"rolled"	--	--	false	true	true	false	tree trolled	vc-re-rolled rule	vr-re-rolled rule	"re rolled" or "rerolled"	--
 "me"	"mold"	--	--	false	true	true	false	tree trolled	vc-me-mold rule	vr-me-mold rule	--	--
@@ -229,6 +230,19 @@ a goodrhyme rule (this is the vc-run-roam rule):
 this is the vr-run-roam rule:
 	now sco-run-roam is true;
 	say "You exhort yourself to get going, and not just get going, but to see new places. And yes, the hun home does feel a bit fake. You notice a few things off about it, and you feel okay exiting now.";
+
+chapter hun home scoring
+
+a goodrhyme rule (this is the vc-a-gnome rule):
+	if player is not in hun home, unavailable;
+	if sco-a-gnome is true:
+		vcal "You already summoned a gnome!";
+		already-done;
+	ready;
+
+this is the vr-a-gnome rule:
+	now sco-a-gnome is true;
+	say "Yes, yes, that's a good idea, have a gnome for upkeep once everything's fixed here. But they shouldn't be here right now, you'd guess.";
 
 chapter tree trolled scoring
 

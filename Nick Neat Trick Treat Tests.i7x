@@ -4,7 +4,7 @@ Version 1/241027 of Nick Neat Trick Treat Tests by Andrew Schultz begins here.
 
 volume IDE tests
 
-test wf with "test w1/test w2/donor douse/test w3/sank sing/out/test w4/wee wold/n".
+test wf with "test w1/test w2/donor douse/test w3/sank sing/out/test w4/wee wold/n/test w5/a gnome/e".
 
 test w1 with "ick eat/pick pete/treat tree".
 
@@ -13,6 +13,8 @@ test w2 with "in/loner louse/moaner mouse".
 test w3 with "n/plank pling/blank bling/thank thing".
 
 test w4 with "s/be bold/rerolled/me mold/see sold".
+
+test w5 with "w/fun foam/ton tome/pun poem/run roam".
 
 Nick Neat Trick Treat Tests ends here.
 

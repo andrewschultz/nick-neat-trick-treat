@@ -55,6 +55,8 @@ sco-pun-poem is a truth state that varies.
 sco-run-roam is a truth state that varies.
 sco-done-dome is a truth state that varies.
 
+sco-a-gnome is a truth state that varies.
+
 Nick Neat Trick Treat Globals ends here.
 
 ---- DOCUMENTATION ----
