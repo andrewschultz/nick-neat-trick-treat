@@ -46,11 +46,8 @@ chapter honer house scoring
 
 a goodrhyme rule (this is the vc-donor-douse rule):
 	if player is not in honer house, unavailable;
-	if sco-donor-douse is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-donor-douse is true:
-		vcal "You already did this!";
+		vcal "Don't get greedy!";
 		already-done;
 	ready;
 
@@ -60,11 +57,8 @@ this is the vr-donor-douse rule:
 
 a goodrhyme rule (this is the vc-loner-louse rule):
 	if player is not in honer house, unavailable;
-	if sco-loner-louse is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-loner-louse is true:
-		vcal "You already did this!";
+		vcal "Don't rub it in. Move on!";
 		already-done;
 	ready;
 
@@ -74,11 +68,8 @@ this is the vr-loner-louse rule:
 
 a goodrhyme rule (this is the vc-moaner-mouse rule):
 	if player is not in honer house, unavailable;
-	if sco-moaner-mouse is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-moaner-mouse is true:
-		vcal "You already did this!";
+		vcal "The mouse has been properly chastised.";
 		already-done;
 	ready;
 
@@ -136,7 +127,7 @@ volume homonyms
 
 table of thing homonyms
 mything	hom-rule (a rule)	myhom (topic)	custom-msg (text)
-Nick	--	--	--
+bait base	--	"bays"	"No..."
 
 table of room homonyms
 loc	hom-rule (a rule)	myhom (topic)	custom-msg (text)

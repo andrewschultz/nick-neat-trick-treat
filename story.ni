@@ -64,19 +64,40 @@ Nick Neat Trick Treat is a person in Sick Seat. the player is Nick Neat Trick Tr
 
 book Strick Street
 
-Strick Street is outside of Sick Seat. "[if honer house is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now. You can visit a hun-home to the left, a rank ring to the north, or woods to the south. It's quite scary to the east[end if]."
+Strick Street is inside of Sick Seat. "[if honer house is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now. You can visit a hun-home to the left, a rank ring to the north, or woods to the south. It's quite scary to the east[end if]."
 
 [becomes stray street?]
 
-check going in Strick Street when honer house is unvisited:
+the honer house first rule is listed first in the check going rulebook.
+
+check going in Strick Street when honer house is unvisited (this is the honer house first rule):
 	if noun is not inside, say "The honer house looks like it could help you before you really get started." instead;
 
-check going in Strick Street when honer house is visited:
+check going inside in Strick Street when honer house is visited:
 	if noun is inside, say "You built up enough confidence in Honer House." instead;
+
+check going east in Strick Street:
+	say "That way's the final boss." instead;
+
+chapter bait base plate place
+
+the bait base plate place is a thing. [rate race / mate mace / late lace]
+
+the great grace fate face is a thing.
 
 book Honer House
 
-Honer House is north of Strick Street.
+Honer House is inside of Strick Street. "Here in the honer house you [house-left]. You can go back out [if house-crit-score is 2]once[else]now[end if] you've gotten your bearings[if sco-donor-douse is false], though you may be able to do some sneaky trick-or-treating before[end if]."
+
+to say house-left:
+	if house-score is 3:
+		say "are totally finished";
+	else if house-crit-score is 2:
+		say "have done what you needed";
+	else if house-crit-score is 0:
+		say "hear both an animal and human whine, trying to make themselves out to be tougher than they mean to be. Name them, and overcome your fears";
+	else:
+		say "still hear [if sco-loner-louse is false]a person[else]an animal[end if] whine, still trying to make themselves out to be tougher than they mean to be. You're halfway there"
 
 book Hun Home
 

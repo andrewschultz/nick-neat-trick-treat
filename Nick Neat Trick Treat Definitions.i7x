@@ -59,6 +59,21 @@ this is the flag bad goto from rule:
 	if debug-state is true, say "FROM RULE CHECK: [location of player] ([mrlp]).";
 	do nothing;
 
+volume trivia
+
+book definitions of point sums
+
+to decide which number is house-score:
+	decide on (boolval of sco-loner-louse) + (boolval of sco-moaner-mouse) + (boolval of sco-donor-douse);
+
+to decide which number is house-crit-score:
+	decide on (boolval of sco-loner-louse) + (boolval of sco-moaner-mouse);
+
+book shortcut
+
+to say once-now of (ts - a truth state):
+	say "[if ts is true]now[else]once[end if]"
+
 volume big rule
 
 this is the verb-checker rule:
