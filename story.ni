@@ -141,6 +141,17 @@ book Hun Home
 
 Hun Home is west of Strick Street. "No secret doors here. Just back east."
 
+check going east in Hun Home when player has book:
+	if sco-run-roam is false, say "[The book] seems to pull you back. Isn't it much cheerier here than outside?" instead;
+
+chapter fun foam
+
+the fun foam is a thing.
+
+chapter ton tome
+
+the ton tome is a thing.
+
 chapter book
 
 Love Look Bove Book is a plateitem. printed name is "Love-Look-[']Bove Book". description is "Mushy love stuff. But hey, if it makes the baddies puke more than you, BET.". [at least it isn't a biography of someone important.]

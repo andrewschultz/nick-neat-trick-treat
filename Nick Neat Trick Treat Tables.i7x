@@ -14,6 +14,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "blank"	"bling"	--	--	false	true	true	false	rank ring	vc-blank-bling rule	vr-blank-bling rule	--	--
 "thank"	"thing"	--	--	false	true	true	false	rank ring	vc-thank-thing rule	vr-thank-thing rule	--	--
 "sank"	"sing"	--	--	false	true	true	false	rank ring	vc-sank-sing rule	vr-sank-sing rule	--	--
+"fun"	"foam"	--	--	false	true	true	false	hun home	vc-fun-foam rule	vr-fun-foam rule	--	--
+"ton"	"tome"	--	--	false	true	true	false	hun home	vc-ton-tome rule	vr-ton-tome rule	--	--
+"pun"	"poem"	--	--	false	true	true	false	hun home	vc-pun-poem rule	vr-pun-poem rule	--	--
+"run"	"roam"	--	--	false	true	true	false	hun home	vc-run-roam rule	vr-run-roam rule	--	--
+"done"	"dome"	--	--	false	true	true	false	hun home	vc-done-dome rule	vr-done-dome rule	--	--
 "be"	"bold"	--	--	false	true	true	false	tree trolled	vc-be-bold rule	vr-be-bold rule	--	--
 "re"	"rolled"	--	--	false	true	true	false	tree trolled	vc-re-rolled rule	vr-re-rolled rule	"re rolled" or "rerolled"	--
 "me"	"mold"	--	--	false	true	true	false	tree trolled	vc-me-mold rule	vr-me-mold rule	--	--
@@ -152,6 +157,78 @@ a goodrhyme rule (this is the vc-sank-sing rule):
 this is the vr-sank-sing rule:
 	now sco-sank-sing is true;
 	say "Well, whatever works. You engage in some harmless positivity. [if sco-thank-thing is false]There's no audience yet, but when there is, you'll be ready[else]The thing seems to appreciate it[end if].";
+
+chapter hun home scoring
+
+a goodrhyme rule (this is the vc-fun-foam rule):
+	if player is not in hun home, unavailable;
+	if sco-fun-foam is true:
+		vcal "Too much fun foam would be suffocating.";
+		already-done;
+	ready;
+
+this is the vr-fun-foam rule:
+	now sco-fun-foam is true;
+	say "Pop! Fun foam appears! Weird, but way less creepy-weird than, well, the hun home.";
+	move fun foam to hun home;
+
+a goodrhyme rule (this is the vc-ton-tome rule):
+	if player is not in hun home, unavailable;
+	if sco-fun-foam is false:
+		vcp "But the ton-tome would land with such a crash if it appeared! You need a soft place for it to rest.";
+		not-yet;
+	if sco-ton-tome is true:
+		vcal "Two ton tomes are more than enough! Well, one is, in its own way.";
+		already-done;
+	ready;
+
+this is the vr-ton-tome rule:
+	now sco-ton-tome is true;
+	say "A very, very big and dark and intimidating book pops into existence and falls onto the fun foam.";
+	move ton tome to hun home;
+
+a goodrhyme rule (this is the vc-pun-poem rule):
+	if player is not in hun home, unavailable;
+	if sco-ton-tome is false:
+		vcp "There is nowhere for poems to be written, to bring joy where there might be darkness!";
+		not-yet;
+	if sco-pun-poem is true:
+		vcal "Too many puns get old and stale.";
+		already-done;
+	ready;
+
+this is the vr-pun-poem rule:
+	now sco-pun-poem is true;
+	say "The ton tome glows a bit! It seems less awful now. In fact, some of the more evil pages crumble and blow away. The book's less heavy now.";
+
+a goodrhyme rule (this is the vc-done-dome rule):
+	if player is not in hun home, unavailable;
+	if sco-pun-poem is false:
+		vcp "You haven't cheered the place up enough to consider it 'done!'";
+		not-yet;
+	if sco-done-dome is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-done-dome rule:
+	now sco-done-dome is true;
+	say "Now that the place is cheered up, you feel obliged to stay here, forced to be happy. As if a voice says 'What more could you want?'[paragraph break]Many pages of the erstwhile Ton Tome blow away. What's left is a [book], which seems sappy. Still, you pick it up, and you feel frozen to the spot. It's perfect here, right? Why would you want to leave? Why not enjoy what you've created?";
+	now player has book;
+
+a goodrhyme rule (this is the vc-run-roam rule):
+	if player is not in hun home, unavailable;
+	if sco-done-dome is false:
+		vcp "It's a bit creepy in here, but no need to run away ... yet. Still, you file the idea for later.";
+		not-yet;
+	if sco-run-roam is true:
+		vcal "You already exhorted yourself to get out! You need no magicking to do so.";
+		already-done;
+	ready;
+
+this is the vr-run-roam rule:
+	now sco-run-roam is true;
+	say "You exhort yourself to get going, and not just get going, but to see new places. And yes, the hun home does feel a bit fake. You notice a few things off about it, and you feel okay exiting now.";
 
 chapter tree trolled scoring
 

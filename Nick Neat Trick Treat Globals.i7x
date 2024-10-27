@@ -49,6 +49,12 @@ sco-wee-wold is a truth state that varies.
 
 sco-me-mold is a truth state that varies.
 
+sco-fun-foam is a truth state that varies.
+sco-ton-tome is a truth state that varies.
+sco-pun-poem is a truth state that varies.
+sco-run-roam is a truth state that varies.
+sco-done-dome is a truth state that varies.
+
 Nick Neat Trick Treat Globals ends here.
 
 ---- DOCUMENTATION ----
