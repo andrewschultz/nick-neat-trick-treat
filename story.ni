@@ -118,7 +118,11 @@ Hun Home is west of Strick Street.
 
 book Tree Trolled
 
-Tree Trolled is south of Strick Street. printed name of Tree Trolled is "Tree, Trolled".
+Tree Trolled is south of Strick Street. printed name of Tree Trolled is "Tree, Trolled". "Oh no you're not going further into the forest. You make sure to keep track of a path back north." [Dee Dold would know more about this. Dee loves trees.]
+
+after printing the locale description when player is in tree trolled and sco-be-bold is false:
+	say "Ugh. You're just scared. Tough to pep yourself up.";
+	continue the action;
 
 book Leaky Ley
 

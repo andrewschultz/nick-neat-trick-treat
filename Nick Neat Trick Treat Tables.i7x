@@ -14,6 +14,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "blank"	"bling"	--	--	false	true	true	false	rank ring	vc-blank-bling rule	vr-blank-bling rule	--	--
 "thank"	"thing"	--	--	false	true	true	false	rank ring	vc-thank-thing rule	vr-thank-thing rule	--	--
 "sank"	"sing"	--	--	false	true	true	false	rank ring	vc-sank-sing rule	vr-sank-sing rule	--	--
+"be"	"bold"	--	--	false	true	true	false	tree trolled	vc-be-bold rule	vr-be-bold rule	--	--
+"re"	"rolled"	--	--	false	true	true	false	tree trolled	vc-re-rolled rule	vr-re-rolled rule	--	--
+"me"	"mold"	--	--	false	true	true	false	tree trolled	vc-me-mold rule	vr-me-mold rule	--	--
+"see"	"sold"	--	--	false	true	true	false	tree trolled	vc-see-sold rule	vr-see-sold rule	--	--
+"wee"	"wold"	--	--	false	true	true	false	tree trolled	vc-wee-wold rule	vr-wee-wold rule	--	--
 "fair"	"fine"	--	--	false	true	true	false	Lair Line	vc-fair-fine rule	vr-fair-fine rule	--	--
 "theyre|their"	"thine"	--	--	false	true	false	false	Lair Line	vc-theyre-thine rule	vr-theyre-thine rule	--	--
 "dare"	"dine"	--	--	false	true	true	false	Lair Line	vc-dare-dine rule	vr-dare-dine rule	--	--
@@ -147,6 +152,72 @@ a goodrhyme rule (this is the vc-sank-sing rule):
 this is the vr-sank-sing rule:
 	now sco-sank-sing is true;
 	say "Well, whatever works. You engage in some harmless positivity. [if sco-thank-thing is false]There's no audience yet, but when there is, you'll be ready[else]The thing seems to appreciate it[end if].";
+
+chapter tree trolled scoring
+
+a goodrhyme rule (this is the vc-be-bold rule):
+	if player is not in tree trolled, unavailable;
+	if sco-be-bold is true:
+		vcal "You are bold enough now.";
+		already-done;
+	ready;
+
+this is the vr-be-bold rule:
+	now sco-be-bold is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-re-rolled rule):
+	if player is not in tree trolled, unavailable;
+	if sco-be-bold is false:
+		vcp "But you haven't tried anything to feel less scared!";
+		not-yet;
+	if sco-re-rolled is true:
+		vcal "Nah, you're doing well enough. Don't push your luck.";
+		already-done;
+	ready;
+
+this is the vr-re-rolled rule:
+	now sco-re-rolled is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-me-mold rule):
+	if player is not in tree trolled, unavailable;
+	if sco-re-rolled is false:
+		vcal "You have no excuse to make an effigy of yourself yet!";
+		already-done;
+	if sco-me-mold is true:
+		vcp "One you-doll is enough.";
+		not-yet;
+	ready;
+
+this is the vr-me-mold rule:
+	now sco-me-mold is true;
+	say "Ah, there we go! It looks ... vaguely like you, you guess. Sadly, Mart Made-Art-Aid isn't here to give pointers.";
+
+a goodrhyme rule (this is the vc-see-sold rule):
+	if player is not in tree trolled, unavailable;
+	if sco-me-mold is false:
+		vcp "You have nothing to perform a transaction with!";
+		not-yet;
+	if sco-see-sold is true:
+		vcal "The deal has already been clinched.";
+		already-done;
+	ready;
+
+this is the vr-see-sold rule:
+	now sco-see-sold is true;
+	say "The tree is impressed by your confidence. It swaps: the key, cold, for the me-mold.";
+
+a goodrhyme rule (this is the vc-wee-wold rule):
+	if player is not in tree trolled, unavailable;
+	if sco-wee-wold is true:
+		vcal "It's bad to overpopulate forests!";
+		already-done;
+	ready;
+
+this is the vr-wee-wold rule:
+	now sco-wee-wold is true;
+	say "You hear more people rustling around.";
 
 chapter Lair Line scoring
 

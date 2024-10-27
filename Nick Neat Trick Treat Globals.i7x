@@ -40,6 +40,15 @@ sco-sank-sing is a truth state that varies.
 
 sco-treat-tree is a truth state that varies.
 
+sco-be-bold is a truth state that varies.
+sco-re-rolled is a truth state that varies.
+sco-see-sold is a truth state that varies.
+sco-eee-old is a truth state that varies.
+
+sco-wee-wold is a truth state that varies.
+
+sco-me-mold is a truth state that varies.
+
 Nick Neat Trick Treat Globals ends here.
 
 ---- DOCUMENTATION ----
