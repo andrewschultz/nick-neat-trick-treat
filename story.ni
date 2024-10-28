@@ -94,8 +94,11 @@ the honer house first rule is listed first in the check going rulebook.
 check going in Strick Street when honer house is unvisited (this is the honer house first rule):
 	if noun is not inside, say "The honer house looks like it could help you before you really get started." instead;
 
-check going north in Strick Street:
+check going inside in Strick Street:
 	if house-crit-score is 2, say "You built up enough confidence in Honer House." instead;
+
+check going north in Strick Street:
+	if player has jewel, say "You got the jewel. That's enough." instead;
 
 check going south in Strick Street:
 	if player has cold key, say "You got the cold key. That's enough." instead;
@@ -202,7 +205,7 @@ volume verb modification
 
 check taking inventory:
 	say "Other than your costume, and your phone under it (which has the Meet Me Pete P message) ...";
-	if number of carried plateitems > 0, say "[The list of plateitems] should be useful for [the plate].";
+	if number of carried plateitems > 0, say "[The list of carried plateitems] should be useful for [the plate].";
 
 volume endgame
 

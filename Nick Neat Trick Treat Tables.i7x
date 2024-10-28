@@ -145,8 +145,9 @@ a goodrhyme rule (this is the vc-thank-thing rule):
 
 this is the vr-thank-thing rule:
 	now sco-thank-thing is true;
-	say "A weird wraith sighs. You feel like you have earned it";
-	if sco-sank-sing is true, say "[line break]It also appreciates your 'Sank? Sing!' advice."
+	say "A weird wraith sighs. You feel like you have earned the jewel, and you take it without any incident.";
+	if sco-sank-sing is true, say "[line break]It also appreciates your 'Sank? Sing!' advice.";
+	now player has jewel;
 
 a goodrhyme rule (this is the vc-sank-sing rule):
 	if player is not in rank ring, unavailable;
