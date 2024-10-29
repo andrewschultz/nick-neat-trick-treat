@@ -82,10 +82,7 @@ Strick Street is inside of Sick Seat. "[one of]Hmm. You're not sure if strick is
 [becomes stray street?]
 
 after printing the locale description for Strick Street when number of carried plateitems is 3 and plate place is not moot:
-	say "You place all three items in [the plate]. It shatters to reveal a [face].";
-	moot plate;
-	move fate face to strick street;
-	continue the action;
+	say "You place all three items in [the plate]. It vibrates, but nothing else happens, yet. Perhaps you need some incantations as you put them in.";
 
 chapter check going rules
 

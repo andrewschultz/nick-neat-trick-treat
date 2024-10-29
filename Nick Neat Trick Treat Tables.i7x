@@ -72,6 +72,20 @@ this is the vr-treat-tree rule:
 	say "Meeting by the treat tree should be easy but oh no it doesn't work out! There's another tree, much sadder. It pushes you to somewhere dark...";
 	move player to Strick Street;
 
+chapter strick street scoring
+
+to decide which number is incant-score: decide on 0. [placeholder]
+
+to incant-once:
+	if incant-score is 3:
+		say "[The plate] shatters to reveal a [face]!";
+		moot plate;
+		move fate face to strick street;
+	else if incant-score is 2:
+		say "More rumbling. Clear cracks appear in [the plate].";
+	else:
+		say "[The plate] shakes a bit. You think you see a crack in it.";
+
 chapter honer house scoring
 
 a goodrhyme rule (this is the vc-donor-douse rule):
@@ -383,7 +397,7 @@ bait base	--	"bays"	"No..."
 
 table of room homonyms
 loc	hom-rule (a rule)	myhom (topic)	custom-msg (text)
-Sick Seat	--	--	--
+Hidey House	--	--	--
 
 Nick Neat Trick Treat Tables ends here.
 
