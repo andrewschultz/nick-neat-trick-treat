@@ -90,9 +90,13 @@ after printing the locale description for Strick Street when number of carried p
 chapter check going rules
 
 the honer house first rule is listed first in the check going rulebook.
+the push player east rule is listed after the honer house first rule in the check going rulebook.
 
 check going in Strick Street when honer house is unvisited (this is the honer house first rule):
 	if noun is not inside, say "The honer house looks like it could help you before you really get started." instead;
+
+check going in strick street when plate place is moot (this is the push player east rule):
+	if noun is not east, say "Now the way east is opened, that's where you should go." instead;
 
 check going inside in Strick Street:
 	if house-crit-score is 2, say "You built up enough confidence in Honer House." instead;
@@ -120,7 +124,7 @@ after examining plate place:
 
 understand "indentations" as plate place.
 
-the great grace fate face is a thing.
+the great grace fate face is a thing. "The Great Grace Fate Face affords passage east. It might be scary to walk into it, but it'd be scarier to stay here too long."
 
 book Honer House
 
@@ -175,27 +179,43 @@ chapter cold key
 
 the cold key is a plateitem. description is "It warmed up quickly in your pocket. Technically it's a key, cold, but switching words like that reminds you of poetry adults tell you you should enjoy. Ugh."
 
+book and eee ing
+
+There is a room called and eee ing. It is east of Strick Street. printed name is "And Eee-ing". "You hear lots of noises here, of arguments and encouragement and such. Sadly, there is despair, too. A lot of eee-ing."
+
+Randy Ring Candy King is a person in eee ing. printed name is "Randy Ring-Candy-King.". "But the focus is, well, someone imposing. [one of][or]A man introduces himself as Randy Ring-Candy-King. He is impressed you have gotten this far. He mentions that although you're more a chocolate person than ring candy, that variety is good. He "
+
 book Leaky Ley
 
-Leaky Ley is east of Strick Street.
+Leaky Ley is east of eee ing.
+
+chapter Cheeky Che
+
+Cheeky Che is a person in Leaky Ley. "[one of]'I am Cheeky Che,' someone announces. 'You stand no chance againt my taunting, but even if you did, you are no match for my leader!'[or]Cheeky Che waits for your best shot.[stopping][paragraph break]The insults would normally work, but something about the artifacts you found helps you resist.". description is "Don't look too long. You'll get drawn in. Think of strong defense, nothing rude, just ... let Che know."
 
 chapter Streaky Stray
 
-the Streaky Stray is a thing in Leaky Ley.
+the Streaky Stray is a thing. "A Streaky Stray attempts to zap people with a reeky ray. It doesn't seem lethal, but it sure can ruin people's halloween."
 
 chapter Freaky Fey
 
-Freaky Fray is a thing in Leaky Ley.
+Freaky Fray is a thing in Leaky Ley. "The freaky fray rages about you.". description is "You aren't strong enough to fight, but maybe the right words are more powerful than you think."
 
-the reeky ray is a thing in Leaky Ley.
+the reeky ray is scenery in Leaky Ley. "The Streaky Stray holds and fires it. It hasn't hit you with it, yet."
 
 check going in Freaky Fray: say "But it is the final fight!" instead;
 
-[streaky stray / creaky cray / weakie way ] [geeky gay / meeky may / peaky pay / reeky ray / kiki k / seek eee say / eeky eh / beaky bay ]
+[streaky stray / creaky cray / weakie way ] [geeky gay / meeky may / peaky pay / kiki k / seek eee say / eeky eh / beaky bay ]
 
-chapter Lair Line
+book Lair Line
 
-Lair Line is north of Leaky Ley. [this is just to get internal automap to work] "The Spare Spine is in the background here."
+Lair Line is a room. [this is just to get internal automap to work] "The Spare Spine is in the background here."
+
+chapter Spare Spine
+
+the spare spine is scenery in Lair Line. "The spare spine is scary for real in the daytime. You don't want to get involved with it."
+
+chapter Claire Cline
 
 Claire Cline is a person in Lair Line.
 
@@ -204,8 +224,17 @@ volume unsorted
 volume verb modification
 
 check taking inventory:
-	say "Other than your costume, and your phone under it (which has the Meet Me Pete P message) ...";
-	if number of carried plateitems > 0, say "[The list of carried plateitems] should be useful for [the plate].";
+	say "Other than your costume, and your phone under it (which has the Meet Me Pete P message) ...[paragraph break]";
+	if jet jewel is moot:
+		say "Well, not much, now you put the magic items in the face.";
+	else if number of carried plateitems > 0:
+		say "[The list of carried plateitems] should be useful for [the plate].";
+	else:
+		say "You have nothing to help you in your quest, yet.";
+	the rule succeeds;
+
+check taking:
+	say "You never need to [b]TAKE[r] anything explicitly in [this-game]." instead;
 
 volume endgame
 
@@ -215,3 +244,8 @@ final question wording	only if victorious	topic	final response rule	final respon
 
 this is the show-misses rule:
 	say "Under construction."
+
+volume map index
+
+index map with Honer House mapped west of Tree Trolled.
+index map with Lair Line mapped south of eee ing.
