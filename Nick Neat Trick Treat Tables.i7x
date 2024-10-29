@@ -25,6 +25,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "me"	"mold"	--	--	false	true	true	false	tree trolled	vc-me-mold rule	vr-me-mold rule	--	--
 "see"	"sold"	--	--	false	true	true	false	tree trolled	vc-see-sold rule	vr-see-sold rule	--	--
 "wee"	"wold"	--	--	false	true	true	false	tree trolled	vc-wee-wold rule	vr-wee-wold rule	--	--
+"dandy"	"ding"	--	--	false	true	true	false	eee ing	vc-dandy-ding rule	vr-dandy-ding rule	--	--
 "fair"	"fine"	--	--	false	true	true	false	Lair Line	vc-fair-fine rule	vr-fair-fine rule	--	--
 "theyre|their"	"thine"	--	--	false	true	false	false	Lair Line	vc-theyre-thine rule	vr-theyre-thine rule	--	--
 "dare"	"dine"	--	--	false	true	true	false	Lair Line	vc-dare-dine rule	vr-dare-dine rule	--	--
@@ -311,6 +312,22 @@ a goodrhyme rule (this is the vc-wee-wold rule):
 this is the vr-wee-wold rule:
 	now sco-wee-wold is true;
 	say "You hear more people rustling around.";
+
+chapter eee ing scoring
+
+a goodrhyme rule (this is the vc-dandy-ding rule):
+	if player is not in eee ing, unavailable;
+	if sco-dandy-ding is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-dandy-ding is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-dandy-ding rule:
+	now sco-dandy-ding is true;
+	say "'There you go!' says [Randy]. 'Just had to make sure, you know. Oh, one other thing -- can you call up a classmate? I have a few of them here.'";
 
 chapter Lair Line scoring
 

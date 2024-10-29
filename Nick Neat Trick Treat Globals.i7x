@@ -57,6 +57,8 @@ sco-done-dome is a truth state that varies.
 
 sco-a-gnome is a truth state that varies.
 
+sco-dandy-ding is a truth state that varies.
+
 Nick Neat Trick Treat Globals ends here.
 
 ---- DOCUMENTATION ----
