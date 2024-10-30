@@ -184,9 +184,17 @@ Randy Ring Candy King is a person in eee ing. printed name is "Randy Ring-Candy-
 
 book Leaky Ley
 
-Leaky Ley is east of eee ing.
+Leaky Ley is east of eee ing. "You sense a disruption of parallel universes here."
 
 chapter Cheeky Che
+
+a twit is a kind of person.
+
+Cheeky Che is a twit in Leaky Ley. Cliquey Clay is a twit in Leaky Ley.
+
+for printing a locale paragraph about a twit (called tw):
+	if tw is not mentioned, say "Cheeky Che and Cliquey Clay, who announced themselves as the Twit Twins, mock you here. They look pretty tough.";
+	now all twits are mentioned;
 
 Cheeky Che is a person in Leaky Ley. "[one of]'I am Cheeky Che,' someone announces. 'You stand no chance againt my taunting, but even if you did, you are no match for my leader!'[or]Cheeky Che waits for your best shot.[stopping][paragraph break]The insults would normally work, but something about the artifacts you found helps you resist.". description is "Don't look too long. You'll get drawn in. Think of strong defense, nothing rude, just ... let Che know."
 
@@ -200,7 +208,7 @@ Freaky Fray is a thing in Leaky Ley. "The freaky fray rages about you.". descrip
 
 the reeky ray is scenery in Leaky Ley. "The Streaky Stray holds and fires it. It hasn't hit you with it, yet."
 
-check going in Freaky Fray: say "But it is the final fight!" instead;
+check going in Freaky Fray: say "You can't flee. You need to win!" instead;
 
 [streaky stray / creaky cray / weakie way ] [geeky gay / meeky may / peaky pay / kiki k / seek eee say / eeky eh / beaky bay ]
 
