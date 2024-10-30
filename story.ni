@@ -70,9 +70,20 @@ to eye-blink (nm - a number):
 	if nm is 0:
 		say "Oh dear. I should have a clue for this, even one saying you're done.";
 		continue the action;
+	let left-eye be false;
+	let right-eye be false;
+	if nm > 1000:
+		now left-eye is true;
+		now nm is nm - 1000;
+	if nm > 100:
+		now right-eye is true;
+		now nm is nm - 100;
+	let main be the remainder after dividing nm by 100;
 	let tens be the remainder after dividing nm by 10;
 	let ones be the remainder after dividing nm by 10;
 	say "The left eye blinks [tens in words] times, then the right eye, [ones in words].";
+	if left-eye is true, say "[line break]Odd ... the left eye seemed to squint at the end. So that counts as half?";
+	if right-eye is true, say "[line break]Odd ... the right eye seemed to squint at the end. So that counts as half?";
 
 chapter eyerming
 
@@ -96,9 +107,11 @@ understand the command "eye [thing]" as something new.
 understand "eye [thing]" as eyeing when player has eyes.
 
 carry out eyeing:
-	if eyevalue of location of player < 0, say "You don't need to do anything [if eyevalue of location of player is -2]else [end if]with [the noun]." instead;
+	if eyevalue of noun < 0, say "You don't need to do anything [if eyevalue of location of player is -2]else [end if]with [the noun]." instead;
 	eye-blink eyevalue of noun;
 	the rule succeeds;
+
+check eyeing Nick when sco-ick-eat is true and Leaky Ley is unvisited: say "The eyes do their blinking slowly, as if to say, this is a way off...";
 
 check eyeing eyes: say "Physically impossible and fortunately unnecessary." instead;
 
@@ -110,7 +123,7 @@ volume rooms
 
 book sick seat
 
-Sick Seat is a room. printed name is "On your sick seat". "[one of]You're on your sick seat, sick in a positive way, though right now you are sort of sick of the vegtables you have to eat before trick-or-treating[or]You're still on your seat here, not ready to move along until there's adventure[stopping].". eyevalue of sick seat is 33.
+Sick Seat is a room. printed name is "At dinner, on your sick seat". "[if sco-ick-eat is false]You're on your sick seat, sick in a positive way, though right now you are sort of sick of the vegtables you have to eat before trick-or-treating. You usually don't mind them, but today they're tough to shovel down. Some quick self-talk to pep yourself up should do the trick.[else]You're still on your seat here, trying to figure which friend to choose for adventure[end if].". eyevalue of sick seat is 33.
 
  [bad bid, dad did]
  [mom, more? Bomb, bore!]
@@ -183,7 +196,7 @@ the great grace fate face is a thing. "The Great Grace Fate Face affords passage
 
 book Honer House
 
-Honer House is inside of Strick Street. "Here in the honer house you [house-left]. You can go back out [if house-crit-score is 2]once[else]now[end if] you've gotten your bearings[if sco-donor-douse is false], though you may be able to do some sneaky trick-or-treating before[end if]."
+Honer House is inside of Strick Street. "Here in the honer house you [house-left]. You can go back out [if house-crit-score is 2]once[else]now[end if] you've gotten your bearings[if sco-donor-douse is false], though you may be able to do some sneaky trick-or-treating before[end if].". eyevalue of honer house is 1055.
 
 to say house-left:
 	if house-score is 3:
@@ -197,7 +210,7 @@ to say house-left:
 
 book Rank Ring
 
-Rank Ring is north of Strick Street. "It's too misty any way but back south."
+Rank Ring is north of Strick Street. "It's too misty any way but back south.". eyevalue of rank ring is 55.
 
 chapter jewel
 
@@ -216,7 +229,7 @@ the fun foam is a thing. "Fun foam rests, providing a soft landing for any huge 
 
 chapter ton tome
 
-the ton tome is a thing. "The ton tome you summoned landed on the fun foam.".
+the ton tome is a thing. "The ton tome you summoned landed on the fun foam.". eyevalue of ton tome is 34.
 
 chapter book
 
@@ -242,13 +255,13 @@ Randy Ring Candy King is a person in eee ing. printed name is "Randy Ring-Candy-
 
 book Leaky Ley
 
-Leaky Ley is east of eee ing. "You sense a disruption of parallel universes here."
+Leaky Ley is east of eee ing. "You sense a disruption of parallel universes here.". eyevalue of leaky ley is 163.
 
 chapter Cheeky Che
 
-a twit is a kind of person.
+a twit is a kind of person. description of a twit is usually "Don't look too long. You'll get drawn in. Think of strong defense, nothing rude, just ... let him know.". eyevalue of a twit is usually 163.
 
-Cheeky Che is a twit in Leaky Ley. Cliquey Clay is a twit in Leaky Ley. "Don't look too long. You'll get drawn in. Think of strong defense, nothing rude, just ... let him know."
+Cheeky Che is a twit in Leaky Ley. Cliquey Clay is a twit in Leaky Ley.
 
 for printing a locale paragraph about a twit (called tw):
 	if tw is not mentioned, say "[one of]Two identical, rough-looking teens stand herre. They introduce themselves as Cheeky Che and Cliquey Clay, the twit twins. You stand no chance against their taunts, and it's probably best not to try. If you got by them, their leader would have to resort to worse![or]Cheeky Che and Cliquey Clay both continue to smile condescendingly at you.[stopping]";
@@ -265,7 +278,7 @@ chapter Streaky Stray
 
 Reeky Ray is a person. "Not only named Ray, Reeky Ray has a ray that shoots and hits you.". description is "No time to gawp! Look inside yourself, and find Ray's weakness, and take him down!". eyevalue of reeky ray is 75.
 
-chapter Freaky Fey
+chapter Freaky Fray
 
 Freaky Fray is a thing. "The freaky fray rages about you.". description is "You aren't strong enough to fight, but maybe the right words are more powerful than you think."
 

@@ -2,6 +2,24 @@ Version 1/241026 of Nick Neat Trick Treat Tables by Andrew Schultz begins here.
 
 "This lays out the major tables for Nick Neat Trick Treat for easy indexing and searching, as well as any rules related to the tables."
 
+volume stubs
+
+to rm-and (th - a thing) and (nu - a number):
+	now eyevalue of location of player is nu;
+	now eyevalue of th is nu;
+
+to declue (th - a thing):
+	now eyevalue of th is -2;
+
+to declue-here:
+	now eyevalue of location of player is -2;
+
+to declue-rm (th - a thing):
+	now eyevalue of th is -2;
+	declue-here;
+
+volume main table
+
 table of verb checks [the order of things to solve is roughly alphabetical, so the lurking lump always gives you the best value, but this is subverted by if one rhyme pushes the game/story further than the others. So Leave Lo is first. Sassed can be anywhere for the bonus point, since the lump explicitly avoids bonus points.]
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "ick"	"eat"	--	--	false	true	true	false	sick seat	vc-ick-eat rule	vr-ick-eat rule	--	--
@@ -40,18 +58,6 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "green"	"grid"	--	--	false	true	true	false	lair line	vc-green-grid rule	vr-green-grid rule	--	--
 "dare"	"dine"	--	--	false	true	true	false	Lair Line	vc-dare-dine rule	vr-dare-dine rule	--	--
 
-a goodrhyme rule (this is the vc-green-grid rule):
-	if player is not in lair line, unavailable;
-	if sco-green-grid is true:
-		vcal "You already got a [kid] to find a portal back!";
-		already-done;
-	ready;
-
-this is the vr-green-grid rule:
-	now sco-green-grid is true;
-	say "[The kid], awed with how you took down Reeky Ray, mutters there's no way they can do this. But you know there are some things some people are better suited for than others. You ask them to give it a try. A gren grid glows--and beneath it you see your neighborhood![paragraph break]But you don't want to jump through right away. You could stay out a bit too late, talking with friends. And what goes well with conversation?";
-
-
 chapter sick seat scoring
 
 a goodrhyme rule (this is the vc-ick-eat rule):
@@ -63,12 +69,14 @@ a goodrhyme rule (this is the vc-ick-eat rule):
 
 this is the vr-ick-eat rule:
 	now sco-ick-eat is true;
-	say "You mouth the phrase to yourself. You think it. It wouldn't do to say it aloud. You worry you're getting a bit too old for either saying the phrase or disliking vegetables. But a part of you hopes you always hate certain vegetables. You have to stand for SOMETHING, after all.[paragraph break]Now, whom to choose to adventure with, from your seat? You're pretty sure.";
+	say "You mouth the phrase to yourself. You think it. It wouldn't do to say it aloud. You worry you're getting a bit too old for either saying the phrase or disliking vegetables. But a part of you hopes you always hate certain vegetables. You have to stand for SOMETHING, after all.[paragraph break]But the vegetables aren't bad once you start in on them. They just don't compare to trick or treat candy.[paragraph break]You have a lot of friends to go out with. But who's the best fit for tonight? Well, you've sort of already chosen. Just got to remember whom to, uh, choose.";
+	declue-here;
+	now eyevalue of Nick is 55;
 
 a goodrhyme rule (this is the vc-pick-pete rule):
 	if player is not in sick seat, unavailable;
 	if sco-ick-eat is false:
-		vcp "Pete will be fun to trick-or-treat, but first, those vegetables. Your parents aren't wasting them.";
+		vcp "Pete will be fun to trick-or-treat with, but first, those vegetables. Your parents aren't wasting them.";
 		not-yet;
 	if sco-pick-pete is true:
 		vcal "You already picked Pete. Where to meet him?";
@@ -81,6 +89,7 @@ this is the vr-pick-pete rule:
 	say "[line break]The message back: 'Meet me. -- Pete P.'";
 	say "[line break]But where?";
 	now player has meet me pete p;
+	declue-rm nick;
 
 a goodrhyme rule (this is the vc-treat-tree rule):
 	if player does not have meet me pete p, unavailable;
@@ -91,7 +100,7 @@ a goodrhyme rule (this is the vc-treat-tree rule):
 
 this is the vr-treat-tree rule:
 	now sco-treat-tree is true;
-	say "Meeting by the treat tree should be easy but oh no it doesn't work out! There's another tree, much sadder. It pushes you to somewhere dark...";
+	say "Meeting by the treat tree should be easy, but the area is much darker than you remember. The tree even starts talking ... someone or something has cast a spell on it, so it can't enjoy Halloween, or it can't help others to. It's  trolled tree now. It nudges you north to a neighborhood you didn't know existed.[paragraph break]And you're pretty sure Strick Street isn't an avenue, as strick isn't really a word, but sadly it fits in here.[paragraph break]How to make things un-struck?";
 	move player to Strick Street;
 
 chapter strick street scoring
@@ -449,7 +458,7 @@ this is the vr-creaky-cray rule:
 
 to check-final-boss:
 	if twin-score is 2:
-		say "They run away, shaking their fingers at you. 'You'll be sorry! You made us get the big boss!'[paragraph break]And thus begins the final fight. Reeky Ray, who holds a reeky ray that is very, very accurate. How to disrupt it, or him?";
+		say "They run away, shaking their fingers at you. 'You'll be sorry! You made us get the big boss!'[paragraph break]And thus begins the final fight, a freaky fray. Reeky Ray, who holds a reeky ray that is very, very accurate. How to disrupt it, or him?";
 		moot cheeky che;
 		moot cliquey clay;
 		move reeky ray to leaky ley;
@@ -482,6 +491,7 @@ a goodrhyme rule (this is the vc-slick-sleet rule):
 this is the vr-slick-sleet rule:
 	now sco-slick-sleet is true;
 	say "Reeky Ray begins tripping over himself. 'What? It can't be!'";
+	declue Nick;
 	check-fight-end;
 
 to check-fight-end:
@@ -493,6 +503,17 @@ to check-fight-end:
 		move player to Lair Line;
 
 chapter Lair Line scoring
+
+a goodrhyme rule (this is the vc-green-grid rule):
+	if player is not in lair line, unavailable;
+	if sco-green-grid is true:
+		vcal "You already got a [kid] to find a portal back!";
+		already-done;
+	ready;
+
+this is the vr-green-grid rule:
+	now sco-green-grid is true;
+	say "[The kid], awed with how you took down Reeky Ray, mutters there's no way they can do this. But you know there are some things some people are better suited for than others. You ask them to give it a try. A gren grid glows--and beneath it you see your neighborhood![paragraph break]But you don't want to jump through right away. You could stay out a bit too late, talking with friends. And what goes well with conversation?";
 
 a goodrhyme rule (this is the vc-fair-fine rule):
 	if player is not in Lair Line, unavailable;
