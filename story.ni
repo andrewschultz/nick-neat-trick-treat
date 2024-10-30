@@ -14,7 +14,7 @@ release along with the "parchment" interpreter.
 
 the release number is 1.
 
-Use memory economy.
+[Use memory economy.]
 
 chapter general headers
 
@@ -47,6 +47,22 @@ include Nick Neat Trick Treat Tables by Andrew Schultz.
 section testing
 
 include Nick Neat Trick Treat Tests by Andrew Schultz.
+
+volume eyes
+
+the some size em eyes are a thing. printed name is "some-size-[']em eyes". description is "They look like those gumballs that are disguised to fool people into thinking they're chocolate. You've been suckered more than once, especially on clearance sales. There are two of them. The left one blinks back at you four times, and the right blinks five, as if to great you, Nick Neat-Trick Treat.[paragraph break]You can [b]EYE[r] a room with them or [b]EYE[r] a thing.".
+
+report examining the player when gs-eyes-found is false:
+	find-the-eyes;
+	continue the action;
+
+to find-the-eyes:
+	say "Wait! What's this? Some size-[']em eyes! The perfect thing to size up what weird stuff you need to do, on a weird adventure. Way better than a decoder ring.[paragraph break][i][bracket][b]NOTE[r][i]: the eyes can be used to [b]EYE[r] the room in general, or a thing, to tell you how long each word in the solution should  be. They don't guarantee you can do anything right now.[close bracket][line break]";
+	now player has eyes;
+
+report taking inventory when gs-eyes-found is false:
+	find-the-eyes;
+	continue the action;
 
 volume rooms
 
@@ -235,7 +251,10 @@ volume unsorted
 
 volume verb modification
 
-check taking inventory:
+the print empty inventory rule is not listed in any rulebook.
+the print standard inventory rule is not listed in any rulebook.
+
+carry out taking inventory:
 	if sco-ick-eat is false, say "You're carrying nothing special. You're not in your costume yet. You need to finish dinner." instead;
 	if sco-treat-tree is false, say "You've got that phone message to deal with." instead;
 	say "Other than your costume, and your phone under it (which has the Meet Me Pete P message) ...[paragraph break]";
@@ -251,6 +270,9 @@ check taking inventory:
 
 check taking:
 	say "You never need to [b]TAKE[r] anything explicitly in [this-game]." instead;
+
+check dropping:
+	say "You never need to [b]DROP[r] anything explicitly in [this-game]." instead;
 
 volume endgame
 

@@ -4,6 +4,10 @@ Version 1/241026 of Nick Neat Trick Treat Globals by Andrew Schultz begins here.
 
 volume variables
 
+chapter game states
+
+gs-eyes-found is a truth state that varies.
+
 chapter Sick Seat variables
 
 sco-ick-eat is a truth state that varies.
