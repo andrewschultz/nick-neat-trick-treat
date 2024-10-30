@@ -67,6 +67,14 @@ sco-pluraled-plea is a truth state that varies.
 
 sco-andy-ng is a truth state that varies.
 
+sco-weakie-way is a truth state that varies.
+sco-creaky-cray is a truth state that varies.
+
+sco-grit-grins is a truth state that varies.
+
+sco-streaky-stray is a truth state that varies.
+sco-slick-sleet is a truth state that varies.
+
 Nick Neat Trick Treat Globals ends here.
 
 ---- DOCUMENTATION ----

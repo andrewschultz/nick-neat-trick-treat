@@ -67,6 +67,17 @@ volume trivia
 
 book definitions of point sums
 
+to decide which number is incant-score: decide on (boolval of sco-pluraled-plea) + (boolval of sco-shove-shook) + (boolval of sco-get-ghoul);
+
+to decide which number is twin-score:
+	let temp be boolval of sco-grit-grins;
+	if sco-creaky-cray is true or sco-weakie-way is true, increment temp;
+	decide on temp;
+	[let y be (boolval of ((whether or not sco-weakie-way is true) or (whether or not sco-creaky-cray is true)));]
+
+to decide which number is ray-score:
+	decide on (boolval of sco-slick-sleet) + (boolval of sco-streaky-stray);
+
 to decide which number is house-score:
 	decide on (boolval of sco-loner-louse) + (boolval of sco-moaner-mouse) + (boolval of sco-donor-douse);
 

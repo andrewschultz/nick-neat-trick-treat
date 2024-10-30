@@ -30,6 +30,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "wee"	"wold"	--	--	false	true	true	false	tree trolled	vc-wee-wold rule	vr-wee-wold rule	--	--
 "dandy"	"ding"	--	--	false	true	true	false	eee ing	vc-dandy-ding rule	vr-dandy-ding rule	--	--
 "andy|sandy|mandy|landy"	"ng|tsing|hsing|sing|ming|ling"	--	--	false	true	true	false	eee ing	vc-andy-ng rule	vr-andy-ng rule	"andy ng" or "sandy sing/tsing/hsing" or "mandy ming" or "landy ling"	--
+"weakie"	"way"	--	--	false	true	true	false	leaky ley	vc-weakie-way rule	vr-weakie-way rule	--	--
+"creaky"	"cray"	--	--	false	true	true	false	leaky ley	vc-creaky-cray rule	vr-creaky-cray rule	--	--
+"grit"	"grins"	--	--	false	true	true	false	leaky ley	vc-grit-grins rule	vr-grit-grins rule	--	--
+"streaky"	"stray"	--	--	false	true	true	false	leaky ley	vc-streaky-stray rule	vr-streaky-stray rule	--	--
+"slick"	"sleet"	--	--	false	true	true	false	leaky ley	vc-slick-sleet rule	vr-slick-sleet rule	--	--
 "fair"	"fine"	--	--	false	true	true	false	Lair Line	vc-fair-fine rule	vr-fair-fine rule	--	--
 "theyre|their"	"thine"	--	--	false	true	false	false	Lair Line	vc-theyre-thine rule	vr-theyre-thine rule	--	--
 "dare"	"dine"	--	--	false	true	true	false	Lair Line	vc-dare-dine rule	vr-dare-dine rule	--	--
@@ -77,8 +82,6 @@ this is the vr-treat-tree rule:
 	move player to Strick Street;
 
 chapter strick street scoring
-
-to decide which number is incant-score: decide on (boolval of sco-pluraled-plea) + (boolval of sco-shove-shook) + (boolval of sco-get-ghoul);
 
 a goodrhyme rule (this is the vc-pluraled-plea rule):
 	if player does not have cold key, unavailable;
@@ -393,6 +396,88 @@ this is the vr-andy-ng rule:
 	wfak;
 	say "Between you and Pete and your classmates and Randy, you are ready for the final fight.";
 	move player to Leaky Ley;
+
+chapter leaky ley scoring
+
+a goodrhyme rule (this is the vc-grit-grins rule):
+	if player is not in leaky ley, unavailable;
+	if sco-grit-grins is true:
+		vcal "You already grinned grittily to stand up to the twits at once. Now look at them individually.";
+		already-done;
+	ready;
+
+this is the vr-grit-grins rule:
+	now sco-grit-grins is true;
+	say "You grin, fiercely you hope, as if to say 'I've put up with worse.' And you have, but it's the eye contact and involuntary eye-roll that really gets them.";
+	check-final-boss;
+
+a goodrhyme rule (this is the vc-weakie-way rule):
+	if player is not in leaky ley, unavailable;
+	if sco-weakie-way is true:
+		vcal "Insults lose zing the second time around.";
+		already-done;
+	ready;
+
+this is the vr-weakie-way rule:
+	now sco-weakie-way is true;
+	say "You worry slightly that putting the adjective second may deduct style points, but it turns out emphasizing it leaves them taken aback."
+
+a goodrhyme rule (this is the vc-creaky-cray rule):
+	if player is not in leaky ley, unavailable;
+	if sco-creaky-cray is true:
+		vcal "Insults lose zing the second time around.";
+		already-done;
+	ready;
+
+this is the vr-creaky-cray rule:
+	now sco-creaky-cray is true;
+	say "You totally justifiably DARVO them, even though you aren't aware of the acronym. You exaggerate how senseless it is to ruin younger kids['] halloween, and you wonder if their lives are so empty they'll be doing this every year.";
+	check-final-boss;
+
+to check-final-boss:
+	if twin-score is 2:
+		say "They run away, shaking their fingers at you. 'You'll be sorry! You made us get the big boss!'[paragraph break]And thus begins the final fight. Reeky Ray, who holds a reeky ray that is very, very accurate. How to disrupt it, or him?";
+		moot cheeky che;
+		moot cliquey clay;
+		move reeky ray to leaky ley;
+		move freaky fray to leaky ley;
+
+a goodrhyme rule (this is the vc-streaky-stray rule):
+	if player is not in leaky ley, unavailable;
+	if reeky ray is not touchable:
+		vcp "There's nothing to make streaky or stray, yet.";
+		not-yet;
+	if sco-streaky-stray is true:
+		vcal "You already made the reeky ray wobble a bit! Now to make Reeky Ray himself wobble.";
+		already-done;
+	ready;
+
+this is the vr-streaky-stray rule:
+	now sco-streaky-stray is true;
+	say "Reeky Ray begins misfiring. 'What? It can't be!'";
+	check-fight-end;
+
+a goodrhyme rule (this is the vc-slick-sleet rule):
+	if sco-slick-sleet is true:
+		vcal "But you already created slick sleet!!";
+		already-done;
+	if reeky ray is not touchable:
+		vcp "Sleet won't help you here, yet.";
+		not-yet;
+	ready;
+
+this is the vr-slick-sleet rule:
+	now sco-slick-sleet is true;
+	say "Reeky Ray begins tripping over himself. 'What? It can't be!'";
+	check-fight-end;
+
+to check-fight-end:
+	say "[line break]";
+	if ray-score is 1:
+		say "But it can! Reeky Ray shakes his head, then picks himself up. Maybe one more blow will knock him out!";
+	else:
+		say "But it can, again! And this time, having lost control of himself and his weapon, Reeky Ray collapses, exhausted. 'Halloween is stupid! Find more practical things to do! Chocolate is bad for you!' But nobody is listening.[paragraph break]Randy has something to show you, though.";
+		move player to Lair Line;
 
 chapter Lair Line scoring
 

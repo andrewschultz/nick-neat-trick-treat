@@ -188,27 +188,36 @@ Leaky Ley is east of eee ing. "You sense a disruption of parallel universes here
 
 chapter Cheeky Che
 
+to decide which number is twin-score:
+	let temp be boolval of sco-grit-grins;
+	if sco-creaky-cray is true or sco-weakie-way is true, increment temp;
+	decide on temp;
+	[let y be (boolval of ((whether or not sco-weakie-way is true) or (whether or not sco-creaky-cray is true)));]
+
 a twit is a kind of person.
 
-Cheeky Che is a twit in Leaky Ley. Cliquey Clay is a twit in Leaky Ley.
+Cheeky Che is a twit in Leaky Ley. Cliquey Clay is a twit in Leaky Ley. "Don't look too long. You'll get drawn in. Think of strong defense, nothing rude, just ... let him know."
 
 for printing a locale paragraph about a twit (called tw):
-	if tw is not mentioned, say "Cheeky Che and Cliquey Clay, who announced themselves as the Twit Twins, mock you here. They look pretty tough.";
+	if tw is not mentioned, say "[one of]Two identical, rough-looking teens stand herre. They introduce themselves as Cheeky Che and Cliquey Clay, the twit twins. You stand no chance against their taunts, and it's probably best not to try. If you got by them, their leader would have to resort to worse![or]Cheeky Che and Cliquey Clay both continue to smile condescendingly at you.[stopping]";
 	now all twits are mentioned;
 
-Cheeky Che is a person in Leaky Ley. "[one of]'I am Cheeky Che,' someone announces. 'You stand no chance againt my taunting, but even if you did, you are no match for my leader!'[or]Cheeky Che waits for your best shot.[stopping][paragraph break]The insults would normally work, but something about the artifacts you found helps you resist.". description is "Don't look too long. You'll get drawn in. Think of strong defense, nothing rude, just ... let Che know."
+after examining a twit:
+	if twin-score is 0:
+		say "You need to figure a way to take the twits down, both individually and as a team.";
+	else if twin-score is 1:
+		say "[if sco-grit-grins is false]You hit them individually. Now you need to hit them together[else]You hit their partnership. Now focus on them individually[end if].";
+	continue the action;
 
 chapter Streaky Stray
 
-the Streaky Stray is a thing. "A Streaky Stray attempts to zap people with a reeky ray. It doesn't seem lethal, but it sure can ruin people's halloween."
+Reeky Ray is a person. "Not only named Ray, Reeky Ray has a ray that shoots and hits you.". description is "No time to gawp! Look inside yourself, and find Ray's weakness, and take him down!"
 
 chapter Freaky Fey
 
-Freaky Fray is a thing in Leaky Ley. "The freaky fray rages about you.". description is "You aren't strong enough to fight, but maybe the right words are more powerful than you think."
+Freaky Fray is a thing. "The freaky fray rages about you.". description is "You aren't strong enough to fight, but maybe the right words are more powerful than you think."
 
-the reeky ray is scenery in Leaky Ley. "The Streaky Stray holds and fires it. It hasn't hit you with it, yet."
-
-check going in Freaky Fray: say "You can't flee. You need to win!" instead;
+check going in Leaky Ley: say "You can't flee. You need to win!" instead;
 
 [streaky stray / creaky cray / weakie way ] [geeky gay / meeky may / peaky pay / kiki k / seek eee say / eeky eh / beaky bay ]
 
