@@ -10,6 +10,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "donor"	"douse"	--	--	false	true	false	false	honer house	vc-donor-douse rule	vr-donor-douse rule	--	--
 "loner"	"louse"	--	--	false	true	true	false	honer house	vc-loner-louse rule	vr-loner-louse rule	--	--
 "moaner"	"mouse"	--	--	false	true	true	false	honer house	vc-moaner-mouse rule	vr-moaner-mouse rule	--	--
+"get"	"ghoul"	--	--	false	true	true	false	strick street	vc-get-ghoul rule	vr-get-ghoul rule	--	--
+"shove"	"shook"	--	--	false	true	true	false	strick street	vc-shove-shook rule	vr-shove-shook rule	--	--
+"pluralled|pluraled"	"plea"	--	--	false	true	true	false	strick street	vc-pluraled-plea rule	vr-pluraled-plea rule	--	--
 "plank"	"pling"	--	--	false	true	true	false	rank ring	vc-plank-pling rule	vr-plank-pling rule	--	--
 "blank"	"bling"	--	--	false	true	true	false	rank ring	vc-blank-bling rule	vr-blank-bling rule	--	--
 "thank"	"thing"	--	--	false	true	true	false	rank ring	vc-thank-thing rule	vr-thank-thing rule	--	--
@@ -74,9 +77,45 @@ this is the vr-treat-tree rule:
 
 chapter strick street scoring
 
-to decide which number is incant-score: decide on 0. [placeholder]
+to decide which number is incant-score: decide on (boolval of sco-pluraled-plea) + (boolval of sco-shove-shook) + (boolval of sco-get-ghoul);
 
-to incant-once:
+a goodrhyme rule (this is the vc-pluraled-plea rule):
+	if player does not have cold key, unavailable;
+	if player is not in strick street:
+		vcp "This is not the right place for such a plea.";
+		not-yet;
+	ready;
+
+this is the vr-pluraled-plea rule:
+	now sco-pluraled-plea is true;
+	ritual-item cold key;
+
+a goodrhyme rule (this is the vc-shove-shook rule):
+	if player does not have book, unavailable;
+	if player is not in strick street:
+		vcp "There's nothing for the book to shake here.";
+		not-yet;
+	ready;
+
+this is the vr-shove-shook rule:
+	now sco-shove-shook is true;
+	ritual-item book;
+
+a goodrhyme rule (this is the vc-get-ghoul rule):
+	if player does not have jewel, unavailable;
+	if player is not in strick street:
+		vcp "That'd seem to work, in the 'get rid of' sense, but perhaps it should be part of a ritual.";
+		not-yet;
+	ready;
+
+this is the vr-get-ghoul rule:
+	now sco-get-ghoul is true;
+	ritual-item jewel;
+
+to ritual-item (th - a thing):
+	say "You place [the th] in the compartment in [the plate] where it fits. The compartment closes.";
+	moot th;
+	say "[line break]";
 	if incant-score is 3:
 		say "[The plate] shatters to reveal a [face]!";
 		moot plate;

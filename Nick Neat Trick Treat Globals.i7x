@@ -59,6 +59,12 @@ sco-a-gnome is a truth state that varies.
 
 sco-dandy-ding is a truth state that varies.
 
+sco-get-ghoul is a truth state that varies.
+
+sco-shove-shook is a truth state that varies.
+
+sco-pluraled-plea is a truth state that varies.
+
 Nick Neat Trick Treat Globals ends here.
 
 ---- DOCUMENTATION ----

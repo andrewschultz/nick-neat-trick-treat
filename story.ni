@@ -222,10 +222,12 @@ volume verb modification
 
 check taking inventory:
 	say "Other than your costume, and your phone under it (which has the Meet Me Pete P message) ...[paragraph break]";
-	if jet jewel is moot:
+	if incant-score is 3:
 		say "Well, not much, now you put the magic items in the face.";
+	else if number of carried plateitems > 0 and incant-score > 0:
+		say "[The list of carried plateitems] are probably meant for [the plate], like [the list of moot plateitems] you used.";
 	else if number of carried plateitems > 0:
-		say "[The list of carried plateitems] should be useful for [the plate].";
+		say "You have [the list of carried plateitems] but haven't figured where to use [if number of carried plateitems > 1]them[else]it[end if] yet.";
 	else:
 		say "You have nothing to help you in your quest, yet.";
 	the rule succeeds;
