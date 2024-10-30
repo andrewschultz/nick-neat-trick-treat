@@ -52,14 +52,14 @@ volume when play begins
 
 volume eyes
 
-the some size em eyes are a thing. printed name is "some-size-[']em eyes". description is "They look like those gumballs that are disguised to fool people into thinking they're chocolate. You've been suckered more than once, especially on clearance sales. There are two of them. The left one blinks back at you four times, and the right blinks five, as if to great you, Nick Neat-Trick Treat.[paragraph break]You can [b]EYE[r] a room with them or [b]EYE[r] a thing.".
+the some size em eyes are a thing. printed name is "some-size-[']em eyes". description is "They look like those gumballs that are disguised to fool people into thinking they're chocolate. You've been suckered more than once, especially on clearance sales. There are two of them. The left one blinks back at you four times, and the right blinks five, as if to great you, Nick Neat-Trick Treat.[paragraph break]You can [b]EYE[r] a room with them or [b]EYE[r] a thing.". eyevalue of eyes is -1.
 
 report examining the player when gs-eyes-found is false:
 	find-the-eyes;
 	continue the action;
 
 to find-the-eyes:
-	say "Wait! What's this? Some size-[']em eyes! The perfect thing to size up what weird stuff you need to do, on a weird adventure. Way better than a decoder ring.[paragraph break][i][bracket][b]NOTE[r][i]: the eyes can be used to [b]EYE[r] the room in general, or a thing, to tell you how long each word in the solution should  be. They don't guarantee you can do anything right now.[close bracket][line break]";
+	say "Wait! What's this? Some size-[']em eyes! The perfect thing to size up what weird stuff you need to do, on a weird adventure. Way better than a decoder ring.[paragraph break][i][bracket][b]NOTE[r][i]: the eyes can be used to [b]EYE[r][i] the room in general, or a thing, to tell you how long each word in the solution should  be. They don't guarantee you can do anything right now.[close bracket][r][line break]";
 	now player has eyes;
 
 report taking inventory when gs-eyes-found is false:
@@ -110,7 +110,7 @@ volume rooms
 
 book sick seat
 
-Sick Seat is a room. printed name is "On your sick seat". "[one of]You're on your sick seat, sick in a positive way, though right now you are sort of sick of the vegtables you have to eat before trick-or-treating[or]You're still on your seat here, not ready to move along until there's adventure[stopping]."
+Sick Seat is a room. printed name is "On your sick seat". "[one of]You're on your sick seat, sick in a positive way, though right now you are sort of sick of the vegtables you have to eat before trick-or-treating[or]You're still on your seat here, not ready to move along until there's adventure[stopping].". eyevalue of sick seat is 33.
 
  [bad bid, dad did]
  [mom, more? Bomb, bore!]
@@ -123,19 +123,19 @@ check going in Sick Seat:
 
 chapter Nick
 
-Nick Neat Trick Treat is a person in Sick Seat. the player is Nick Neat Trick Treat. printed name is "Nick Neat-Trick-Treat".
+Nick Neat Trick Treat is a person in Sick Seat. the player is Nick Neat Trick Treat. printed name is "Nick Neat-Trick-Treat". eyevalue of nick is 33.
 
 chapter the phone
 
-Nick carries the phone. description is "You don't want to be gazing at it when you walk around. If there's a message, you'll get it."
+Nick carries the phone. description is "You don't want to be gazing at it when you walk around. If there's a message, you'll get it.". eyevalue of phone is 54.
 
 chapter the note
 
-Meet Me Pete P is a thing. "It's just the message on your phone. [if sco-treat-tree is false]There must be a common, yet secret, place to meet him[else]You figured you could meet at the Treat Tree[end if]."
+Meet Me Pete P is a thing. "It's just the message on your phone. [if sco-treat-tree is false]There must be a common, yet secret, place to meet him[else]You figured you could meet at the Treat Tree[end if].". eyevalue of pete p is 54.
 
 book Strick Street
 
-Strick Street is inside of Sick Seat. "[one of]Hmm. You're not sure if strick is a word, but you figure if you badgered any of the denizens about it, they'd be ... upset. So, maybe it's short for stricken? [or][stopping][if honer house is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now. You can visit a hun-home to the left, a rank ring to the north, or woods to the south. It's quite scary to the east[end if]."
+Strick Street is inside of Sick Seat. "[one of]Hmm. You're not sure if strick is a word, but you figure if you badgered any of the denizens about it, they'd be ... upset. So, maybe it's short for stricken? [or][stopping][if honer house is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now. You can visit a hun-home to the left, a rank ring to the north, or woods to the south. It's quite scary to the east[end if]." .eyevalue of strick street is -1.
 
 [becomes stray street?]
 
@@ -170,7 +170,7 @@ check going east in Strick Street:
 
 chapter bait base plate place
 
-the bait base plate place is a thing. [rate race / mate mace / late lace] "A bait base plate place blocks your way east. It is solid and smooth, except for three indentations.". description is "It appears the indentations can fit a key, a book, and some jewelry.".
+the bait base plate place is a thing. [rate race / mate mace / late lace] "A bait base plate place blocks your way east. It is solid and smooth, except for three indentations.". description is "It appears the indentations can fit a key, a book, and some jewelry.". eyevalue of place is -1.
 
 after examining plate place:
 	let ncp be number of carried plateitems;
@@ -179,7 +179,7 @@ after examining plate place:
 
 understand "indentations" as plate place.
 
-the great grace fate face is a thing. "The Great Grace Fate Face affords passage east. It might be scary to walk into it, but it'd be scarier to stay here too long."
+the great grace fate face is a thing. "The Great Grace Fate Face affords passage east. It might be scary to walk into it, but it'd be scarier to stay here too long.". eyevalue of face is -1.
 
 book Honer House
 
@@ -201,26 +201,26 @@ Rank Ring is north of Strick Street. "It's too misty any way but back south."
 
 chapter jewel
 
-the yet youll jet jewel is a plateitem. printed name is "yet-you'll-jet jewel". description is "You're dazzled by its beauty but you know you'll have to use it to get somewhere."
+the yet youll jet jewel is a plateitem. printed name is "yet-you'll-jet jewel". description is "You're dazzled by its beauty but you know you'll have to use it to get somewhere.". eyevalue of jewel is 35.
 
 book Hun Home
 
-Hun Home is west of Strick Street. "No secret doors here. Just back east."
+Hun Home is west of Strick Street. "No secret doors here. Just back east.". eyevalue of hun home is 34.
 
 check going east in Hun Home when player has book:
 	if sco-run-roam is false, say "[The book] seems to pull you back. Isn't it much cheerier here than outside?" instead;
 
 chapter fun foam
 
-the fun foam is a thing.
+the fun foam is a thing. "Fun foam rests, providing a soft landing for any huge objects that may come crashing through.". eyevalue of fun foam is 34.
 
 chapter ton tome
 
-the ton tome is a thing.
+the ton tome is a thing. "The ton tome you summoned landed on the fun foam.".
 
 chapter book
 
-Love Look Bove Book is a plateitem. printed name is "Love-Look-[']Bove Book". description is "Mushy love stuff. But hey, if it makes the baddies puke more than you, BET.". [at least it isn't a biography of someone important.]
+Love Look Bove Book is a plateitem. printed name is "Love-Look-[']Bove Book". description is "Mushy love stuff. But hey, if it makes the baddies puke more than you, BET.". [at least it isn't a biography of someone important.] eyevalue of book is 55.
 
 book Tree Trolled
 
@@ -236,9 +236,9 @@ the cold key is a plateitem. description is "It warmed up quickly in your pocket
 
 book and eee ing
 
-There is a room called and eee ing. It is east of Strick Street. printed name is "And Eee-ing". "You hear lots of noises here, of arguments and encouragement and such. Sadly, there is despair, too. A lot of eee-ing."
+There is a room called and eee ing. It is east of Strick Street. printed name is "And Eee-ing". "You hear lots of noises here, of arguments and encouragement and such. Sadly, there is despair, too. A lot of eee-ing.". eyevalue of eee ing is 54.
 
-Randy Ring Candy King is a person in eee ing. printed name is "Randy Ring-Candy-King.". "But the focus is, well, someone imposing. [one of]A man introduces himself as Randy Ring-Candy-King. He is impressed you have gotten this far. He mentions that although you're more a chocolate person than ring candy, that variety is good. He asks for your approval.[or]Randy Ring-Candy-King waits for a sign, a phrase, that shows you will work well together.[stopping]"
+Randy Ring Candy King is a person in eee ing. printed name is "Randy Ring-Candy-King.". "But the focus is, well, someone imposing. [one of]A man introduces himself as Randy Ring-Candy-King. He is impressed you have gotten this far. He mentions that although you're more a chocolate person than ring candy, that variety is good. He asks for your approval.[or]Randy Ring-Candy-King waits for a sign, a phrase, that shows you will work well together.[stopping]". eyevalue of Randy is 54.
 
 book Leaky Ley
 
@@ -263,7 +263,7 @@ after examining a twit:
 
 chapter Streaky Stray
 
-Reeky Ray is a person. "Not only named Ray, Reeky Ray has a ray that shoots and hits you.". description is "No time to gawp! Look inside yourself, and find Ray's weakness, and take him down!"
+Reeky Ray is a person. "Not only named Ray, Reeky Ray has a ray that shoots and hits you.". description is "No time to gawp! Look inside yourself, and find Ray's weakness, and take him down!". eyevalue of reeky ray is 75.
 
 chapter Freaky Fey
 
@@ -275,19 +275,19 @@ check going in Leaky Ley: say "You can't flee. You need to win!" instead;
 
 book Lair Line
 
-Lair Line is a room. [this is just to get internal automap to work] "The Spare Spine is in the background here."
+Lair Line is a room. [this is just to get internal automap to work] "The Spare Spine is in the background here.". eyevalue of lair line is 44.
 
 chapter Spare Spine
 
-the spare spine is scenery in Lair Line. "The spare spine is scary for real in the daytime. You don't want to get involved with it."
+the spare spine is scenery in Lair Line. "The spare spine is scary for real in the daytime. You don't want to get involved with it.". eyevalue of spare spine is 44.
 
 chapter Claire Cline
 
-Claire Cline is a person in Lair Line. "Claire Cline is here, with a been-bid-keen kid or two, who didn't get to share in the adventure[if sco-fair-fine is false]. They also have no candy[end if]."
+Claire Cline is a person in Lair Line. "Claire Cline is here, with a been-bid-keen kid or two, who didn't get to share in the adventure[if sco-fair-fine is false]. They also have no candy[end if].". eyevalue of claire cline is 44.
 
 chapter been bid keen kid
 
-the been bid keen kid is a person in Lair Line. "One been-bid-keen kid in particular stands here, [if sco-green-grid is true]pleased to have been able to contribute[else]looking for something to do or maybe create[end if]."
+the been bid keen kid is a person in Lair Line. "One been-bid-keen kid in particular stands here, [if sco-green-grid is true]pleased to have been able to contribute[else]looking for something to do or maybe create[end if].". eyevalue of kid is 54.
 
 volume unsorted
 

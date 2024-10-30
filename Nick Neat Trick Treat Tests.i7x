@@ -22,6 +22,49 @@ test w7 with "weakie way/creaky cray/grit grins/slick sleet/streaky stray".
 
 test w8 with "fair fine/green grid/dare dine".
 
+volume eye test
+
+when play begins:
+	moot leet learner;
+	moot naff button;
+	moot lurking lump;
+
+to et-it (ts - a truth state):
+	say "ROOMS.";
+	repeat with RM running through rooms:
+		if rm is hidey house or rm is gazy gap, next;
+		if ts is false and eyevalue of RM is not 0, next;
+		say "[RM] [eyevalue of RM].";
+	say "THINGS.";
+	repeat with TH running through things:
+		if th is moot, next;
+		if ts is false and eyevalue of TH is not 0, next;
+		say "[TH] [eyevalue of TH].";
+
+chapter eting
+
+eting is an action out of world.
+
+understand the command "et" as something new.
+
+understand "et" as eting.
+
+carry out eting:
+	et-it false;
+	the rule succeeds;
+
+chapter etaing
+
+etaing is an action out of world.
+
+understand the command "eta" as something new.
+
+understand "eta" as eting.
+
+carry out etaing:
+	et-it true;
+	the rule succeeds;
+
 Nick Neat Trick Treat Tests ends here.
 
 ---- DOCUMENTATION ----
