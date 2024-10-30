@@ -337,7 +337,8 @@ a goodrhyme rule (this is the vc-be-bold rule):
 
 this is the vr-be-bold rule:
 	now sco-be-bold is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You feel less fearful now. And yet -- you went about it pretty well, but you could feel even less fearful if things are done right.";
+	rm-and Tree Trolled and 10026;
 
 a goodrhyme rule (this is the vc-re-rolled rule):
 	if player is not in TreeTrolled, unavailable;
@@ -351,7 +352,8 @@ a goodrhyme rule (this is the vc-re-rolled rule):
 
 this is the vr-re-rolled rule:
 	now sco-re-rolled is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Yes! That's more like it. It maybe wasn't that brave to look for ways to be more brave, but you did so, and you found them. The tree, trolled, almost seems to smile. 'I need a piece of you, or an effigy of you, or something. Then I will give you something back.'[paragraph break]Weird, but maybe you're in luck. The ground is soft here ... maybe you can make something of it.";
+	rm-and Tree Trolled and 24;
 
 a goodrhyme rule (this is the vc-me-mold rule):
 	if player is not in TreeTrolled, unavailable;
@@ -365,7 +367,8 @@ a goodrhyme rule (this is the vc-me-mold rule):
 
 this is the vr-me-mold rule:
 	now sco-me-mold is true;
-	say "Ah, there we go! It looks ... vaguely like you, you guess. Sadly, Mart Made-Art-Aid, that cool summer camp counselor (as you called him,) isn't here to give pointers.";
+	say "Ah, there we go! It looks ... vaguely like you, you guess. Sadly, Mart Made-Art-Aid, that cool summer camp counselor (as you called him,) isn't here to give pointers.[paragraph break]It was work, though, and you're not giving it away for free. The tree, trolled, indicates it wants to engage in commerce, of a sort.";
+	rm-and Tree Trolled and 34;
 
 a goodrhyme rule (this is the vc-see-sold rule):
 	if player is not in TreeTrolled, unavailable;

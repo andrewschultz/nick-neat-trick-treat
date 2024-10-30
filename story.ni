@@ -72,6 +72,10 @@ to eye-blink (nm - a number):
 		continue the action;
 	let left-eye be false;
 	let right-eye be false;
+	let cross-eyed be false;
+	if nm > 10000:
+		now cross-eyed is true;
+		now nm is nm - 10000;
 	if nm > 1000:
 		now left-eye is true;
 		now nm is nm - 1000;
@@ -82,6 +86,7 @@ to eye-blink (nm - a number):
 	let tens be the remainder after dividing nm by 10;
 	let ones be the remainder after dividing nm by 10;
 	say "The left eye blinks [tens in words] times, then the right eye, [ones in words].";
+	if cross-eyed is true, say "[line break]Odd ... the eyes seem to look at each other, almost being pulled into each other.";
 	if left-eye is true, say "[line break]Odd ... the left eye seemed to squint at the end. So that counts as half?";
 	if right-eye is true, say "[line break]Odd ... the right eye seemed to squint at the end. So that counts as half?";
 
@@ -112,6 +117,8 @@ carry out eyeing:
 	the rule succeeds;
 
 check eyeing Nick when sco-ick-eat is true and Leaky Ley is unvisited: say "The eyes do their blinking slowly, as if to say, this is a way off...";
+
+check eyeing tree trolled when sco-re-rolled is false and sco-be-bold is true: say "The eyes look almost cross-eyed here, as if they're being pulled together." instead;
 
 check eyeing eyes: say "Physically impossible and fortunately unnecessary." instead;
 
@@ -237,7 +244,7 @@ Love Look Bove Book is a plateitem. printed name is "Love-Look-[']Bove Book". de
 
 book Tree Trolled
 
-TreeTrolled is south of Strick Street. printed name of TreeTrolled is "Tree, Trolled". "Oh no you're not going further into the forest. You make sure to keep track of a path back north." [Dee Dold would know more about this. Dee loves trees.]
+TreeTrolled is south of Strick Street. printed name of TreeTrolled is "Tree, Trolled". "Oh no you're not going further into the forest. You make sure to keep track of a path back north.". eyevalue of TreeTrolled is 24. [Dee Dold would know more about this. Dee loves trees.]
 
 after printing the locale description when player is in tree trolled and sco-be-bold is false:
 	say "Ugh. You're just scared. Tough to pep yourself up.";
@@ -245,7 +252,7 @@ after printing the locale description when player is in tree trolled and sco-be-
 
 chapter tree trolled
 
-the tree trolled is a thing in TreeTrolled. printed name of Tree Trolled is "tree, trolled". "It looks sad, no longer the treat tree you and Pete P had hoped to find."
+the tree trolled is a thing in TreeTrolled. printed name of Tree Trolled is "tree, trolled". "It looks sad, no longer the treat tree you and Pete P had hoped to find.". eyevalue of tree trolled is 24.
 
 chapter cold key
 
@@ -284,7 +291,7 @@ Reeky Ray is a person. "Not only named Ray, Reeky Ray has a ray that shoots and 
 
 chapter Freaky Fray
 
-Freaky Fray is a thing. "The freaky fray rages about you.". description is "You aren't strong enough to fight, but maybe the right words are more powerful than you think."
+Freaky Fray is a thing. "The freaky fray rages about you.". description is "You aren't strong enough to fight, but maybe the right words are more powerful than you think.". eyevalue of Freaky Fray is 75.
 
 check going in Leaky Ley: say "You can't flee. You need to win!" instead;
 
