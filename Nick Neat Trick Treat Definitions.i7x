@@ -6,6 +6,10 @@ volume types
 
 a plateitem is a kind of thing.
 
+a thing has a number called eyevalue.
+
+a room has a number called eyevalue.
+
 volume game specific
 
 to say adjtext of (ru - a rule): say "[ru]"

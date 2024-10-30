@@ -48,6 +48,8 @@ section testing
 
 include Nick Neat Trick Treat Tests by Andrew Schultz.
 
+volume when play begins
+
 volume eyes
 
 the some size em eyes are a thing. printed name is "some-size-[']em eyes". description is "They look like those gumballs that are disguised to fool people into thinking they're chocolate. You've been suckered more than once, especially on clearance sales. There are two of them. The left one blinks back at you four times, and the right blinks five, as if to great you, Nick Neat-Trick Treat.[paragraph break]You can [b]EYE[r] a room with them or [b]EYE[r] a thing.".
@@ -63,6 +65,46 @@ to find-the-eyes:
 report taking inventory when gs-eyes-found is false:
 	find-the-eyes;
 	continue the action;
+
+to eye-blink (nm - a number):
+	if nm is 0:
+		say "Oh dear. I should have a clue for this, even one saying you're done.";
+		continue the action;
+	let tens be the remainder after dividing nm by 10;
+	let ones be the remainder after dividing nm by 10;
+	say "The left eye blinks [tens in words] times, then the right eye, [ones in words].";
+
+chapter eyerming
+
+eyerming is an action out of world.
+
+understand the command "eye" as something new.
+
+understand "eye" as eyerming when player has eyes.
+
+carry out eyerming:
+	if eyevalue of location of player < 0, say "You don't need to do anything [if eyevalue of location of player is -2]else [end if]here." instead;
+	eye-blink eyevalue of location of player;
+	the rule succeeds;
+
+chapter eyeing
+
+eyeing is an action out of world applying to one thing.
+
+understand the command "eye [thing]" as something new.
+
+understand "eye [thing]" as eyeing when player has eyes.
+
+carry out eyeing:
+	if eyevalue of location of player < 0, say "You don't need to do anything [if eyevalue of location of player is -2]else [end if]with [the noun]." instead;
+	eye-blink eyevalue of noun;
+	the rule succeeds;
+
+check eyeing eyes: say "Physically impossible and fortunately unnecessary." instead;
+
+check eyeing base: say "Nothing from the eyes. You probably have to manipulate it with other objects you rhymed." instead;
+
+check eyeing face: say "Nothing from the eyes. You can just walk through it." instead;
 
 volume rooms
 
