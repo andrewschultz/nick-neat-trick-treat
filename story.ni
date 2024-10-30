@@ -221,7 +221,7 @@ book Hun Home
 Hun Home is west of Strick Street. "No secret doors here. Just back east.". eyevalue of hun home is 34.
 
 check going east in Hun Home when player has book:
-	if sco-run-roam is false, say "[The book] seems to pull you back. Isn't it much cheerier here than outside?" instead;
+	if sco-done-dome is true and sco-run-roam is false, say "[The book] seems to pull you back. Isn't it much cheerier here than outside?" instead;
 
 chapter fun foam
 
@@ -305,6 +305,10 @@ Claire Cline is a person in Lair Line. "Claire Cline is here, with a been-bid-ke
 chapter been bid keen kid
 
 the been bid keen kid is a person in Lair Line. "One been-bid-keen kid in particular stands here, [if sco-green-grid is true]pleased to have been able to contribute[else]looking for something to do or maybe create[end if].". eyevalue of kid is 54.
+
+chapter xyzzying
+
+carry out xyzzying: say "A voice booms 'Magic? My, tragic try!'" instead;
 
 volume unsorted
 
