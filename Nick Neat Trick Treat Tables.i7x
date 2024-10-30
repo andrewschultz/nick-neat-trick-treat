@@ -57,6 +57,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "theyre|there"	"thine"	--	--	false	true	false	false	Lair Line	vc-theyre-thine rule	vr-theyre-thine rule	--	--
 "green"	"grid"	--	--	false	true	true	false	lair line	vc-green-grid rule	vr-green-grid rule	--	--
 "dare"	"dine"	--	--	false	true	true	false	Lair Line	vc-dare-dine rule	vr-dare-dine rule	--	--
+"share"	"shine"	--	--	false	true	false	false	lair line	vc-share-shine rule	vr-share-shine rule	--	--
 
 chapter sick seat scoring
 
@@ -552,6 +553,17 @@ this is the vr-dare-dine rule:
 	say "You know you're not supposed to start eating candy until your parents saw your haul. Of course, you don't eat all the candy at once. In fact, it lasts longer than previous years. Each bite reminds you of friends and adventurs, and even thr bad candy tastes good. Your parents are shocked it lasts through Christmas. They are proud of your restraint -- you are growing up! Of course, if you explained the whole adventure, they would talk about kids and THEIR IMAGINATION.";
 	end the story saying "'Why wait? My, mate, I ATE!'";
 	follow the shutdown rules;
+
+a goodrhyme rule (this is the vc-share-shine rule):
+	if player is not in lair line, unavailable;
+	if sco-share-shine is true:
+		vcal "That'd be overdoing the gratitude!";
+		already-done;
+	ready;
+
+this is the vr-share-shine rule:
+	now sco-share-shine is true;
+	say "You take time, unprompted, to thank others that helped you deeat Reeky Ray. You couldn't have done it without them!";
 
 volume misc tables
 

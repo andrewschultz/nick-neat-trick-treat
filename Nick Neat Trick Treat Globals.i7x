@@ -83,6 +83,8 @@ sco-there-thine is a truth state that varies.
 
 sco-green-grid is a truth state that varies.
 
+sco-share-shine is a truth state that varies.
+
 Nick Neat Trick Treat Globals ends here.
 
 ---- DOCUMENTATION ----

@@ -20,7 +20,7 @@ test w6 with "pluraled plea/shove shook/get ghoul/e/dandy ding/andy ng".
 
 test w7 with "weakie way/creaky cray/grit grins/slick sleet/streaky stray".
 
-test w8 with "fair fine/green grid/dare dine".
+test w8 with "share shine/fair fine/green grid/dare dine".
 
 volume eye test
 
