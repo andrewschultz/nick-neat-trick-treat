@@ -29,6 +29,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "see"	"sold"	--	--	false	true	true	false	tree trolled	vc-see-sold rule	vr-see-sold rule	--	--
 "wee"	"wold"	--	--	false	true	true	false	tree trolled	vc-wee-wold rule	vr-wee-wold rule	--	--
 "dandy"	"ding"	--	--	false	true	true	false	eee ing	vc-dandy-ding rule	vr-dandy-ding rule	--	--
+"andy|sandy|mandy|landy"	"ng|tsing|hsing|sing|ming|ling"	--	--	false	true	true	false	eee ing	vc-andy-ng rule	vr-andy-ng rule	"andy ng" or "sandy sing/tsing/hsing" or "mandy ming" or "landy ling"	--
 "fair"	"fine"	--	--	false	true	true	false	Lair Line	vc-fair-fine rule	vr-fair-fine rule	--	--
 "theyre|their"	"thine"	--	--	false	true	false	false	Lair Line	vc-theyre-thine rule	vr-theyre-thine rule	--	--
 "dare"	"dine"	--	--	false	true	true	false	Lair Line	vc-dare-dine rule	vr-dare-dine rule	--	--
@@ -370,17 +371,28 @@ chapter eee ing scoring
 
 a goodrhyme rule (this is the vc-dandy-ding rule):
 	if player is not in eee ing, unavailable;
-	if sco-dandy-ding is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-dandy-ding is true:
-		vcal "You already did this!";
+		vcal "You already got Randy's attention!";
 		already-done;
 	ready;
 
 this is the vr-dandy-ding rule:
 	now sco-dandy-ding is true;
-	say "'There you go!' says [Randy]. 'Just had to make sure, you know. Oh, one other thing -- can you call up a classmate? I have a few of them here.'";
+	say "'There you go!' says [Randy]. 'Just had to make sure, you know. Oh, one other thing -- can you call up a classmate? Maybe someone you don't know that well, just by name. I think you have a few who would work really well with me.'";
+
+a goodrhyme rule (this is the vc-andy-ng rule):
+	if player is not in eee ing, unavailable;
+	if sco-dandy-ding is false:
+		vcal "You remember a classmate you don't know very well. Maybe you should've gotten to know them better. Maybe you could, very shortly, with [randy] to introduce you.";
+		not-yet;
+	ready;
+
+this is the vr-andy-ng rule:
+	now sco-andy-ng is true;
+	say "[randy] says, 'yes! They seem like someone quite worthy. They and their friends will be a big help.' You protest you don't know them that well so they might not help. [Randy] assures you that people do help each other, just because, and you can get to know each other, later.";
+	wfak;
+	say "Between you and Pete and your classmates and Randy, you are ready for the final fight.";
+	move player to Leaky Ley;
 
 chapter Lair Line scoring
 
