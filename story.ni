@@ -306,6 +306,30 @@ chapter been bid keen kid
 
 the been bid keen kid is a person in Lair Line. "One been-bid-keen kid in particular stands here, [if sco-green-grid is true]pleased to have been able to contribute[else]looking for something to do or maybe create[end if].". eyevalue of kid is 54.
 
+volume meta verbs
+
+[much of the basic stuff is defined in the universal file code]
+
+chapter abouting
+
+carry out abouting:
+	say "[this-game] was written for EctoComp 2024. It is entry 9 in my [pprr] series and likely the last. The others are [series-names].";
+	say "[line break]You may have guessed by the use of proper names in puzzles that the concept is reaching its end. But I hadn't done a classic trick-or-treating game, so here it is.";
+	say "[line break]There will be a post-comp version.";
+	the rule succeeds;
+
+chapter creditsing
+
+carry out creditsing:
+	say "Thanks to all administrators past and present of EctoComp: Ruber Eaglenest, Duncan Bowsman, JJ Guest and others I've forgotten.";
+	the rule succeeds;
+
+chapter versioning
+
+carry out versioning:
+	say "Version 1 was released to EctoComp on October 31, 2024.";
+	the rule succeeds;
+
 chapter xyzzying
 
 carry out xyzzying: say "A voice booms 'Magic? My, tragic try!'" instead;
