@@ -221,6 +221,8 @@ volume unsorted
 volume verb modification
 
 check taking inventory:
+	if sco-ick-eat is false, say "You're carrying nothing special. You're not in your costume yet. You need to finish dinner." instead;
+	if sco-treat-tree is false, say "You've got that phone message to deal with." instead;
 	say "Other than your costume, and your phone under it (which has the Meet Me Pete P message) ...[paragraph break]";
 	if incant-score is 3:
 		say "Well, not much, now you put the magic items in the face.";
