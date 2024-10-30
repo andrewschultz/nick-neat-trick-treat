@@ -1,0 +1,185 @@
+#--wbase.txt
+#--
+#--main branch file for Nick Neat-Trick-Treat walkthroughs
+#--  (there are only two, really. Full points, or minimum points.)
+#--
+#--command usage to regenerate walkthroughs after modifying this: rbr.py wbase.txt
+
+#  SO DON'T USE WDROP.PY. rbr.py incorporates wdrop because of the line below.
+file=walkthrough-pre.txt,min,minimum walkthrough
+file=walkthrough-full-pre.txt,max,maximum walkthrough
+postproc=wdrop.py
+cmdflags=58
+
+==t0
+This is a quick walkthrough for Nick Neat-Trick-Treat. It neglects bonus points.
+==!
+This is a full walkthrough for Nick Neat-Trick-Treat. It details all bonus points.
+
+You need to finish your vegetables. Note the dual rhymes all about.
+
+Also, X ME or I shows you a hint item which tells you the lengths of each word.
+
+> ICK EAT (1)
+
+Then whom do you choose to call?
+
+> PICK PETE (1)
+
+"Meet Me -- Pete P."
+
+> TREAT TREE (1)
+
+Oh no! The treat tree has been trolled! It's a trolled tree!
+
+And now it's dark here in Strick Street! Perhaps you should train first, in the honer house.
+
+> IN
+
+> MOANER MOUSE (1)
+
+> LONER LOUSE (1)
+
+There's also a way to get a bonus point. You can beg for candy anywhere!
+
+==t1
+> DONOR DOUSE (1)
+
+> OUT
+
+You can go in any direction except east first. We'll have to cover them all. Let's try north. It's simplest, I hope.
+
+> N
+
+The rank ring is full of rotten boards and stuff. They make different weird noises. Maybe the right one hides something.
+
+> PLANK PLING (1)
+
+So much loot! You don't want to be too greedy.
+
+> BLANK BLING (1)
+
+Be properly grateful.
+
+> THANK THING (1)
+
+The thing seems depressed. There's a bonus point in here.
+
+==t1
+How to let the thing uplift itself?
+
+> SANK SING (1)
+
+> S
+
+Okay, let's go south to the tree. It's scary.
+
+> BE BOLD (1)
+
+Hm, you feel a bit unlucky.
+
+> REROLLED (1)
+
+The ground is clay-ey.
+
+> ME MOLD (1)
+
+Clinch the deal.
+
+> SEE SOLD (1)
+
+You can remind the tree of a far-away place for a bonus point.
+
+==t1
+> WEE WOLD (1)
+
+The only way left is west.
+
+> W
+
+Make things softer.
+
+> FUN FOAM (1)
+
+Now something heavy can land on it.
+
+> TON TOME (1)
+
+Make the reading less heavy.
+
+> PUN POEM (1)
+
+Finish things.
+
+> DONE DOME (1)
+
+Oh no! Too comfy! How to flee?
+
+> RUN ROAM (1)
+
+> E
+
+Now you have 3 things to manipulate so they go in the plate.
+
+Curled key:
+
+> PLURALED PLEA (1)
+
+Love Look 'Bove Book:
+
+> SHOVE SHOOK (1)
+
+Jet jewel:
+
+> GET GHOUL
+
+> E
+
+How to say things are right?
+
+> DANDY DING (1)
+
+Name a classmate. Several first/last names are acceptable here.
+
+> ANDY NG (1)
+
+On to the fight! Okay, the twins
+
+> CREAKY CRAY (1)
+
+You can also duff them up another way.
+
+==t1
+> WEAKIE WAY (1)
+
+But you also have to address that they are twit twins.
+
+==t1
+> GRIT GRINS (1)
+
+Okay, they make way for the big boss, Reeky Ray.
+
+Make the weapon misfire.
+
+> STREAKY STRAY (1)
+
+Now, do something only you can.
+
+> SLICK SLEET (1)
+
+The denouement. You found a ton of candy. Don't hog it.
+
+> FAIR FINE (1)
+
+There's one other way to spread the happiness around.
+
+==t1
+> SHARE SHINE (1)
+
+You'd love to eat all the candy, but think of a way home first. A new friend can help.
+
+> GREEN GRID (1)
+
+Okay. Time to chow down.
+
+> DARE DINE (1)
