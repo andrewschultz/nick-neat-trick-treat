@@ -237,11 +237,15 @@ Love Look Bove Book is a plateitem. printed name is "Love-Look-[']Bove Book". de
 
 book Tree Trolled
 
-Tree Trolled is south of Strick Street. printed name of Tree Trolled is "Tree, Trolled". "Oh no you're not going further into the forest. You make sure to keep track of a path back north." [Dee Dold would know more about this. Dee loves trees.]
+TreeTrolled is south of Strick Street. printed name of TreeTrolled is "Tree, Trolled". "Oh no you're not going further into the forest. You make sure to keep track of a path back north." [Dee Dold would know more about this. Dee loves trees.]
 
 after printing the locale description when player is in tree trolled and sco-be-bold is false:
 	say "Ugh. You're just scared. Tough to pep yourself up.";
 	continue the action;
+
+chapter tree trolled
+
+the tree trolled is a thing in TreeTrolled. printed name of Tree Trolled is "tree, trolled". "It looks sad, no longer the treat tree you and Pete P had hoped to find."
 
 chapter cold key
 
@@ -340,5 +344,5 @@ this is the show-misses rule:
 
 volume map index
 
-index map with Honer House mapped west of Tree Trolled.
+index map with Honer House mapped west of TreeTrolled.
 index map with Lair Line mapped south of eee ing.

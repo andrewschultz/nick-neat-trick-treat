@@ -41,11 +41,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "run"	"roam"	--	--	false	true	true	false	hun home	vc-run-roam rule	vr-run-roam rule	--	--
 "done"	"dome"	--	--	false	true	true	false	hun home	vc-done-dome rule	vr-done-dome rule	--	--
 "a"	"gnome"	--	--	false	true	false	false	hun home	vc-a-gnome rule	vr-a-gnome rule	--	--
-"be"	"bold"	--	--	false	true	true	false	tree trolled	vc-be-bold rule	vr-be-bold rule	--	--
-"re"	"rolled"	--	--	false	true	true	false	tree trolled	vc-re-rolled rule	vr-re-rolled rule	"re rolled" or "rerolled"	--
-"me"	"mold"	--	--	false	true	true	false	tree trolled	vc-me-mold rule	vr-me-mold rule	--	--
-"see"	"sold"	--	--	false	true	true	false	tree trolled	vc-see-sold rule	vr-see-sold rule	--	--
-"wee"	"wold"	--	--	false	true	true	false	tree trolled	vc-wee-wold rule	vr-wee-wold rule	--	--
+"be"	"bold"	--	--	false	true	true	false	TreeTrolled	vc-be-bold rule	vr-be-bold rule	--	--
+"re"	"rolled"	--	--	false	true	true	false	TreeTrolled	vc-re-rolled rule	vr-re-rolled rule	"re rolled" or "rerolled"	--
+"me"	"mold"	--	--	false	true	true	false	TreeTrolled	vc-me-mold rule	vr-me-mold rule	--	--
+"see"	"sold"	--	--	false	true	true	false	TreeTrolled	vc-see-sold rule	vr-see-sold rule	--	--
+"wee"	"wold"	--	--	false	true	true	false	TreeTrolled	vc-wee-wold rule	vr-wee-wold rule	--	--
 "dandy"	"ding"	--	--	false	true	true	false	eee ing	vc-dandy-ding rule	vr-dandy-ding rule	--	--
 "andy|sandy|mandy|landy"	"ng|tsing|hsing|sing|ming|ling"	--	--	false	true	true	false	eee ing	vc-andy-ng rule	vr-andy-ng rule	"andy ng" or "sandy sing/tsing/hsing" or "mandy ming" or "landy ling"	--
 "weakie"	"way"	--	--	false	true	true	false	leaky ley	vc-weakie-way rule	vr-weakie-way rule	--	--
@@ -326,10 +326,10 @@ this is the vr-a-gnome rule:
 	now sco-a-gnome is true;
 	say "Yes, yes, that's a good idea, have a gnome for upkeep once everything's fixed here. But they shouldn't be here right now, you'd guess.";
 
-chapter tree trolled scoring
+chapter TreeTrolled scoring
 
 a goodrhyme rule (this is the vc-be-bold rule):
-	if player is not in tree trolled, unavailable;
+	if player is not in TreeTrolled, unavailable;
 	if sco-be-bold is true:
 		vcal "You are bold enough now.";
 		already-done;
@@ -340,7 +340,7 @@ this is the vr-be-bold rule:
 	say "Hooray! You figured what to do! You get a point!";
 
 a goodrhyme rule (this is the vc-re-rolled rule):
-	if player is not in tree trolled, unavailable;
+	if player is not in TreeTrolled, unavailable;
 	if sco-be-bold is false:
 		vcp "But you haven't tried anything to feel less scared!";
 		not-yet;
@@ -354,7 +354,7 @@ this is the vr-re-rolled rule:
 	say "Hooray! You figured what to do! You get a point!";
 
 a goodrhyme rule (this is the vc-me-mold rule):
-	if player is not in tree trolled, unavailable;
+	if player is not in TreeTrolled, unavailable;
 	if sco-re-rolled is false:
 		vcal "You have no excuse to make an effigy of yourself yet!";
 		already-done;
@@ -368,7 +368,7 @@ this is the vr-me-mold rule:
 	say "Ah, there we go! It looks ... vaguely like you, you guess. Sadly, Mart Made-Art-Aid, that cool summer camp counselor (as you called him,) isn't here to give pointers.";
 
 a goodrhyme rule (this is the vc-see-sold rule):
-	if player is not in tree trolled, unavailable;
+	if player is not in TreeTrolled, unavailable;
 	if sco-me-mold is false:
 		vcp "You have nothing to perform a transaction with!";
 		not-yet;
@@ -383,7 +383,7 @@ this is the vr-see-sold rule:
 	now player has cold key;
 
 a goodrhyme rule (this is the vc-wee-wold rule):
-	if player is not in tree trolled, unavailable;
+	if player is not in TreeTrolled, unavailable;
 	if sco-wee-wold is true:
 		vcal "It's bad to overpopulate forests!";
 		already-done;
