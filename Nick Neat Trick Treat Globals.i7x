@@ -75,6 +75,10 @@ sco-grit-grins is a truth state that varies.
 sco-streaky-stray is a truth state that varies.
 sco-slick-sleet is a truth state that varies.
 
+sco-there-thine is a truth state that varies.
+
+sco-green-grid is a truth state that varies.
+
 Nick Neat Trick Treat Globals ends here.
 
 ---- DOCUMENTATION ----

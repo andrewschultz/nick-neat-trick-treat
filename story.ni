@@ -188,12 +188,6 @@ Leaky Ley is east of eee ing. "You sense a disruption of parallel universes here
 
 chapter Cheeky Che
 
-to decide which number is twin-score:
-	let temp be boolval of sco-grit-grins;
-	if sco-creaky-cray is true or sco-weakie-way is true, increment temp;
-	decide on temp;
-	[let y be (boolval of ((whether or not sco-weakie-way is true) or (whether or not sco-creaky-cray is true)));]
-
 a twit is a kind of person.
 
 Cheeky Che is a twit in Leaky Ley. Cliquey Clay is a twit in Leaky Ley. "Don't look too long. You'll get drawn in. Think of strong defense, nothing rude, just ... let him know."
@@ -231,7 +225,11 @@ the spare spine is scenery in Lair Line. "The spare spine is scary for real in t
 
 chapter Claire Cline
 
-Claire Cline is a person in Lair Line.
+Claire Cline is a person in Lair Line. "Claire Cline is here, with a been-bid-keen kid or two, who didn't get to share in the adventure[if sco-fair-fine is false]. They also have no candy[end if]."
+
+chapter been bid keen kid
+
+the been bid keen kid is a person in Lair Line. "One been-bid-keen kid in particular stands here, [if sco-green-grid is true]pleased to have been able to contribute[else]looking for something to do or maybe create[end if]."
 
 volume unsorted
 

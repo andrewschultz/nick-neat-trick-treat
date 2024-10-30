@@ -36,8 +36,21 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "streaky"	"stray"	--	--	false	true	true	false	leaky ley	vc-streaky-stray rule	vr-streaky-stray rule	--	--
 "slick"	"sleet"	--	--	false	true	true	false	leaky ley	vc-slick-sleet rule	vr-slick-sleet rule	--	--
 "fair"	"fine"	--	--	false	true	true	false	Lair Line	vc-fair-fine rule	vr-fair-fine rule	--	--
-"theyre|their"	"thine"	--	--	false	true	false	false	Lair Line	vc-theyre-thine rule	vr-theyre-thine rule	--	--
+"theyre|there"	"thine"	--	--	false	true	false	false	Lair Line	vc-theyre-thine rule	vr-theyre-thine rule	--	--
+"green"	"grid"	--	--	false	true	true	false	lair line	vc-green-grid rule	vr-green-grid rule	--	--
 "dare"	"dine"	--	--	false	true	true	false	Lair Line	vc-dare-dine rule	vr-dare-dine rule	--	--
+
+a goodrhyme rule (this is the vc-green-grid rule):
+	if player is not in lair line, unavailable;
+	if sco-green-grid is true:
+		vcal "You already got a [kid] to find a portal back!";
+		already-done;
+	ready;
+
+this is the vr-green-grid rule:
+	now sco-green-grid is true;
+	say "[The kid], awed with how you took down Reeky Ray, mutters there's no way they can do this. But you know there are some things some people are better suited for than others. You ask them to give it a try. A gren grid glows--and beneath it you see your neighborhood![paragraph break]But you don't want to jump through right away. You could stay out a bit too late, talking with friends. And what goes well with conversation?";
+
 
 chapter sick seat scoring
 
@@ -508,15 +521,15 @@ a goodrhyme rule (this is the vc-dare-dine rule):
 	if sco-fair-fine is false:
 		vcp "But the dining is not equitable yet! Claire Cline would like you to try to spread the wealth.";
 		not-yet;
-	if sco-dare-dine is true:
-		vcal "You already did this!";
-		already-done;
+	if sco-green-grid is false:
+		vcp "But you need a portal home! And you can't do it yourself.";
+		not-yet;
 	ready;
 
 this is the vr-dare-dine rule:
 	now sco-dare-dine is true;
-	say "Good. Let's get going.";
-	end the story saying "Why wait? My, mate, I ATE!";
+	say "You know you're not supposed to start eating candy until your parents saw your haul. Of course, you don't eat all the candy at once. In fact, it lasts longer than previous years. Each bite reminds you of friends and adventurs, and even thr bad candy tastes good. Your parents are shocked it lasts through Christmas. They are proud of your restraint -- you are growing up! Of course, if you explained the whole adventure, they would talk about kids and THEIR IMAGINATION.";
+	end the story saying "'Why wait? My, mate, I ATE!'";
 	follow the shutdown rules;
 
 volume misc tables
