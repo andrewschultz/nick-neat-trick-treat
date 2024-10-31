@@ -4,7 +4,7 @@ Version 1/241026 of Nick Neat Trick Treat Definitions by Andrew Schultz begins h
 
 volume types
 
-a plateitem is a kind of thing.
+a plateitem is a kind of rhymable.
 
 a thing has a number called eyevalue.
 
@@ -70,6 +70,8 @@ this is the flag bad goto from rule:
 volume trivia
 
 book definitions of point sums
+
+to decide which number is ncp: decide on number of carried plateitems + number of moot plateitems.
 
 to decide which number is incant-score: decide on (boolval of sco-pluraled-plea) + (boolval of sco-shove-shook) + (boolval of sco-get-ghoul);
 

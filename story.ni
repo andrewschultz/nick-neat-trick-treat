@@ -156,7 +156,7 @@ Nick carries the phone. description is "You don't want to be gazing at it when y
 
 chapter the note
 
-Meet Me Pete P is a thing. "It's just the message on your phone. [if sco-treat-tree is false]There must be a common, yet secret, place to meet him[else]You figured you could meet at the Treat Tree[end if].". eyevalue of pete p is 54.
+Meet Me Pete P is a rhymable. "It's just the message on your phone. [if sco-treat-tree is false]There must be a common, yet secret, place to meet him[else]You figured you could meet at the Treat Tree[end if].". eyevalue of pete p is 54.
 
 book Strick Street
 
@@ -198,7 +198,6 @@ chapter bait base plate place
 the bait base plate place is a thing. [rate race / mate mace / late lace] "A bait base plate place blocks your way east. It is solid and smooth, except for three indentations.". description is "It appears the indentations can fit a key, a book, and some jewelry.". eyevalue of place is -1.
 
 after examining plate place:
-	let ncp be number of carried plateitems;
 	if ncp > 0, say "You have [the list of carried plateitems], which is [if ncp is 1]a good start[else if ncp is 2]so close[else]good enough for passage east[end if].";
 	continue the action;
 

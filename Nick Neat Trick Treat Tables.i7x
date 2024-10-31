@@ -133,6 +133,9 @@ a goodrhyme rule (this is the vc-get-ghoul rule):
 	if player is not in strick street:
 		vcp "That'd seem to work, in the 'get rid of' sense, but perhaps it should be part of a ritual.";
 		not-yet;
+	if ncp < 3:
+		vcp "[The plate] shakes a bit. Hmm. It has three slots, but you only seem to have [ncp in words] thing[if ncp > 1]s[end if] to put into it.";
+		not-yet;
 	ready;
 
 this is the vr-get-ghoul rule:
