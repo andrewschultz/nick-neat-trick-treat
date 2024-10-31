@@ -166,7 +166,7 @@ a goodrhyme rule (this is the vc-donor-douse rule):
 
 this is the vr-donor-douse rule:
 	now sco-donor-douse is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You cheekily ask for more candy, even though there doesn't appear to be anyone here. A voice promises you it will be waiting at game's end.";
 
 a goodrhyme rule (this is the vc-loner-louse rule):
 	if player is not in honer house, unavailable;
@@ -177,7 +177,7 @@ a goodrhyme rule (this is the vc-loner-louse rule):
 
 this is the vr-loner-louse rule:
 	now sco-loner-louse is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You fight back at any imaginary undead who, okay, they are lonely, and maybe they died gruesomely, but that doesn't excuse them being mean and scaring people.";
 
 a goodrhyme rule (this is the vc-moaner-mouse rule):
 	if player is not in honer house, unavailable;
@@ -188,7 +188,7 @@ a goodrhyme rule (this is the vc-moaner-mouse rule):
 
 this is the vr-moaner-mouse rule:
 	now sco-moaner-mouse is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You locate the source of scary moaning, which is not a very big mouth. The truth sets one free from fear!";
 
 chapter rank ring scoring
 
@@ -201,7 +201,7 @@ a goodrhyme rule (this is the vc-plank-pling rule):
 
 this is the vr-plank-pling rule:
 	now sco-plank-pling is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You search around. Most planks give odd thuds, but one -- ah, a pling! There must be something under it, or them. But what?";
 
 a goodrhyme rule (this is the vc-blank-bling rule):
 	if player is not in rank ring, unavailable;
@@ -209,7 +209,7 @@ a goodrhyme rule (this is the vc-blank-bling rule):
 		vcp "Nothing will materialise just because you want it to! Search for it first.";
 		not-yet;
 	if sco-blank-bling is true:
-		vcal "You already did this!";
+		vcal "You already acquired bling!";
 		already-done;
 	ready;
 
@@ -293,7 +293,7 @@ a goodrhyme rule (this is the vc-done-dome rule):
 		vcp "You haven't cheered the place up enough to consider it 'done!'";
 		not-yet;
 	if sco-done-dome is true:
-		vcal "You already did this!";
+		vcal "You already certified completing renovation of the home/dome!";
 		already-done;
 	ready;
 
@@ -416,7 +416,7 @@ this is the vr-dandy-ding rule:
 a goodrhyme rule (this is the vc-andy-ng rule):
 	if player is not in eee ing, unavailable;
 	if sco-dandy-ding is false:
-		vcal "You remember a classmate you don't know very well. Maybe you should've gotten to know them better. Maybe you could, very shortly, with [randy] to introduce you.";
+		vcp "You remember a classmate you don't know very well. Maybe you should've gotten to know them better. Maybe you could, very shortly, with [randy] to introduce you.";
 		not-yet;
 	ready;
 
