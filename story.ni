@@ -52,7 +52,9 @@ volume when play begins
 
 volume eyes
 
-the some size em eyes are a thing. printed name is "some-size-[']em eyes". description is "They look like those gumballs that are disguised to fool people into thinking they're chocolate. You've been suckered more than once, especially on clearance sales. There are two of them. The left one blinks back at you four times, and the right blinks five, as if to great you, Nick Neat-Trick Treat.[paragraph break]You can [b]EYE[r] a room with them or [b]EYE[r] a thing.". eyevalue of eyes is -1.
+the some size em eyes are a rhymable. printed name is "some-size-[']em eyes". description is "They look like those gumballs that are disguised to fool people into thinking they're chocolate. You've been suckered more than once, especially on clearance sales. There are two of them. The left one blinks back at you four times, and the right blinks five, as if to great you, Nick Neat-Trick Treat.[paragraph break]You can [b]EYE[r] a room with them or [b]EYE[r] a thing.". eyevalue of eyes is -1.
+
+guess-table of eyes is the table of some eyes guesses.
 
 report examining the player when gs-eyes-found is false:
 	find-the-eyes;
@@ -158,6 +160,8 @@ chapter the note
 
 Meet Me Pete P is a rhymable. "It's just the message on your phone. [if sco-treat-tree is false]There must be a common, yet secret, place to meet him[else]You figured you could meet at the Treat Tree[end if].". eyevalue of pete p is 54.
 
+guess-table of meet me is the table of meet me guesses.
+
 book Strick Street
 
 Strick Street is inside of Sick Seat. "[one of]Hmm. You're not sure if strick is a word, but you figure if you badgered any of the denizens about it, they'd be ... upset. So, maybe it's short for stricken? [or][stopping][if honer house is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now. You can visit a hun-home to the left, a rank ring to the north, or woods to the south. It's quite scary to the east[end if]." .eyevalue of strick street is -1.
@@ -209,6 +213,8 @@ book Honer House
 
 Honer House is inside of Strick Street. "Here in the honer house you [house-left]. You can go back out [if house-crit-score is 2]once[else]now[end if] you've gotten your bearings[if sco-donor-douse is false], though you may be able to do some sneaky trick-or-treating before[end if].". eyevalue of honer house is 1055.
 
+guess-table of honer house is the table of honer house guesses.
+
 to say house-left:
 	if house-score is 3:
 		say "are totally finished";
@@ -223,13 +229,19 @@ book Rank Ring
 
 Rank Ring is north of Strick Street. "It's too misty any way but back south.". eyevalue of rank ring is 55.
 
+guess-table of rank ring is the table of rank ring guesses.
+
 chapter jewel
 
 the yet youll jet jewel is a plateitem. printed name is "yet-you'll-jet jewel". description is "You're dazzled by its beauty but you know you'll have to use it to get somewhere.". eyevalue of jewel is 35.
 
+guess-table of jewel is table of jet jewel guesses.
+
 book Hun Home
 
 Hun Home is west of Strick Street. "No secret doors here. Just back east.". eyevalue of hun home is 34.
+
+guess-table of hun home is the table of hun home guesses.
 
 check going east in Hun Home when player has book:
 	if sco-done-dome is true and sco-run-roam is false, say "[The book] seems to pull you back. Isn't it much cheerier here than outside?" instead;
@@ -250,6 +262,8 @@ book Tree Trolled
 
 TreeTrolled is south of Strick Street. printed name of TreeTrolled is "Tree, Trolled". "Oh no you're not going further into the forest. You make sure to keep track of a path back north.". eyevalue of TreeTrolled is 24. [Dee Dold would know more about this. Dee loves trees.]
 
+guess-table of TreeTrolled is table of treetrolled guesses.
+
 after printing the locale description when player is in tree trolled and sco-be-bold is false:
 	say "Ugh. You're just scared. Tough to pep yourself up.";
 	continue the action;
@@ -258,19 +272,25 @@ chapter tree trolled
 
 the tree trolled is a thing in TreeTrolled. printed name of Tree Trolled is "tree, trolled". "It looks sad, no longer the treat tree you and Pete P had hoped to find.". eyevalue of tree trolled is 24.
 
-chapter cold key
+chapter curled whee whirled key
 
-the cold key is a plateitem. description is "It warmed up quickly in your pocket. Technically it's a key, cold, but switching words like that reminds you of poetry adults tell you you should enjoy. Ugh."
+the curled whee whirled key is a rhymable. description is "It's a really odd but cool shape and design. It warmed up quickly in your pocket. Technically it's a key, cold, but switching words like that reminds you of poetry adults tell you you should enjoy. Ugh.[paragraph break]Just looking at it makes you think of words that don't exist but maybe should, the sort over-sensible adults would, and have, smacked you down verbally for saying.". printed name is "curled (whee) world key". eyevalue of key is 5084.
+
+guess-table of curled key is the table of curled key guesses.
 
 book and eee ing
 
 There is a room called and eee ing. It is east of Strick Street. printed name is "And Eee-ing". "You hear lots of noises here, of arguments and encouragement and such. Sadly, there is despair, too. A lot of eee-ing.". eyevalue of eee ing is 54.
+
+guess-table of eee ing is the table of eee ing guesses.
 
 Randy Ring Candy King is a person in eee ing. printed name is "Randy Ring-Candy-King.". "But the focus is, well, someone imposing. [one of]A man introduces himself as Randy Ring-Candy-King. He is impressed you have gotten this far. He mentions that although you're more a chocolate person than ring candy, that variety is good. He asks for your approval.[or]Randy Ring-Candy-King waits for a sign, a phrase, that shows you will work well together.[stopping]". eyevalue of Randy is 54.
 
 book Leaky Ley
 
 Leaky Ley is east of eee ing. "You sense a disruption of parallel universes here.". eyevalue of leaky ley is 163.
+
+guess-table of leaky ley is the table of leaky ley guesses.
 
 chapter Cheeky Che
 
@@ -303,7 +323,9 @@ check going in Leaky Ley: say "You can't flee. You need to win!" instead;
 
 book Lair Line
 
-Lair Line is a room. [this is just to get internal automap to work] "The Spare Spine is in the background here.". eyevalue of lair line is 44.
+Lair Line is a room. [this is just to get internal automap to work] "The Spare Spine is in the background here. Actually, it borders you on all sides. [if sco-green-grid is false]How can you make another way out?[else]After a celebration, the green grid should provide a way back.[end if]". eyevalue of lair line is 44.
+
+guess-table of lair line is the table of lair line guesses.
 
 chapter Spare Spine
 
