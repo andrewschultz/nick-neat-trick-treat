@@ -439,6 +439,7 @@ a goodrhyme rule (this is the vc-grit-grins rule):
 this is the vr-grit-grins rule:
 	now sco-grit-grins is true;
 	say "You grin, fiercely you hope, as if to say 'I've put up with worse.' And you have, but it's the eye contact and involuntary eye-roll that really gets them.";
+	moot twit twins;
 	check-final-boss;
 
 a goodrhyme rule (this is the vc-weakie-way rule):

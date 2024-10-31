@@ -302,7 +302,9 @@ a twit is a kind of person. description of a twit is usually "Don't look too lon
 Cheeky Che is a twit in Leaky Ley. Cliquey Clay is a twit in Leaky Ley.
 
 for printing a locale paragraph about a twit (called tw):
-	if tw is not mentioned, say "[one of]Two identical, rough-looking teens stand herre. They introduce themselves as Cheeky Che and Cliquey Clay, the twit twins. You stand no chance against their taunts, and it's probably best not to try. If you got by them, their leader would have to resort to worse![or]Cheeky Che and Cliquey Clay both continue to smile condescendingly at you.[stopping]";
+	if tw is not mentioned:
+		say "[one of]Two identical, rough-looking teens stand here. They introduce themselves as Cheeky Che and Cliquey Clay, the twit twins. You stand no chance against their taunts, and it's probably best not to try. If you got by them, their leader would have to resort to worse![or]Cheeky Che and Cliquey Clay both continue to smile condescendingly at you.[stopping]";
+		if twit twins are in Leaky Ley, say "[line break]Also, you sense you will have to deal with them [if twin-score is 0]individually and[else]also[end if] in their capacity as twit twins. They're sneaky that way.";
 	now all twits are mentioned;
 
 after examining a twit:
@@ -311,6 +313,10 @@ after examining a twit:
 	else if twin-score is 1:
 		say "[if sco-grit-grins is false]You hit them individually. Now you need to hit them together[else]You hit their partnership. Now focus on them individually[end if].";
 	continue the action;
+
+chapter Twit Twins
+
+the twit twins are scenery in Leaky Ley. "You stare between the twit twins. It's hard to tell them apart. You hope not to have to."
 
 chapter Streaky Stray
 
