@@ -22,6 +22,27 @@ test w7 with "weakie way/creaky cray/grit grins/slick sleet/streaky stray".
 
 test w8 with "share shine/fair fine/green grid/dare dine".
 
+volume room defs
+
+chapter tabing
+
+tabing is an action out of world.
+
+understand the command "tab" as something new.
+
+understand "tab" as tabing.
+
+carry out tabing:
+	repeat with x running through rooms:
+		say "[x] [guess-table of x].";
+	repeat with x running through things:
+		if x is not a rhymable:
+			say "<[x]>[line break]";
+			next;
+		say "[x] [guess-table of x].";
+	the rule succeeds;
+
+
 volume eye test
 
 when play begins:
