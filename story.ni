@@ -137,7 +137,10 @@ volume rooms
 
 book sick seat
 
-Sick Seat is a room. printed name is "At dinner, on your sick seat". "[if sco-ick-eat is false]You're on your sick seat, sick in a positive way, though right now you are sort of sick of the vegtables you have to eat before trick-or-treating. You usually don't mind them, but today they're tough to shovel down. Some quick self-talk to pep yourself up should do the trick.[else]You're still on your seat here, trying to figure which friend to choose for adventure[end if].". eyevalue of sick seat is 33.
+Sick Seat is a room. printed name is "At dinner, on your sick seat". "[if sco-ick-eat is false]You're on your sick seat, sick in a positive way, though right now you are sort of sick of the vegtables you have to eat before trick-or-treating. You usually don't mind them, but today they're tough to shovel down. Some quick self-talk to pep yourself up should do the trick.[paragraph break]If it weren't Halloween, you'd find yourself daydreaming of tater tots later (lots,) but chocolate and such is even better[else]You're still on your seat here, trying to figure which friend to choose for adventure[end if].". eyevalue of sick seat is 33.
+
+every turn when sco-ick-eat is false:
+	if a random chance of 1 in 3 succeeds, say "You look at the vegetables and think [one of]'Bad bid, Dad did.'[or]'Bomb, bore, Mom. More?!'[in random order]But of course saying that would get you grounded."
 
  [bad bid, dad did]
  [mom, more? Bomb, bore!]
@@ -150,11 +153,11 @@ check going in Sick Seat:
 
 chapter Nick
 
-Nick Neat Trick Treat is a person in Sick Seat. the player is Nick Neat Trick Treat. printed name is "Nick Neat-Trick-Treat". eyevalue of nick is 33.
+Nick Neat Trick Treat is a person in Sick Seat. the player is Nick Neat Trick Treat. printed name is "Nick Neat-Trick-Treat". eyevalue of nick is 33. description of nick is "You [if sco-pick-pete is false]will be[else]are[end if] dressed as your favorite character from the Blest Blue Zest Zoo, the Guest Goo. You can hardly wait for the add-on season: Nest (New). You have friends, of course, dressed as Pressed Prue and the Best Boo."
 
 chapter the phone
 
-Nick carries the phone. description is "You don't want to be gazing at it when you walk around. If there's a message, you'll get it.". eyevalue of phone is 54.
+Nick carries the phone. description of phone is "You don't want to be gazing at it when you walk around. If there's a message, you'll get it.". eyevalue of phone is 54.
 
 chapter the note
 
