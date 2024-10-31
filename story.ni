@@ -73,9 +73,13 @@ to eye-blink (nm - a number):
 	let left-eye be false;
 	let right-eye be false;
 	let cross-eyed be false;
+	let eye-roll be false;
 	if nm > 10000:
 		now cross-eyed is true;
 		now nm is nm - 10000;
+	if nm > 5000:
+		now eye-roll is true;
+		now nm is nm - 5000;
 	if nm > 1000:
 		now left-eye is true;
 		now nm is nm - 1000;
@@ -89,6 +93,7 @@ to eye-blink (nm - a number):
 	if cross-eyed is true, say "[line break]Odd ... the eyes seem to look at each other, almost being pulled into each other.";
 	if left-eye is true, say "[line break]Odd ... the left eye seemed to squint at the end. So that counts as half?";
 	if right-eye is true, say "[line break]Odd ... the right eye seemed to squint at the end. So that counts as half?";
+	if eye-roll is true, say "[line break]Odd ... the eyes each make an eyeroll, as if to say 'well, I guess that COULD be a word.'";
 
 chapter eyerming
 
@@ -180,7 +185,7 @@ check going north in Strick Street:
 	if player has jewel, say "You got the jewel. That's enough." instead;
 
 check going south in Strick Street:
-	if player has cold key, say "You got the cold key. That's enough." instead;
+	if player has curled whee whirled key, say "You got the curled whee whirled key. That's enough." instead;
 
 check going west in Strick Street:
 	if player has bove book, say "You got the book from there. That's enough." instead;

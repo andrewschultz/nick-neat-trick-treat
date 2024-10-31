@@ -107,7 +107,7 @@ this is the vr-treat-tree rule:
 chapter strick street scoring
 
 a goodrhyme rule (this is the vc-pluraled-plea rule):
-	if player does not have cold key, unavailable;
+	if player does not have whirled key, unavailable;
 	if player is not in strick street:
 		vcp "This is not the right place for such a plea.";
 		not-yet;
@@ -115,7 +115,7 @@ a goodrhyme rule (this is the vc-pluraled-plea rule):
 
 this is the vr-pluraled-plea rule:
 	now sco-pluraled-plea is true;
-	ritual-item cold key;
+	ritual-item whirled key;
 
 a goodrhyme rule (this is the vc-shove-shook rule):
 	if player does not have book, unavailable;
@@ -382,8 +382,9 @@ a goodrhyme rule (this is the vc-see-sold rule):
 
 this is the vr-see-sold rule:
 	now sco-see-sold is true;
-	say "The tree is impressed by your confidence. It swaps: the key, cold, for the me-mold. Perhaps you have a future career as an artist! Or just a side hustle.";
-	now player has cold key;
+	say "The tree is impressed by your confidence. It swaps: the key, cold, for the me-mold. Perhaps you have a future career as an artist! Or just a side hustle.[paragraph break]But they key quickly warms up when you grab it! ";
+	now player has whirled key;
+	declue-rm trolled tree;
 
 a goodrhyme rule (this is the vc-wee-wold rule):
 	if player is not in TreeTrolled, unavailable;
