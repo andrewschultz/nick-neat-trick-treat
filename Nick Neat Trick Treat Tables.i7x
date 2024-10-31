@@ -23,40 +23,40 @@ volume main table
 table of verb checks [the order of things to solve is roughly alphabetical, so the lurking lump always gives you the best value, but this is subverted by if one rhyme pushes the game/story further than the others. So Leave Lo is first. Sassed can be anywhere for the bonus point, since the lump explicitly avoids bonus points.]
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "ick"	"eat"	--	--	false	true	true	false	sick seat	vc-ick-eat rule	vr-ick-eat rule	--	--
-"pick"	"pete"	--	--	false	true	true	false	sick seat	vc-pick-pete rule	vr-pick-pete rule	--	--
+"pick"	"pete"	--	--	false	true	true	false	sick seat	vc-pick-pete rule	vr-pick-pete rule	--	"You can [b]PICK PETE[r] as a companion [once-now of vc-pick-pete rule] you've finished dinner."
 "treat"	"tree"	--	--	false	true	true	false	sick seat	vc-treat-tree rule	vr-treat-tree rule	--	--
 "donor"	"douse"	--	--	false	true	false	false	honer house	vc-donor-douse rule	vr-donor-douse rule	--	--
 "loner"	"louse"	--	--	false	true	true	false	honer house	vc-loner-louse rule	vr-loner-louse rule	--	--
 "moaner"	"mouse"	--	--	false	true	true	false	honer house	vc-moaner-mouse rule	vr-moaner-mouse rule	--	--
-"get"	"ghoul"	--	--	false	true	true	false	strick street	vc-get-ghoul rule	vr-get-ghoul rule	--	--
-"shove"	"shook"	--	--	false	true	true	false	strick street	vc-shove-shook rule	vr-shove-shook rule	--	--
-"pluralled|pluraled"	"plea"	--	--	false	true	true	false	strick street	vc-pluraled-plea rule	vr-pluraled-plea rule	--	--
+"get"	"ghoul"	--	--	false	true	true	false	strick street	vc-get-ghoul rule	vr-get-ghoul rule	--	"You can [b]GET GHOUL[r] [once-now of vc-get-ghoul rule] you have what you need for a ritual and are in the right place."
+"shove"	"shook"	--	--	false	true	true	false	strick street	vc-shove-shook rule	vr-shove-shook rule	--	"You can [b]SHOVE SHOOK[r] [once-now of vc-shove-shook rule] you have what you need for a ritual and are in the right place."
+"pluralled|pluraled"	"plea"	--	--	false	true	true	false	strick street	vc-pluraled-plea rule	vr-pluraled-plea rule	--	"You can make a [b]PLURALED PLEA[r] [once-now of vc-pluraled-plea rule] you have what you need for a ritual and are in the right place."
 "plank"	"pling"	--	--	false	true	true	false	rank ring	vc-plank-pling rule	vr-plank-pling rule	--	--
-"blank"	"bling"	--	--	false	true	true	false	rank ring	vc-blank-bling rule	vr-blank-bling rule	--	--
-"thank"	"thing"	--	--	false	true	true	false	rank ring	vc-thank-thing rule	vr-thank-thing rule	--	--
+"blank"	"bling"	--	--	false	true	true	false	rank ring	vc-blank-bling rule	vr-blank-bling rule	--	"You can find [b]BLANK BLING[r] [once-now of vc-blank-bling rule] you discover where it's been hidden."
+"thank"	"thing"	--	--	false	true	true	false	rank ring	vc-thank-thing rule	vr-thank-thing rule	--	"You can [b]THANK THING[r] [once-now of vc-thank-thing rule] you have gotten a gift to be thnkful for."
 "sank"	"sing"	--	--	false	true	true	false	rank ring	vc-sank-sing rule	vr-sank-sing rule	--	--
 "fun"	"foam"	--	--	false	true	true	false	hun home	vc-fun-foam rule	vr-fun-foam rule	--	--
-"ton"	"tome"	--	--	false	true	true	false	hun home	vc-ton-tome rule	vr-ton-tome rule	--	--
-"pun"	"poem"	--	--	false	true	true	false	hun home	vc-pun-poem rule	vr-pun-poem rule	--	--
-"run"	"roam"	--	--	false	true	true	false	hun home	vc-run-roam rule	vr-run-roam rule	--	--
-"done"	"dome"	--	--	false	true	true	false	hun home	vc-done-dome rule	vr-done-dome rule	--	--
+"ton"	"tome"	--	--	false	true	true	false	hun home	vc-ton-tome rule	vr-ton-tome rule	--	"You can summon a [b]TON TOME[r] [once-now of vc-ton-tome rule] it can land softly."
+"pun"	"poem"	--	--	false	true	true	false	hun home	vc-pun-poem rule	vr-pun-poem rule	--	"You can summon a [b]PUN POEM[r] [once-now of vc-pun-poem rule] there's a thing or place where it can be recorded."
+"done"	"dome"	--	--	false	true	true	false	hun home	vc-done-dome rule	vr-done-dome rule	--	"You can claim [b]DONE DOME[r] [once-now of vc-done-dome rule] the place is a bit cheerier."
+"run"	"roam"	--	--	false	true	true	false	hun home	vc-run-roam rule	vr-run-roam rule	--	"You can [b]RUN ROAM[r] [once-now of vc-run-roam rule] you need to rebel against feeling stuck."
 "a"	"gnome"	--	--	false	true	false	false	hun home	vc-a-gnome rule	vr-a-gnome rule	--	--
 "be"	"bold"	--	--	false	true	true	false	TreeTrolled	vc-be-bold rule	vr-be-bold rule	--	--
-"re"	"rolled"	--	--	false	true	true	false	TreeTrolled	vc-re-rolled rule	vr-re-rolled rule	"re rolled" or "rerolled"	--
-"me"	"mold"	--	--	false	true	true	false	TreeTrolled	vc-me-mold rule	vr-me-mold rule	--	--
-"see"	"sold"	--	--	false	true	true	false	TreeTrolled	vc-see-sold rule	vr-see-sold rule	--	--
+"re"	"rolled"	--	--	false	true	true	false	TreeTrolled	vc-re-rolled rule	vr-re-rolled rule	"re rolled" or "rerolled"	"You can [b]REROLLED[r] [once-now of vc-re-rolled rule] you have committed to something but want to do it a bit better."
+"me"	"mold"	--	--	false	true	true	false	TreeTrolled	vc-me-mold rule	vr-me-mold rule	--	"You can [b]ME MOLD[r] [once-now of vc-me-mold rule] you feel confident enough in your artistic ability."
+"see"	"sold"	--	--	false	true	true	false	TreeTrolled	vc-see-sold rule	vr-see-sold rule	--	"You can [b]SEE SOLD[r] [once-now of vc-see-sold rule] you have a creation you can swap."
 "wee"	"wold"	--	--	false	true	true	false	TreeTrolled	vc-wee-wold rule	vr-wee-wold rule	--	--
 "dandy"	"ding"	--	--	false	true	true	false	eee ing	vc-dandy-ding rule	vr-dandy-ding rule	--	--
-"andy|sandy|mandy|landy"	"ng|tsing|hsing|sing|ming|ling"	--	--	false	true	true	false	eee ing	vc-andy-ng rule	vr-andy-ng rule	"andy ng" or "sandy sing/tsing/hsing" or "mandy ming" or "landy ling"	--
+"andy|sandy|mandy|landy"	"ng|tsing|hsing|sing|ming|ling"	--	--	false	true	true	false	eee ing	vc-andy-ng rule	vr-andy-ng rule	"andy ng" or "sandy sing/tsing/hsing" or "mandy ming" or "landy ling"	"You can recall [b]ANDY NG[r] or any other classmate [once-now of vc-andy-ng rule] you have hit it off with Randy."
 "weakie"	"way"	--	--	false	true	true	false	leaky ley	vc-weakie-way rule	vr-weakie-way rule	--	--
 "creaky"	"cray"	--	--	false	true	true	false	leaky ley	vc-creaky-cray rule	vr-creaky-cray rule	--	--
 "grit"	"grins"	--	--	false	true	true	false	leaky ley	vc-grit-grins rule	vr-grit-grins rule	--	--
-"streaky"	"stray"	--	--	false	true	true	false	leaky ley	vc-streaky-stray rule	vr-streaky-stray rule	--	--
-"slick"	"sleet"	--	--	false	true	true	false	leaky ley	vc-slick-sleet rule	vr-slick-sleet rule	--	--
+"streaky"	"stray"	--	--	false	true	true	false	leaky ley	vc-streaky-stray rule	vr-streaky-stray rule	--	"You can call out a [b]STREAKY STRAY[r] [once-now of vc-streaky-stray rule] things get really heated."
+"slick"	"sleet"	--	--	false	true	true	false	leaky ley	vc-slick-sleet rule	vr-slick-sleet rule	--	"You can cast [b]SLICK SLEET[r] [once-now of vc-slick-sleet rule] your final enemy is up."
 "fair"	"fine"	--	--	false	true	true	false	Lair Line	vc-fair-fine rule	vr-fair-fine rule	--	--
 "theyre|there"	"thine"	--	--	false	true	false	false	Lair Line	vc-theyre-thine rule	vr-theyre-thine rule	--	--
 "green"	"grid"	--	--	false	true	true	false	lair line	vc-green-grid rule	vr-green-grid rule	--	--
-"dare"	"dine"	--	--	false	true	true	false	Lair Line	vc-dare-dine rule	vr-dare-dine rule	--	--
+"dare"	"dine"	--	--	false	true	true	false	Lair Line	vc-dare-dine rule	vr-dare-dine rule	--	"You can [b]DARE DINE[r] [once-now of vc-dare-dine rule] you have passed out the candy equitably."
 "share"	"shine"	--	--	false	true	false	false	lair line	vc-share-shine rule	vr-share-shine rule	--	--
 
 chapter sick seat scoring
