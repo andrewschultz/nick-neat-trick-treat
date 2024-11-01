@@ -4,9 +4,9 @@ Version 1/241026 of Nick Neat Trick Treat Globals by Andrew Schultz begins here.
 
 volume variables
 
-core-max is 30.
+core-max is 29.
 
-max-bonus is 6.
+max-bonus is 7.
 
 entry-in-series is 9.
 

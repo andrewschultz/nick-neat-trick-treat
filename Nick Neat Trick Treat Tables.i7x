@@ -444,6 +444,14 @@ this is the vr-grit-grins rule:
 	moot twit twins;
 	check-final-boss;
 
+to optional-score (ru - a rule):
+	repeat through table of verb checks:
+		if check-rule entry is ru:
+			if idid entry is false:
+				now core entry is false;
+			else:
+				up-min;
+
 a goodrhyme rule (this is the vc-weakie-way rule):
 	if player is not in leaky ley, unavailable;
 	if sco-weakie-way is true:
@@ -453,7 +461,9 @@ a goodrhyme rule (this is the vc-weakie-way rule):
 
 this is the vr-weakie-way rule:
 	now sco-weakie-way is true;
-	say "You worry slightly that putting the adjective second may deduct style points, but it turns out emphasizing it leaves them taken aback."
+	say "You worry slightly that putting the adjective second may deduct style points, but it turns out emphasizing it leaves them taken aback.";
+	optional-score vc-creaky-cray rule;
+	check-final-boss;
 
 a goodrhyme rule (this is the vc-creaky-cray rule):
 	if player is not in leaky ley, unavailable;
@@ -465,6 +475,7 @@ a goodrhyme rule (this is the vc-creaky-cray rule):
 this is the vr-creaky-cray rule:
 	now sco-creaky-cray is true;
 	say "You totally justifiably DARVO them, even though you aren't aware of the acronym. You exaggerate how senseless it is to ruin younger kids['] halloween, and you wonder if their lives are so empty they'll be doing this every year.";
+	optional-score vc-weakie-way rule;
 	check-final-boss;
 
 to check-final-boss:
