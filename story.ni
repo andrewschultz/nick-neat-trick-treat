@@ -167,7 +167,20 @@ guess-table of meet me is the table of meet me guesses.
 
 book Strick Street
 
-Strick Street is inside of Sick Seat. "[one of]Hmm. You're not sure if strick is a word, but you figure if you badgered any of the denizens about it, they'd be ... upset. So, maybe it's short for stricken? [or][stopping][if honer house is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now. You can visit a hun-home to the left, a rank ring to the north, or woods to the south. It's quite scary to the east[end if]." .eyevalue of strick street is -1.
+Strick Street is inside of Sick Seat. "[one of]Hmm. You're not sure if strick is a word, but you figure if you badgered any of the denizens about it, they'd be ... upset. So, maybe it's short for stricken? [or][stopping][if honer house is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now[strick-details][end if]." .eyevalue of strick street is -1.
+
+to say strick-details:
+	if number of stricksolved directions is 3:
+		say ". Seems like it's time to go east, since you worked through the home, the ring and the forest";
+		continue the action;
+	now print-room-to is true;
+	if number of stricksolved directions > 1:
+		say ". You've already taken care of [list of stricksolved directions]";
+	if number of strickseen directions > 0:
+		say ". You've seen [list of strickseen directions] but have something left to do there";
+	if number of strickunseen directions > 0:
+		say ". You haven't explored [list of strickunseen directions] yet";
+	now print-room-to is false;
 
 [becomes stray street?]
 

@@ -10,6 +10,10 @@ max-bonus is 6.
 
 entry-in-series is 9.
 
+chapter printing booleans
+
+print-room-to is a truth state that varies.
+
 chapter game states
 
 gs-eyes-found is a truth state that varies.

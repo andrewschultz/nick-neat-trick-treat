@@ -69,6 +69,26 @@ this is the flag bad goto from rule:
 
 volume trivia
 
+book for directions in Strick Street
+
+a direction can be stricksolved. a direction is usually not stricksolved.
+
+definition: a direction (called di) is strickseen:
+	unless di is north or di is west or di is south, no;
+	if di is stricksolved, no;
+	if the room di of strick street is visited, yes;
+	no;
+
+definition: a direction (called di) is strickunseen:
+	unless di is north or di is west or di is south, no;
+	if the room di of strick street is not visited, yes;
+	no;
+
+after printing the name of a direction (called di) when print-room-to is true:
+	let rm be room di of location of player;
+	say "[if rm is visited]to [rm][else]somewhere new[end if]";
+	continue the action;
+
 book definitions of point sums
 
 to decide which number is ncp: decide on number of carried plateitems + number of moot plateitems.
