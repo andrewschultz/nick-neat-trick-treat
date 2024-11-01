@@ -277,7 +277,7 @@ the tree trolled is a thing in TreeTrolled. printed name of Tree Trolled is "tre
 
 chapter curled whee whirled key
 
-the curled whee whirled key is a rhymable. description is "It's a really odd but cool shape and design. It warmed up quickly in your pocket. Technically it's a key, cold, but switching words like that reminds you of poetry adults tell you you should enjoy. Ugh.[paragraph break]Just looking at it makes you think of words that don't exist but maybe should, the sort over-sensible adults would, and have, smacked you down verbally for saying.". printed name is "curled (whee) world key". eyevalue of key is 5084.
+the curled whee whirled key is a plateitem. description is "It's a really odd but cool shape and design. It warmed up quickly in your pocket. Technically it's a key, cold, but switching words like that reminds you of poetry adults tell you you should enjoy. Ugh.[paragraph break]Just looking at it makes you think of words that don't exist but maybe should, the sort over-sensible adults would, and have, smacked you down verbally for saying.". printed name is "curled (whee) world key". eyevalue of key is 5084.
 
 guess-table of curled key is the table of curled key guesses.
 

@@ -4,7 +4,8 @@ Version 1/241027 of Nick Neat Trick Treat Tests by Andrew Schultz begins here.
 
 volume IDE tests
 
-test wf with "test w1/test w2/donor douse/out/test w3/sank sing/s/test w4/wee wold/n/test w5/a gnome/e/test w6/test w7/there thine/test w8".
+test wf with "test w1/test w2/donor douse/out/test w3/sank sing/s/test w4/wee wold/n/test w5/a gnome/e/test w6/test w7/there thine/share shine/test w8".
+test wm with "test w1/test w2/out/test w3/s/test w4/n/test w5/e/test w6/test w7/test w8".
 
 test w1 with "ick eat/pick pete/treat tree".
 
@@ -20,7 +21,7 @@ test w6 with "pluraled plea/shove shook/get ghoul/e/dandy ding/andy ng".
 
 test w7 with "weakie way/creaky cray/grit grins/slick sleet/streaky stray".
 
-test w8 with "share shine/fair fine/green grid/dare dine".
+test w8 with "fair fine/green grid/dare dine".
 
 volume room defs
 
@@ -42,6 +43,18 @@ carry out tabing:
 		say "[x] [guess-table of x].";
 	the rule succeeds;
 
+chapter riing
+
+riing is an action out of world.
+
+understand the command "ri" as something new.
+
+understand "ri" as riing.
+
+carry out riing:
+	repeat with x running through plateitems:
+		say "[x] [location of x].";
+	the rule succeeds;
 
 volume eye test
 
