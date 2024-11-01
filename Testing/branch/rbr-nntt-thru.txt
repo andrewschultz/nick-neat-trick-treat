@@ -184,6 +184,54 @@ by one point
 @all
 `Leaky Ley
 
+@alt
+##balance undos
+>creaky cray
+by one point
+\\
+>weakie way
+by one point
+\\
+>undo
+>undo
+\\
+>weakie way
+by one point
+\\
+>grit grins
+by one point
+Reeky Ray
+\\
+>undo
+>undo
+\\
+>creaky cray
+by one point
+\\
+>grit grins
+by one point
+Reeky Ray
+\\
+>undo
+>undo
+\\
+>grit grins
+by one point
+\\
+>creaky cray
+by one point
+Reeky Ray
+\\
+>undo
+\\
+>weakie way
+by one point
+Reeky Ray
+\\
+>undo
+>undo
+
+@!min
 >weakie way
 by one point
 

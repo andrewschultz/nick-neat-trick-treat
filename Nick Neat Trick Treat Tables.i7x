@@ -449,8 +449,6 @@ to optional-score (ru - a rule):
 		if check-rule entry is ru:
 			if idid entry is false:
 				now core entry is false;
-			else:
-				up-min;
 
 a goodrhyme rule (this is the vc-weakie-way rule):
 	if player is not in leaky ley, unavailable;

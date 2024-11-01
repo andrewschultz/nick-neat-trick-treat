@@ -448,11 +448,13 @@ final question wording	only if victorious	topic	final response rule	final respon
 "see the points or alternate paths you [b]MISSED[r]" 	true	"missed/misses"	show-misses rule	--
 
 this is the show-misses rule:
-	say "There are six total bonus points. Here is how to get [if cur-bonus is 0]them all[else]the remaining [(max-bonus - cur-bonus) in words][end if].[paragraph break]Note that some of the bonus points require creative punctuation to think of, which is why they are bonus points. But I liked them too much to leave out.[paragraph break]";
+	say "There are seven total bonus points. One involves finding both ways to pick at Che and Clay. Here is how to get [if cur-bonus is 0]them all[else]the remaining [(max-bonus - cur-bonus) in words][end if].[paragraph break]Note that some of the bonus points require creative punctuation or emphasis to think of, which is why they are bonus points. But I liked them too much to leave out.[paragraph break]";
 	if sco-donor-douse is false, say "You could have said [b]DONOR DOUSE[r] in the Honer House.";
 	if sco-sank-sing is false, say "You could have said [b]SANK SING[r] to cheer up the thing in the Rank Ring.";
 	if sco-a-gnome is false, say "You could have left [b]A GNOME[r] to take care of the Hun Home.";
 	if sco-wee-wold is false, say "You could have reminded [the tree] of the [b]WEE WOLD[r].";
+	if sco-creaky-cray is false, say "You could have labeled Che and Clay [b]CREAKY CRAY[r].";
+	if sco-weakie-way is false, say "You could have mocked Che and Clay as [b]WEAKIE WAY[r].";
 	if sco-theyre-thine is false, say "You could've used medieval dialect and offered candy with [b]THERE[r] / [b]THEY'RE THINE[r].";
 	if sco-share-shine is false, say "You could have spread credit around with [b]SHARE SHINE[r].";
 
