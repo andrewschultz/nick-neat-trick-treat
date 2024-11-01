@@ -1,0 +1,139 @@
+## reg-nntt-lone-jjthru.txt
+##
+## no generator file, though I originally got this from the full walkthrough. However, there are negative tests very much worth checking!
+##
+## I also checked to make sure that JJ doesn't show you misleading stuff.
+
+## walkthrough with no bonus points, jumping everywhere
+** game: /home/andrew/prt/debug-nick-neat-trick-treat.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>z
+
+>jj
+After some thought, you consider a good way forward: ICK EAT...
+
+>jj
+After some thought, you consider a good way forward: PICK PETE...
+
+>jj
+After some thought, you consider a good way forward: TREAT TREE...
+
+>in
+
+>jj
+After some thought, you consider a good way forward: LONER LOUSE...
+
+>jj
+After some thought, you consider a good way forward: MOANER MOUSE...
+
+>jj
+The lurking lump remains immovable. There's nothing critical to do here.
+
+>out
+
+>jj
+The lurking lump remains immovable. There's nothing critical to do here.
+
+>n
+
+>jj
+After some thought, you consider a good way forward: PLANK PLING...
+
+>jj
+After some thought, you consider a good way forward: BLANK BLING...
+
+>jj
+After some thought, you consider a good way forward: THANK THING...
+
+>jj
+The lurking lump remains immovable. There's nothing critical to do here.
+
+>s
+
+>w
+
+>jj
+After some thought, you consider a good way forward: FUN FOAM...
+
+>jj
+After some thought, you consider a good way forward: TON TOME...
+
+>jj
+After some thought, you consider a good way forward: PUN POEM...
+
+>jj
+After some thought, you consider a good way forward: DONE DOME...
+
+>jj
+After some thought, you consider a good way forward: RUN ROAM...
+
+>jj
+The lurking lump remains immovable. There's nothing critical to do here.
+
+>e
+
+>s
+
+>jj
+After some thought, you consider a good way forward: BE BOLD...
+
+>jj
+After some thought, you consider a good way forward: RE ROLLED...
+
+>jj
+After some thought, you consider a good way forward: ME MOLD...
+
+>jj
+After some thought, you consider a good way forward: SEE SOLD...
+
+>jj
+The lurking lump remains immovable. There's nothing critical to do here.
+
+>n
+
+>jj
+After some thought, you consider a good way forward: GET GHOUL...
+
+>jj
+After some thought, you consider a good way forward: SHOVE SHOOK...
+
+>jj
+After some thought, you consider a good way forward: PLURALLED PLEA...
+
+>jj
+The lurking lump remains immovable. There's nothing critical to do here.
+
+>e
+
+>jj
+After some thought, you consider a good way forward: DANDY DING...
+
+>jj
+After some thought, you consider a good way forward: ANDY NG...
+
+>jj
+After some thought, you consider a good way forward: WEAKIE WAY...
+
+>jj
+After some thought, you consider a good way forward: CREAKY CRAY...
+
+>jj
+After some thought, you consider a good way forward: GRIT GRINS...
+
+>jj
+After some thought, you consider a good way forward: STREAKY STRAY...
+
+>jj
+After some thought, you consider a good way forward: SLICK SLEET...
+
+>jj
+After some thought, you consider a good way forward: FAIR FINE...
+
+>jj
+After some thought, you consider a good way forward: GREEN GRID...
+
+>jj
+After some thought, you consider a good way forward: DARE DINE...
