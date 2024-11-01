@@ -364,7 +364,24 @@ chapter creditsing
 
 carry out creditsing:
 	say "Thanks to all administrators past and present of EctoComp: Ruber Eaglenest, Duncan Bowsman, JJ Guest and others I've forgotten.";
+	say "[line break]Thanks to Wade Clarke for testing without being given a lot of time. I owe him one for this.";
+	say "[line break]Thanks to Olaf Nowacki for finding a bug quickly during the comp itself.";
 	the rule succeeds;
+
+chapter verbsing
+
+carry out verbsing:
+	say "[this-game], like others in the series, doesn't have many custom verbs that are used regularly. In fact, many standard verbs such as [b]PUSH[r] and [b]PULL[r] are disabled, and [b]CLIMB[r] or [b]ATTACK[r], for instance, have minimal implementation. Even [b]TAKE[r] should be useless--you implicitly take what useful stuff you can.[paragraph break]This is to help you focus on certain phrases you need to guess to advance.";
+	say "[line break]The four cardinal directions and [b]IN[r]/[b]OUT[r] are used, as well as [b]X[r] or [b]EXAMINE[r]. [b]READ[r] may provide different output. [b]I[r] takes inventory.";
+	say "[line break][b]T[r] in a future release will let you talk to people or entities, but it's just for fun.";
+	say "[line break]These are the in-game verbs [b]META[r] gives general information commands and meta-verbs.";
+
+report verbsing:
+	if player has eyes:
+		say "You can also [b]EYE[r] an object to see if you need to do anything to it. [b]EYE[r] alone shows the whole room.";
+	else:
+		say "There will be one hint item you can find with standard introductory commands.";
+	continue the action;
 
 chapter versioning
 
