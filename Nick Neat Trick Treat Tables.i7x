@@ -588,6 +588,14 @@ volume misc tables
 table of noways
 noway-rm	noway-txt
 Sick Seat	"You'll get to move once [if sco-ick-eat is false]you've eaten your vegetables[else]you choose the friend who'll most help with adventure[end if]."
+Strick Street	"You can go [if house-crit-score is 2]in the planar directions[else]inside[end if], but not [noun]."
+Honer House	"The secrets in this house are verbal, not physical. You can only go back out."
+Rank Ring	"It's even ranker any direction but back south."
+TreeTrolled	"Any direction but back north could get you very, very lost in a very, very dangerous forest."
+Hun Home	"There are no secret passages in this home. You can only go back east."
+Eee Ing	"You'd get lost here. Best stay by [Randy]."
+Leaky Ley	"You can't run from this conflict."
+Lair Line	"There's no compass direction out. [if sco-green-grid is false]You need to find someone who can make a portal out.[else]The green grid will lead you out, but why not celebrate your adventure first?[end if]"
 
 volume homonyms
 
