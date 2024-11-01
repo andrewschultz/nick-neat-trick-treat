@@ -16,13 +16,17 @@ Then whom do you choose to call?
 
 Oh no! The treat tree has been trolled! It's a trolled tree!
 
-And now it's dark here in Strick Steet! Perhaps you should train first, in the honer house.
+And now it's dark here in Strick Street! Perhaps you should train first, in the honer house.
 
 > IN
 
-> MOANER MOUSE (4)
+Take out someone who's being a bit of a jerk.
 
-> LONER LOUSE (5)
+> LONER LOUSE (4)
+
+Now an animal trying to seem bigger than they are.
+
+> MOANER MOUSE (5)
 
 There's also a way to get a bonus point. You can beg for candy anywhere!
 
@@ -68,7 +72,9 @@ Clinch the deal.
 
 You can remind the tree of a far-away place for a bonus point.
 
-The only way left is west.
+You're done here. The only way left from Strick Street is west.
+
+> N
 
 > W
 
@@ -92,6 +98,8 @@ Oh no! Too comfy! How to flee?
 
 > RUN ROAM (18)
 
+Also, there is a way to let someone else watch over the new place.
+
 > E
 
 Now you have 3 things to manipulate so they go in the plate.
@@ -106,21 +114,21 @@ Love Look 'Bove Book:
 
 Jet jewel:
 
-> GET GHOUL
+> GET GHOUL (21)
 
 > E
 
 How to say things are right?
 
-> DANDY DING (21)
+> DANDY DING (22)
 
-Name a classmate. Several first/last names are acceptable here.
+Name a classmate. Several first/last names are acceptable here. Randy tells you all of them
 
-> ANDY NG (22)
+> ANDY NG (23)
 
 On to the fight! Okay, the twins
 
-> CREAKY CRAY (23)
+> CREAKY CRAY (24)
 
 You can also duff them up another way.
 
@@ -130,22 +138,22 @@ Okay, they make way for the big boss, Reeky Ray.
 
 Make the weapon misfire.
 
-> STREAKY STRAY (24)
+> STREAKY STRAY (25)
 
 Now, do something only you can.
 
-> SLICK SLEET (25)
+> SLICK SLEET (26)
 
 The denouement. You found a ton of candy. Don't hog it.
 
-> FAIR FINE (26)
+> FAIR FINE (27)
 
 There's one other way to spread the happiness around.
 
-You'd love to eat all the cany, but think of a way home first. A new friend can help.
+You'd love to eat all the candy, but think of a way home first. A new friend can help.
 
-> GREEN GRID (27)
+> GREEN GRID (28)
 
 Okay. Time to chow down.
 
-> DARE DINE (28)
+> DARE DINE (29)

@@ -36,9 +36,13 @@ And now it's dark here in Strick Street! Perhaps you should train first, in the 
 
 > IN
 
-> MOANER MOUSE (1)
+Take out someone who's being a bit of a jerk.
 
 > LONER LOUSE (1)
+
+Now an animal trying to seem bigger than they are.
+
+> MOANER MOUSE (1)
 
 There's also a way to get a bonus point. You can beg for candy anywhere!
 
@@ -93,7 +97,9 @@ You can remind the tree of a far-away place for a bonus point.
 ==t1
 > WEE WOLD (1)
 
-The only way left is west.
+You're done here. The only way left from Strick Street is west.
+
+> N
 
 > W
 
@@ -117,6 +123,11 @@ Oh no! Too comfy! How to flee?
 
 > RUN ROAM (1)
 
+Also, there is a way to let someone else watch over the new place.
+
+==t1
+> A GNOME (1)
+
 > E
 
 Now you have 3 things to manipulate so they go in the plate.
@@ -131,7 +142,7 @@ Love Look 'Bove Book:
 
 Jet jewel:
 
-> GET GHOUL
+> GET GHOUL (1)
 
 > E
 
@@ -139,7 +150,7 @@ How to say things are right?
 
 > DANDY DING (1)
 
-Name a classmate. Several first/last names are acceptable here.
+Name a classmate. Several first/last names are acceptable here. Randy tells you all of them
 
 > ANDY NG (1)
 
