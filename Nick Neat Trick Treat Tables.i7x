@@ -34,7 +34,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "plank"	"pling"	--	--	false	true	true	false	rank ring	vc-plank-pling rule	vr-plank-pling rule	--	--
 "blank"	"bling"	--	--	false	true	true	false	rank ring	vc-blank-bling rule	vr-blank-bling rule	--	"You can find [b]BLANK BLING[r] [once-now of vc-blank-bling rule] you discover where it's been hidden."
 "thank"	"thing"	--	--	false	true	true	false	rank ring	vc-thank-thing rule	vr-thank-thing rule	--	"You can [b]THANK THING[r] [once-now of vc-thank-thing rule] you have gotten a gift to be thnkful for."
-"sank"	"sing"	--	--	false	true	true	false	rank ring	vc-sank-sing rule	vr-sank-sing rule	--	--
+"sank"	"sing"	--	--	false	true	false	false	rank ring	vc-sank-sing rule	vr-sank-sing rule	--	--
 "fun"	"foam"	--	--	false	true	true	false	hun home	vc-fun-foam rule	vr-fun-foam rule	--	--
 "ton"	"tome"	--	--	false	true	true	false	hun home	vc-ton-tome rule	vr-ton-tome rule	--	"You can summon a [b]TON TOME[r] [once-now of vc-ton-tome rule] it can land softly."
 "pun"	"poem"	--	--	false	true	true	false	hun home	vc-pun-poem rule	vr-pun-poem rule	--	"You can summon a [b]PUN POEM[r] [once-now of vc-pun-poem rule] there's a thing or place where it can be recorded."
@@ -45,7 +45,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "re"	"rolled"	--	--	false	true	true	false	TreeTrolled	vc-re-rolled rule	vr-re-rolled rule	"re rolled" or "rerolled"	"You can [b]REROLLED[r] [once-now of vc-re-rolled rule] you have committed to something but want to do it a bit better."
 "me"	"mold"	--	--	false	true	true	false	TreeTrolled	vc-me-mold rule	vr-me-mold rule	--	"You can [b]ME MOLD[r] [once-now of vc-me-mold rule] you feel confident enough in your artistic ability."
 "see"	"sold"	--	--	false	true	true	false	TreeTrolled	vc-see-sold rule	vr-see-sold rule	--	"You can [b]SEE SOLD[r] [once-now of vc-see-sold rule] you have a creation you can swap."
-"wee"	"wold"	--	--	false	true	true	false	TreeTrolled	vc-wee-wold rule	vr-wee-wold rule	--	--
+"wee"	"wold"	--	--	false	true	false	false	TreeTrolled	vc-wee-wold rule	vr-wee-wold rule	--	--
 "dandy"	"ding"	--	--	false	true	true	false	eee ing	vc-dandy-ding rule	vr-dandy-ding rule	--	--
 "andy|sandy|mandy|landy"	"ng|tsing|hsing|sing|ming|ling"	--	--	false	true	true	false	eee ing	vc-andy-ng rule	vr-andy-ng rule	"andy ng" or "sandy sing/tsing/hsing" or "mandy ming" or "landy ling"	"You can recall [b]ANDY NG[r] or any other classmate [once-now of vc-andy-ng rule] you have hit it off with Randy."
 "weakie"	"way"	--	--	false	true	true	false	leaky ley	vc-weakie-way rule	vr-weakie-way rule	--	--
@@ -561,8 +561,7 @@ a goodrhyme rule (this is the vc-dare-dine rule):
 this is the vr-dare-dine rule:
 	now sco-dare-dine is true;
 	say "You know you're not supposed to start eating candy until your parents saw your haul. Of course, you don't eat all the candy at once. In fact, it lasts longer than previous years. Each bite reminds you of friends and adventurs, and even thr bad candy tastes good. Your parents are shocked it lasts through Christmas. They are proud of your restraint -- you are growing up! Of course, if you explained the whole adventure, they would talk about kids and THEIR IMAGINATION.";
-	end the story saying "'Why wait? My, mate, I ATE!'";
-	follow the shutdown rules;
+	win-the-game;
 
 a goodrhyme rule (this is the vc-share-shine rule):
 	if player is not in lair line, unavailable;
@@ -573,7 +572,16 @@ a goodrhyme rule (this is the vc-share-shine rule):
 
 this is the vr-share-shine rule:
 	now sco-share-shine is true;
-	say "You take time, unprompted, to thank others that helped you deeat Reeky Ray. You couldn't have done it without them!";
+	say "You take time, unprompted, to thank others that helped you defeat Reeky Ray. You couldn't have done it without them!";
+
+to win-the-game:
+	if cur-bonus is max-bonus:
+		choose row with final response rule of show-misses rule in the Table of Final Question Options;
+		blank out the whole row; [don't let the player see MISSED if they got everything]
+	follow the score and thinking changes rule;
+	force-status;
+	end the story finally saying "'Why wait? My, mate, I ATE!'";
+	follow the shutdown rules;
 
 volume misc tables
 
