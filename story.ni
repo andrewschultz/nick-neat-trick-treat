@@ -137,7 +137,7 @@ volume rooms
 
 book sick seat
 
-Sick Seat is a room. printed name is "At dinner, on your sick seat". "[if sco-ick-eat is false]You're on your sick seat, sick in a positive way, though right now you are sort of sick of the vegtables you have to eat before trick-or-treating. You usually don't mind them, but today they're tough to shovel down. Some quick self-talk to pep yourself up should do the trick.[paragraph break]If it weren't Halloween, you'd find yourself daydreaming of tater tots later (lots,) but chocolate and such is even better[else]You're still on your seat here, trying to figure which friend to choose for adventure[end if].". eyevalue of sick seat is 33.
+Sick Seat is a room. printed name is "At dinner, on your sick seat". "[if sco-ick-eat is false]You're on your sick seat, sick in a positive way, though right now you are sort of sick of the vegtables you have to eat before trick-or-treating. You usually don't mind them, but today they're tough to shovel down. Some quick self-talk to pep yourself up should do the trick.[paragraph break]If it weren't Halloween, you'd find yourself daydreaming of tater tots later (lots,) but chocolate and such is even better.[else if sco-treat-tree is false]You're still on your seat here, trying to figure which friend to choose for adventure.[else]You're on your seat here, thinking of where Pete P wants you to 'meet me.'[end if]". eyevalue of sick seat is 33.
 
 every turn when sco-ick-eat is false:
 	if a random chance of 1 in 3 succeeds, say "You look at the vegetables and think [one of]'Bad bid, Dad did.'[or]'Bomb, bore, Mom. More?!'[in random order]But of course saying that would get you grounded."
@@ -157,7 +157,7 @@ Nick Neat Trick Treat is a person in Sick Seat. the player is Nick Neat Trick Tr
 
 chapter the phone
 
-Nick carries the phone. description of phone is "You don't want to be gazing at it when you walk around. If there's a message, you'll get it.". eyevalue of phone is 54.
+Nick carries the phone. description of phone is "You don't want to be gazing at it when you walk around. If there's a message, you'll get it.". eyevalue of phone is 54. understand "phone message" and "message" as phone.
 
 chapter the note
 
@@ -342,7 +342,7 @@ the spare spine is scenery in Lair Line. "The spare spine is scary for real in t
 
 chapter Claire Cline
 
-Claire Cline is a person in Lair Line. "Claire Cline is here, with a been-bid-keen kid or two, who didn't get to share in the adventure[if sco-fair-fine is false]. They also have no candy[end if].". eyevalue of claire cline is 44.
+Claire Cline is a person in Lair Line. "Claire Cline is here, with a been-bid-keen kid or two, who didn't get to share in the adventure[if sco-fair-fine is false]. They also have no candy[end if].". description is "You heard Claire gets picked on for being different, but you find her less boring than a lot of high school kids. Adults seem to love her or hate her, even though she doesn't try for that. She's baby-sat you and Pete before, but not for a couple years.". eyevalue of claire cline is 44.
 
 chapter been bid keen kid
 
