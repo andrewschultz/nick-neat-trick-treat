@@ -33,7 +33,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pluralled|pluraled"	"plea"	--	--	false	true	true	false	strick street	vc-pluraled-plea rule	vr-pluraled-plea rule	--	"You can make a [b]PLURALED PLEA[r] [once-now of vc-pluraled-plea rule] you have what you need for a ritual and are in the right place."
 "plank"	"pling"	--	--	false	true	true	false	rank ring	vc-plank-pling rule	vr-plank-pling rule	--	--
 "blank"	"bling"	--	--	false	true	true	false	rank ring	vc-blank-bling rule	vr-blank-bling rule	--	"You can find [b]BLANK BLING[r] [once-now of vc-blank-bling rule] you discover where it's been hidden."
-"thank"	"thing"	--	--	false	true	true	false	rank ring	vc-thank-thing rule	vr-thank-thing rule	--	"You can [b]THANK THING[r] [once-now of vc-thank-thing rule] you have gotten a gift to be thnkful for."
+"thank"	"thing"	--	--	false	true	true	false	rank ring	vc-thank-thing rule	vr-thank-thing rule	--	"You can [b]THANK THING[r] [once-now of vc-thank-thing rule] you have gotten a gift to be thankful for."
 "sank"	"sing"	--	--	false	true	false	false	rank ring	vc-sank-sing rule	vr-sank-sing rule	--	--
 "fun"	"foam"	--	--	false	true	true	false	hun home	vc-fun-foam rule	vr-fun-foam rule	--	--
 "ton"	"tome"	--	--	false	true	true	false	hun home	vc-ton-tome rule	vr-ton-tome rule	--	"You can summon a [b]TON TOME[r] [once-now of vc-ton-tome rule] it can land softly."
@@ -557,7 +557,7 @@ a goodrhyme rule (this is the vc-theyre-thine rule):
 
 this is the vr-theyre-thine rule:
 	now sco-theyre-thine is true;
-	say "With a small flourish, you hand a few candies to kids dressed in medieval costumes[if sco-fair-fine is false], but really, you still have a lot[else], makihg things even fairer[end if]."
+	say "With a small flourish, you hand a few candies to kids dressed in medieval costumes[if sco-fair-fine is false], but really, you still have a lot[else], making things even fairer[end if]."
 
 a goodrhyme rule (this is the vc-dare-dine rule):
 	if player is not in Lair Line, unavailable;
@@ -571,7 +571,7 @@ a goodrhyme rule (this is the vc-dare-dine rule):
 
 this is the vr-dare-dine rule:
 	now sco-dare-dine is true;
-	say "You know you're not supposed to start eating candy until your parents saw your haul. Of course, you don't eat all the candy at once. In fact, it lasts longer than previous years. Each bite reminds you of friends and adventurs, and even thr bad candy tastes good. Your parents are shocked it lasts through Christmas. They are proud of your restraint -- you are growing up! Of course, if you explained the whole adventure, they would talk about kids and THEIR IMAGINATION.";
+	say "You know you're not supposed to start eating candy until your parents saw your haul. Of course, you don't eat all the candy at once. In fact, it lasts longer than previous years. Each bite reminds you of friends and adventures, and even the bad candy tastes good. Your parents are shocked it lasts through Christmas. They are proud of your restraint -- you are growing up! Of course, if you explained the whole adventure, they would talk about kids and THEIR IMAGINATION.";
 	win-the-game;
 
 a goodrhyme rule (this is the vc-share-shine rule):
