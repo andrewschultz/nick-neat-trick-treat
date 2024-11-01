@@ -54,7 +54,7 @@
 			<endRoom>Red</endRoom>
 		</colors>
 		<regions>
-			<NoRegion Name="NoRegion" TextColor="Blue">White</NoRegion>
+			<NoRegion Name="NoRegion" TextColor="Black">White</NoRegion>
 		</regions>
 		<fonts>
 			<room size="13">Arial</room>
