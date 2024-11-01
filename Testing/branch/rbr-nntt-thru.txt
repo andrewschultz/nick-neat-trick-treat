@@ -1,0 +1,234 @@
+#-- rbr-nntt-thru.txt
+#-- main branch file for Nick Neat-Trick-Treat walkthroughs
+#
+#-- TTC.PY generates test cases not found here
+#--
+
+#tricky todo: see about going each way AFTER solving e.g. laundring lair, e, w
+
+#NOTE: PRC.PY has a bug where it double-prints the text at the end if the final command fails
+
+file=reg-nntt-thru-min.txt,min,minimum walkthrough
+file=reg-nntt-thru-all.txt,all,walkthrough with all points and potential neutral retries
+file=reg-nntt-thru-reject.txt,rej,walkthrough with all rejections and THINK
+file=reg-nntt-thru-alt-verbs.txt,alt,walkthrough with altverb tests
+file=reg-nntt-thru-mistakes.txt,mis,walkthrough testing all mistakes
+file=reg-nntt-thru-homonyms.txt,hom,walkthrough testing homonyms
+file=reg-nntt-thru-verbs.txt,ver,walkthrough testing special verbs
+file=reg-nntt-thru-hints.txt,hin/hint/hints,walkthrough testing HINTS basic
+
+##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+#--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
+
+}$REJECT=I couldn't parse that command. You don't need any more than two words long.
+}$REJECT1=Most special commands are more than one word. VERBS will give a list of useful, non-puzzle-solving verbs.
+}$REJECT1A=Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
+}$REJECT2=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+}$GREENBONUSFIRST=The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
+}$GREENBONUS=The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
+}$GREENCOREFIRST=The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right.
+}$GREENCORE=The HA HALF button on your Leet Learner lights up green.
+}$YELLOWBONUS=The HA HALF button on your Leet Learner lights up yellow. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
+}$YELLOWCOREFIRST=The HA HALF button on your Leet Learner lights up yellow--one of the words must work for a future solution.
+}$YELLOWCORE=The HA HALF button on your Leet Learner lights up yellow.
+}$GONG1=A guide gong rings to notify you that you don't need to go back through
+}$GONG=That guide gong, again, rings to notify you that you don't need to go back through
+
+}}MAX=40
+}}CURMAX=40
+}}SCORE=0
+}}CURMIN=35
+}}CURMINBONUS=0
+}}CURMAXBONUS=5
+}}MAXBONUS=5
+
+}$SCOS=You have scored a total of {SCORE} out of {MAX} points and need {CURMIN} to win. You have found {CURMINBONUS} of {MAXBONUS} bonus points so far.
+}$MISSINGONE=1 optional point is no longer available.
+}$MISSING={} optional points are no longer available.
+
+## *FILE
+## *FORK
+
+## *DESCRIPTION
+
+** game: /home/andrew/prt/debug-nick-neat-trick-treat.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+@all
+`Sick Seat
+
+>z
+
+>ick eat
+by one point
+
+>pick pete
+by one point
+
+>treat tree
+by one point
+
+@all
+`Strick Street
+
+>in
+
+@all
+`Honer House
+
+>loner louse
+by one point
+
+>moaner mouse
+by one point
+
+@!min
+>donor douse
+by one point
+
+>out
+
+@all
+`Strick Street
+
+>n
+
+@all
+`Rank Ring
+
+>plank pling
+by one point
+
+>blank bling
+by one point
+
+>thank thing
+by one point
+
+@!min
+>sank sing
+by one point
+
+>s
+
+>s
+
+@all
+`Tree, Trolled
+
+>be bold
+by one point
+
+>rerolled
+by one point
+
+>me mold
+by one point
+
+>see sold
+by one point
+
+@!min
+>wee wold
+by one point
+
+>n
+
+>w
+
+@all
+`Hun Home
+
+>fun foam
+by one point
+
+>ton tome
+by one point
+
+>pun poem
+by one point
+
+>done dome
+by one point
+
+>run roam
+by one point
+
+@!min
+>a gnome
+by one point
+
+>e
+
+>pluraled plea
+by one point
+
+>shove shook
+by one point
+
+>get ghoul
+by one point
+
+>e
+@all
+`And Eee-ing
+
+>dandy ding
+by one point
+
+>andy ng
+by one point
+
+@all
+`Leaky Ley
+
+>weakie way
+by one point
+
+>creaky cray
+by one point
+
+>grit grins
+by one point
+
+>slick sleet
+by one point
+
+>streaky stray
+by one point
+
+@all
+`Lair Line
+
+@!min
+>share shine
+by one point
+
+@alt
+>theyre thine
+by one point
+\\
+>undo
+
+@!min
+>there thine
+by one point
+
+>fair fine
+by one point
+
+>green grid
+by one point
+
+>dare dine
+by one point
+
+@all
+"Why wait? My, mate, I ATE!"
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+
+@min
+Would you like to RESTART, RESTORE a saved game, QUIT, UNDO the last command or see the points or alternate paths you MISSED?
+

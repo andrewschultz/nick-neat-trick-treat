@@ -1,0 +1,160 @@
+## reg-nntt-thru-all.txt
+## GENERATOR FILE: rbr-nntt-thru.txt
+
+## walkthrough with all points and potential neutral retries
+
+** game: /home/andrew/prt/debug-nick-neat-trick-treat.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+`Sick Seat
+
+>z
+
+>ick eat
+by one point
+
+>pick pete
+by one point
+
+>treat tree
+by one point
+
+`Strick Street
+
+>in
+
+`Honer House
+
+>loner louse
+by one point
+
+>moaner mouse
+by one point
+
+>donor douse
+by one point
+
+>out
+
+`Strick Street
+
+>n
+
+`Rank Ring
+
+>plank pling
+by one point
+
+>blank bling
+by one point
+
+>thank thing
+by one point
+
+>sank sing
+by one point
+
+>s
+
+>s
+
+`Tree, Trolled
+
+>be bold
+by one point
+
+>rerolled
+by one point
+
+>me mold
+by one point
+
+>see sold
+by one point
+
+>wee wold
+by one point
+
+>n
+
+>w
+
+`Hun Home
+
+>fun foam
+by one point
+
+>ton tome
+by one point
+
+>pun poem
+by one point
+
+>done dome
+by one point
+
+>run roam
+by one point
+
+>a gnome
+by one point
+
+>e
+
+>pluraled plea
+by one point
+
+>shove shook
+by one point
+
+>get ghoul
+by one point
+
+>e
+`And Eee-ing
+
+>dandy ding
+by one point
+
+>andy ng
+by one point
+
+`Leaky Ley
+
+>weakie way
+by one point
+
+>creaky cray
+by one point
+
+>grit grins
+by one point
+
+>slick sleet
+by one point
+
+>streaky stray
+by one point
+
+`Lair Line
+
+>share shine
+by one point
+
+>there thine
+by one point
+
+>fair fine
+by one point
+
+>green grid
+by one point
+
+>dare dine
+by one point
+
+"Why wait? My, mate, I ATE!"
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+
