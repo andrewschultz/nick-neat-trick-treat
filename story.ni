@@ -228,6 +228,10 @@ to say house-left:
 	else:
 		say "still hear [if sco-loner-louse is false]a person[else]an animal[end if] whine, still trying to make themselves out to be tougher than they mean to be. You're halfway there"
 
+check going outside in honer house:
+	say "Honer House shuts behind you. Strick Street is lit a bit better now. There's something blocking the way east, though: a bait base plate place. It looks scary and magical. Perhaps you'll find a way to get by it.";
+	move plate place to strick street;
+
 book Rank Ring
 
 Rank Ring is north of Strick Street. "It's too misty any way but back south.". eyevalue of rank ring is 55.
@@ -419,6 +423,10 @@ check taking:
 
 check dropping:
 	say "You never need to [b]DROP[r] anything explicitly in [this-game]." instead;
+
+chapter irregular verbs
+
+check talktoing: say "Talktoing is not implemented for the EctoComp release." instead;
 
 volume endgame
 
