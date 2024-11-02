@@ -241,15 +241,26 @@ to say house-left:
 	else:
 		say "still hear [if sco-loner-louse is false]a person[else]an animal[end if] whine, still trying to make themselves out to be tougher than they mean to be. You're halfway there"
 
-check going outside in honer house:
+check going outside in honer house when house-crit-score is 2:
+	if sco-donor-douse is false, max-down;
 	say "Honer House shuts behind you. Strick Street is lit a bit better now. There's something blocking the way east, though: a bait base plate place. It looks scary and magical. Perhaps you'll find a way to get by it.";
 	move plate place to strick street;
+
+after printing the locale description when player is in honer house and house-crit-score is 2 and sco-donor-douse is false:
+	say "Oh gosh. You'd like to beg for candy here. It's part of you getting your bearings, right? (Of course, you may just want to move on. It's okay either way.)"';
+	continue the action;
 
 book Rank Ring
 
 Rank Ring is north of Strick Street. "It's too misty any way but back south.". eyevalue of rank ring is 55.
 
 guess-table of rank ring is the table of rank ring guesses.
+
+check going south in Rank Ring when sco-thank-thing is true and sco-sank-sing is false: max-down;
+
+after printing the locale description for Rank Ring when sco-thank-thing is true and sco-sank-sing is false:
+	say "You sense the thing, though you can't see it, could use a pep talk appropriate to this place. It doesn't have to be profound. But it's also not critical.";
+	continue the action;
 
 chapter jewel
 
@@ -265,6 +276,11 @@ guess-table of hun home is the table of hun home guesses.
 
 check going east in Hun Home when player has book:
 	if sco-done-dome is true and sco-run-roam is false, say "[The book] seems to pull you back. Isn't it much cheerier here than outside?" instead;
+	if sco-run-roam is true and sco-a-gnome is false, max-down;
+
+after printing the locale description for Hun Home when sco-run-roam is true and sco-a-gnome is false:
+	say "You sense you could, if you wanted, leave a caretaker for this place.";
+	continue the action;
 
 chapter fun foam
 
@@ -284,8 +300,15 @@ TreeTrolled is south of Strick Street. printed name of TreeTrolled is "Tree, Tro
 
 guess-table of TreeTrolled is table of treetrolled guesses.
 
-after printing the locale description when player is in tree trolled and sco-be-bold is false:
+after printing the locale description when player is in treetrolled and sco-be-bold is false:
 	say "Ugh. You're just scared. Tough to pep yourself up.";
+	continue the action;
+
+check going north in TreeTrolled when sco-see-sold is true:
+	if sco-wee-wold is false, max-down;
+
+after printing the locale description when player is in treetrolled and sco-see-sold is true and sco-wee-wold is false:
+	say "The tree, trolled, still looks a little sad. Perhaps it has something to tell you of far-away exotic places, whether or not you or they have ever been there. But it knows you may be too busy, what with that new key it gave you.";
 	continue the action;
 
 chapter tree trolled

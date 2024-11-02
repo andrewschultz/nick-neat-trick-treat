@@ -26,7 +26,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pick"	"pete"	--	--	false	true	true	false	sick seat	vc-pick-pete rule	vr-pick-pete rule	--	"You can [b]PICK PETE[r] as a companion [once-now of vc-pick-pete rule] you've finished dinner."
 "treat"	"tree"	--	--	false	true	true	false	sick seat	vc-treat-tree rule	vr-treat-tree rule	--	--
 "donor"	"douse"	--	--	false	true	false	false	honer house	vc-donor-douse rule	vr-donor-douse rule	--	--
-"loner"	"louse"	--	--	false	true	true	false	honer house	vc-loner-louse rule	vr-loner-louse rule	--	--
+"loner"	"louse"	"loaner"	--	false	true	true	false	honer house	vc-loner-louse rule	vr-loner-louse rule	--	--
 "moaner"	"mouse"	--	--	false	true	true	false	honer house	vc-moaner-mouse rule	vr-moaner-mouse rule	--	--
 "get"	"ghoul"	--	--	false	true	true	false	strick street	vc-get-ghoul rule	vr-get-ghoul rule	--	"You can [b]GET GHOUL[r] [once-now of vc-get-ghoul rule] you have what you need for a ritual and are in the right place."
 "shove"	"shook"	--	--	false	true	true	false	strick street	vc-shove-shook rule	vr-shove-shook rule	--	"You can [b]SHOVE SHOOK[r] [once-now of vc-shove-shook rule] you have what you need for a ritual and are in the right place."
@@ -230,7 +230,10 @@ a goodrhyme rule (this is the vc-thank-thing rule):
 this is the vr-thank-thing rule:
 	now sco-thank-thing is true;
 	say "A weird wraith sighs. You feel like you have earned the jewel, and you take it without any incident.";
-	if sco-sank-sing is true, say "[line break]It also appreciates your 'Sank? Sing!' advice.";
+	if sco-sank-sing is true:
+		say "[line break]It also appreciates your 'Sank? Sing!' advice from earlier.";
+	else:
+		say "[line break]The weird wraith still looks a bit sad, though. Perhaps positive advice, however trivial and generic, would be nice, if you can think of it. But you DO have a quest to get on with.";
 	now player has jewel;
 
 a goodrhyme rule (this is the vc-sank-sing rule):
@@ -315,8 +318,10 @@ a goodrhyme rule (this is the vc-run-roam rule):
 this is the vr-run-roam rule:
 	now sco-run-roam is true;
 	say "You exhort yourself to get going, and not just get going, but to see new places. And yes, the hun home does feel a bit fake. You notice a few things off about it, and you feel okay exiting now.";
-
-chapter hun home scoring
+	if sco-a-gnome is false:
+		say "[line break]And yet ... and yet ... you could call in someone appropriate to keep watch over the more comfy home you created.";
+	else:
+		say "[line break]The (a) gnome you called earlier will keep the Hun Home in its much nicer state from here on out.";
 
 a goodrhyme rule (this is the vc-a-gnome rule):
 	if player is not in hun home, unavailable;
@@ -385,7 +390,9 @@ a goodrhyme rule (this is the vc-see-sold rule):
 
 this is the vr-see-sold rule:
 	now sco-see-sold is true;
-	say "The tree is impressed by your confidence. It swaps: the key, cold, for the me-mold. Perhaps you have a future career as an artist! Or just a side hustle.[paragraph break]But they key quickly warms up when you grab it! ";
+	say "The tree is impressed by your confidence. It swaps: the key, cold, for the me-mold. Perhaps you have a future career as an artist! Or just a side hustle.[paragraph break]But the key quickly warms up when you grab it! And my, what an odd shape it is, too. Whirled, curled. A whirled (whee) curled key!";
+	if sco-wee-wold is false:
+		say "[line break]There doesn't seem to be anything else to say. Though the tree does seem to want to chat. Perhaps about distant lands. But where? It's still feeling trolled, so it won't want to start the conversation.";
 	now player has whirled key;
 	declue-rm trolled tree;
 
