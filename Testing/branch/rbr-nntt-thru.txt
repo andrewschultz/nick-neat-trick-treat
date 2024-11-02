@@ -14,7 +14,8 @@ file=reg-nntt-thru-reject.txt,rej,walkthrough with all rejections and THINK
 file=reg-nntt-thru-alt-verbs.txt,alt,walkthrough with altverb tests
 file=reg-nntt-thru-mistakes.txt,mis,walkthrough testing all mistakes
 file=reg-nntt-thru-homonyms.txt,hom,walkthrough testing homonyms
-file=reg-nntt-thru-verbs.txt,ver,walkthrough testing special verbs
+file=reg-nntt-thru-goto.txt,gt/goto,walkthrough testing going to or from
+file=reg-nntt-thru-verbs.txt,ver/verbs,walkthrough testing special verbs
 file=reg-nntt-thru-hints.txt,hin/hint/hints,walkthrough testing HINTS basic
 
 ##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
@@ -61,8 +62,41 @@ file=reg-nntt-thru-hints.txt,hin/hint/hints,walkthrough testing HINTS basic
 
 >z
 
+@verbs
+>guide gong
+Since Nick Neat-Trick-Treat doesn't have a complex map, I've disabled GUIDE GONG.
+\\
+>stride strong
+Since Nick Neat-Trick-Treat doesn't have a complex map, I've disabled STRIDE STRONG.
+\\
+>pride prong
+Since Nick Neat-Trick-Treat doesn't have a complex map, I've disabled PRIDE PRONG.
+\\
+>xyzzy
+A voice booms "Magic? My, tragic try!"
+\\
+>about
+Nick Neat-Trick-Treat was written for EctoComp 2024. It is entry 9 in my Prime Pro-Rhyme Row series and likely the last. The others are Very Vile Fairy File, Quite Queer Night Near, Low-Key Learny Jokey Journey, Civil Seeming Drivel Dreaming, There Those Dare Doze, Bright Brave Knight Knave, Taller Tech Mauler Mech and Beef Beans Grief Greens.
+You may have guessed by the use of proper names in puzzles that the concept is reaching its end. But I hadn't done a classic trick-or-treating game, so here it is.
+There will be a post-comp version.
+\\
+>credits
+Thanks to all administrators past and present of EctoComp: Ruber Eaglenest, Duncan Bowsman, JJ Guest and others I've forgotten.
+Thanks to Wade Clarke for testing without being given a lot of time. I owe him one for this.
+Thanks to Olaf Nowacki for finding a bug quickly during the comp itself.
+
+@gt
+#testcase-goto-table-of-noways-sick-seat
+>w
+You'll get to move once you've eaten your vegetables.
+
 >ick eat
 by one point
+
+@gt
+#+testcase-goto-table-of-noways-sick-seat
+>w
+You'll get to move once you choose the friend who'll most help with adventure.
 
 >pick pete
 by one point
@@ -73,10 +107,27 @@ by one point
 @all
 `Strick Street
 
+@gt
+>gt seat
+Since no mutually available rooms are more than two away from each other, the map for Nick Neat-Trick-Treat is small enough. So GT / GO TO is, unlike in other Prime Pro-Rhyme Row games, disabled.
+\\
+#testcase-goto-table-of-noways-strick-street
+>w
+You can go inside, but not west.
+\\
+#testcase-goto-table-of-noways-strick-street
+>e
+You can go inside, but not east.
+
 >in
 
 @all
 `Honer House
+
+@gt
+#testcase-goto-table-of-noways-honer-house
+>w
+The secrets in this house are verbal, not physical. You can only go back out.
 
 >loner louse
 by one point
@@ -93,10 +144,23 @@ by one point
 @all
 `Strick Street
 
+@gt
+#+testcase-goto-table-of-noways-strick-street
+>u
+You can go in the planar directions, but not up.
+\\
+>in
+You built up enough confidence in Honer House.
+
 >n
 
 @all
 `Rank Ring
+
+@gt
+#testcase-goto-table-of-noways-rank-ring
+>w
+It's even ranker any direction but back south.
 
 >plank pling
 by one point
@@ -117,6 +181,11 @@ by one point
 
 @all
 `Tree, Trolled
+
+@gt
+#testcase-goto-table-of-noways-treetrolled
+>w
+Any direction but back north could get you very, very lost in a very, very dangerous forest.
 
 >be bold
 by one point
@@ -140,6 +209,11 @@ by one point
 
 @all
 `Hun Home
+
+@gt
+#testcase-goto-table-of-noways-hun-home
+>w
+There are no secret passages in this home. You can only go back east.
 
 >fun foam
 by one point
@@ -175,6 +249,11 @@ by one point
 @all
 `And Eee-ing
 
+@gt
+#testcase-goto-table-of-noways-eee-ing
+>w
+You'd get lost here. Best stay by Randy Ring-Candy-King.
+
 >dandy ding
 by one point
 
@@ -183,6 +262,11 @@ by one point
 
 @all
 `Leaky Ley
+
+@gt
+#testcase-goto-table-of-noways-leaky-ley
+>w
+You can't run from this conflict.
 
 @alt
 ##balance undos
@@ -267,8 +351,18 @@ by one point
 >fair fine
 by one point
 
+@gt
+#testcase-goto-table-of-noways-lair-line
+>w
+There's no compass direction out. You need to find someone who can make a portal out.
+
 >green grid
 by one point
+
+@gt
+#+testcase-goto-table-of-noways-lair-line
+>w
+There's no compass direction out. The green grid will lead you out, but why not celebrate your adventure first?
 
 >dare dine
 by one point
