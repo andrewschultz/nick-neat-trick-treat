@@ -451,6 +451,7 @@ this is the vr-andy-ng rule:
 	wfak;
 	say "Perhaps the shared experience of the final fight will help. Between you and Pete and your classmates and Randy.";
 	now classmate-chosen is classmate-asked;
+	now nowhere is mapped north of Leaky Ley;
 	move player to Leaky Ley;
 
 chapter leaky ley scoring
@@ -620,8 +621,8 @@ volume misc tables
 
 table of noways
 noway-rm	noway-txt
-Sick Seat	"You'll get to move once [if sco-ick-eat is false]you've eaten your vegetables[else]you choose the friend who'll most help with adventure[end if]."
-Strick Street	"You can go [if house-crit-score is 2]in the planar directions[else]inside[end if], but not [noun]."
+Sick Seat	"You don't want to go wandering through your house on Halloween when you should be going OUT! Besides, you need to [if sco-ick-eat is false]eat your vegetables[else]choose the friend who'll most help with adventure[end if] first."
+Strick Street	"[if house-crit-score < 2]Everywhere but [b]IN[r] to the Honer House is really too scary[else]Now you've got your bearings in Honer House, you see passages in the planar direction, but not [noun]."
 HonerHouse	"The secrets in this house are verbal, not physical. You can only go back out."
 Rank Ring	"It's even ranker any direction but back south."
 TreeTrolled	"Any direction but back north could get you very, very lost in a very, very dangerous forest."

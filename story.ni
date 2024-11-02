@@ -140,16 +140,20 @@ book sick seat
 Sick Seat is a room. printed name is "At dinner, on your sick seat". "[if sco-ick-eat is false]You're on your sick seat, sick in a positive way, though right now you are sort of sick of the vegetables you have to eat before trick-or-treating. You usually don't mind them, but today they're tough to shovel down. Some quick self-talk to pep yourself up should do the trick.[paragraph break]If it weren't Halloween, you'd find yourself daydreaming of tater tots later (lots,) but chocolate and such is even better.[else if sco-treat-tree is false]You're still on your seat here, trying to figure which friend to choose for adventure.[else]You're on your seat here, thinking of where Pete P wants you to 'meet me.'[end if]". eyevalue of sick seat is 33.
 
 every turn when sco-ick-eat is false:
-	if a random chance of 1 in 3 succeeds, say "You look at the vegetables and think [one of]'Bad bid, Dad did.'[or]'Bomb, bore, Mom. More?!'[in random order]But of course saying that would get you grounded."
+	if a random chance of 1 in 3 succeeds, say "You look at the vegetables and think [one of]'Bad bid, Dad did.' [or]'Bomb, bore, Mom. More?!' [in random order] But of course saying that would get you grounded."
 
  [bad bid, dad did]
  [mom, more? Bomb, bore!]
 
-check going in Sick Seat:
+check going outside in Sick Seat:
 	if sco-ick-eat is false, say "Need to finish those vegetables first. Force yourself, with a pep talk." instead;
-	if sco-pick-pete is false, say "Need to decide who to go with." instead;
-	if noun is not outside, say "You don't want to go wandering through your house. It's Halloween. You want to go out!" instead;
+	if sco-pick-pete is false, say "Need to decide who to go with first." instead;
 	say "You will automatically go outside once you're prepared." instead;
+
+the convert exit into go out rule is not listed in any rulebook.
+the can't exit when not inside anything rule is not listed in any rulebook.
+
+check exiting: try going outside instead;
 
 chapter Nick
 
@@ -187,19 +191,31 @@ to say strick-details:
 after printing the locale description for Strick Street when number of carried plateitems is 3 and plate place is not moot:
 	say "You place all three items in [the plate]. It vibrates, but nothing else happens, yet. Perhaps you need some incantations as you put them in.";
 
+chapter honer house (scenery)
+
+the honer house is scenery in strick street. "[if house-crit-score >= 2]It was nice in there, but you have bigger things to do[else]It looks quite welcoming. You [house-enter][end if]."
+
+to say house-enter:
+	if HonerHouse is unvisited:
+		say "should [b]ENTER[r] it or go [b]IN[r]";
+	else:
+		say "can probably go back in and unlock its mysteries and get started on the real adventure"
+
+check entering honer house: try going inside instead.
+
 chapter check going rules
 
 the honer house first rule is listed first in the check going rulebook.
 the push player east rule is listed after the honer house first rule in the check going rulebook.
 
 check going in Strick Street when HonerHouse is unvisited (this is the honer house first rule):
-	if noun is not inside, say "The honer house looks like it could help you before you really get started." instead;
+	if noun is not inside, say "Every way except [b]IN[r] seems too dark, but the honer house looks like a place to gain your bearings." instead;
 
 check going in strick street when plate place is moot (this is the push player east rule):
 	if noun is not east, say "Now the way east is opened, that's where you should go." instead;
 
 check going inside in Strick Street:
-	if house-crit-score is 2, say "You built up enough confidence in Honer House." instead;
+	if house-crit-score is 2, say "You built up enough confidence in Honer House. No need to go back." instead;
 
 check going north in Strick Street:
 	if player has jewel, say "You got the jewel. That's enough." instead;
@@ -323,7 +339,13 @@ guess-table of curled key is the table of curled key guesses.
 
 book and eee ing
 
-There is a room called and eee ing. It is east of Strick Street. printed name is "And Eee-ing". "You hear lots of noises here, of arguments and encouragement and such. Sadly, there is despair, too. A lot of eee-ing.". eyevalue of eee ing is 54.
+There is a room called and eee ing. It is east of Strick Street. west of eee ing is nowhere. printed name is "And Eee-ing". "You hear lots of noises here, of arguments and encouragement and such. Sadly, there is despair, too. A lot of eee-ing.". eyevalue of eee ing is 54.
+
+after printing the locale description for eee ing:
+	now nowhere is mapped north of Eee ing;
+	continue the action;
+
+check going west in eee ing: say "No way back." instead;
 
 guess-table of eee ing is the table of eee ing guesses.
 
@@ -331,7 +353,7 @@ Randy Ring Candy King is a person in eee ing. printed name is "Randy Ring-Candy-
 
 book Leaky Ley
 
-Leaky Ley is east of eee ing. "You sense a disruption of parallel universes here.". eyevalue of leaky ley is 163.
+Leaky Ley is north of eee ing. "You sense a disruption of parallel universes here.". south of Leaky Ley is nowhere. eyevalue of leaky ley is 163. [north is arbitrary, but it fits in the internal 3x3 map this way]
 
 guess-table of leaky ley is the table of leaky ley guesses.
 
@@ -365,8 +387,6 @@ Reeky Ray is a person. "Not only named Ray, Reeky Ray has a ray that shoots and 
 chapter Freaky Fray
 
 Freaky Fray is a thing. "The freaky fray rages about you.". description is "You aren't strong enough to fight, but maybe the right words are more powerful than you think.". eyevalue of Freaky Fray is 75.
-
-check going in Leaky Ley: say "You can't flee. You need to win!" instead;
 
 [streaky stray / creaky cray / weakie way ] [geeky gay / meeky may / peaky pay / kiki k / seek eee say / eeky eh / beaky bay ]
 

@@ -118,7 +118,7 @@ definition: a direction (called di) is strickunseen:
 
 after printing the name of a direction (called di) when print-room-to is true:
 	let rm be room di of location of player;
-	say "[if rm is visited]to [rm][else]somewhere new[end if]";
+	say " [if rm is visited]to [rm][else]somewhere new[end if]";
 	continue the action;
 
 book definitions of point sums
