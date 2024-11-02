@@ -44,7 +44,7 @@ include Nick Neat Trick Treat Definitions by Andrew Schultz.
 
 include Nick Neat Trick Treat Tables by Andrew Schultz.
 
-section testing
+section testing - not for release
 
 include Nick Neat Trick Treat Tests by Andrew Schultz.
 

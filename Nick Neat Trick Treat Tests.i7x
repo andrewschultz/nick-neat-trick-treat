@@ -61,7 +61,6 @@ volume eye test
 when play begins:
 	moot leet learner;
 	moot naff button;
-	moot lurking lump;
 
 to et-it (ts - a truth state):
 	say "ROOMS.";
@@ -72,6 +71,7 @@ to et-it (ts - a truth state):
 	say "THINGS.";
 	repeat with TH running through things:
 		if th is moot, next;
+		if th is lurking lump, next;
 		if ts is false and eyevalue of TH is not 0, next;
 		say "[TH] [eyevalue of TH].";
 

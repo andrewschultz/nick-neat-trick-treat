@@ -4,7 +4,7 @@
 	<map>
 		<room id="1" name="Sick Seat" subtitle="" x="-224" y="-160" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" isStartRoom="yes" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
 		<room id="2" name="Strick Street" subtitle="" x="-64" y="-32" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
-		<line id="3" name="" description="" style="dashed" flow="oneWay">
+		<line id="3" name="" description="" style="dashed" flow="oneWay" midText="2 puzzles">
 			<dock index="0" id="1" port="se" />
 			<dock index="1" id="2" port="nw" />
 		</line>
@@ -39,7 +39,7 @@
 			<dock index="1" id="14" port="ne" />
 		</line>
 		<room id="16" name="Leaky Ley" subtitle="" x="96" y="-160" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
-		<line id="17" name="" description="" style="dashed" flow="oneWay">
+		<line id="17" name="" description="" style="dashed" flow="oneWay" midText="Randy">
 			<dock index="0" id="10" port="n" />
 			<dock index="1" id="16" port="s" />
 		</line>
@@ -59,7 +59,7 @@
 			<endRoom>Red</endRoom>
 		</colors>
 		<regions>
-			<NoRegion Name="NoRegion" TextColor="Blue">White</NoRegion>
+			<NoRegion Name="NoRegion" TextColor="Black">White</NoRegion>
 		</regions>
 		<fonts>
 			<room size="13">Arial</room>
