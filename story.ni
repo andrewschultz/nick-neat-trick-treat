@@ -167,7 +167,7 @@ guess-table of meet me is the table of meet me guesses.
 
 book Strick Street
 
-Strick Street is inside of Sick Seat. "[one of]Hmm. You're not sure if strick is a word, but you figure if you badgered any of the denizens about it, they'd be ... upset. So, maybe it's short for stricken? [or][stopping][if honer house is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now[strick-details][end if]." .eyevalue of strick street is -1.
+Strick Street is inside of Sick Seat. "[one of]Hmm. You're not sure if strick is a word, but you figure if you badgered any of the denizens about it, they'd be ... upset. So, maybe it's short for stricken? [or][stopping][if HonerHouse is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now[strick-details][end if]." .eyevalue of strick street is -1.
 
 to say strick-details:
 	if number of stricksolved directions is 3:
@@ -192,7 +192,7 @@ chapter check going rules
 the honer house first rule is listed first in the check going rulebook.
 the push player east rule is listed after the honer house first rule in the check going rulebook.
 
-check going in Strick Street when honer house is unvisited (this is the honer house first rule):
+check going in Strick Street when HonerHouse is unvisited (this is the honer house first rule):
 	if noun is not inside, say "The honer house looks like it could help you before you really get started." instead;
 
 check going in strick street when plate place is moot (this is the push player east rule):
@@ -225,11 +225,11 @@ understand "indentations" as plate place.
 
 the great grace fate face is a thing. "The Great Grace Fate Face affords passage east. It might be scary to walk into it, but it'd be scarier to stay here too long.". eyevalue of face is -1.
 
-book Honer House
+book HonerHouse
 
-Honer House is inside of Strick Street. "Here in the honer house you [house-left]. You can go back out [if house-crit-score is 2]once[else]now[end if] you've gotten your bearings[if sco-donor-douse is false], though you may be able to do some sneaky trick-or-treating before[end if].". eyevalue of honer house is 1055.
+HonerHouse is inside of Strick Street. HonerHouse is privately-named. printed name of HonerHouse is "Honer House". "Here in the honer house you [house-left]. You can go back out [if house-crit-score is 2]once[else]now[end if] you've gotten your bearings[if sco-donor-douse is false], though you may be able to do some sneaky trick-or-treating before[end if].". eyevalue of honer house is 1055.
 
-guess-table of honer house is the table of honer house guesses.
+guess-table of HonerHouse is the table of honer house guesses.
 
 to say house-left:
 	if house-score is 3:
@@ -241,13 +241,13 @@ to say house-left:
 	else:
 		say "still hear [if sco-loner-louse is false]a person[else]an animal[end if] whine, still trying to make themselves out to be tougher than they mean to be. You're halfway there"
 
-check going outside in honer house when house-crit-score is 2:
+check going outside in HonerHouse when house-crit-score is 2:
 	if sco-donor-douse is false, max-down;
 	say "Honer House shuts behind you. Strick Street is lit a bit better now. There's something blocking the way east, though: a bait base plate place. It looks scary and magical. Perhaps you'll find a way to get by it.";
 	move plate place to strick street;
 
 after printing the locale description when player is in honer house and house-crit-score is 2 and sco-donor-douse is false:
-	say "Oh gosh. You'd like to beg for candy here. It's part of you getting your bearings, right? (Of course, you may just want to move on. It's okay either way.)"';
+	say "Oh gosh. You'd like to beg for candy here. It's part of you getting your bearings, right? (Of course, you may just want to move on. It's okay either way.)";
 	continue the action;
 
 book Rank Ring
@@ -483,5 +483,5 @@ this is the show-misses rule:
 
 volume map index
 
-index map with Honer House mapped west of TreeTrolled.
+index map with HonerHouse mapped west of TreeTrolled.
 index map with Lair Line mapped south of eee ing.

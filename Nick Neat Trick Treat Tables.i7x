@@ -25,9 +25,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "ick"	"eat"	--	--	false	true	true	false	sick seat	vc-ick-eat rule	vr-ick-eat rule	--	--
 "pick"	"pete"	--	--	false	true	true	false	sick seat	vc-pick-pete rule	vr-pick-pete rule	--	"You can [b]PICK PETE[r] as a companion [once-now of vc-pick-pete rule] you've finished dinner."
 "treat"	"tree"	--	--	false	true	true	false	sick seat	vc-treat-tree rule	vr-treat-tree rule	--	--
-"donor"	"douse"	--	--	false	true	false	false	honer house	vc-donor-douse rule	vr-donor-douse rule	--	--
-"loner"	"louse"	"loaner"	--	false	true	true	false	honer house	vc-loner-louse rule	vr-loner-louse rule	--	--
-"moaner"	"mouse"	--	--	false	true	true	false	honer house	vc-moaner-mouse rule	vr-moaner-mouse rule	--	--
+"donor"	"douse"	--	--	false	true	false	false	HonerHouse	vc-donor-douse rule	vr-donor-douse rule	--	--
+"loner"	"louse"	"loaner"	--	false	true	true	false	HonerHouse	vc-loner-louse rule	vr-loner-louse rule	--	--
+"moaner"	"mouse"	--	--	false	true	true	false	HonerHouse	vc-moaner-mouse rule	vr-moaner-mouse rule	--	--
 "get"	"ghoul"	--	--	false	true	true	false	strick street	vc-get-ghoul rule	vr-get-ghoul rule	--	"You can [b]GET GHOUL[r] [once-now of vc-get-ghoul rule] you have what you need for a ritual and are in the right place."
 "shove"	"shook"	--	--	false	true	true	false	strick street	vc-shove-shook rule	vr-shove-shook rule	--	"You can [b]SHOVE SHOOK[r] [once-now of vc-shove-shook rule] you have what you need for a ritual and are in the right place."
 "pluralled|pluraled"	"plea"	--	--	false	true	true	false	strick street	vc-pluraled-plea rule	vr-pluraled-plea rule	--	"You can make a [b]PLURALED PLEA[r] [once-now of vc-pluraled-plea rule] you have what you need for a ritual and are in the right place."
@@ -155,10 +155,10 @@ to ritual-item (th - a thing):
 	else:
 		say "[The plate] shakes a bit. You think you see a crack in it.";
 
-chapter honer house scoring
+chapter Honer House scoring
 
 a goodrhyme rule (this is the vc-donor-douse rule):
-	if player is not in honer house, unavailable;
+	if player is not in HonerHouse, unavailable;
 	if sco-donor-douse is true:
 		vcal "Don't get greedy!";
 		already-done;
@@ -169,7 +169,7 @@ this is the vr-donor-douse rule:
 	say "You cheekily ask for more candy, even though there doesn't appear to be anyone here. A voice promises you it will be waiting at game's end.";
 
 a goodrhyme rule (this is the vc-loner-louse rule):
-	if player is not in honer house, unavailable;
+	if player is not in HonerHouse, unavailable;
 	if sco-loner-louse is true:
 		vcal "Don't rub it in. Move on!";
 		already-done;
@@ -178,9 +178,10 @@ a goodrhyme rule (this is the vc-loner-louse rule):
 this is the vr-loner-louse rule:
 	now sco-loner-louse is true;
 	say "You fight back at any imaginary undead who, okay, they are lonely, and maybe they died gruesomely, but that doesn't excuse them being mean and scaring people.";
+	check-house-progress;
 
 a goodrhyme rule (this is the vc-moaner-mouse rule):
-	if player is not in honer house, unavailable;
+	if player is not in HonerHouse, unavailable;
 	if sco-moaner-mouse is true:
 		vcal "The mouse has been properly chastised.";
 		already-done;
@@ -189,6 +190,16 @@ a goodrhyme rule (this is the vc-moaner-mouse rule):
 this is the vr-moaner-mouse rule:
 	now sco-moaner-mouse is true;
 	say "You locate the source of scary moaning, which is not a very big mouth. The truth sets one free from fear!";
+	check-house-progress;
+
+to check-house-progress:
+	if house-crit-score is 1:
+		say "You sense there is one more thing you need to do here.";
+	else:
+		if house-score is 3:
+			say "Can't be more to do here. You even got some candy!";
+		else:
+			say "Perhaps you could do some trick-or-treating with an impromptu phrase. You want LOTS of candy, if you can. You've earned it! You passed this introductory bit!";
 
 chapter rank ring scoring
 
@@ -611,7 +622,7 @@ table of noways
 noway-rm	noway-txt
 Sick Seat	"You'll get to move once [if sco-ick-eat is false]you've eaten your vegetables[else]you choose the friend who'll most help with adventure[end if]."
 Strick Street	"You can go [if house-crit-score is 2]in the planar directions[else]inside[end if], but not [noun]."
-Honer House	"The secrets in this house are verbal, not physical. You can only go back out."
+HonerHouse	"The secrets in this house are verbal, not physical. You can only go back out."
 Rank Ring	"It's even ranker any direction but back south."
 TreeTrolled	"Any direction but back north could get you very, very lost in a very, very dangerous forest."
 Hun Home	"There are no secret passages in this home. You can only go back east."
