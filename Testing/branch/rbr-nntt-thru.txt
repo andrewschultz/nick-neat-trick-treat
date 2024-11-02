@@ -58,7 +58,7 @@ file=reg-nntt-thru-hints.txt,hin/hint/hints,walkthrough testing HINTS basic
 * main-thru
 
 @all
-`Sick Seat
+`At dinner, on your sick seat
 
 >z
 
@@ -88,7 +88,10 @@ Thanks to Olaf Nowacki for finding a bug quickly during the comp itself.
 @gt
 #testcase-goto-table-of-noways-sick-seat
 >w
-You'll get to move once you've eaten your vegetables.
+You don't want to go wandering through your house on Halloween when you should be going OUT! Besides, you need to eat your vegetables first.
+\\
+>out
+Need to finish those vegetables first. Force yourself, with a pep talk.
 
 >ick eat
 by one point
@@ -96,7 +99,10 @@ by one point
 @gt
 #+testcase-goto-table-of-noways-sick-seat
 >w
-You'll get to move once you choose the friend who'll most help with adventure.
+You don't want to go wandering through your house on Halloween when you should be going OUT! Besides, you need to choose the friend who'll most help with adventure first.
+\\
+>out
+Need to decide who to go with first.
 
 >pick pete
 by one point
@@ -113,11 +119,11 @@ Since no mutually available rooms are more than two away from each other, the ma
 \\
 #testcase-goto-table-of-noways-strick-street
 >w
-You can go inside, but not west.
+Every way except IN seems too dark, but the honer house looks like a place to gain your bearings.
 \\
-#testcase-goto-table-of-noways-strick-street
+#+testcase-goto-table-of-noways-strick-street
 >e
-You can go inside, but not east.
+Every way except IN seems too dark, but the honer house looks like a place to gain your bearings.
 
 >in
 
@@ -147,10 +153,13 @@ by one point
 @gt
 #+testcase-goto-table-of-noways-strick-street
 >u
-You can go in the planar directions, but not up.
+Now you've got your bearings in Honer House, you see passages in the planar direction, but not up.
+\\
+>e
+You don't have what you need to get by the bait base plate place.
 \\
 >in
-You built up enough confidence in Honer House.
+You built up enough confidence in Honer House. No need to go back.
 
 >n
 
@@ -246,12 +255,16 @@ by one point
 by one point
 
 >e
+
 @all
 `And Eee-ing
 
 @gt
 #testcase-goto-table-of-noways-eee-ing
 >w
+No way back.
+\\
+>n
 You'd get lost here. Best stay by Randy Ring-Candy-King.
 
 >dandy ding
