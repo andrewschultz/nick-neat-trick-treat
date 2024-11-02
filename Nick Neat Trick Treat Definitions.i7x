@@ -83,6 +83,22 @@ this is the flag bad goto from rule:
 	if debug-state is true, say "FROM RULE CHECK: [location of player] ([mrlp]).";
 	do nothing;
 
+volume zap PPRR specific verbs unnecessary for NNTT
+
+check gotoing (this is the totally zap gotoing rule):
+	say "Since no mutually available rooms are more than two away from each other, the map for [this-game] is small enough. So [b]GT[r] / [b]GO TO[r] is, unlike in other [pprr] games, disabled." instead;
+
+the totally zap gotoing rule is listed first in the check gotoing rules.
+
+check guide-gonging (this is the disable guide gong options rule):
+	say "Since [this-game] doesn't have a complex map, I've disabled [b]GUIDE GONG[r]." instead;
+
+check pride-pronging (this is the disable pride prong options rule):
+	say "Since [this-game] doesn't have a complex map, I've disabled [b]PRIDE PRONG[r]." instead;
+
+check stride-stronging (this is the disable stride strong options rule):
+	say "Since [this-game] doesn't have a complex map, I've disabled [b]STRIDE STRONG[r]." instead;
+
 volume trivia
 
 book for directions in Strick Street
