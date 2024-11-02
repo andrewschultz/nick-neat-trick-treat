@@ -416,8 +416,13 @@ this is the vr-dandy-ding rule:
 a goodrhyme rule (this is the vc-andy-ng rule):
 	if player is not in eee ing, unavailable;
 	if sco-dandy-ding is false:
-		vcp "You remember a classmate you don't know very well. Maybe you should've gotten to know them better. Maybe you could, very shortly, with [randy] to introduce you.";
+		now classmate-asked is called;
+		vcp "You remember [classmate-asked], whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with [randy] to introduce you. You need [randy]'s trust, first, though.";
 		not-yet;
+	if sco-andy-ng is true: [this code is probably not reached since you are kicked to the next room right away]
+		now classmate-asked is called;
+		vcal "Yes, [classmate-asked] would work as well. But you only need one along.";
+		already-done;
 	ready;
 
 this is the vr-andy-ng rule:
@@ -427,6 +432,7 @@ this is the vr-andy-ng rule:
 	say "In fact on self-reflection you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.";
 	wfak;
 	say "Perhaps the shared experience of the final fight will help. Between you and Pete and your classmates and Randy.";
+	now classmate-chosen is classmate-asked;
 	move player to Leaky Ley;
 
 chapter leaky ley scoring

@@ -10,6 +10,22 @@ a thing has a number called eyevalue.
 
 a room has a number called eyevalue.
 
+a classmate is a kind of thing. a classmate can be called. a classmate is usually not called. a classmate has text called cmregex.
+
+classmate-chosen is a classmate that varies.
+
+BUG Unknown is a classmate. cmregex of Bug is "bug".
+Andy Ng is a classmate. cmregex of Andy is "andy".
+Landy Ling is a classmate. cmregex of Landy is "landy".
+Mandy Ming is a classmate. cmregex of Mandy is "mandy".
+Sandy Hsing is a classmate. cmregex of Sandy is "sandy".
+
+to decide which classmate is classmate-asked:
+	repeat with C running through classmates:
+		if the player's command matches the regular expression "\b[cmregex of c]\b":
+			decide on C;
+	decide on BUG Unknown;
+
 volume game specific
 
 to say adjtext of (ru - a rule): say "[ru]"
