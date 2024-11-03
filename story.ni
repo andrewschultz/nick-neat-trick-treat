@@ -76,12 +76,16 @@ to eye-blink (nm - a number):
 	let right-eye be false;
 	let cross-eyed be false;
 	let eye-roll be false;
+	let side-eye be false;
 	if nm > 10000:
 		now cross-eyed is true;
 		now nm is nm - 10000;
 	if nm > 5000:
 		now eye-roll is true;
 		now nm is nm - 5000;
+	if nm > 2000:
+		now side-eye is true;
+		now nm is nm - 2000;
 	if nm > 1000:
 		now left-eye is true;
 		now nm is nm - 1000;
@@ -89,13 +93,21 @@ to eye-blink (nm - a number):
 		now right-eye is true;
 		now nm is nm - 100;
 	let main be the remainder after dividing nm by 100;
-	let tens be the remainder after dividing nm by 10;
+	let tens be main / 10;
 	let ones be the remainder after dividing nm by 10;
-	say "The left eye blinks [tens in words] times, then the right eye, [ones in words].";
-	if cross-eyed is true, say "[line break]Odd ... the eyes seem to look at each other, almost being pulled into each other.";
-	if left-eye is true, say "[line break]Odd ... the left eye seemed to squint at the end. So that counts as half?";
-	if right-eye is true, say "[line break]Odd ... the right eye seemed to squint at the end. So that counts as half?";
-	if eye-roll is true, say "[line break]Odd ... the eyes each make an eyeroll, as if to say 'well, I guess that COULD be a word.'";
+	say "The left eye blinks [tens in words] time[if tens > 1]s[end if], then the right eye, [ones in words].";
+	if cross-eyed is true:
+		say "[line break]Odd ... the eyes seem to look at each other, almost being pulled into each other.";
+	else if side-eye is true:
+		say "[line break]Odd ... the eyes seem to glance at you side-eye, as if to say 'Do you REALLY need to do that?'";
+	else if left-eye is true:
+		say "[line break]Odd ... the left eye seemed to squint at the end. So that counts as half?";
+	else if right-eye is true:
+		say "[line break]Odd ... the right eye seemed to squint at the end. So that counts as half?";
+	else if eye-roll is true:
+		say "[line break]Odd ... the eyes each make an eyeroll, as if to say 'well, I guess that COULD be a word.'";
+	else if debug-state is true:
+		say "[line break]Debug note: normal eye-scan.";
 
 chapter eyerming
 
