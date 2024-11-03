@@ -71,8 +71,7 @@ a goodrhyme rule (this is the vc-ick-eat rule):
 this is the vr-ick-eat rule:
 	now sco-ick-eat is true;
 	say "You mouth the phrase to yourself. You think it. It wouldn't do to say it aloud. You worry you're getting a bit too old for either saying the phrase or disliking vegetables. But a part of you hopes you always hate certain vegetables. You have to stand for SOMETHING, after all.[paragraph break]But the vegetables aren't bad once you start in on them. They just don't compare to trick or treat candy.[paragraph break]You have a lot of friends to go out with. But who's the best fit for tonight? Well, you've sort of already chosen. Just got to remember whom to, uh, choose.";
-	declue-here;
-	now eyevalue of Nick is 55;
+	rm-and nick and 44;
 
 a goodrhyme rule (this is the vc-pick-pete rule):
 	if player is not in sick seat, unavailable;
@@ -90,7 +89,7 @@ this is the vr-pick-pete rule:
 	say "[line break]The message back: 'Meet me. -- Pete P.'";
 	say "[line break]But where?";
 	now player has meet me pete p;
-	declue-rm nick;
+	rm-and Nick and 55;
 
 a goodrhyme rule (this is the vc-treat-tree rule):
 	if player does not have meet me pete p, unavailable;
@@ -245,6 +244,7 @@ this is the vr-thank-thing rule:
 		say "[line break]It also appreciates your 'Sank? Sing!' advice from earlier.";
 	else:
 		say "[line break]The weird wraith still looks a bit sad, though. Perhaps positive advice, however trivial and generic, would be nice, if you can think of it. But you DO have a quest to get on with.";
+	now eyevalue of rank ring is 2044;
 	now player has jewel;
 
 a goodrhyme rule (this is the vc-sank-sing rule):
@@ -300,6 +300,8 @@ a goodrhyme rule (this is the vc-pun-poem rule):
 this is the vr-pun-poem rule:
 	now sco-pun-poem is true;
 	say "The ton tome glows a bit! It seems less awful now. In fact, some of the more evil pages crumble and blow away. The book's less heavy now.";
+	rm-and foam and 44;
+	now eyevalue of tome is 44;
 
 a goodrhyme rule (this is the vc-done-dome rule):
 	if player is not in hun home, unavailable;
@@ -315,6 +317,8 @@ this is the vr-done-dome rule:
 	now sco-done-dome is true;
 	say "Now that the place is cheered up, you feel obliged to stay here, forced to be happy. As if a voice says 'What more could you want?'[paragraph break]Many pages of the erstwhile Ton Tome blow away. What's left is a [book], which seems sappy. Still, you pick it up, and you feel frozen to the spot. It's perfect here, right? Why would you want to leave? Why not enjoy what you've created?";
 	now player has book;
+	rm-and foam and 34;
+	now eyevalue of tome is 34;
 
 a goodrhyme rule (this is the vc-run-roam rule):
 	if player is not in hun home, unavailable;
@@ -333,6 +337,12 @@ this is the vr-run-roam rule:
 		say "[line break]And yet ... and yet ... you could call in someone appropriate to keep watch over the more comfy home you created.";
 	else:
 		say "[line break]The (a) gnome you called earlier will keep the Hun Home in its much nicer state from here on out.";
+	if sco-a-gnome is true:
+		declue-rm fun foam;
+		declue ton tome;
+	else:
+		rm-and fun foam and 2015;
+		now eyevalue of ton tome is 2015;
 
 a goodrhyme rule (this is the vc-a-gnome rule):
 	if player is not in hun home, unavailable;
@@ -344,6 +354,9 @@ a goodrhyme rule (this is the vc-a-gnome rule):
 this is the vr-a-gnome rule:
 	now sco-a-gnome is true;
 	say "Yes, yes, that's a good idea, have a gnome for upkeep once everything's fixed here. But they shouldn't be here right now, you'd guess.";
+	if sco-run-roam is true:
+		declue-rm fun foam;
+		declue ton tome;
 
 chapter TreeTrolled scoring
 
@@ -406,6 +419,10 @@ this is the vr-see-sold rule:
 		say "[line break]There doesn't seem to be anything else to say. Though the tree does seem to want to chat. Perhaps about distant lands. But where? It's still feeling trolled, so it won't want to start the conversation.";
 	now player has whirled key;
 	declue-rm trolled tree;
+	if sco-wee-wold is true:
+		declue-rm tree;
+	else:
+		rm-and tree and 2024;
 
 a goodrhyme rule (this is the vc-wee-wold rule):
 	if player is not in TreeTrolled, unavailable;
@@ -417,6 +434,8 @@ a goodrhyme rule (this is the vc-wee-wold rule):
 this is the vr-wee-wold rule:
 	now sco-wee-wold is true;
 	say "You hear more people rustling around.";
+	if sco-see-sold is true:
+		declue-rm tree;
 
 chapter eee ing scoring
 
@@ -466,8 +485,8 @@ a goodrhyme rule (this is the vc-grit-grins rule):
 this is the vr-grit-grins rule:
 	now sco-grit-grins is true;
 	say "You grin, fiercely you hope, as if to say 'I've put up with worse.' And you have, but it's the eye contact and involuntary eye-roll that really gets them.";
-	moot twit twins;
-	check-final-boss;
+	declue twit twins;
+	check-final-boss 0;
 
 to optional-score (ru - a rule):
 	repeat through table of verb checks:
@@ -486,7 +505,7 @@ this is the vr-weakie-way rule:
 	now sco-weakie-way is true;
 	say "You worry slightly that putting the adjective second may deduct style points, but it turns out emphasizing it leaves them taken aback.";
 	optional-score vc-creaky-cray rule;
-	check-final-boss;
+	check-final-boss 64;
 
 a goodrhyme rule (this is the vc-creaky-cray rule):
 	if player is not in leaky ley, unavailable;
@@ -499,15 +518,20 @@ this is the vr-creaky-cray rule:
 	now sco-creaky-cray is true;
 	say "You totally justifiably DARVO them, even though you aren't aware of the acronym. You exaggerate how senseless it is to ruin younger kids['] halloween, and you wonder if their lives are so empty they'll be doing this every year.";
 	optional-score vc-weakie-way rule;
-	check-final-boss;
+	check-final-boss 63;
 
-to check-final-boss:
+to check-final-boss (eyenum - a number):
 	if twin-score is 2:
 		say "They run away, shaking their fingers at you. 'You'll be sorry! You made us get the big boss!'[paragraph break]And thus begins the final fight, a freaky fray. Reeky Ray, who holds a reeky ray that is very, very accurate. How to disrupt it, or him?";
+		moot twit twins;
 		moot cheeky che;
 		moot cliquey clay;
 		move reeky ray to leaky ley;
 		move freaky fray to leaky ley;
+		now eyevalue of leaky ley is 75;
+	else if eyenum is not 0:
+		rm-and cheeky che and eyenum;
+		now eyevalue of cliquey clay is eyenum;
 
 a goodrhyme rule (this is the vc-streaky-stray rule):
 	if player is not in leaky ley, unavailable;
@@ -559,6 +583,7 @@ a goodrhyme rule (this is the vc-green-grid rule):
 this is the vr-green-grid rule:
 	now sco-green-grid is true;
 	say "[The kid], awed with how you took down Reeky Ray, mutters there's no way they can do this. But you know there are some things some people are better suited for than others. You ask them to give it a try. A gren grid glows--and beneath it you see your neighborhood![paragraph break]But you don't want to jump through right away. You could stay out a bit too late, talking with friends. And what goes well with conversation?";
+	declue kid;
 
 a goodrhyme rule (this is the vc-fair-fine rule):
 	if player is not in Lair Line, unavailable;

@@ -390,7 +390,7 @@ after examining a twit:
 
 chapter Twit Twins
 
-the twit twins are scenery in Leaky Ley. "You stare between the twit twins. It's hard to tell them apart. You hope not to have to."
+the twit twins are scenery in Leaky Ley. "You stare between the twit twins. It's hard to tell them apart. You hope not to have to.". eyevalue of twins is 45.
 
 chapter Streaky Stray
 
