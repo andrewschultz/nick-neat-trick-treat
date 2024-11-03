@@ -4,6 +4,13 @@ A log of fixes for live competitions and also post-comp releases.
 
 The specific commits are at https://github.com/andrewschultz/nick-neat-trick-treat
 
+2044/11/3: version 1.20, bugfixes, in-comp
+* fixed general hinting bug (inaccurate values)
+* fixed specific item hinting bugs (inaccurate values)
+* honer house is now scenery in Strick Street
+* Seat is now scenery in starting room
+* fixed kid and book printed names
+
 2024/11/2: version 1.10, bugfixes, in-comp
 * fixed blank VERBS (full info) and TALK (note slated for post-release) commands
 * fixed bug in henchmen fight before final boss
