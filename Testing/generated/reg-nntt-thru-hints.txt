@@ -28,7 +28,8 @@ The left eye blinks three times, then the right eye, three.
 
 #testcase-values-eyevalue-of-sick-seat-is-33
 >eye seat
-BLATHER
+The left eye blinks three times, then the right eye, three.
+Debug note: normal eye-scan.
 
 >ick eat
 by one point

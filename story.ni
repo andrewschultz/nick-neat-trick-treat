@@ -155,7 +155,7 @@ volume rooms
 
 book sick seat
 
-Sick Seat is a room. printed name is "At dinner, on your sick seat". "[if sco-ick-eat is false]You're on your sick seat, sick in a positive way, though right now you are sort of sick of the vegetables you have to eat before trick-or-treating. You usually don't mind them, but today they're tough to shovel down. Some quick self-talk to pep yourself up should do the trick.[paragraph break]If it weren't Halloween, you'd find yourself daydreaming of tater tots later (lots,) but chocolate and such is even better.[else if sco-treat-tree is false]You're still on your seat here, trying to figure which friend to choose for adventure.[else]You're on your seat here, thinking of where Pete P wants you to 'meet me.'[end if]". eyevalue of sick seat is 33.
+SickSeat is a room. printed name is "At dinner, on your sick seat". "[if sco-ick-eat is false]You're on your sick seat, sick in a positive way, though right now you are sort of sick of the vegetables you have to eat before trick-or-treating. You usually don't mind them, but today they're tough to shovel down. Some quick self-talk to pep yourself up should do the trick.[paragraph break]If it weren't Halloween, you'd find yourself daydreaming of tater tots later (lots,) but chocolate and such is even better.[else if sco-treat-tree is false]You're still on your seat here, trying to figure which friend to choose for adventure.[else]You're on your seat here, thinking of where Pete P wants you to 'meet me.'[end if]". eyevalue of sick seat is 33.
 
 every turn when sco-ick-eat is false:
 	if a random chance of 1 in 3 succeeds, say "You look at the vegetables and think [one of]'Bad bid, Dad did.' [or]'Bomb, bore, Mom. More?!' [in random order] But of course saying that would get you grounded."
@@ -163,7 +163,7 @@ every turn when sco-ick-eat is false:
  [bad bid, dad did]
  [mom, more? Bomb, bore!]
 
-check going outside in Sick Seat:
+check going outside in SickSeat:
 	if sco-ick-eat is false, say "Need to finish those vegetables first. Force yourself, with a pep talk." instead;
 	if sco-pick-pete is false, say "Need to decide who to go with first." instead;
 	say "You will automatically go outside once you're prepared." instead;
@@ -175,7 +175,11 @@ check exiting: try going outside instead;
 
 chapter Nick
 
-Nick Neat Trick Treat is a person in Sick Seat. the player is Nick Neat Trick Treat. printed name is "Nick Neat-Trick-Treat". eyevalue of nick is 33. description of nick is "You [if sco-pick-pete is false]will be[else]are[end if] dressed as your favorite character from the Blest Blue Zest Zoo, the Guest Goo. You can hardly wait for the add-on season: Nest (New). You have friends, of course, dressed as Pressed Prue and the Best Boo."
+Nick Neat Trick Treat is a person in SickSeat. the player is Nick Neat Trick Treat. printed name is "Nick Neat-Trick-Treat". eyevalue of nick is 33. description of nick is "You [if sco-pick-pete is false]will be[else]are[end if] dressed as your favorite character from the Blest Blue Zest Zoo, the Guest Goo. You can hardly wait for the add-on season: Nest (New). You have friends, of course, dressed as Pressed Prue and the Best Boo."
+
+chapter sick seat scenery
+
+the sick seat is scenery in SickSeat. "Ergonomic and designed with characters from your favorite TV shows and such.". eyevalue of sick seat is 33.
 
 chapter the phone
 
@@ -189,7 +193,7 @@ guess-table of meet me is the table of meet me guesses.
 
 book Strick Street
 
-Strick Street is inside of Sick Seat. "[one of]Hmm. You're not sure if strick is a word, but you figure if you badgered any of the denizens about it, they'd be ... upset. So, maybe it's short for stricken? [or][stopping][if HonerHouse is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now[strick-details][end if]." .eyevalue of strick street is -1.
+Strick Street is inside of SickSeat. "[one of]Hmm. You're not sure if strick is a word, but you figure if you badgered any of the denizens about it, they'd be ... upset. So, maybe it's short for stricken? [or][stopping][if HonerHouse is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now[strick-details][end if]." .eyevalue of strick street is -1.
 
 to say strick-details:
 	if number of stricksolved directions is 3:

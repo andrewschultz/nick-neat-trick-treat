@@ -22,9 +22,9 @@ volume main table
 
 table of verb checks [the order of things to solve is roughly alphabetical, so the lurking lump always gives you the best value, but this is subverted by if one rhyme pushes the game/story further than the others. So Leave Lo is first. Sassed can be anywhere for the bonus point, since the lump explicitly avoids bonus points.]
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
-"ick"	"eat"	--	--	false	true	true	false	sick seat	vc-ick-eat rule	vr-ick-eat rule	--	--
-"pick"	"pete"	--	--	false	true	true	false	sick seat	vc-pick-pete rule	vr-pick-pete rule	--	"You can [b]PICK PETE[r] as a companion [once-now of vc-pick-pete rule] you've finished dinner."
-"treat"	"tree"	--	--	false	true	true	false	sick seat	vc-treat-tree rule	vr-treat-tree rule	--	--
+"ick"	"eat"	--	--	false	true	true	false	SickSeat	vc-ick-eat rule	vr-ick-eat rule	--	--
+"pick"	"pete"	--	--	false	true	true	false	SickSeat	vc-pick-pete rule	vr-pick-pete rule	--	"You can [b]PICK PETE[r] as a companion [once-now of vc-pick-pete rule] you've finished dinner."
+"treat"	"tree"	--	--	false	true	true	false	SickSeat	vc-treat-tree rule	vr-treat-tree rule	--	--
 "donor"	"douse"	--	--	false	true	false	false	HonerHouse	vc-donor-douse rule	vr-donor-douse rule	--	--
 "loner"	"louse"	"loaner"	--	false	true	true	false	HonerHouse	vc-loner-louse rule	vr-loner-louse rule	--	--
 "moaner"	"mouse"	--	--	false	true	true	false	HonerHouse	vc-moaner-mouse rule	vr-moaner-mouse rule	--	--
@@ -62,7 +62,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 chapter sick seat scoring
 
 a goodrhyme rule (this is the vc-ick-eat rule):
-	if player is not in sick seat, unavailable;
+	if player is not in SickSeat, unavailable;
 	if sco-ick-eat is true:
 		vcal "You've earned enough brownie points. Time to prep to go look for candy.";
 		already-done;
@@ -72,9 +72,10 @@ this is the vr-ick-eat rule:
 	now sco-ick-eat is true;
 	say "You mouth the phrase to yourself. You think it. It wouldn't do to say it aloud. You worry you're getting a bit too old for either saying the phrase or disliking vegetables. But a part of you hopes you always hate certain vegetables. You have to stand for SOMETHING, after all.[paragraph break]But the vegetables aren't bad once you start in on them. They just don't compare to trick or treat candy.[paragraph break]You have a lot of friends to go out with. But who's the best fit for tonight? Well, you've sort of already chosen. Just got to remember whom to, uh, choose.";
 	rm-and nick and 44;
+	now eyevalue of sick seat is 44;
 
 a goodrhyme rule (this is the vc-pick-pete rule):
-	if player is not in sick seat, unavailable;
+	if player is not in SickSeat, unavailable;
 	if sco-ick-eat is false:
 		vcp "Pete will be fun to trick-or-treat with, but first, those vegetables. Your parents aren't wasting them.";
 		not-yet;
@@ -89,6 +90,7 @@ this is the vr-pick-pete rule:
 	say "[line break]The message back: 'Meet me. -- Pete P.'";
 	say "[line break]But where?";
 	now player has meet me pete p;
+	declue-rm sick seat;
 	rm-and Nick and 55;
 
 a goodrhyme rule (this is the vc-treat-tree rule):
@@ -645,7 +647,7 @@ volume misc tables
 
 table of noways
 noway-rm	noway-txt
-Sick Seat	"You don't want to go wandering through your house on Halloween when you should be going OUT! Besides, you need to [if sco-ick-eat is false]eat your vegetables[else]choose the friend who'll most help with adventure[end if] first."
+SickSeat	"You don't want to go wandering through your house on Halloween when you should be going OUT! Besides, you need to [if sco-ick-eat is false]eat your vegetables[else]choose the friend who'll most help with adventure[end if] first."
 Strick Street	"[if house-crit-score < 2]Everywhere but [b]IN[r] to the Honer House is really too scary[else]Now you've got your bearings in Honer House, you see passages in the planar direction, but not [noun]."
 HonerHouse	"The secrets in this house are verbal, not physical. You can only go back out."
 Rank Ring	"It's even ranker any direction but back south."
