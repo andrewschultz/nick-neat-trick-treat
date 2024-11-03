@@ -122,7 +122,7 @@ carry out eyerming:
 	eye-blink eyevalue of location of player;
 	the rule succeeds;
 
-does the player mean eyeing meet me: it is unlikely.
+does the player mean doing something with meet me: it is unlikely.
 
 check eyerming when player is in eee ing and sco-dandy-ding is true: say "The eyes are all over the places on this one. You may have several good options here. A few kids in your class might fit." instead;
 
@@ -216,6 +216,14 @@ after printing the locale description for Strick Street when number of carried p
 chapter helpful house (scenery)
 
 the helpful house is scenery in strick street. "[if house-crit-score >= 2]It was nice in Honer House, but you have bigger things to do[else][one of]It looks quite welcoming, even if 'helpful' seems tricky to rthyme. You should [b]ENTER[r] it or go [b]IN[r][or][stopping][end if]."
+
+check eyeing helpful house:
+	say "Nothing from the eyes.[paragraph break]";
+	if house-crit-score >= 2:
+		say "You did what you needed there.";
+	else:
+		say "Perhaps [if honerhouse is visited]back [end if]inside, the eyes might see more.";
+	 the rule fails;
 
 understand "honer/house" and "honer house" as helpful house when HonerHouse is visited.
 

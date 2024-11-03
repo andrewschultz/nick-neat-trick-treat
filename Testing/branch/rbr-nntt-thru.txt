@@ -175,7 +175,23 @@ Every way except IN seems too dark, but the honer house looks like a place to ga
 >e
 Every way except IN seems too dark, but the honer house looks like a place to gain your bearings.
 
+@hint
+>eye house
+Nothing from the eyes.
+Perhaps inside, the eyes might see more.
+
 >in
+
+@hint
+>out
+\\
+>eye house
+\\
+Nothing from the eyes.
+Perhaps back inside, the eyes might see more.
+\\
+>undo
+>undo
 
 @all
 `Honer House
@@ -215,6 +231,10 @@ You built up enough confidence in Honer House. No need to go back.
 #testcase-values-eyevalue-of-place-is--1
 >eye place
 Nothing from the eyes. You probably have to manipulate it with other objects you acquired.
+\\
+>eye house
+Nothing from the eyes.
+You did what you needed there.
 
 >n
 

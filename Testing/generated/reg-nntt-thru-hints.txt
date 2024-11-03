@@ -73,7 +73,21 @@ by one point
 >eye
 You don't need to do anything with the general location.
 
+>eye house
+Nothing from the eyes.
+Perhaps inside, the eyes might see more.
+
 >in
+
+>out
+
+>eye house
+
+Nothing from the eyes.
+Perhaps back inside, the eyes might see more.
+
+>undo
+>undo
 
 >loner louse
 by one point
@@ -89,6 +103,10 @@ by one point
 #testcase-values-eyevalue-of-place-is--1
 >eye place
 Nothing from the eyes. You probably have to manipulate it with other objects you acquired.
+
+>eye house
+Nothing from the eyes.
+You did what you needed there.
 
 >n
 
