@@ -1,0 +1,20 @@
+Fixes.txt
+
+A log of fixes for live competitions and also post-comp releases.
+
+The specific commits are at https://github.com/andrewschultz/nick-neat-trick-treat
+
+2024/11/2: version 1.10, bugfixes, in-comp
+* fixed blank VERBS (full info) and TALK (note slated for post-release) commands
+* fixed bug in henchmen fight before final boss
+* fixed description of main hub room (e.g. tell you what you solved or visited)
+* fixed tally of optional and core scores
+* clued player to if/when walking back to the hub meant they would miss a bonus point
+* rejected GT/GO TO and GUIDE GONG options (used in general series, not useful here in a smaller game)
+* added more specific observations to "can't go that way"
+* revealed missed points to player at end
+* noted TAKE and DROP are not used
+* removed test module from release version (player could've accidentally stumbled on diagnostics)
+* fixed Trizbort map, added it to big ZIP file
+
+2024/10/30-31: initial release
