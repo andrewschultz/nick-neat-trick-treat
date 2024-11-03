@@ -470,7 +470,6 @@ this is the vr-andy-ng rule:
 	wfak;
 	say "Perhaps the shared experience of the final fight will help. Between you and Pete and your classmates and Randy.";
 	now classmate-chosen is classmate-asked;
-	now nowhere is mapped north of Leaky Ley;
 	move player to Leaky Ley;
 
 chapter leaky ley scoring

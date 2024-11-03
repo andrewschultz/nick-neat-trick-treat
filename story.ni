@@ -261,7 +261,7 @@ the great grace fate face is a thing. "The Great Grace Fate Face affords passage
 
 book HonerHouse
 
-HonerHouse is inside of Strick Street. HonerHouse is privately-named. printed name of HonerHouse is "Honer House". "Here in the honer house you [house-left]. You can go back out [if house-crit-score is 2]once[else]now[end if] you've gotten your bearings[if sco-donor-douse is false], though you may be able to do some sneaky trick-or-treating before[end if].". eyevalue of honer house is 1055.
+HonerHouse is inside of Strick Street. HonerHouse is privately-named. printed name of HonerHouse is "Honer House". "Here in the honer house you [house-left]. You can go back out [if house-crit-score is 2]once[else]now[end if] you've gotten your bearings[if sco-donor-douse is false], though you may be able to do some sneaky trick-or-treating before[end if].". eyevalue of honerhouse is 1055.
 
 guess-table of HonerHouse is the table of honer house guesses.
 
@@ -424,7 +424,7 @@ Claire Cline is a person in Lair Line. "Claire Cline is here, with a been-bid-ke
 
 chapter been bid keen kid
 
-the been bid keen kid is a person in Lair Line. "One been-bid-keen kid in particular stands here, [if sco-green-grid is true]pleased to have been able to contribute[else]looking for something to do or maybe create[end if].". eyevalue of kid is 54.
+the been bid keen kid is a person in Lair Line. printed name of keen kid is "been-bid-keen kid". "One been-bid-keen kid in particular stands here, [if sco-green-grid is true]pleased to have been able to contribute[else]looking for something to do or maybe create[end if].". eyevalue of kid is 54.
 
 volume meta verbs
 
