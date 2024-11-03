@@ -118,9 +118,13 @@ understand the command "eye" as something new.
 understand "eye" as eyerming when player has eyes.
 
 carry out eyerming:
-	if eyevalue of location of player < 0, say "You don't need to do anything [if eyevalue of location of player is -2]else [end if]here." instead;
+	if eyevalue of location of player < 0, say "You don't need to do anything [if eyevalue of location of player is -2]else [end if]with the general location." instead;
 	eye-blink eyevalue of location of player;
 	the rule succeeds;
+
+does the player mean eyeing meet me: it is unlikely.
+
+check eyerming when player is in eee ing and sco-dandy-ding is true: say "The eyes are all over the places on this one. You may have several good options here. A few kids in your class might fit." instead;
 
 chapter eyeing
 
@@ -131,19 +135,21 @@ understand the command "eye [thing]" as something new.
 understand "eye [thing]" as eyeing when player has eyes.
 
 carry out eyeing:
-	if eyevalue of noun < 0, say "You don't need to do anything [if eyevalue of location of player is -2]else [end if]with [the noun]." instead;
+	if eyevalue of noun < 0:
+		if noun is nick, say "The eyes show nothing. You cast the spell you needed to!" instead;
+		say "You don't need to do anything [if eyevalue of noun is -2]else [end if]with [the noun]." instead;
 	eye-blink eyevalue of noun;
 	the rule succeeds;
 
-check eyeing Nick when sco-ick-eat is true and Leaky Ley is unvisited: say "The eyes do their blinking slowly, as if to say, this is a way off...";
-
-check eyeing tree trolled when sco-re-rolled is false and sco-be-bold is true: say "The eyes look almost cross-eyed here, as if they're being pulled together." instead;
+check eyeing Nick when sco-pick-pete is true and Leaky Ley is unvisited: say "The eyes do their blinking slowly, as if to say, this is a way off...";
 
 check eyeing eyes: say "Physically impossible and fortunately unnecessary." instead;
 
-check eyeing base: say "Nothing from the eyes. You probably have to manipulate it with other objects you rhymed." instead;
+check eyeing base: say "Nothing from the eyes. You probably have to manipulate it with [if number of moot plateitems > 0]more [end if]other objects you acquired." instead;
 
-check eyeing face: say "Nothing from the eyes. You can just walk through it." instead;
+check eyeing face: say "Nothing from the eyes. You can just walk through it to the east." instead;
+
+check eyeing randy when sco-dandy-ding is true: say "The eyes are all over the places on this one. You may have several good options here. A few kids in your class might fit." instead;
 
 volume rooms
 
