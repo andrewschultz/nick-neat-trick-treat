@@ -381,7 +381,7 @@ check going west in eee ing: say "No way back." instead;
 
 guess-table of eee ing is the table of eee ing guesses.
 
-Randy Ring Candy King is a person in eee ing. printed name is "Randy Ring-Candy-King.". "But the focus is, well, someone imposing. [one of]A man introduces himself as Randy Ring-Candy-King. He is impressed you have gotten this far. He mentions that although you're more a chocolate person than ring candy, that variety is good. He asks for your approval.[or]Randy Ring-Candy-King waits for a sign, a phrase, that shows you will work well together.[stopping]". eyevalue of Randy is 54.
+Randy Ring Candy King is a person in eee ing. printed name is "Randy Ring-Candy-King". "But the focus is, well, someone imposing. [one of]A man introduces himself as Randy Ring-Candy-King. He is impressed you have gotten this far. He mentions that although you're more a chocolate person than ring candy, that variety is good. He asks for your approval.[or]Randy Ring-Candy-King waits for a sign, a phrase, that shows you will work well together.[stopping]". eyevalue of Randy is 54.
 
 book Leaky Ley
 

@@ -32,7 +32,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "shove"	"shook"	--	--	false	true	true	false	strick street	vc-shove-shook rule	vr-shove-shook rule	--	"You can [b]SHOVE SHOOK[r] [once-now of vc-shove-shook rule] you have what you need for a ritual and are in the right place."
 "pluralled|pluraled"	"plea"	--	--	false	true	true	false	strick street	vc-pluraled-plea rule	vr-pluraled-plea rule	--	"You can make a [b]PLURALED PLEA[r] [once-now of vc-pluraled-plea rule] you have what you need for a ritual and are in the right place."
 "plank"	"pling"	--	--	false	true	true	false	rank ring	vc-plank-pling rule	vr-plank-pling rule	--	--
-"blank"	"bling"	--	--	false	true	true	false	rank ring	vc-blank-bling rule	vr-blank-bling rule	--	"You can find [b]BLANK BLING[r] [once-now of vc-blank-bling rule] you discover where it's been hidden."
+"blank"	"bling"	--	--	false	true	true	false	rank ring	vc-blank-bling rule	vr-blank-bling rule	--	"You can find [b]BLANK BLING[r] [once-now of vc-blank-bling rule] you have discovered where it's been hidden."
 "thank"	"thing"	--	--	false	true	true	false	rank ring	vc-thank-thing rule	vr-thank-thing rule	--	"You can [b]THANK THING[r] [once-now of vc-thank-thing rule] you have gotten a gift to be thankful for."
 "sank"	"sing"	--	--	false	true	false	false	rank ring	vc-sank-sing rule	vr-sank-sing rule	--	--
 "fun"	"foam"	--	--	false	true	true	false	hun home	vc-fun-foam rule	vr-fun-foam rule	--	--
@@ -51,12 +51,12 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "weakie"	"way"	--	--	false	true	true	false	leaky ley	vc-weakie-way rule	vr-weakie-way rule	--	--
 "creaky"	"cray"	--	--	false	true	true	false	leaky ley	vc-creaky-cray rule	vr-creaky-cray rule	--	--
 "grit"	"grins"	--	--	false	true	true	false	leaky ley	vc-grit-grins rule	vr-grit-grins rule	--	--
-"streaky"	"stray"	--	--	false	true	true	false	leaky ley	vc-streaky-stray rule	vr-streaky-stray rule	--	"You can call out a [b]STREAKY STRAY[r] [once-now of vc-streaky-stray rule] things get really heated."
+"streaky"	"stray"	--	--	false	true	true	false	leaky ley	vc-streaky-stray rule	vr-streaky-stray rule	--	"You can call out a [b]STREAKY STRAY[r] [once-now of vc-streaky-stray rule] combat gets really heated."
 "slick"	"sleet"	--	--	false	true	true	false	leaky ley	vc-slick-sleet rule	vr-slick-sleet rule	--	"You can cast [b]SLICK SLEET[r] [once-now of vc-slick-sleet rule] your final enemy is up."
 "fair"	"fine"	--	--	false	true	true	false	Lair Line	vc-fair-fine rule	vr-fair-fine rule	--	--
 "theyre|there"	"thine"	--	--	false	true	false	false	Lair Line	vc-theyre-thine rule	vr-theyre-thine rule	--	--
 "green"	"grid"	--	--	false	true	true	false	lair line	vc-green-grid rule	vr-green-grid rule	--	--
-"dare"	"dine"	--	--	false	true	true	false	Lair Line	vc-dare-dine rule	vr-dare-dine rule	--	"You can [b]DARE DINE[r] [once-now of vc-dare-dine rule] you have passed out the candy equitably."
+"dare"	"dine"	--	--	false	true	true	false	Lair Line	vc-dare-dine rule	vr-dare-dine rule	--	"You can [b]DARE DINE[r] [once-now of vc-dare-dine rule] you have passed out the candy equitably and have a way home."
 "share"	"shine"	--	--	false	true	false	false	lair line	vc-share-shine rule	vr-share-shine rule	--	--
 
 chapter sick seat scoring
@@ -392,11 +392,11 @@ this is the vr-re-rolled rule:
 a goodrhyme rule (this is the vc-me-mold rule):
 	if player is not in TreeTrolled, unavailable;
 	if sco-re-rolled is false:
-		vcal "You have no excuse to make an effigy of yourself yet!";
-		already-done;
+		vcal "You have no reason to make an effigy of yourself yet!";
+		not-yet;
 	if sco-me-mold is true:
 		vcp "One you-doll is enough.";
-		not-yet;
+		already-done;
 	ready;
 
 this is the vr-me-mold rule:
