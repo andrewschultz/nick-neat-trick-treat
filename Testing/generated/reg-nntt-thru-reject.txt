@@ -1,0 +1,349 @@
+## reg-nntt-thru-reject.txt
+## GENERATOR FILE: rbr-nntt-thru.txt
+
+## walkthrough with all rejections and THINK
+
+** game: /home/andrew/prt/debug-nick-neat-trick-treat.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>z
+
+#testcase-check-vc-pick-pete-rule-if-sco-ick-eat-is-false
+>pick pete
+Pete will be fun to trick-or-treat with, but first, those vegetables. Your parents aren't wasting them.
+
+#testcase-think-table-of-verb-checks-vc-pick-pete-rule
+>think
+You can PICK PETE as a companion once you've finished dinner.
+
+>slick sleet
+Sleet won't help you here, yet.
+
+#testcase-think-table-of-verb-checks-vc-slick-sleet-rule
+>think
+You can cast SLICK SLEET once your final enemy is up.
+
+>ick eat
+by one point
+
+>pick pete
+by one point
+
+#testcase-check-vc-pick-pete-rule-if-sco-pick-pete-is-true
+>pick pete
+You already picked Pete. Where to meet him?
+
+>treat tree
+by one point
+
+>in
+
+>loner louse
+by one point
+
+>moaner mouse
+by one point
+
+>donor douse
+by one point
+
+>out
+
+>n
+
+>blank bling
+Nothing will materialise just because you want it to! Search for it first.
+
+>thank thing
+You have found nothing to be grateful for, yet.
+
+#testcase-think-table-of-verb-checks-vc-blank-bling-rule
+#testcase-think-table-of-verb-checks-vc-thank-thing-rule
+>think
+You can find BLANK BLING once you have discovered where it's been hidden.
+You can THANK THING once you have gotten a gift to be thankful for.
+
+>plank pling
+by one point
+
+#+testcase-think-table-of-verb-checks-vc-blank-bling-rule
+#+testcase-think-table-of-verb-checks-vc-thank-thing-rule
+>think
+You can find BLANK BLING now you have discovered where it's been hidden.
+You can THANK THING once you have gotten a gift to be thankful for.
+
+>blank bling
+by one point
+
+#+testcase-think-table-of-verb-checks-vc-thank-thing-rule
+>think
+You can THANK THING now you have gotten a gift to be thankful for.
+
+>thank thing
+by one point
+
+>think
+!THANK THING
+
+>sank sing
+by one point
+
+>get ghoul
+That'd seem to work, in the "get rid of" sense, but perhaps it should be part of a ritual.
+
+#testcase-think-table-of-verb-checks-vc-get-ghoul-rule
+>think
+You can GET GHOUL once you have what you need for a ritual and are in the right place.
+
+>s
+
+>s
+
+>rerolled
+But you haven't tried anything to feel less scared!
+
+>see sold
+You have nothing to perform a transaction with!
+
+>me mold
+You have no reason to make an effigy of yourself yet!
+
+>think
+You can ME MOLD once you feel confident enough in your artistic ability.
+You can REROLLED once you have committed to something but want to do it a bit better.
+You can SEE SOLD once you have a creation you can swap.
+
+>be bold
+by one point
+
+>think
+You can ME MOLD once you feel confident enough in your artistic ability.
+You can REROLLED now you have committed to something but want to do it a bit better.
+You can SEE SOLD once you have a creation you can swap.
+
+>rerolled
+by one point
+
+>think
+You can ME MOLD now you feel confident enough in your artistic ability.
+You can SEE SOLD once you have a creation you can swap.
+!REROLLED
+
+>me mold
+by one point
+
+>think
+You can SEE SOLD now you have a creation you can swap.
+!ME MOLD
+
+>see sold
+by one point
+
+>wee wold
+by one point
+
+>pluraled plea
+This is not the right place for such a plea.
+
+#testcase-think-table-of-verb-checks-vc-pluraled-plea-rule
+>think
+You can make a PLURALED PLEA once you have what you need for a ritual and are in the right place.
+
+>n
+
+>w
+
+>ton tome
+But the ton-tome would land with such a crash if it appeared! You need a soft place for it to rest.
+
+>pun poem
+There is nowhere for poems to be written, to bring joy where there might be darkness!
+
+>done dome
+You haven't cheered the place up enough to consider it "done!"
+
+>run roam
+It's a bit creepy in here, but no need to run away ... yet. Still, you file the idea for later.
+
+#testcase-think-table-of-verb-checks-vc-done-dome-rule
+#testcase-think-table-of-verb-checks-vc-pun-poem-rule
+#testcase-think-table-of-verb-checks-vc-run-roam-rule
+#testcase-think-table-of-verb-checks-vc-ton-tome-rule
+>think
+You can summon a TON TOME once it can land softly.
+You can summon a PUN POEM once there's a thing or place where it can be recorded.
+You can claim DONE DOME once the place is a bit cheerier.
+You can RUN ROAM once you need to rebel against feeling stuck.
+
+>fun foam
+by one point
+
+#+testcase-think-table-of-verb-checks-vc-done-dome-rule
+#+testcase-think-table-of-verb-checks-vc-pun-poem-rule
+#+testcase-think-table-of-verb-checks-vc-run-roam-rule
+#+testcase-think-table-of-verb-checks-vc-ton-tome-rule
+>think
+You can summon a TON TOME now it can land softly.
+You can summon a PUN POEM once there's a thing or place where it can be recorded.
+You can claim DONE DOME once the place is a bit cheerier.
+You can RUN ROAM once you need to rebel against feeling stuck.
+
+>ton tome
+by one point
+
+#+testcase-think-table-of-verb-checks-vc-done-dome-rule
+#+testcase-think-table-of-verb-checks-vc-pun-poem-rule
+#+testcase-think-table-of-verb-checks-vc-run-roam-rule
+>think
+!TON TOME
+You can summon a PUN POEM now there's a thing or place where it can be recorded.
+You can claim DONE DOME once the place is a bit cheerier.
+You can RUN ROAM once you need to rebel against feeling stuck.
+
+>pun poem
+by one point
+
+#+testcase-think-table-of-verb-checks-vc-done-dome-rule
+#+testcase-think-table-of-verb-checks-vc-run-roam-rule
+>think
+!PUN POEM
+You can claim DONE DOME now the place is a bit cheerier.
+You can RUN ROAM once you need to rebel against feeling stuck.
+
+>done dome
+by one point
+
+#+testcase-think-table-of-verb-checks-vc-run-roam-rule
+>think
+!DONE DOME
+You can RUN ROAM now you need to rebel against feeling stuck.
+
+>run roam
+by one point
+
+>think
+!RUN ROAM
+
+>a gnome
+by one point
+
+>shove shook
+There's nothing for the book to shake here.
+
+#testcase-think-table-of-verb-checks-vc-shove-shook-rule
+>think
+You can SHOVE SHOOK once you have what you need for a ritual and are in the right place.
+
+>e
+
+#testcase-think-table-of-verb-checks-vc-pluraled-plea-rule
+>think
+You can make a PLURALED PLEA now you have what you need for a ritual and are in the right place.
+
+>pluraled plea
+by one point
+
+#testcase-think-table-of-verb-checks-vc-shove-shook-rule
+>think
+You can SHOVE SHOOK now you have what you need for a ritual and are in the right place.
+
+>shove shook
+by one point
+
+#testcase-think-table-of-verb-checks-vc-get-ghoul-rule
+>think
+You can GET GHOUL now you have what you need for a ritual and are in the right place.
+
+>get ghoul
+by one point
+
+>e
+
+>andy ng
+You remember Andy Ng, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
+
+#testcase-think-table-of-verb-checks-vc-andy-ng-rule
+>think
+You can recall ANDY NG or any other classmate once you have hit it off with Randy.
+
+>dandy ding
+by one point
+
+#testcase-think-table-of-verb-checks-vc-andy-ng-rule
+>think
+You can recall ANDY NG or any other classmate now you have hit it off with Randy.
+
+>andy ng
+by one point
+
+>streaky stray
+There's nothing to make streaky or stray, yet.
+
+#testcase-think-table-of-verb-checks-vc-streaky-stray-rule
+>think
+You can call out a STREAKY STRAY once combat gets really heated.
+
+>weakie way
+by one point
+
+>creaky cray
+by one point
+
+>grit grins
+by one point
+
+#+testcase-think-table-of-verb-checks-vc-slick-sleet-rule
+>think
+You can cast SLICK SLEET now your final enemy is up.
+
+>slick sleet
+by one point
+
+#testcase-think-table-of-verb-checks-vc-streaky-stray-rule
+>think
+You can call out a STREAKY STRAY now combat gets really heated.
+
+>streaky stray
+by one point
+
+>share shine
+by one point
+
+>there thine
+by one point
+
+>dare dine
+But the dining is not equitable yet! Claire Cline would like you to try to spread the wealth.
+
+#testcase-think-table-of-verb-checks-vc-dare-dine-rule
+>think
+You can DARE DINE once you have passed out the candy equitably and have a way home.
+
+>green grid
+by one point
+
+>think
+You can DARE DINE once you have passed out the candy equitably and have a way home.
+
+>undo
+>undo
+
+>fair fine
+by one point
+
+#testcase-think-table-of-verb-checks-vc-dare-dine-rule
+>think
+You can DARE DINE once you have passed out the candy equitably and have a way home.
+
+>green grid
+by one point
+
+#testcase-think-table-of-verb-checks-vc-dare-dine-rule
+>think
+You can DARE DINE now you have passed out the candy equitably and have a way home.
+
+>dare dine
+by one point
+

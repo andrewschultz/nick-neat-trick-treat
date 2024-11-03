@@ -18,7 +18,7 @@ file=reg-nntt-thru-goto.txt,gt/goto,walkthrough testing going to or from
 file=reg-nntt-thru-verbs.txt,ver/verbs,walkthrough testing special verbs
 file=reg-nntt-thru-hints.txt,hin/hint/hints,walkthrough testing HINTS basic
 
-##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+#--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
 #--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
 
 }$REJECT=I couldn't parse that command. You don't need any more than two words long.
@@ -106,6 +106,23 @@ You don't want to go wandering through your house on Halloween when you should b
 >out
 Need to finish those vegetables first. Force yourself, with a pep talk.
 
+@rej
+#testcase-check-vc-pick-pete-rule-if-sco-ick-eat-is-false
+>pick pete
+Pete will be fun to trick-or-treat with, but first, those vegetables. Your parents aren't wasting them.
+\\
+#testcase-think-table-of-verb-checks-vc-pick-pete-rule
+>think
+You can PICK PETE as a companion once you've finished dinner.
+
+@rej+
+>slick sleet
+Sleet won't help you here, yet.
+\\
+#testcase-think-table-of-verb-checks-vc-slick-sleet-rule
+>think
+You can cast SLICK SLEET once your final enemy is up.
+
 >ick eat
 by one point
 
@@ -151,6 +168,11 @@ The left eye blinks five times, then the right eye, four.
 >eye me
 The left eye blinks five times, then the right eye, five.
 The eyes do their blinking slowly, as if to say, this is a way off...
+
+@rej
+#testcase-check-vc-pick-pete-rule-if-sco-pick-pete-is-true
+>pick pete
+You already picked Pete. Where to meet him?
 
 >treat tree
 by one point
@@ -251,6 +273,19 @@ It's even ranker any direction but back south.
 >eye
 The left eye blinks five times, then the right eye, five.
 
+@rej
+>blank bling
+Nothing will materialise just because you want it to! Search for it first.
+\\
+>thank thing
+You have found nothing to be grateful for, yet.
+\\
+#testcase-think-table-of-verb-checks-vc-blank-bling-rule
+#testcase-think-table-of-verb-checks-vc-thank-thing-rule
+>think
+You can find BLANK BLING once you have discovered where it's been hidden.
+You can THANK THING once you have gotten a gift to be thankful for.
+
 >plank pling
 by one point
 
@@ -259,6 +294,13 @@ by one point
 >eye
 The left eye blinks five times, then the right eye, five.
 
+@rej
+#+testcase-think-table-of-verb-checks-vc-blank-bling-rule
+#+testcase-think-table-of-verb-checks-vc-thank-thing-rule
+>think
+You can find BLANK BLING now you have discovered where it's been hidden.
+You can THANK THING once you have gotten a gift to be thankful for.
+
 >blank bling
 by one point
 
@@ -266,6 +308,11 @@ by one point
 #testcase-values-eyevalue-of-rank-ring-is-55
 >eye
 The left eye blinks five times, then the right eye, five.
+
+@rej
+#+testcase-think-table-of-verb-checks-vc-thank-thing-rule
+>think
+You can THANK THING now you have gotten a gift to be thankful for.
 
 >thank thing
 by one point
@@ -276,9 +323,21 @@ by one point
 The left eye blinks four times, then the right eye, four.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
 
+@rej
+>think
+!THANK THING
+
 @!min
 >sank sing
 by one point
+
+@rej
+>get ghoul
+That'd seem to work, in the "get rid of" sense, but perhaps it should be part of a ritual.
+\\
+#testcase-think-table-of-verb-checks-vc-get-ghoul-rule
+>think
+You can GET GHOUL once you have what you need for a ritual and are in the right place.
 
 >s
 
@@ -308,6 +367,21 @@ Debug note: normal eye-scan.
 The left eye blinks two times, then the right eye, four.
 Debug note: normal eye-scan.
 
+@rej
+>rerolled
+But you haven't tried anything to feel less scared!
+\\
+>see sold
+You have nothing to perform a transaction with!
+\\
+>me mold
+You have no reason to make an effigy of yourself yet!
+\\
+>think
+You can ME MOLD once you feel confident enough in your artistic ability.
+You can REROLLED once you have committed to something but want to do it a bit better.
+You can SEE SOLD once you have a creation you can swap.
+
 >be bold
 by one point
 
@@ -321,6 +395,18 @@ Odd ... the eyes seem to look at each other, almost being pulled into each other
 >eye
 The left eye blinks two times, then the right eye, six.
 Odd ... the eyes seem to look at each other, almost being pulled into each other.
+
+@alt
+>re rolled
+by one point
+\\
+>undo
+
+@rej
+>think
+You can ME MOLD once you feel confident enough in your artistic ability.
+You can REROLLED now you have committed to something but want to do it a bit better.
+You can SEE SOLD once you have a creation you can swap.
 
 >rerolled
 by one point
@@ -336,6 +422,12 @@ Debug note: normal eye-scan.
 The left eye blinks two times, then the right eye, four.
 Debug note: normal eye-scan.
 
+@rej
+>think
+You can ME MOLD now you feel confident enough in your artistic ability.
+You can SEE SOLD once you have a creation you can swap.
+!REROLLED
+
 >me mold
 by one point
 
@@ -349,6 +441,11 @@ Debug note: normal eye-scan.
 >eye
 The left eye blinks three times, then the right eye, four.
 Debug note: normal eye-scan.
+
+@rej
+>think
+You can SEE SOLD now you have a creation you can swap.
+!ME MOLD
 
 >see sold
 by one point
@@ -377,6 +474,14 @@ You don't need to do anything else with the tree, trolled.
 >eye
 You don't need to do anything else with the general location.
 
+@rej
+>pluraled plea
+This is not the right place for such a plea.
+\\
+#testcase-think-table-of-verb-checks-vc-pluraled-plea-rule
+>think
+You can make a PLURALED PLEA once you have what you need for a ritual and are in the right place.
+
 >n
 
 >w
@@ -394,6 +499,29 @@ There are no secret passages in this home. You can only go back east.
 >eye
 The left eye blinks three times, then the right eye, four.
 
+@rej
+>ton tome
+But the ton-tome would land with such a crash if it appeared! You need a soft place for it to rest.
+\\
+>pun poem
+There is nowhere for poems to be written, to bring joy where there might be darkness!
+\\
+>done dome
+You haven't cheered the place up enough to consider it "done!"
+\\
+>run roam
+It's a bit creepy in here, but no need to run away ... yet. Still, you file the idea for later.
+\\
+#testcase-think-table-of-verb-checks-vc-done-dome-rule
+#testcase-think-table-of-verb-checks-vc-pun-poem-rule
+#testcase-think-table-of-verb-checks-vc-run-roam-rule
+#testcase-think-table-of-verb-checks-vc-ton-tome-rule
+>think
+You can summon a TON TOME once it can land softly.
+You can summon a PUN POEM once there's a thing or place where it can be recorded.
+You can claim DONE DOME once the place is a bit cheerier.
+You can RUN ROAM once you need to rebel against feeling stuck.
+
 >fun foam
 by one point
 
@@ -405,6 +533,17 @@ The left eye blinks three times, then the right eye, four.
 #testcase-values-eyevalue-of-fun-foam-is-34
 >eye foam
 The left eye blinks three times, then the right eye, four.
+
+@rej
+#+testcase-think-table-of-verb-checks-vc-done-dome-rule
+#+testcase-think-table-of-verb-checks-vc-pun-poem-rule
+#+testcase-think-table-of-verb-checks-vc-run-roam-rule
+#+testcase-think-table-of-verb-checks-vc-ton-tome-rule
+>think
+You can summon a TON TOME now it can land softly.
+You can summon a PUN POEM once there's a thing or place where it can be recorded.
+You can claim DONE DOME once the place is a bit cheerier.
+You can RUN ROAM once you need to rebel against feeling stuck.
 
 >ton tome
 by one point
@@ -422,6 +561,16 @@ The left eye blinks three times, then the right eye, four.
 >eye ton tome
 The left eye blinks three times, then the right eye, four.
 
+@rej
+#+testcase-think-table-of-verb-checks-vc-done-dome-rule
+#+testcase-think-table-of-verb-checks-vc-pun-poem-rule
+#+testcase-think-table-of-verb-checks-vc-run-roam-rule
+>think
+!TON TOME
+You can summon a PUN POEM now there's a thing or place where it can be recorded.
+You can claim DONE DOME once the place is a bit cheerier.
+You can RUN ROAM once you need to rebel against feeling stuck.
+
 >pun poem
 by one point
 
@@ -437,6 +586,14 @@ The left eye blinks four times, then the right eye, four.
 #testcase-values-eyevalue-of-ton-tome-is-34
 >eye ton tome
 The left eye blinks four times, then the right eye, four.
+
+@rej
+#+testcase-think-table-of-verb-checks-vc-done-dome-rule
+#+testcase-think-table-of-verb-checks-vc-run-roam-rule
+>think
+!PUN POEM
+You can claim DONE DOME now the place is a bit cheerier.
+You can RUN ROAM once you need to rebel against feeling stuck.
 
 >done dome
 by one point
@@ -458,6 +615,12 @@ The left eye blinks three times, then the right eye, four.
 >e
 The Love-Look-'Bove Book seems to pull you back. Isn't it much cheerier here than outside?
 
+@rej
+#+testcase-think-table-of-verb-checks-vc-run-roam-rule
+>think
+!DONE DOME
+You can RUN ROAM now you need to rebel against feeling stuck.
+
 >run roam
 by one point
 
@@ -477,6 +640,10 @@ Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY nee
 The left eye blinks one time, then the right eye, five.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
 
+@rej
+>think
+!RUN ROAM
+
 @!min
 >a gnome
 by one point
@@ -493,6 +660,14 @@ You don't need to do anything else with the fun foam.
 #testcase-values-eyevalue-of-ton-tome-is-34
 >eye ton tome
 You don't need to do anything else with the ton tome.
+
+@rej
+>shove shook
+There's nothing for the book to shake here.
+\\
+#testcase-think-table-of-verb-checks-vc-shove-shook-rule
+>think
+You can SHOVE SHOOK once you have what you need for a ritual and are in the right place.
 
 >e
 
@@ -514,6 +689,11 @@ by one point
 \\
 >undo
 
+@rej
+#testcase-think-table-of-verb-checks-vc-pluraled-plea-rule
+>think
+You can make a PLURALED PLEA now you have what you need for a ritual and are in the right place.
+
 >pluraled plea
 by one point
 
@@ -528,6 +708,11 @@ Debug note: normal eye-scan.
 >eye base
 Nothing from the eyes. You probably have to manipulate it with more other objects you acquired.
 
+@rej
+#testcase-think-table-of-verb-checks-vc-shove-shook-rule
+>think
+You can SHOVE SHOOK now you have what you need for a ritual and are in the right place.
+
 >shove shook
 by one point
 
@@ -536,6 +721,11 @@ by one point
 >eye jewel
 The left eye blinks three times, then the right eye, five.
 Debug note: normal eye-scan.
+
+@rej
+#testcase-think-table-of-verb-checks-vc-get-ghoul-rule
+>think
+You can GET GHOUL now you have what you need for a ritual and are in the right place.
 
 >get ghoul
 by one point
@@ -571,6 +761,14 @@ Debug note: normal eye-scan.
 The left eye blinks five times, then the right eye, four.
 Debug note: normal eye-scan.
 
+@rej
+>andy ng
+You remember Andy Ng, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
+\\
+#testcase-think-table-of-verb-checks-vc-andy-ng-rule
+>think
+You can recall ANDY NG or any other classmate once you have hit it off with Randy.
+
 >dandy ding
 by one point
 
@@ -582,6 +780,11 @@ The eyes are all over the places on this one. You may have several good options 
 #+testcase-values-eyevalue-of-randy-is-54
 >eye randy
 The eyes are all over the places on this one. You may have several good options here. A few kids in your class might fit.
+
+@rej
+#testcase-think-table-of-verb-checks-vc-andy-ng-rule
+>think
+You can recall ANDY NG or any other classmate now you have hit it off with Randy.
 
 >andy ng
 by one point
@@ -720,6 +923,14 @@ Reeky Ray
 >undo
 >undo
 
+@rej
+>streaky stray
+There's nothing to make streaky or stray, yet.
+\\
+#testcase-think-table-of-verb-checks-vc-streaky-stray-rule
+>think
+You can call out a STREAKY STRAY once combat gets really heated.
+
 @!min
 >weakie way
 by one point
@@ -735,6 +946,11 @@ by one point
 >eye me
 The left eye blinks five times, then the right eye, five.
 Debug note: normal eye-scan.
+
+@rej
+#+testcase-think-table-of-verb-checks-vc-slick-sleet-rule
+>think
+You can cast SLICK SLEET now your final enemy is up.
 
 >slick sleet
 by one point
@@ -754,6 +970,11 @@ Debug note: normal eye-scan.
 >eye ray
 The left eye blinks seven times, then the right eye, five.
 Debug note: normal eye-scan.
+
+@rej
+#testcase-think-table-of-verb-checks-vc-streaky-stray-rule
+>think
+You can call out a STREAKY STRAY now combat gets really heated.
 
 >streaky stray
 by one point
@@ -791,6 +1012,25 @@ by one point
 >there thine
 by one point
 
+@rej
+>dare dine
+But the dining is not equitable yet! Claire Cline would like you to try to spread the wealth.
+\\
+#testcase-think-table-of-verb-checks-vc-dare-dine-rule
+>think
+You can DARE DINE once you have passed out the candy equitably and have a way home.
+
+@rej+
+##balance undos
+>green grid
+by one point
+\\
+>think
+You can DARE DINE once you have passed out the candy equitably and have a way home.
+\\
+>undo
+>undo
+
 >fair fine
 by one point
 
@@ -821,6 +1061,11 @@ Debug note: normal eye-scan.
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
 
+@rej
+#testcase-think-table-of-verb-checks-vc-dare-dine-rule
+>think
+You can DARE DINE once you have passed out the candy equitably and have a way home.
+
 >green grid
 by one point
 
@@ -849,6 +1094,11 @@ Debug note: normal eye-scan.
 #+testcase-goto-table-of-noways-lair-line
 >w
 There's no compass direction out. The green grid will lead you out, but why not celebrate your adventure first?
+
+@rej
+#testcase-think-table-of-verb-checks-vc-dare-dine-rule
+>think
+You can DARE DINE now you have passed out the candy equitably and have a way home.
 
 >dare dine
 by one point
