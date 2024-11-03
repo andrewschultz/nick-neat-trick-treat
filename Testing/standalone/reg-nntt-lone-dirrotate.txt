@@ -1,0 +1,173 @@
+## reg-nntt-lone-dirrotate.txt
+** game: /home/andrew/prt/debug-nick-neat-trick-treat.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* nsw
+
+>{include}_intro
+>{include}_n
+>{include}_s
+>{include}_w
+face
+>{include}_end
+
+* nws
+
+>{include}_intro
+>{include}_n
+>{include}_w
+>{include}_s
+face
+>{include}_end
+
+* snw
+
+>{include}_intro
+>{include}_s
+>{include}_n
+>{include}_w
+face
+>{include}_end
+
+* swn
+
+>{include}_intro
+>{include}_s
+>{include}_w
+>{include}_n
+face
+>{include}_end
+
+* wns
+
+>{include}_intro
+>{include}_w
+>{include}_s
+>{include}_n
+face
+>{include}_end
+
+* wsn
+
+>{include}_intro
+>{include}_w
+>{include}_s
+>{include}_n
+face
+>{include}_end
+
+* _intro
+
+>ick eat
+by one point
+
+>pick pete
+by one point
+
+>treat tree
+by one point
+
+>in
+
+>loner louse
+by one point
+
+>moaner mouse
+by one point
+
+>out
+
+* _n
+
+>n
+
+>plank pling
+by one point
+
+>blank bling
+by one point
+
+>thank thing
+by one point
+
+>s
+
+* _s
+
+>s
+
+>be bold
+by one point
+
+>rerolled
+by one point
+
+>me mold
+by one point
+
+>see sold
+by one point
+
+>n
+
+* _w
+
+>w
+
+>fun foam
+by one point
+
+>ton tome
+by one point
+
+>pun poem
+by one point
+
+>done dome
+by one point
+
+>run roam
+by one point
+
+>e
+
+* _end
+
+>get ghoul
+by one point
+
+>shove shook
+by one point
+
+>pluraled plea
+by one point
+
+>e
+
+>dandy ding
+by one point
+
+>andy ng
+by one point
+
+>grit grins
+by one point
+
+>creaky cray
+by one point
+
+>streaky stray
+by one point
+
+>slick sleet
+by one point
+
+>fair fine
+by one point
+
+>green grid
+by one point
+
+>dare dine
+by one point
+Why wait? My, mate, I ATE!
