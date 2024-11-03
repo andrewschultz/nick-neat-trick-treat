@@ -313,7 +313,7 @@ Hun Home is west of Strick Street. "No secret doors here. Just back east.". eyev
 guess-table of hun home is the table of hun home guesses.
 
 check going east in Hun Home when player has book:
-	if sco-done-dome is true and sco-run-roam is false, say "[The book] seems to pull you back. Isn't it much cheerier here than outside?" instead;
+	if sco-done-dome is true and sco-run-roam is false, say "[The book] seems to pull you back. Isn't it much cheerier here than outside? Unless you have something more fun to do?" instead;
 	if sco-run-roam is true and sco-a-gnome is false, max-down;
 
 after printing the locale description for Hun Home when sco-run-roam is true and sco-a-gnome is false:
@@ -330,7 +330,7 @@ the ton tome is a thing. "The ton tome you summoned landed on the fun foam.". ey
 
 chapter book
 
-Love Look Bove Book is a plateitem. printed name is "Love-Look-[']Bove Book". description is "Mushy love stuff. But hey, if it makes the baddies puke more than you, BET.". [at least it isn't a biography of someone important.] eyevalue of book is 55.
+the Love Look Bove Book is a plateitem. printed name is "Love-Look-[']Bove Book". description is "Mushy love stuff. But hey, if it makes the baddies puke more than you, BET.". [at least it isn't a biography of someone important.] eyevalue of book is 55.
 
 book Tree Trolled
 

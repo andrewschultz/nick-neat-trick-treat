@@ -434,6 +434,10 @@ The left eye blinks three times, then the right eye, four.
 >eye ton tome
 The left eye blinks three times, then the right eye, four.
 
+@gt
+>e
+The Love-Look-'Bove Book seems to pull you back. Isn't it much cheerier here than outside?
+
 >run roam
 by one point
 
