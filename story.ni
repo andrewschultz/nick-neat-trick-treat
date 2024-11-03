@@ -193,7 +193,7 @@ guess-table of meet me is the table of meet me guesses.
 
 book Strick Street
 
-Strick Street is inside of SickSeat. "[one of]Hmm. You're not sure if strick is a word, but you figure if you badgered any of the denizens about it, they'd be ... upset. So, maybe it's short for stricken? [or][stopping][if HonerHouse is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a house helpfully labeled Honer House[else]The honer house is dark now[strick-details][end if]." .eyevalue of strick street is -1.
+Strick Street is inside of SickSeat. "[one of]Hmm. You're not sure if strick is a word, but you figure if you badgered any of the denizens about it, they'd be ... upset. So, maybe it's short for stricken? [or][stopping][if HonerHouse is unvisited]Everything's a bit scary, but you can go [b]IN[r] to a cheerily lit house[else]The honer house is dark now[strick-details][end if]." .eyevalue of strick street is -1.
 
 to say strick-details:
 	if number of stricksolved directions is 3:
@@ -213,9 +213,11 @@ to say strick-details:
 after printing the locale description for Strick Street when number of carried plateitems is 3 and plate place is not moot:
 	say "You place all three items in [the plate]. It vibrates, but nothing else happens, yet. Perhaps you need some incantations as you put them in.";
 
-chapter honer house (scenery)
+chapter helpful house (scenery)
 
-the honer house is scenery in strick street. "[if house-crit-score >= 2]It was nice in there, but you have bigger things to do[else]It looks quite welcoming. You [house-enter][end if]."
+the helpful house is scenery in strick street. "[if house-crit-score >= 2]It was nice in Honer House, but you have bigger things to do[else][one of]It looks quite welcoming, even if 'helpful' seems tricky to rthyme. You should [b]ENTER[r] it or go [b]IN[r][or][stopping][end if]."
+
+understand "honer/house" and "honer house" as helpful house when HonerHouse is visited.
 
 to say house-enter:
 	if HonerHouse is unvisited:
@@ -223,7 +225,7 @@ to say house-enter:
 	else:
 		say "can probably go back in and unlock its mysteries and get started on the real adventure"
 
-check entering honer house: try going inside instead.
+check entering helpful house: try going inside instead.
 
 chapter check going rules
 
@@ -284,7 +286,7 @@ check going outside in HonerHouse when house-crit-score is 2:
 	say "Honer House shuts behind you. Strick Street is lit a bit better now. There's something blocking the way east, though: a bait base plate place. It looks scary and magical. Perhaps you'll find a way to get by it.";
 	move plate place to strick street;
 
-after printing the locale description when player is in honer house and house-crit-score is 2 and sco-donor-douse is false:
+after printing the locale description when player is in HonerHouse and house-crit-score is 2 and sco-donor-douse is false:
 	say "Oh gosh. You'd like to beg for candy here. It's part of you getting your bearings, right? (Of course, you may just want to move on. It's okay either way.)";
 	continue the action;
 
