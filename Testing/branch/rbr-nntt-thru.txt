@@ -671,6 +671,16 @@ You can SHOVE SHOOK once you have what you need for a ritual and are in the righ
 
 >e
 
+@gt
+>n
+You got the jewel. That's enough.
+\\
+>w
+You got the book from there. That's enough.
+\\
+>s
+You got the curled (whee) whirled key. That's enough.
+
 @hint
 #testcase-values-eyevalue-of-place-is--1
 >eye place
@@ -736,6 +746,16 @@ by one point
 Nothing from the eyes. You can just walk through it to the east.
 # caught by check rule...
 !Debug note: normal eye-scan.
+
+@gt
+>n
+Now the way east is opened, that's where you should go.
+\\
+>w
+Now the way east is opened, that's where you should go.
+\\
+>s
+Now the way east is opened, that's where you should go.
 
 >e
 

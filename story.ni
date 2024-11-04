@@ -253,7 +253,7 @@ check going north in Strick Street:
 	if player has jewel, say "You got the jewel. That's enough." instead;
 
 check going south in Strick Street:
-	if player has curled whee whirled key, say "You got the curled whee whirled key. That's enough." instead;
+	if player has curled whee whirled key, say "You got [the key]. That's enough." instead;
 
 check going west in Strick Street:
 	if player has bove book, say "You got the book from there. That's enough." instead;
@@ -365,7 +365,7 @@ the tree trolled is a thing in TreeTrolled. printed name of Tree Trolled is "tre
 
 chapter curled whee whirled key
 
-the curled whee whirled key is a plateitem. description is "It's a really odd but cool shape and design. It warmed up quickly in your pocket. Technically it's a key, cold, but switching words like that reminds you of poetry adults tell you you should enjoy. Ugh.[paragraph break]Just looking at it makes you think of words that don't exist but maybe should, the sort over-sensible adults would, and have, smacked you down verbally for saying.". printed name is "curled (whee) world key". eyevalue of key is 5084.
+the curled whee whirled key is a plateitem. description is "It's a really odd but cool shape and design. It warmed up quickly in your pocket. Technically it's a key, cold, but switching words like that reminds you of poetry adults tell you you should enjoy. Ugh.[paragraph break]Just looking at it makes you think of words that don't exist but maybe should, the sort over-sensible adults would, and have, smacked you down verbally for saying.". printed name is "curled (whee) whirled key". eyevalue of key is 5084.
 
 guess-table of curled key is the table of curled key guesses.
 
