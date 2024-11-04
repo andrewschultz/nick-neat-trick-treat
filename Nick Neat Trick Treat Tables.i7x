@@ -471,7 +471,7 @@ this is the vr-andy-ng rule:
 	now sco-andy-ng is true;
 	say "[randy] says, 'yes! They seem like someone quite worthy. They and their friends will be a big help.' You protest you don't know them that well so they might not help. [Randy] assures you that people do help each other, just because, and you can get to know each other, later.";
 	wfak;
-	say "In fact on self-reflection you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.";
+	say "But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.";
 	wfak;
 	say "Perhaps the shared experience of the final fight will help. Between you and Pete and your classmates and Randy.";
 	now classmate-chosen is classmate-asked;

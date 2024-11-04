@@ -275,7 +275,7 @@ the great grace fate face is a thing. "The Great Grace Fate Face affords passage
 
 book HonerHouse
 
-HonerHouse is inside of Strick Street. HonerHouse is privately-named. printed name of HonerHouse is "Honer House". "Here in the honer house you [house-left]. You can go back out [if house-crit-score is 2]once[else]now[end if] you've gotten your bearings[if sco-donor-douse is false], though you may be able to do some sneaky trick-or-treating before[end if].". eyevalue of honerhouse is 55.
+HonerHouse is inside of Strick Street. HonerHouse is privately-named. printed name of HonerHouse is "Honer House". "Here in the honer house you [house-left]. You can go back out [if house-crit-score is 2]once[else]now[end if] you've gotten your bearings[if sco-donor-douse is false], though you may be able to do some sneaky trick-or-treating before[end if].". eyevalue of honerhouse is 1055.
 
 guess-table of HonerHouse is the table of honer house guesses.
 

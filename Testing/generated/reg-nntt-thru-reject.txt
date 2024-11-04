@@ -10,6 +10,140 @@
 
 >z
 
+#testcase-check-vc-a-gnome-rule-if-player-is-not-in-hun-home
+#testcase-reject-start-table-of-verb-checks-vc-a-gnome-rule
+>a gnome
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-check-vc-andy-ng-rule-if-player-is-not-in-eee-ing
+#testcase-reject-start-table-of-verb-checks-vc-andy-ng-rule
+>andy ng
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-be-bold-rule
+>be bold
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-blank-bling-rule
+>blank bling
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-creaky-cray-rule
+>creaky cray
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-dandy-ding-rule
+>dandy ding
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-dare-dine-rule
+>dare dine
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-done-dome-rule
+>done dome
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-donor-douse-rule
+>donor douse
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-fair-fine-rule
+>fair fine
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-fun-foam-rule
+>fun foam
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-get-ghoul-rule
+>get ghoul
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-green-grid-rule
+>green grid
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-grit-grins-rule
+>grit grins
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-loner-louse-rule
+>loner louse
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-me-mold-rule
+>me mold
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-moaner-mouse-rule
+>moaner mouse
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-plank-pling-rule
+>plank pling
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-pluraled-plea-rule
+>pluraled plea
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-pun-poem-rule
+>pun poem
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-re-rolled-rule
+>re rolled
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-run-roam-rule
+>run roam
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-sank-sing-rule
+>sank sing
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-see-sold-rule
+>see sold
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-share-shine-rule
+>share shine
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-shove-shook-rule
+>shove shook
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-streaky-stray-rule
+>streaky stray
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-thank-thing-rule
+>thank thing
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-theyre-thine-rule
+>theyre thine
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-ton-tome-rule
+>ton tome
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-treat-tree-rule
+>treat tree
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-weakie-way-rule
+>weakie way
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-start-table-of-verb-checks-vc-wee-wold-rule
+>wee wold
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
 #testcase-check-vc-pick-pete-rule-if-sco-ick-eat-is-false
 >pick pete
 Pete will be fun to trick-or-treat with, but first, those vegetables. Your parents aren't wasting them.
