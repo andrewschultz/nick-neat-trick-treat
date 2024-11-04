@@ -4,7 +4,15 @@ A log of fixes for live competitions and also post-comp releases.
 
 The specific commits are at https://github.com/andrewschultz/nick-neat-trick-treat
 
-2044/11/3: version 1.20, bugfixes, in-comp
+2024/11/4: version 1.2.1, bugfixes, in-comp
+* fixed a few misc hint item inaccuracies
+* ME disambiguation now goes to player and not meet-me message
+* house scenery in Strick Street is now "helpful" until entered
+* fixed a couple namespace collisions where scenery (seat, house) were similarly named to room
+* fixed misfiring THINK command for one south room puzzle
+* fixed typos including period (!) in Randy's name
+
+2024/11/3: version 1.20, bugfixes, in-comp
 * fixed general hinting bug (inaccurate values)
 * fixed specific item hinting bugs (inaccurate values)
 * honer house is now scenery in Strick Street
