@@ -72,6 +72,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "leetly"	--	--	false	--	"Meetings with Pete are always leet, though."
 "neat"	"knee"	--	false	--	"<CLEVER REJECT TEXT>"
 "seat"	"c|see|sea"	--	false	--	"No, you and Pete P aren't going to a play or a beach."
+"tweet"	"twee"	--	false	--	"You hear an eerie bird-call."
 "wheat"	"whee"	--	false	--	"It's candy that's worth getting excited about."
 "yeet"	"ye"	--	false	--	"<CLEVER REJECT TEXT>"
 

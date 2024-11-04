@@ -51,7 +51,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "weakie"	"way"	--	--	false	true	true	false	leaky ley	vc-weakie-way rule	vr-weakie-way rule	--	--
 "creaky"	"cray"	--	--	false	true	true	false	leaky ley	vc-creaky-cray rule	vr-creaky-cray rule	--	--
 "grit"	"grins"	--	--	false	true	true	false	leaky ley	vc-grit-grins rule	vr-grit-grins rule	--	--
-"streaky"	"stray"	--	--	false	true	true	false	leaky ley	vc-streaky-stray rule	vr-streaky-stray rule	--	"You can call out a [b]STREAKY STRAY[r] [once-now of vc-streaky-stray rule] combat gets really heated."
+"streaky"	"stray"	--	--	false	true	true	false	leaky ley	vc-streaky-stray rule	vr-streaky-stray rule	--	"You can call out a [b]STREAKY STRAY[r] [once-now of vc-streaky-stray rule] combat has gotten really heated."
 "slick"	"sleet"	--	--	false	true	true	false	leaky ley	vc-slick-sleet rule	vr-slick-sleet rule	--	"You can cast [b]SLICK SLEET[r] [once-now of vc-slick-sleet rule] your final enemy is up."
 "fair"	"fine"	--	--	false	true	true	false	Lair Line	vc-fair-fine rule	vr-fair-fine rule	--	--
 "theyre|there"	"thine"	--	--	false	true	false	false	Lair Line	vc-theyre-thine rule	vr-theyre-thine rule	--	--
@@ -95,7 +95,7 @@ this is the vr-pick-pete rule:
 a goodrhyme rule (this is the vc-treat-tree rule):
 	if player does not have meet me pete p, unavailable;
 	if sco-treat-tree is true:
-		vcal "You already met Pete!";
+		vcal "[if player is in lair line]You can't see it right now, but the tree is okay again, thanks to you[else if eee ing is visited]You hope the tree has healed, but you have more important business right now[else]You can't change the treat tree back until you get to the root of all this[end if].";
 		already-done;
 	ready;
 
@@ -234,7 +234,7 @@ a goodrhyme rule (this is the vc-thank-thing rule):
 		vcp "You have found nothing to be grateful for, yet.";
 		not-yet;
 	if sco-thank-thing is true:
-		vcal "You've ben taught to be polite, but that'd be overkill.";
+		vcal "You've been taught to be polite, but that'd be overkill.";
 		already-done;
 	ready;
 
@@ -428,7 +428,7 @@ this is the vr-see-sold rule:
 a goodrhyme rule (this is the vc-wee-wold rule):
 	if player is not in TreeTrolled, unavailable;
 	if sco-wee-wold is true:
-		vcal "It's bad to overpopulate forests!";
+		vcal "You might get tired of the story, and so might the tree.";
 		already-done;
 	ready;
 
@@ -455,11 +455,15 @@ a goodrhyme rule (this is the vc-andy-ng rule):
 	if player is not in eee ing, unavailable;
 	if sco-dandy-ding is false:
 		now classmate-asked is called;
+		now classmate-chosen is classmate-asked;
 		vcp "You remember [classmate-asked], whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with [randy] to introduce you. You need [randy]'s trust, first, though.";
 		not-yet;
 	if sco-andy-ng is true: [this code is probably not reached since you are kicked to the next room right away]
+		if classmate-asked is classmate-chosen:
+			vcal "Don't worry. [classmate-chosen] will be along when needed.";
+		else:
+			vcal "[if classmate-asked is called]You already suggested [classmate-asked][else]Yes, [classmate-asked] would work as well[end if]. But [classmate-chosen] will bring the others along.";
 		now classmate-asked is called;
-		vcal "Yes, [classmate-asked] would work as well. But you only need one along.";
 		already-done;
 	ready;
 
