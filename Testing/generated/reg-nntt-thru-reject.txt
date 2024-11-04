@@ -162,6 +162,11 @@ You can cast SLICK SLEET once your final enemy is up.
 >ick eat
 by one point
 
+#testcase-check-vc-ick-eat-rule-fallthrough
+You mouth the phrase to yourself. You think it. It wouldn't do to say it aloud. You worry you're getting a bit too old for either saying the phrase or disliking vegetables. But a part of you hopes you always hate certain vegetables. You have to stand for SOMETHING, after all.
+But the vegetables aren't bad once you start in on them. They just don't compare to trick or treat candy.
+You have a lot of friends to go out with. But who's the best fit for tonight? Well, you've sort of already chosen. Just got to remember whom to, uh, choose.
+
 #testcase-check-vc-ick-eat-rule-if-sco-ick-eat-is-true
 >ick eat
 You've earned enough brownie points. Time to prep to go look for candy.
@@ -169,12 +174,22 @@ You've earned enough brownie points. Time to prep to go look for candy.
 >pick pete
 by one point
 
+#testcase-check-vc-pick-pete-rule-fallthrough
+You message Pete on your phone. Pete P. He has a long name nobody can quite pronounce. Well, some kids do, and they get called show-offs. He's not ashamed of his long name. He just understands. You know how to spell it and pronounce it.
+The message back: "Meet me. -- Pete P."
+But where?
+
 #testcase-check-vc-pick-pete-rule-if-sco-pick-pete-is-true
 >pick pete
 You already picked Pete. Where to meet him?
 
 >treat tree
 by one point
+
+#testcase-check-vc-treat-tree-rule-fallthrough
+Meeting by the treat tree should be easy, but the area is much darker than you remember. The tree even starts talking ... someone or something has cast a spell on it, so it can't enjoy Halloween, or it can't help others to. It's a trolled tree now. It nudges you north to a neighborhood you didn't know existed.
+And you're pretty sure Strick Street isn't an avenue, as strick isn't really a word, but sadly it fits in here.
+How to make things un-struck?
 
 #testcase-check-vc-treat-tree-rule-if-sco-treat-tree-is-true
 >treat tree
@@ -185,6 +200,10 @@ You can't change the treat tree back until you get to the root of all this.
 >loner louse
 by one point
 
+#testcase-check-vc-loner-louse-rule-fallthrough
+You fight back at any imaginary undead who, okay, they are lonely, and maybe they died gruesomely, but that doesn't excuse them being mean and scaring people.
+You sense there is one more thing you need to do here.
+
 #testcase-check-vc-loner-louse-rule-if-sco-loner-louse-is-true
 >loner louse
 Don't rub it in. Move on!
@@ -192,12 +211,21 @@ Don't rub it in. Move on!
 >moaner mouse
 by one point
 
+#testcase-check-vc-moaner-mouse-rule-fallthrough
+You locate the source of scary moaning, which is not a very big mouth. The truth sets one free from fear!
+Perhaps you could do some trick-or-treating with an impromptu phrase. You want LOTS of candy, if you can. You've earned it! You passed this introductory bit!
+
 #testcase-check-vc-moaner-mouse-rule-if-sco-moaner-mouse-is-true
 >moaner mouse
 The mouse has been properly chastised.
 
 >donor douse
 by one point
+
+#testcase-check-vc-donor-douse-rule-fallthrough
+You cheekily ask for more candy, even though there doesn't appear to be anyone here. A voice promises you it will be waiting at game's end.
+Your score and bonus points just went up by one point.
+A stun-steed zooms by, bellowing "None-need-done deed!" Have you lost focus on what's really important? Or just put in a bit of extra rigor? You decide on the second, as you could also imagine a bin-bare-min mare to insult you for finding no extra neat stuff.
 
 #testcase-check-vc-donor-douse-rule-if-sco-donor-douse-is-true
 >donor douse
@@ -222,6 +250,9 @@ You can THANK THING once you have gotten a gift to be thankful for.
 >plank pling
 by one point
 
+#testcase-check-vc-plank-pling-rule-fallthrough
+You search around. Most planks give odd thuds, but one -- ah, a pling! There must be something under it, or them. But what?
+
 #testcase-check-vc-plank-pling-rule-if-sco-plank-pling-is-true
 >plank pling
 You already found the odd-sounding plank and what was behind it!
@@ -235,6 +266,9 @@ You can THANK THING once you have gotten a gift to be thankful for.
 >blank bling
 by one point
 
+#testcase-check-vc-blank-bling-rule-fallthrough
+Hooray! You found some blank bling! Gut you feel guilty just taking it. Who or what left it for you?
+
 #testcase-check-vc-blank-bling-rule-if-sco-blank-bling-is-true
 >blank bling
 You already acquired bling!
@@ -246,6 +280,9 @@ You can THANK THING now you have gotten a gift to be thankful for.
 >thank thing
 by one point
 
+#testcase-check-vc-thank-thing-rule-fallthrough
+The weird wraith still looks a bit sad, though. Perhaps positive advice, however trivial and generic, would be nice, if you can think of it. But you DO have a quest to get on with.
+
 #testcase-check-vc-thank-thing-rule-if-sco-thank-thing-is-true
 >thank thing
 You've been taught to be polite, but that'd be overkill.
@@ -255,6 +292,9 @@ You've been taught to be polite, but that'd be overkill.
 
 >sank sing
 by one point
+
+#testcase-check-vc-sank-sing-rule-fallthrough
+Well, whatever works. You engage in some harmless positivity. The thing seems to appreciate it.
 
 #testcase-check-vc-sank-sing-rule-if-sco-sank-sing-is-true
 >sank sing
@@ -293,6 +333,9 @@ You can SEE SOLD once you have a creation you can swap.
 >be bold
 by one point
 
+#testcase-check-vc-be-bold-rule-fallthrough
+You feel less fearful now. And yet -- you went about it pretty well, but you could feel even less fearful if things are done right.
+
 #testcase-check-vc-be-bold-rule-if-sco-be-bold-is-true
 >be bold
 You are bold enough now.
@@ -304,6 +347,10 @@ You can SEE SOLD once you have a creation you can swap.
 
 >rerolled
 by one point
+
+#testcase-check-vc-re-rolled-rule-fallthrough
+Yes! That's more like it. It maybe wasn't that brave to look for ways to be more brave, but you did so, and you found them. The tree, trolled, almost seems to smile. "I need a piece of you, or an effigy of you, or something. Then I will give you something back."
+Weird, but maybe you're in luck. The ground is soft here ... maybe you can make something of it.
 
 #testcase-check-vc-re-rolled-rule-if-sco-re-rolled-is-true
 >rerolled
@@ -317,6 +364,10 @@ You can SEE SOLD once you have a creation you can swap.
 >me mold
 by one point
 
+#testcase-check-vc-me-mold-rule-fallthrough
+Ah, there we go! It looks ... vaguely like you, you guess. Sadly, Mart Made-Art-Aid, that cool summer camp counselor (as you called him,) isn't here to give pointers.
+It was work, though, and you're not giving it away for free. The tree, trolled, indicates it wants to engage in commerce, of a sort.
+
 #testcase-check-vc-me-mold-rule-if-sco-me-mold-is-true
 >me mold
 One you-doll is enough.
@@ -328,12 +379,20 @@ You can SEE SOLD now you have a creation you can swap.
 >see sold
 by one point
 
+#testcase-check-vc-see-sold-rule-fallthrough
+The tree is impressed by your confidence. It swaps: the key, cold, for the me-mold. Perhaps you have a future career as an artist! Or just a side hustle.
+But the key quickly warms up when you grab it! And my, what an odd shape it is, too. Whirled, curled. A whirled (whee) curled key!
+There doesn't seem to be anything else to say. Though the tree does seem to want to chat. Perhaps about distant lands. But where? It's still feeling trolled, so it won't want to start the conversation.
+
 #testcase-check-vc-see-sold-rule-if-sco-see-sold-is-true
 >see sold
 The deal has already been clinched.
 
 >wee wold
 by one point
+
+#testcase-check-vc-wee-wold-rule-fallthrough
+At your suggestion, the tree, trolled launches into stories of the far-off Wee Wold. After a while, it apologizes for taking so long. But really, you don't mind. You're glad you took the time, even if it doesn't further your quest.
 
 #testcase-check-vc-wee-wold-rule-if-sco-wee-wold-is-true
 >wee wold
@@ -377,6 +436,9 @@ You can RUN ROAM once you need to rebel against feeling stuck.
 >fun foam
 by one point
 
+#testcase-check-vc-fun-foam-rule-fallthrough
+Pop! Fun foam appears! Weird, but way less creepy-weird than, well, the hun home.
+
 #testcase-check-vc-fun-foam-rule-if-sco-fun-foam-is-true
 >fun foam
 Too much fun foam would be suffocating.
@@ -394,6 +456,9 @@ You can RUN ROAM once you need to rebel against feeling stuck.
 >ton tome
 by one point
 
+#testcase-check-vc-ton-tome-rule-fallthrough
+A very, very big and dark and intimidating book, which puts scary high school textbooks to shame, pops into existence and falls onto the fun foam.
+
 #testcase-check-vc-ton-tome-rule-if-sco-ton-tome-is-true
 >ton tome
 Two ton tomes are more than enough! Well, one is, in its own way.
@@ -410,6 +475,9 @@ You can RUN ROAM once you need to rebel against feeling stuck.
 >pun poem
 by one point
 
+#testcase-check-vc-pun-poem-rule-fallthrough
+The ton tome glows a bit! It seems less awful now. In fact, some of the more evil pages crumble and blow away. The book's less heavy now.
+
 #testcase-check-vc-pun-poem-rule-if-sco-pun-poem-is-true
 >pun poem
 Too many puns get old and stale.
@@ -424,6 +492,10 @@ You can RUN ROAM once you need to rebel against feeling stuck.
 >done dome
 by one point
 
+#testcase-check-vc-done-dome-rule-fallthrough
+Now that the place is cheered up, you feel obliged to stay here, forced to be happy. As if a voice says "What more could you want?"
+Many pages of the erstwhile Ton Tome blow away. What's left is a Love-Look-'Bove Book, which seems sappy. Still, you pick it up, and you feel frozen to the spot. It's perfect here, right? Why would you want to leave? Why not enjoy what you've created?
+
 #testcase-check-vc-done-dome-rule-if-sco-done-dome-is-true
 >done dome
 You already certified completing renovation of the home/dome!
@@ -436,6 +508,10 @@ You can RUN ROAM now you need to rebel against feeling stuck.
 >run roam
 by one point
 
+#testcase-check-vc-run-roam-rule-fallthrough
+You exhort yourself to get going, and not just get going, but to see new places. And yes, the hun home does feel a bit fake. You notice a few things off about it, and you feel okay exiting now.
+And yet ... and yet ... you could call in someone appropriate to keep watch over the more comfy home you created.
+
 #testcase-check-vc-run-roam-rule-if-sco-run-roam-is-true
 >run roam
 You already exhorted yourself to get out! You need no magicking to do so.
@@ -445,6 +521,9 @@ You already exhorted yourself to get out! You need no magicking to do so.
 
 >a gnome
 by one point
+
+#testcase-check-vc-a-gnome-rule-fallthrough
+Yes, yes, that's a good idea, have a gnome for upkeep once everything's fixed here. But they shouldn't be here right now, you'd guess.
 
 #testcase-check-vc-a-gnome-rule-if-sco-a-gnome-is-true
 >a gnome
@@ -459,26 +538,38 @@ You can SHOVE SHOOK once you have what you need for a ritual and are in the righ
 
 >e
 
-#testcase-think-table-of-verb-checks-vc-pluraled-plea-rule
+#+testcase-think-table-of-verb-checks-vc-pluraled-plea-rule
 >think
 You can make a PLURALED PLEA now you have what you need for a ritual and are in the right place.
 
 >pluraled plea
 by one point
 
-#testcase-think-table-of-verb-checks-vc-shove-shook-rule
+#testcase-check-vc-pluraled-plea-rule-fallthrough
+You place the curled (whee) whirled key in the compartment in the bait base plate place where it fits. The compartment closes.
+The bait base plate place shakes a bit. You think you see a crack in it.
+
+#+testcase-think-table-of-verb-checks-vc-shove-shook-rule
 >think
 You can SHOVE SHOOK now you have what you need for a ritual and are in the right place.
 
 >shove shook
 by one point
 
-#testcase-think-table-of-verb-checks-vc-get-ghoul-rule
+#testcase-check-vc-shove-shook-rule-fallthrough
+You place the Love-Look-'Bove Book in the compartment in the bait base plate place where it fits. The compartment closes.
+More rumbling. Clear cracks appear in the bait base plate place.
+
+#+testcase-think-table-of-verb-checks-vc-get-ghoul-rule
 >think
 You can GET GHOUL now you have what you need for a ritual and are in the right place.
 
 >get ghoul
 by one point
+
+#testcase-check-vc-get-ghoul-rule-fallthrough
+You place the yet-you'll-jet jewel in the compartment in the bait base plate place where it fits. The compartment closes.
+The bait base plate place shatters to reveal not only a great grace fate face but also passage east!
 
 >e
 
@@ -486,6 +577,7 @@ by one point
 >treat tree
 You hope the tree has healed, but you have more important business right now.
 
+#testcase-check-vc-andy-ng-rule-if-sco-dandy-ding-is-false
 >andy ng
 You remember Andy Ng, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
 
@@ -522,16 +614,24 @@ Hmph. That (or a functionally equivalent alternate solution) still doesn't quite
 >dandy ding
 by one point
 
+#testcase-check-vc-dandy-ding-rule-fallthrough
+"There you go!" says Randy Ring-Candy-King. "Just had to make sure, you know. Oh, one other thing -- can you call up a classmate? Maybe someone you don't know that well, just by name. I think you have a few who would work really well with me."
+
 #testcase-check-vc-dandy-ding-rule-if-sco-dandy-ding-is-true
 >dandy ding
 You already got Randy's attention!
 
-#testcase-think-table-of-verb-checks-vc-andy-ng-rule
+#+testcase-think-table-of-verb-checks-vc-andy-ng-rule
 >think
 You can recall ANDY NG or any other classmate now you have hit it off with Randy.
 
 >andy ng
 by one point
+
+#testcase-check-vc-andy-ng-rule-fallthrough
+Randy Ring-Candy-King says, "Yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
+But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.
+Perhaps the shared experience of the final fight will help. Between you and Pete and your classmates and Randy.
 
 >grit grins
 by one point
@@ -553,8 +653,14 @@ You can call out a STREAKY STRAY once combat has gotten really heated.
 >weakie way
 by one point
 
+#testcase-check-vc-weakie-way-rule-fallthrough
+You worry slightly that putting the adjective second may deduct style points, but it turns out emphasizing it leaves them taken aback.
+
 >creaky cray
 by one point
+
+#testcase-check-vc-creaky-cray-rule-fallthrough
+You totally justifiably DARVO them, even though you aren't aware of the acronym. You exaggerate how senseless it is to ruin younger kids' halloween, and you wonder if their lives are so empty they'll be doing this every year.
 
 #testcase-check-vc-weakie-way-rule-if-sco-weakie-way-is-true
 >weakie way
@@ -566,6 +672,11 @@ Insults lose zing the second time around.
 
 >grit grins
 by one point
+
+#testcase-check-vc-grit-grins-rule-fallthrough
+You grin, fiercely you hope, as if to say "I've put up with worse." And you have, but it's the eye contact and involuntary eye-roll that really gets them.
+They run away, shaking their fingers at you. "You'll be sorry! You made us get the big boss!"
+And thus begins the final fight, a freaky fray. Reeky Ray, who holds a reeky ray that is very, very accurate. How to disrupt it, or him?
 
 >streaky stray
 by one point
@@ -584,16 +695,25 @@ You can cast SLICK SLEET now your final enemy is up.
 >slick sleet
 by one point
 
+#testcase-check-vc-slick-sleet-rule-fallthrough
+Reeky Ray begins tripping over himself. "What? It can't be!"
+But it can! Reeky Ray shakes his head, then picks himself up. Maybe one more blow will knock him out!
+
 #testcase-check-vc-slick-sleet-rule-if-sco-slick-sleet-is-true
 >slick sleet
 But you already created slick sleet!
 
-#testcase-think-table-of-verb-checks-vc-streaky-stray-rule
+#+testcase-think-table-of-verb-checks-vc-streaky-stray-rule
 >think
 You can call out a STREAKY STRAY now combat has gotten really heated.
 
 >streaky stray
 by one point
+
+#testcase-check-vc-streaky-stray-rule-fallthrough
+Reeky Ray begins misfiring. "What? It can't be!"
+But it can, again! And this time, having lost control of himself and his weapon, Reeky Ray collapses, exhausted. "Halloween is stupid! Find more practical things to do! Chocolate is bad for you!" But nobody is listening.
+Randy has something to show you, though.
 
 #+testcase-check-vc-treat-tree-rule-if-sco-treat-tree-is-true
 >treat tree
@@ -602,12 +722,18 @@ You can't see it right now, but the tree is okay again, thanks to you
 >share shine
 by one point
 
+#testcase-check-vc-share-shine-rule-fallthrough
+You take time, unprompted, to thank others that helped you defeat Reeky Ray. You couldn't have done it without them!
+
 #testcase-check-vc-share-shine-rule-if-sco-share-shine-is-true
 >share shine
 That'd be overdoing the gratitude!
 
 >there thine
 by one point
+
+#testcase-check-vc-theyre-thine-rule-fallthrough
+With a small flourish, you hand a few candies to kids dressed in medieval costumes, but really, you still have a lot.
 
 #testcase-check-vc-theyre-thine-rule-if-sco-theyre-thine-is-true
 >there thine
@@ -632,22 +758,29 @@ You can DARE DINE once you have passed out the candy equitably and have a way ho
 >fair fine
 by one point
 
+#testcase-check-vc-fair-fine-rule-fallthrough
+You at first almost spit it out -- then you realize, everyone else deserves it, too. You can't eat ALL that.
+
 #testcase-check-vc-fair-fine-rule-if-sco-fair-fine-is-true
 >fair fine
 You already divided things equitably!
 
-#testcase-think-table-of-verb-checks-vc-dare-dine-rule
+#+testcase-think-table-of-verb-checks-vc-dare-dine-rule
 >think
 You can DARE DINE once you have passed out the candy equitably and have a way home.
 
 >green grid
 by one point
 
+#testcase-check-vc-green-grid-rule-fallthrough
+The been-bid-keen kid, awed with how you took down Reeky Ray, mutters there's no way they can do this. But you know there are some things some people are better suited for than others. You ask them to give it a try. A gren grid glows--and beneath it you see your neighborhood!
+But you don't want to jump through right away. You could stay out a bit too late, talking with friends. And what goes well with conversation?
+
 #testcase-check-vc-green-grid-rule-if-sco-green-grid-is-true
 >green grid
 You already got a been-bid-keen kid to find a portal back!
 
-#testcase-think-table-of-verb-checks-vc-dare-dine-rule
+#+testcase-think-table-of-verb-checks-vc-dare-dine-rule
 >think
 You can DARE DINE now you have passed out the candy equitably and have a way home.
 
@@ -765,4 +898,7 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 
 >dare dine
 by one point
+
+#testcase-check-vc-dare-dine-rule-fallthrough
+You know you're not supposed to start eating candy until your parents saw your haul. Of course, you don't eat all the candy at once. In fact, it lasts longer than previous years. Each bite reminds you of friends and adventures, and even the bad candy tastes good. Your parents are shocked it lasts through Christmas. They are proud of your restraint -- you are growing up! Of course, if you explained the whole adventure, they would talk about kids and THEIR IMAGINATION.
 

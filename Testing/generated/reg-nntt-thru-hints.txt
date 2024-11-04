@@ -91,7 +91,7 @@ Perhaps back inside, the eyes might see more.
 
 #testcase-values-eyevalue-of-honerhouse-is-1055
 >eye
-WRONG
+Odd ... the left eye seemed to squint at the end. So that counts as half?
 
 >loner louse
 by one point
@@ -145,7 +145,7 @@ by one point
 
 >s
 
-#testcase-values-eyevalue-of-place-is--1
+#+testcase-values-eyevalue-of-place-is--1
 >eye plate
 Nothing from the eyes. You probably have to manipulate it with other objects you acquired.
 
@@ -164,12 +164,12 @@ Debug note: normal eye-scan.
 >be bold
 by one point
 
-#testcase-values-eyevalue-of-tree-trolled-is-24
+#+testcase-values-eyevalue-of-tree-trolled-is-24
 >eye tree
 The left eye blinks two times, then the right eye, six.
 Odd ... the eyes seem to look at each other, almost being pulled into each other.
 
-#testcase-values-eyevalue-of-treetrolled-is-24
+#+testcase-values-eyevalue-of-treetrolled-is-24
 >eye
 The left eye blinks two times, then the right eye, six.
 Odd ... the eyes seem to look at each other, almost being pulled into each other.
@@ -177,12 +177,12 @@ Odd ... the eyes seem to look at each other, almost being pulled into each other
 >rerolled
 by one point
 
-#testcase-values-eyevalue-of-tree-trolled-is-24
+#+testcase-values-eyevalue-of-tree-trolled-is-24
 >eye tree
 The left eye blinks two times, then the right eye, four.
 Debug note: normal eye-scan.
 
-#testcase-values-eyevalue-of-treetrolled-is-24
+#+testcase-values-eyevalue-of-treetrolled-is-24
 >eye
 The left eye blinks two times, then the right eye, four.
 Debug note: normal eye-scan.
@@ -190,12 +190,12 @@ Debug note: normal eye-scan.
 >me mold
 by one point
 
-#testcase-values-eyevalue-of-tree-trolled-is-24
+#+testcase-values-eyevalue-of-tree-trolled-is-24
 >eye tree
 The left eye blinks three times, then the right eye, four.
 Debug note: normal eye-scan.
 
-#testcase-values-eyevalue-of-treetrolled-is-24
+#+testcase-values-eyevalue-of-treetrolled-is-24
 >eye
 The left eye blinks three times, then the right eye, four.
 Debug note: normal eye-scan.
@@ -203,12 +203,12 @@ Debug note: normal eye-scan.
 >see sold
 by one point
 
-#testcase-values-eyevalue-of-tree-trolled-is-24
+#+testcase-values-eyevalue-of-tree-trolled-is-24
 >eye tree
 The left eye blinks two times, then the right eye, four.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
 
-#testcase-values-eyevalue-of-treetrolled-is-24
+#+testcase-values-eyevalue-of-treetrolled-is-24
 >eye
 The left eye blinks two times, then the right eye, four.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
@@ -216,11 +216,11 @@ Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY nee
 >wee wold
 by one point
 
-#testcase-values-eyevalue-of-tree-trolled-is-24
+#+testcase-values-eyevalue-of-tree-trolled-is-24
 >eye tree
 You don't need to do anything else with the tree, trolled.
 
-#testcase-values-eyevalue-of-treetrolled-is-24
+#+testcase-values-eyevalue-of-treetrolled-is-24
 >eye
 You don't need to do anything else with the general location.
 
@@ -235,7 +235,7 @@ The left eye blinks three times, then the right eye, four.
 >fun foam
 by one point
 
-#testcase-values-eyevalue-of-hun-home-is-34
+#+testcase-values-eyevalue-of-hun-home-is-34
 >eye
 The left eye blinks three times, then the right eye, four.
 
@@ -246,11 +246,11 @@ The left eye blinks three times, then the right eye, four.
 >ton tome
 by one point
 
-#testcase-values-eyevalue-of-hun-home-is-34
+#+testcase-values-eyevalue-of-hun-home-is-34
 >eye
 The left eye blinks three times, then the right eye, four.
 
-#testcase-values-eyevalue-of-fun-foam-is-34
+#+testcase-values-eyevalue-of-fun-foam-is-34
 >eye fun foam
 The left eye blinks three times, then the right eye, four.
 
@@ -261,47 +261,47 @@ The left eye blinks three times, then the right eye, four.
 >pun poem
 by one point
 
-#testcase-values-eyevalue-of-hun-home-is-34
+#+testcase-values-eyevalue-of-hun-home-is-34
 >eye
 The left eye blinks four times, then the right eye, four.
 
-#testcase-values-eyevalue-of-fun-foam-is-34
+#+testcase-values-eyevalue-of-fun-foam-is-34
 >eye fun foam
 The left eye blinks four times, then the right eye, four.
 
-#testcase-values-eyevalue-of-ton-tome-is-34
+#+testcase-values-eyevalue-of-ton-tome-is-34
 >eye ton tome
 The left eye blinks four times, then the right eye, four.
 
 >done dome
 by one point
 
-#testcase-values-eyevalue-of-hun-home-is-34
+#+testcase-values-eyevalue-of-hun-home-is-34
 >eye
 The left eye blinks three times, then the right eye, four.
 
-#testcase-values-eyevalue-of-fun-foam-is-34
+#+testcase-values-eyevalue-of-fun-foam-is-34
 >eye fun foam
 The left eye blinks three times, then the right eye, four.
 
-#testcase-values-eyevalue-of-ton-tome-is-34
+#+testcase-values-eyevalue-of-ton-tome-is-34
 >eye ton tome
 The left eye blinks three times, then the right eye, four.
 
 >run roam
 by one point
 
-#testcase-values-eyevalue-of-hun-home-is-34
+#+testcase-values-eyevalue-of-hun-home-is-34
 >eye
 The left eye blinks one time, then the right eye, five.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
 
-#testcase-values-eyevalue-of-fun-foam-is-34
+#+testcase-values-eyevalue-of-fun-foam-is-34
 >eye fun foam
 The left eye blinks one time, then the right eye, five.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
 
-#testcase-values-eyevalue-of-ton-tome-is-34
+#+testcase-values-eyevalue-of-ton-tome-is-34
 >eye ton tome
 The left eye blinks one time, then the right eye, five.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
@@ -309,21 +309,21 @@ Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY nee
 >a gnome
 by one point
 
-#testcase-values-eyevalue-of-hun-home-is-34
+#+testcase-values-eyevalue-of-hun-home-is-34
 >eye
 You don't need to do anything else with the general location.
 
-#testcase-values-eyevalue-of-fun-foam-is-34
+#+testcase-values-eyevalue-of-fun-foam-is-34
 >eye fun foam
 You don't need to do anything else with the fun foam.
 
-#testcase-values-eyevalue-of-ton-tome-is-34
+#+testcase-values-eyevalue-of-ton-tome-is-34
 >eye ton tome
 You don't need to do anything else with the ton tome.
 
 >e
 
-#testcase-values-eyevalue-of-place-is--1
+#+testcase-values-eyevalue-of-place-is--1
 >eye place
 Nothing from the eyes. You probably have to manipulate it with other objects you acquired.
 
@@ -340,7 +340,7 @@ by one point
 The left eye blinks five times, then the right eye, five.
 Debug note: normal eye-scan.
 
-#testcase-values-eyevalue-of-place-is--1
+#+testcase-values-eyevalue-of-place-is--1
 >eye base
 Nothing from the eyes. You probably have to manipulate it with more other objects you acquired.
 
@@ -376,7 +376,7 @@ Debug note: normal eye-scan.
 >dandy ding
 by one point
 
-#testcase-values-eyevalue-of-eee-ing-is-54
+#+testcase-values-eyevalue-of-eee-ing-is-54
 >eye
 The eyes are all over the places on this one. You may have several good options here. A few kids in your class might fit.
 
@@ -397,7 +397,7 @@ Odd ... the right eye seemed to squint at the end. So that counts as half?
 The left eye blinks six times, then the right eye, three.
 Odd ... the right eye seemed to squint at the end. So that counts as half?
 
-#testcase-values-eyevalue-of-a-twit-is-usually-163
+#+testcase-values-eyevalue-of-a-twit-is-usually-163
 >eye clay
 The left eye blinks six times, then the right eye, three.
 Odd ... the right eye seemed to squint at the end. So that counts as half?
@@ -472,7 +472,7 @@ by one point
 >grit grins
 by one point
 
-#testcase-values-eyevalue-of-nick-is-33
+#+testcase-values-eyevalue-of-nick-is-33
 >eye me
 The left eye blinks five times, then the right eye, five.
 Debug note: normal eye-scan.
@@ -480,7 +480,7 @@ Debug note: normal eye-scan.
 >slick sleet
 by one point
 
-#testcase-values-eyevalue-of-nick-is-33
+#+testcase-values-eyevalue-of-nick-is-33
 >eye me
 The eyes show nothing. You cast the spell you needed to!
 
@@ -526,17 +526,17 @@ by one point
 The left eye blinks five times, then the right eye, four.
 Debug note: normal eye-scan.
 
-#testcase-values-eyevalue-of-lair-line-is-44
+#+testcase-values-eyevalue-of-lair-line-is-44
 >eye
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
 
-#testcase-values-eyevalue-of-claire-cline-is-44
+#+testcase-values-eyevalue-of-claire-cline-is-44
 >eye claire
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
 
-#testcase-values-eyevalue-of-spare-spine-is-44
+#+testcase-values-eyevalue-of-spare-spine-is-44
 >eye spare spine
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
@@ -544,21 +544,21 @@ Debug note: normal eye-scan.
 >green grid
 by one point
 
-#testcase-values-eyevalue-of-kid-is-54
+#+testcase-values-eyevalue-of-kid-is-54
 >eye kid
 You don't need to do anything else with the been-bid-keen kid.
 
-#testcase-values-eyevalue-of-lair-line-is-44
+#+testcase-values-eyevalue-of-lair-line-is-44
 >eye
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
 
-#testcase-values-eyevalue-of-claire-cline-is-44
+#+testcase-values-eyevalue-of-claire-cline-is-44
 >eye claire
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
 
-#testcase-values-eyevalue-of-spare-spine-is-44
+#+testcase-values-eyevalue-of-spare-spine-is-44
 >eye spine
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.

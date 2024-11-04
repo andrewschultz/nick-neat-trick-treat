@@ -261,6 +261,13 @@ You can cast SLICK SLEET once your final enemy is up.
 >ick eat
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-ick-eat-rule-fallthrough
+{--all}#testcase-run-vr-ick-eat-rule-default
+You mouth the phrase to yourself. You think it. It wouldn't do to say it aloud. You worry you're getting a bit too old for either saying the phrase or disliking vegetables. But a part of you hopes you always hate certain vegetables. You have to stand for SOMETHING, after all.
+But the vegetables aren't bad once you start in on them. They just don't compare to trick or treat candy.
+You have a lot of friends to go out with. But who's the best fit for tonight? Well, you've sort of already chosen. Just got to remember whom to, uh, choose.
+
 @rej
 #testcase-check-vc-ick-eat-rule-if-sco-ick-eat-is-true
 >ick eat
@@ -287,6 +294,13 @@ Debug note: normal eye-scan.
 
 >pick pete
 by one point
+
+@rej,all
+{--rej}#testcase-check-vc-pick-pete-rule-fallthrough
+{--all}#testcase-run-vr-pick-pete-rule-default
+You message Pete on your phone. Pete P. He has a long name nobody can quite pronounce. Well, some kids do, and they get called show-offs. He's not ashamed of his long name. He just understands. You know how to spell it and pronounce it.
+The message back: "Meet me. -- Pete P."
+But where?
 
 @hint
 #+testcase-values-eyevalue-of-nick-is-33
@@ -316,6 +330,13 @@ You already picked Pete. Where to meet him?
 
 >treat tree
 by one point
+
+@rej,all
+{--rej}#testcase-check-vc-treat-tree-rule-fallthrough
+{--all}#testcase-run-vr-treat-tree-rule-default
+Meeting by the treat tree should be easy, but the area is much darker than you remember. The tree even starts talking ... someone or something has cast a spell on it, so it can't enjoy Halloween, or it can't help others to. It's a trolled tree now. It nudges you north to a neighborhood you didn't know existed.
+And you're pretty sure Strick Street isn't an avenue, as strick isn't really a word, but sadly it fits in here.
+How to make things un-struck?
 
 @rej
 #testcase-check-vc-treat-tree-rule-if-sco-treat-tree-is-true
@@ -371,10 +392,16 @@ The secrets in this house are verbal, not physical. You can only go back out.
 @hint
 #testcase-values-eyevalue-of-honerhouse-is-1055
 >eye
-WRONG
+Odd ... the left eye seemed to squint at the end. So that counts as half?
 
 >loner louse
 by one point
+
+@rej,all
+{--rej}#testcase-check-vc-loner-louse-rule-fallthrough
+{--all}#testcase-run-vr-loner-louse-rule-default
+You fight back at any imaginary undead who, okay, they are lonely, and maybe they died gruesomely, but that doesn't excuse them being mean and scaring people.
+You sense there is one more thing you need to do here.
 
 @rej
 #testcase-check-vc-loner-louse-rule-if-sco-loner-louse-is-true
@@ -384,6 +411,12 @@ Don't rub it in. Move on!
 >moaner mouse
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-moaner-mouse-rule-fallthrough
+{--all}#testcase-run-vr-moaner-mouse-rule-default
+You locate the source of scary moaning, which is not a very big mouth. The truth sets one free from fear!
+Perhaps you could do some trick-or-treating with an impromptu phrase. You want LOTS of candy, if you can. You've earned it! You passed this introductory bit!
+
 @rej
 #testcase-check-vc-moaner-mouse-rule-if-sco-moaner-mouse-is-true
 >moaner mouse
@@ -392,6 +425,13 @@ The mouse has been properly chastised.
 @!min
 >donor douse
 by one point
+
+@rej,all
+{--rej}#testcase-check-vc-donor-douse-rule-fallthrough
+{--all}#testcase-run-vr-donor-douse-rule-default
+You cheekily ask for more candy, even though there doesn't appear to be anyone here. A voice promises you it will be waiting at game's end.
+Your score and bonus points just went up by one point.
+A stun-steed zooms by, bellowing "None-need-done deed!" Have you lost focus on what's really important? Or just put in a bit of extra rigor? You decide on the second, as you could also imagine a bin-bare-min mare to insult you for finding no extra neat stuff.
 
 @rej
 #testcase-check-vc-donor-douse-rule-if-sco-donor-douse-is-true
@@ -454,6 +494,11 @@ You can THANK THING once you have gotten a gift to be thankful for.
 >plank pling
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-plank-pling-rule-fallthrough
+{--all}#testcase-run-vr-plank-pling-rule-default
+You search around. Most planks give odd thuds, but one -- ah, a pling! There must be something under it, or them. But what?
+
 @rej
 #testcase-check-vc-plank-pling-rule-if-sco-plank-pling-is-true
 >plank pling
@@ -474,6 +519,11 @@ You can THANK THING once you have gotten a gift to be thankful for.
 >blank bling
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-blank-bling-rule-fallthrough
+{--all}#testcase-run-vr-blank-bling-rule-default
+Hooray! You found some blank bling! Gut you feel guilty just taking it. Who or what left it for you?
+
 @hint
 #+testcase-values-eyevalue-of-rank-ring-is-55
 >eye
@@ -491,6 +541,11 @@ You can THANK THING now you have gotten a gift to be thankful for.
 
 >thank thing
 by one point
+
+@rej,all
+{--rej}#testcase-check-vc-thank-thing-rule-fallthrough
+{--all}#testcase-run-vr-thank-thing-rule-default
+The weird wraith still looks a bit sad, though. Perhaps positive advice, however trivial and generic, would be nice, if you can think of it. But you DO have a quest to get on with.
 
 @rej
 #testcase-check-vc-thank-thing-rule-if-sco-thank-thing-is-true
@@ -511,6 +566,11 @@ Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY nee
 >sank sing
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-sank-sing-rule-fallthrough
+{--all}#testcase-run-vr-sank-sing-rule-default
+Well, whatever works. You engage in some harmless positivity. The thing seems to appreciate it.
+
 @rej
 #testcase-check-vc-sank-sing-rule-if-sco-sank-sing-is-true
 >sank sing
@@ -527,7 +587,7 @@ You can GET GHOUL once you have what you need for a ritual and are in the right 
 >s
 
 @hint
-#testcase-values-eyevalue-of-place-is--1
+#+testcase-values-eyevalue-of-place-is--1
 >eye plate
 Nothing from the eyes. You probably have to manipulate it with other objects you acquired.
 
@@ -575,18 +635,23 @@ You can SEE SOLD once you have a creation you can swap.
 >be bold
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-be-bold-rule-fallthrough
+{--all}#testcase-run-vr-be-bold-rule-default
+You feel less fearful now. And yet -- you went about it pretty well, but you could feel even less fearful if things are done right.
+
 @rej
 #testcase-check-vc-be-bold-rule-if-sco-be-bold-is-true
 >be bold
 You are bold enough now.
 
 @hint
-#testcase-values-eyevalue-of-tree-trolled-is-24
+#+testcase-values-eyevalue-of-tree-trolled-is-24
 >eye tree
 The left eye blinks two times, then the right eye, six.
 Odd ... the eyes seem to look at each other, almost being pulled into each other.
 \\
-#testcase-values-eyevalue-of-treetrolled-is-24
+#+testcase-values-eyevalue-of-treetrolled-is-24
 >eye
 The left eye blinks two times, then the right eye, six.
 Odd ... the eyes seem to look at each other, almost being pulled into each other.
@@ -606,18 +671,24 @@ You can SEE SOLD once you have a creation you can swap.
 >rerolled
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-re-rolled-rule-fallthrough
+{--all}#testcase-run-vr-re-rolled-rule-default
+Yes! That's more like it. It maybe wasn't that brave to look for ways to be more brave, but you did so, and you found them. The tree, trolled, almost seems to smile. "I need a piece of you, or an effigy of you, or something. Then I will give you something back."
+Weird, but maybe you're in luck. The ground is soft here ... maybe you can make something of it.
+
 @rej
 #testcase-check-vc-re-rolled-rule-if-sco-re-rolled-is-true
 >rerolled
 Nah, you're doing well enough. Don't push your luck.
 
 @hint
-#testcase-values-eyevalue-of-tree-trolled-is-24
+#+testcase-values-eyevalue-of-tree-trolled-is-24
 >eye tree
 The left eye blinks two times, then the right eye, four.
 Debug note: normal eye-scan.
 \\
-#testcase-values-eyevalue-of-treetrolled-is-24
+#+testcase-values-eyevalue-of-treetrolled-is-24
 >eye
 The left eye blinks two times, then the right eye, four.
 Debug note: normal eye-scan.
@@ -631,18 +702,24 @@ You can SEE SOLD once you have a creation you can swap.
 >me mold
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-me-mold-rule-fallthrough
+{--all}#testcase-run-vr-me-mold-rule-default
+Ah, there we go! It looks ... vaguely like you, you guess. Sadly, Mart Made-Art-Aid, that cool summer camp counselor (as you called him,) isn't here to give pointers.
+It was work, though, and you're not giving it away for free. The tree, trolled, indicates it wants to engage in commerce, of a sort.
+
 @rej
 #testcase-check-vc-me-mold-rule-if-sco-me-mold-is-true
 >me mold
 One you-doll is enough.
 
 @hint
-#testcase-values-eyevalue-of-tree-trolled-is-24
+#+testcase-values-eyevalue-of-tree-trolled-is-24
 >eye tree
 The left eye blinks three times, then the right eye, four.
 Debug note: normal eye-scan.
 \\
-#testcase-values-eyevalue-of-treetrolled-is-24
+#+testcase-values-eyevalue-of-treetrolled-is-24
 >eye
 The left eye blinks three times, then the right eye, four.
 Debug note: normal eye-scan.
@@ -655,18 +732,25 @@ You can SEE SOLD now you have a creation you can swap.
 >see sold
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-see-sold-rule-fallthrough
+{--all}#testcase-run-vr-see-sold-rule-default
+The tree is impressed by your confidence. It swaps: the key, cold, for the me-mold. Perhaps you have a future career as an artist! Or just a side hustle.
+But the key quickly warms up when you grab it! And my, what an odd shape it is, too. Whirled, curled. A whirled (whee) curled key!
+There doesn't seem to be anything else to say. Though the tree does seem to want to chat. Perhaps about distant lands. But where? It's still feeling trolled, so it won't want to start the conversation.
+
 @rej
 #testcase-check-vc-see-sold-rule-if-sco-see-sold-is-true
 >see sold
 The deal has already been clinched.
 
 @hint
-#testcase-values-eyevalue-of-tree-trolled-is-24
+#+testcase-values-eyevalue-of-tree-trolled-is-24
 >eye tree
 The left eye blinks two times, then the right eye, four.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
 \\
-#testcase-values-eyevalue-of-treetrolled-is-24
+#+testcase-values-eyevalue-of-treetrolled-is-24
 >eye
 The left eye blinks two times, then the right eye, four.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
@@ -675,17 +759,22 @@ Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY nee
 >wee wold
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-wee-wold-rule-fallthrough
+{--all}#testcase-run-vr-wee-wold-rule-default
+At your suggestion, the tree, trolled launches into stories of the far-off Wee Wold. After a while, it apologizes for taking so long. But really, you don't mind. You're glad you took the time, even if it doesn't further your quest.
+
 @rej
 #testcase-check-vc-wee-wold-rule-if-sco-wee-wold-is-true
 >wee wold
 You might get tired of the story, and so might the tree.
 
 @hint
-#testcase-values-eyevalue-of-tree-trolled-is-24
+#+testcase-values-eyevalue-of-tree-trolled-is-24
 >eye tree
 You don't need to do anything else with the tree, trolled.
 \\
-#testcase-values-eyevalue-of-treetrolled-is-24
+#+testcase-values-eyevalue-of-treetrolled-is-24
 >eye
 You don't need to do anything else with the general location.
 
@@ -742,13 +831,18 @@ You can RUN ROAM once you need to rebel against feeling stuck.
 >fun foam
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-fun-foam-rule-fallthrough
+{--all}#testcase-run-vr-fun-foam-rule-default
+Pop! Fun foam appears! Weird, but way less creepy-weird than, well, the hun home.
+
 @rej
 #testcase-check-vc-fun-foam-rule-if-sco-fun-foam-is-true
 >fun foam
 Too much fun foam would be suffocating.
 
 @hint
-#testcase-values-eyevalue-of-hun-home-is-34
+#+testcase-values-eyevalue-of-hun-home-is-34
 >eye
 The left eye blinks three times, then the right eye, four.
 \\
@@ -770,17 +864,22 @@ You can RUN ROAM once you need to rebel against feeling stuck.
 >ton tome
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-ton-tome-rule-fallthrough
+{--all}#testcase-run-vr-ton-tome-rule-default
+A very, very big and dark and intimidating book, which puts scary high school textbooks to shame, pops into existence and falls onto the fun foam.
+
 @rej
 #testcase-check-vc-ton-tome-rule-if-sco-ton-tome-is-true
 >ton tome
 Two ton tomes are more than enough! Well, one is, in its own way.
 
 @hint
-#testcase-values-eyevalue-of-hun-home-is-34
+#+testcase-values-eyevalue-of-hun-home-is-34
 >eye
 The left eye blinks three times, then the right eye, four.
 \\
-#testcase-values-eyevalue-of-fun-foam-is-34
+#+testcase-values-eyevalue-of-fun-foam-is-34
 >eye fun foam
 The left eye blinks three times, then the right eye, four.
 \\
@@ -801,16 +900,21 @@ You can RUN ROAM once you need to rebel against feeling stuck.
 >pun poem
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-pun-poem-rule-fallthrough
+{--all}#testcase-run-vr-pun-poem-rule-default
+The ton tome glows a bit! It seems less awful now. In fact, some of the more evil pages crumble and blow away. The book's less heavy now.
+
 @hint
-#testcase-values-eyevalue-of-hun-home-is-34
+#+testcase-values-eyevalue-of-hun-home-is-34
 >eye
 The left eye blinks four times, then the right eye, four.
 \\
-#testcase-values-eyevalue-of-fun-foam-is-34
+#+testcase-values-eyevalue-of-fun-foam-is-34
 >eye fun foam
 The left eye blinks four times, then the right eye, four.
 \\
-#testcase-values-eyevalue-of-ton-tome-is-34
+#+testcase-values-eyevalue-of-ton-tome-is-34
 >eye ton tome
 The left eye blinks four times, then the right eye, four.
 
@@ -830,21 +934,27 @@ You can RUN ROAM once you need to rebel against feeling stuck.
 >done dome
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-done-dome-rule-fallthrough
+{--all}#testcase-run-vr-done-dome-rule-default
+Now that the place is cheered up, you feel obliged to stay here, forced to be happy. As if a voice says "What more could you want?"
+Many pages of the erstwhile Ton Tome blow away. What's left is a Love-Look-'Bove Book, which seems sappy. Still, you pick it up, and you feel frozen to the spot. It's perfect here, right? Why would you want to leave? Why not enjoy what you've created?
+
 @rej
 #testcase-check-vc-done-dome-rule-if-sco-done-dome-is-true
 >done dome
 You already certified completing renovation of the home/dome!
 
 @hint
-#testcase-values-eyevalue-of-hun-home-is-34
+#+testcase-values-eyevalue-of-hun-home-is-34
 >eye
 The left eye blinks three times, then the right eye, four.
 \\
-#testcase-values-eyevalue-of-fun-foam-is-34
+#+testcase-values-eyevalue-of-fun-foam-is-34
 >eye fun foam
 The left eye blinks three times, then the right eye, four.
 \\
-#testcase-values-eyevalue-of-ton-tome-is-34
+#+testcase-values-eyevalue-of-ton-tome-is-34
 >eye ton tome
 The left eye blinks three times, then the right eye, four.
 
@@ -861,23 +971,29 @@ You can RUN ROAM now you need to rebel against feeling stuck.
 >run roam
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-run-roam-rule-fallthrough
+{--all}#testcase-run-vr-run-roam-rule-default
+You exhort yourself to get going, and not just get going, but to see new places. And yes, the hun home does feel a bit fake. You notice a few things off about it, and you feel okay exiting now.
+And yet ... and yet ... you could call in someone appropriate to keep watch over the more comfy home you created.
+
 @rej
 #testcase-check-vc-run-roam-rule-if-sco-run-roam-is-true
 >run roam
 You already exhorted yourself to get out! You need no magicking to do so.
 
 @hint
-#testcase-values-eyevalue-of-hun-home-is-34
+#+testcase-values-eyevalue-of-hun-home-is-34
 >eye
 The left eye blinks one time, then the right eye, five.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
 \\
-#testcase-values-eyevalue-of-fun-foam-is-34
+#+testcase-values-eyevalue-of-fun-foam-is-34
 >eye fun foam
 The left eye blinks one time, then the right eye, five.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
 \\
-#testcase-values-eyevalue-of-ton-tome-is-34
+#+testcase-values-eyevalue-of-ton-tome-is-34
 >eye ton tome
 The left eye blinks one time, then the right eye, five.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
@@ -890,21 +1006,26 @@ Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY nee
 >a gnome
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-a-gnome-rule-fallthrough
+{--all}#testcase-run-vr-a-gnome-rule-default
+Yes, yes, that's a good idea, have a gnome for upkeep once everything's fixed here. But they shouldn't be here right now, you'd guess.
+
 @rej
 #testcase-check-vc-a-gnome-rule-if-sco-a-gnome-is-true
 >a gnome
 You already summoned a gnome!
 
 @hint
-#testcase-values-eyevalue-of-hun-home-is-34
+#+testcase-values-eyevalue-of-hun-home-is-34
 >eye
 You don't need to do anything else with the general location.
 \\
-#testcase-values-eyevalue-of-fun-foam-is-34
+#+testcase-values-eyevalue-of-fun-foam-is-34
 >eye fun foam
 You don't need to do anything else with the fun foam.
 \\
-#testcase-values-eyevalue-of-ton-tome-is-34
+#+testcase-values-eyevalue-of-ton-tome-is-34
 >eye ton tome
 You don't need to do anything else with the ton tome.
 
@@ -929,7 +1050,7 @@ You got the book from there. That's enough.
 You got the curled (whee) whirled key. That's enough.
 
 @hint
-#testcase-values-eyevalue-of-place-is--1
+#+testcase-values-eyevalue-of-place-is--1
 >eye place
 Nothing from the eyes. You probably have to manipulate it with other objects you acquired.
 
@@ -948,12 +1069,18 @@ by one point
 >undo
 
 @rej
-#testcase-think-table-of-verb-checks-vc-pluraled-plea-rule
+#+testcase-think-table-of-verb-checks-vc-pluraled-plea-rule
 >think
 You can make a PLURALED PLEA now you have what you need for a ritual and are in the right place.
 
 >pluraled plea
 by one point
+
+@rej,all
+{--rej}#testcase-check-vc-pluraled-plea-rule-fallthrough
+{--all}#testcase-run-vr-pluraled-plea-rule-default
+You place the curled (whee) whirled key in the compartment in the bait base plate place where it fits. The compartment closes.
+The bait base plate place shakes a bit. You think you see a crack in it.
 
 @hint
 #testcase-values-eyevalue-of-book-is-55
@@ -962,17 +1089,23 @@ The left eye blinks five times, then the right eye, five.
 Debug note: normal eye-scan.
 
 @hint+
-#testcase-values-eyevalue-of-place-is--1
+#+testcase-values-eyevalue-of-place-is--1
 >eye base
 Nothing from the eyes. You probably have to manipulate it with more other objects you acquired.
 
 @rej
-#testcase-think-table-of-verb-checks-vc-shove-shook-rule
+#+testcase-think-table-of-verb-checks-vc-shove-shook-rule
 >think
 You can SHOVE SHOOK now you have what you need for a ritual and are in the right place.
 
 >shove shook
 by one point
+
+@rej,all
+{--rej}#testcase-check-vc-shove-shook-rule-fallthrough
+{--all}#testcase-run-vr-shove-shook-rule-default
+You place the Love-Look-'Bove Book in the compartment in the bait base plate place where it fits. The compartment closes.
+More rumbling. Clear cracks appear in the bait base plate place.
 
 @hint
 #testcase-values-eyevalue-of-jewel-is-35
@@ -981,12 +1114,18 @@ The left eye blinks three times, then the right eye, five.
 Debug note: normal eye-scan.
 
 @rej
-#testcase-think-table-of-verb-checks-vc-get-ghoul-rule
+#+testcase-think-table-of-verb-checks-vc-get-ghoul-rule
 >think
 You can GET GHOUL now you have what you need for a ritual and are in the right place.
 
 >get ghoul
 by one point
+
+@rej,all
+{--rej}#testcase-check-vc-get-ghoul-rule-fallthrough
+{--all}#testcase-run-vr-get-ghoul-rule-default
+You place the yet-you'll-jet jewel in the compartment in the bait base plate place where it fits. The compartment closes.
+The bait base plate place shatters to reveal not only a great grace fate face but also passage east!
 
 @hint
 #testcase-values-eyevalue-of-face-is--1
@@ -1035,6 +1174,7 @@ The left eye blinks five times, then the right eye, four.
 Debug note: normal eye-scan.
 
 @rej
+#testcase-check-vc-andy-ng-rule-if-sco-dandy-ding-is-false
 >andy ng
 You remember Andy Ng, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
 \\
@@ -1072,13 +1212,18 @@ Hmph. That (or a functionally equivalent alternate solution) still doesn't quite
 >dandy ding
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-dandy-ding-rule-fallthrough
+{--all}#testcase-run-vr-dandy-ding-rule-default
+"There you go!" says Randy Ring-Candy-King. "Just had to make sure, you know. Oh, one other thing -- can you call up a classmate? Maybe someone you don't know that well, just by name. I think you have a few who would work really well with me."
+
 @rej
 #testcase-check-vc-dandy-ding-rule-if-sco-dandy-ding-is-true
 >dandy ding
 You already got Randy's attention!
 
 @hint
-#testcase-values-eyevalue-of-eee-ing-is-54
+#+testcase-values-eyevalue-of-eee-ing-is-54
 >eye
 The eyes are all over the places on this one. You may have several good options here. A few kids in your class might fit.
 \\
@@ -1087,7 +1232,7 @@ The eyes are all over the places on this one. You may have several good options 
 The eyes are all over the places on this one. You may have several good options here. A few kids in your class might fit.
 
 @rej
-#testcase-think-table-of-verb-checks-vc-andy-ng-rule
+#+testcase-think-table-of-verb-checks-vc-andy-ng-rule
 >think
 You can recall ANDY NG or any other classmate now you have hit it off with Randy.
 
@@ -1106,18 +1251,21 @@ Randy Ring-Candy-King says, "yes! They seem like someone quite worthy. They and 
 But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.
 \\
 >undo
+\\
 #+testcase-alt-words-table-of-verb-checks-26-andy-sandy-mandy-landy-ng-tsing-hsing-sing-ming-ling
 >sandy hsing
 Randy Ring-Candy-King says, "yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
 But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.
 \\
 >undo
+\\
 #+testcase-alt-words-table-of-verb-checks-26-andy-sandy-mandy-landy-ng-tsing-hsing-sing-ming-ling
 >mandy ming
 Randy Ring-Candy-King says, "yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
 But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.
 \\
 >undo
+\\
 #+testcase-alt-words-table-of-verb-checks-26-andy-sandy-mandy-landy-ng-tsing-hsing-sing-ming-ling
 >landy ling
 Randy Ring-Candy-King says, "yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
@@ -1126,6 +1274,13 @@ But thinking a bit more, you feel sort of bad. You always felt the Asian kids we
 
 >andy ng
 by one point
+
+@rej,all
+{--rej}#testcase-check-vc-andy-ng-rule-fallthrough
+{--all}#testcase-run-vr-andy-ng-rule-default
+Randy Ring-Candy-King says, "Yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
+But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.
+Perhaps the shared experience of the final fight will help. Between you and Pete and your classmates and Randy.
 
 @all
 `Leaky Ley
@@ -1146,7 +1301,7 @@ Odd ... the right eye seemed to squint at the end. So that counts as half?
 The left eye blinks six times, then the right eye, three.
 Odd ... the right eye seemed to squint at the end. So that counts as half?
 \\
-#testcase-values-eyevalue-of-a-twit-is-usually-163
+#+testcase-values-eyevalue-of-a-twit-is-usually-163
 >eye clay
 The left eye blinks six times, then the right eye, three.
 Odd ... the right eye seemed to squint at the end. So that counts as half?
@@ -1301,8 +1456,18 @@ You could have mocked Che and Clay as WEAKIE WAY.
 >weakie way
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-weakie-way-rule-fallthrough
+{--all}#testcase-run-vr-weakie-way-rule-default
+You worry slightly that putting the adjective second may deduct style points, but it turns out emphasizing it leaves them taken aback.
+
 >creaky cray
 by one point
+
+@rej,all
+{--rej}#testcase-check-vc-creaky-cray-rule-fallthrough
+{--all}#testcase-run-vr-creaky-cray-rule-default
+You totally justifiably DARVO them, even though you aren't aware of the acronym. You exaggerate how senseless it is to ruin younger kids' halloween, and you wonder if their lives are so empty they'll be doing this every year.
 
 @rej
 #testcase-check-vc-weakie-way-rule-if-sco-weakie-way-is-true
@@ -1315,6 +1480,13 @@ Insults lose zing the second time around.
 
 >grit grins
 by one point
+
+@rej,all
+{--rej}#testcase-check-vc-grit-grins-rule-fallthrough
+{--all}#testcase-run-vr-grit-grins-rule-default
+You grin, fiercely you hope, as if to say "I've put up with worse." And you have, but it's the eye contact and involuntary eye-roll that really gets them.
+They run away, shaking their fingers at you. "You'll be sorry! You made us get the big boss!"
+And thus begins the final fight, a freaky fray. Reeky Ray, who holds a reeky ray that is very, very accurate. How to disrupt it, or him?
 
 @rej
 ##balance undos
@@ -1329,7 +1501,7 @@ You already made the reeky ray wobble a bit! Now to make Reeky Ray himself wobbl
 >undo
 
 @hint
-#testcase-values-eyevalue-of-nick-is-33
+#+testcase-values-eyevalue-of-nick-is-33
 >eye me
 The left eye blinks five times, then the right eye, five.
 Debug note: normal eye-scan.
@@ -1342,13 +1514,19 @@ You can cast SLICK SLEET now your final enemy is up.
 >slick sleet
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-slick-sleet-rule-fallthrough
+{--all}#testcase-run-vr-slick-sleet-rule-default
+Reeky Ray begins tripping over himself. "What? It can't be!"
+But it can! Reeky Ray shakes his head, then picks himself up. Maybe one more blow will knock him out!
+
 @rej
 #testcase-check-vc-slick-sleet-rule-if-sco-slick-sleet-is-true
 >slick sleet
 But you already created slick sleet!
 
 @hint
-#testcase-values-eyevalue-of-nick-is-33
+#+testcase-values-eyevalue-of-nick-is-33
 >eye me
 The eyes show nothing. You cast the spell you needed to!
 
@@ -1364,12 +1542,19 @@ The left eye blinks seven times, then the right eye, five.
 Debug note: normal eye-scan.
 
 @rej
-#testcase-think-table-of-verb-checks-vc-streaky-stray-rule
+#+testcase-think-table-of-verb-checks-vc-streaky-stray-rule
 >think
 You can call out a STREAKY STRAY now combat has gotten really heated.
 
 >streaky stray
 by one point
+
+@rej,all
+{--rej}#testcase-check-vc-streaky-stray-rule-fallthrough
+{--all}#testcase-run-vr-streaky-stray-rule-default
+Reeky Ray begins misfiring. "What? It can't be!"
+But it can, again! And this time, having lost control of himself and his weapon, Reeky Ray collapses, exhausted. "Halloween is stupid! Find more practical things to do! Chocolate is bad for you!" But nobody is listening.
+Randy has something to show you, though.
 
 @all
 `Lair Line
@@ -1406,6 +1591,11 @@ by one point
 \\
 >undo
 
+@rej,all
+{--rej}#testcase-check-vc-share-shine-rule-fallthrough
+{--all}#testcase-run-vr-share-shine-rule-default
+You take time, unprompted, to thank others that helped you defeat Reeky Ray. You couldn't have done it without them!
+
 @rej
 #testcase-check-vc-share-shine-rule-if-sco-share-shine-is-true
 >share shine
@@ -1414,6 +1604,11 @@ That'd be overdoing the gratitude!
 @!min
 >there thine
 by one point
+
+@rej,all
+{--rej}#testcase-check-vc-theyre-thine-rule-fallthrough
+{--all}#testcase-run-vr-theyre-thine-rule-default
+With a small flourish, you hand a few candies to kids dressed in medieval costumes, but really, you still have a lot.
 
 @rej
 #testcase-check-vc-theyre-thine-rule-if-sco-theyre-thine-is-true
@@ -1442,6 +1637,11 @@ You can DARE DINE once you have passed out the candy equitably and have a way ho
 >fair fine
 by one point
 
+@rej,all
+{--rej}#testcase-check-vc-fair-fine-rule-fallthrough
+{--all}#testcase-run-vr-fair-fine-rule-default
+You at first almost spit it out -- then you realize, everyone else deserves it, too. You can't eat ALL that.
+
 @rej
 #testcase-check-vc-fair-fine-rule-if-sco-fair-fine-is-true
 >fair fine
@@ -1459,28 +1659,34 @@ The left eye blinks five times, then the right eye, four.
 Debug note: normal eye-scan.
 
 @hint+
-#testcase-values-eyevalue-of-lair-line-is-44
+#+testcase-values-eyevalue-of-lair-line-is-44
 >eye
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
 \\
-#testcase-values-eyevalue-of-claire-cline-is-44
+#+testcase-values-eyevalue-of-claire-cline-is-44
 >eye claire
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
 \\
-#testcase-values-eyevalue-of-spare-spine-is-44
+#+testcase-values-eyevalue-of-spare-spine-is-44
 >eye spare spine
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
 
 @rej
-#testcase-think-table-of-verb-checks-vc-dare-dine-rule
+#+testcase-think-table-of-verb-checks-vc-dare-dine-rule
 >think
 You can DARE DINE once you have passed out the candy equitably and have a way home.
 
 >green grid
 by one point
+
+@rej,all
+{--rej}#testcase-check-vc-green-grid-rule-fallthrough
+{--all}#testcase-run-vr-green-grid-rule-default
+The been-bid-keen kid, awed with how you took down Reeky Ray, mutters there's no way they can do this. But you know there are some things some people are better suited for than others. You ask them to give it a try. A gren grid glows--and beneath it you see your neighborhood!
+But you don't want to jump through right away. You could stay out a bit too late, talking with friends. And what goes well with conversation?
 
 @rej
 #testcase-check-vc-green-grid-rule-if-sco-green-grid-is-true
@@ -1488,22 +1694,22 @@ by one point
 You already got a been-bid-keen kid to find a portal back!
 
 @hint
-#testcase-values-eyevalue-of-kid-is-54
+#+testcase-values-eyevalue-of-kid-is-54
 >eye kid
 You don't need to do anything else with the been-bid-keen kid.
 
 @hint+
-#testcase-values-eyevalue-of-lair-line-is-44
+#+testcase-values-eyevalue-of-lair-line-is-44
 >eye
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
 \\
-#testcase-values-eyevalue-of-claire-cline-is-44
+#+testcase-values-eyevalue-of-claire-cline-is-44
 >eye claire
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
 \\
-#testcase-values-eyevalue-of-spare-spine-is-44
+#+testcase-values-eyevalue-of-spare-spine-is-44
 >eye spine
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
@@ -1514,7 +1720,7 @@ Debug note: normal eye-scan.
 There's no compass direction out. The green grid will lead you out, but why not celebrate your adventure first?
 
 @rej
-#testcase-think-table-of-verb-checks-vc-dare-dine-rule
+#+testcase-think-table-of-verb-checks-vc-dare-dine-rule
 >think
 You can DARE DINE now you have passed out the candy equitably and have a way home.
 
@@ -1633,6 +1839,11 @@ You can DARE DINE now you have passed out the candy equitably and have a way hom
 
 >dare dine
 by one point
+
+@rej,all
+{--rej}#testcase-check-vc-dare-dine-rule-fallthrough
+{--all}#testcase-run-vr-dare-dine-rule-default
+You know you're not supposed to start eating candy until your parents saw your haul. Of course, you don't eat all the candy at once. In fact, it lasts longer than previous years. Each bite reminds you of friends and adventures, and even the bad candy tastes good. Your parents are shocked it lasts through Christmas. They are proud of your restraint -- you are growing up! Of course, if you explained the whole adventure, they would talk about kids and THEIR IMAGINATION.
 
 @all
 "Why wait? My, mate, I ATE!"

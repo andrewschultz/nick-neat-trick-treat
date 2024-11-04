@@ -15,11 +15,26 @@
 >ick eat
 by one point
 
+#testcase-run-vr-ick-eat-rule-default
+You mouth the phrase to yourself. You think it. It wouldn't do to say it aloud. You worry you're getting a bit too old for either saying the phrase or disliking vegetables. But a part of you hopes you always hate certain vegetables. You have to stand for SOMETHING, after all.
+But the vegetables aren't bad once you start in on them. They just don't compare to trick or treat candy.
+You have a lot of friends to go out with. But who's the best fit for tonight? Well, you've sort of already chosen. Just got to remember whom to, uh, choose.
+
 >pick pete
 by one point
 
+#testcase-run-vr-pick-pete-rule-default
+You message Pete on your phone. Pete P. He has a long name nobody can quite pronounce. Well, some kids do, and they get called show-offs. He's not ashamed of his long name. He just understands. You know how to spell it and pronounce it.
+The message back: "Meet me. -- Pete P."
+But where?
+
 >treat tree
 by one point
+
+#testcase-run-vr-treat-tree-rule-default
+Meeting by the treat tree should be easy, but the area is much darker than you remember. The tree even starts talking ... someone or something has cast a spell on it, so it can't enjoy Halloween, or it can't help others to. It's a trolled tree now. It nudges you north to a neighborhood you didn't know existed.
+And you're pretty sure Strick Street isn't an avenue, as strick isn't really a word, but sadly it fits in here.
+How to make things un-struck?
 
 `Strick Street
 
@@ -30,11 +45,24 @@ by one point
 >loner louse
 by one point
 
+#testcase-run-vr-loner-louse-rule-default
+You fight back at any imaginary undead who, okay, they are lonely, and maybe they died gruesomely, but that doesn't excuse them being mean and scaring people.
+You sense there is one more thing you need to do here.
+
 >moaner mouse
 by one point
 
+#testcase-run-vr-moaner-mouse-rule-default
+You locate the source of scary moaning, which is not a very big mouth. The truth sets one free from fear!
+Perhaps you could do some trick-or-treating with an impromptu phrase. You want LOTS of candy, if you can. You've earned it! You passed this introductory bit!
+
 >donor douse
 by one point
+
+#testcase-run-vr-donor-douse-rule-default
+You cheekily ask for more candy, even though there doesn't appear to be anyone here. A voice promises you it will be waiting at game's end.
+Your score and bonus points just went up by one point.
+A stun-steed zooms by, bellowing "None-need-done deed!" Have you lost focus on what's really important? Or just put in a bit of extra rigor? You decide on the second, as you could also imagine a bin-bare-min mare to insult you for finding no extra neat stuff.
 
 >out
 
@@ -47,14 +75,26 @@ by one point
 >plank pling
 by one point
 
+#testcase-run-vr-plank-pling-rule-default
+You search around. Most planks give odd thuds, but one -- ah, a pling! There must be something under it, or them. But what?
+
 >blank bling
 by one point
+
+#testcase-run-vr-blank-bling-rule-default
+Hooray! You found some blank bling! Gut you feel guilty just taking it. Who or what left it for you?
 
 >thank thing
 by one point
 
+#testcase-run-vr-thank-thing-rule-default
+The weird wraith still looks a bit sad, though. Perhaps positive advice, however trivial and generic, would be nice, if you can think of it. But you DO have a quest to get on with.
+
 >sank sing
 by one point
+
+#testcase-run-vr-sank-sing-rule-default
+Well, whatever works. You engage in some harmless positivity. The thing seems to appreciate it.
 
 >s
 
@@ -65,17 +105,36 @@ by one point
 >be bold
 by one point
 
+#testcase-run-vr-be-bold-rule-default
+You feel less fearful now. And yet -- you went about it pretty well, but you could feel even less fearful if things are done right.
+
 >rerolled
 by one point
+
+#testcase-run-vr-re-rolled-rule-default
+Yes! That's more like it. It maybe wasn't that brave to look for ways to be more brave, but you did so, and you found them. The tree, trolled, almost seems to smile. "I need a piece of you, or an effigy of you, or something. Then I will give you something back."
+Weird, but maybe you're in luck. The ground is soft here ... maybe you can make something of it.
 
 >me mold
 by one point
 
+#testcase-run-vr-me-mold-rule-default
+Ah, there we go! It looks ... vaguely like you, you guess. Sadly, Mart Made-Art-Aid, that cool summer camp counselor (as you called him,) isn't here to give pointers.
+It was work, though, and you're not giving it away for free. The tree, trolled, indicates it wants to engage in commerce, of a sort.
+
 >see sold
 by one point
 
+#testcase-run-vr-see-sold-rule-default
+The tree is impressed by your confidence. It swaps: the key, cold, for the me-mold. Perhaps you have a future career as an artist! Or just a side hustle.
+But the key quickly warms up when you grab it! And my, what an odd shape it is, too. Whirled, curled. A whirled (whee) curled key!
+There doesn't seem to be anything else to say. Though the tree does seem to want to chat. Perhaps about distant lands. But where? It's still feeling trolled, so it won't want to start the conversation.
+
 >wee wold
 by one point
+
+#testcase-run-vr-wee-wold-rule-default
+At your suggestion, the tree, trolled launches into stories of the far-off Wee Wold. After a while, it apologizes for taking so long. But really, you don't mind. You're glad you took the time, even if it doesn't further your quest.
 
 >n
 
@@ -86,31 +145,63 @@ by one point
 >fun foam
 by one point
 
+#testcase-run-vr-fun-foam-rule-default
+Pop! Fun foam appears! Weird, but way less creepy-weird than, well, the hun home.
+
 >ton tome
 by one point
+
+#testcase-run-vr-ton-tome-rule-default
+A very, very big and dark and intimidating book, which puts scary high school textbooks to shame, pops into existence and falls onto the fun foam.
 
 >pun poem
 by one point
 
+#testcase-run-vr-pun-poem-rule-default
+The ton tome glows a bit! It seems less awful now. In fact, some of the more evil pages crumble and blow away. The book's less heavy now.
+
 >done dome
 by one point
+
+#testcase-run-vr-done-dome-rule-default
+Now that the place is cheered up, you feel obliged to stay here, forced to be happy. As if a voice says "What more could you want?"
+Many pages of the erstwhile Ton Tome blow away. What's left is a Love-Look-'Bove Book, which seems sappy. Still, you pick it up, and you feel frozen to the spot. It's perfect here, right? Why would you want to leave? Why not enjoy what you've created?
 
 >run roam
 by one point
 
+#testcase-run-vr-run-roam-rule-default
+You exhort yourself to get going, and not just get going, but to see new places. And yes, the hun home does feel a bit fake. You notice a few things off about it, and you feel okay exiting now.
+And yet ... and yet ... you could call in someone appropriate to keep watch over the more comfy home you created.
+
 >a gnome
 by one point
+
+#testcase-run-vr-a-gnome-rule-default
+Yes, yes, that's a good idea, have a gnome for upkeep once everything's fixed here. But they shouldn't be here right now, you'd guess.
 
 >e
 
 >pluraled plea
 by one point
 
+#testcase-run-vr-pluraled-plea-rule-default
+You place the curled (whee) whirled key in the compartment in the bait base plate place where it fits. The compartment closes.
+The bait base plate place shakes a bit. You think you see a crack in it.
+
 >shove shook
 by one point
 
+#testcase-run-vr-shove-shook-rule-default
+You place the Love-Look-'Bove Book in the compartment in the bait base plate place where it fits. The compartment closes.
+More rumbling. Clear cracks appear in the bait base plate place.
+
 >get ghoul
 by one point
+
+#testcase-run-vr-get-ghoul-rule-default
+You place the yet-you'll-jet jewel in the compartment in the bait base plate place where it fits. The compartment closes.
+The bait base plate place shatters to reveal not only a great grace fate face but also passage east!
 
 >e
 
@@ -119,42 +210,86 @@ by one point
 >dandy ding
 by one point
 
+#testcase-run-vr-dandy-ding-rule-default
+"There you go!" says Randy Ring-Candy-King. "Just had to make sure, you know. Oh, one other thing -- can you call up a classmate? Maybe someone you don't know that well, just by name. I think you have a few who would work really well with me."
+
 >andy ng
 by one point
+
+#testcase-run-vr-andy-ng-rule-default
+Randy Ring-Candy-King says, "Yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
+But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.
+Perhaps the shared experience of the final fight will help. Between you and Pete and your classmates and Randy.
 
 `Leaky Ley
 
 >weakie way
 by one point
 
+#testcase-run-vr-weakie-way-rule-default
+You worry slightly that putting the adjective second may deduct style points, but it turns out emphasizing it leaves them taken aback.
+
 >creaky cray
 by one point
+
+#testcase-run-vr-creaky-cray-rule-default
+You totally justifiably DARVO them, even though you aren't aware of the acronym. You exaggerate how senseless it is to ruin younger kids' halloween, and you wonder if their lives are so empty they'll be doing this every year.
 
 >grit grins
 by one point
 
+#testcase-run-vr-grit-grins-rule-default
+You grin, fiercely you hope, as if to say "I've put up with worse." And you have, but it's the eye contact and involuntary eye-roll that really gets them.
+They run away, shaking their fingers at you. "You'll be sorry! You made us get the big boss!"
+And thus begins the final fight, a freaky fray. Reeky Ray, who holds a reeky ray that is very, very accurate. How to disrupt it, or him?
+
 >slick sleet
 by one point
 
+#testcase-run-vr-slick-sleet-rule-default
+Reeky Ray begins tripping over himself. "What? It can't be!"
+But it can! Reeky Ray shakes his head, then picks himself up. Maybe one more blow will knock him out!
+
 >streaky stray
 by one point
+
+#testcase-run-vr-streaky-stray-rule-default
+Reeky Ray begins misfiring. "What? It can't be!"
+But it can, again! And this time, having lost control of himself and his weapon, Reeky Ray collapses, exhausted. "Halloween is stupid! Find more practical things to do! Chocolate is bad for you!" But nobody is listening.
+Randy has something to show you, though.
 
 `Lair Line
 
 >share shine
 by one point
 
+#testcase-run-vr-share-shine-rule-default
+You take time, unprompted, to thank others that helped you defeat Reeky Ray. You couldn't have done it without them!
+
 >there thine
 by one point
+
+#testcase-run-vr-theyre-thine-rule-default
+With a small flourish, you hand a few candies to kids dressed in medieval costumes, but really, you still have a lot.
 
 >fair fine
 by one point
 
+#testcase-run-vr-fair-fine-rule-default
+You at first almost spit it out -- then you realize, everyone else deserves it, too. You can't eat ALL that.
+
 >green grid
 by one point
 
+#testcase-run-vr-green-grid-rule-default
+The been-bid-keen kid, awed with how you took down Reeky Ray, mutters there's no way they can do this. But you know there are some things some people are better suited for than others. You ask them to give it a try. A gren grid glows--and beneath it you see your neighborhood!
+But you don't want to jump through right away. You could stay out a bit too late, talking with friends. And what goes well with conversation?
+
 >dare dine
 by one point
+
+#testcase-run-vr-dare-dine-rule-default
+You know you're not supposed to start eating candy until your parents saw your haul. Of course, you don't eat all the candy at once. In fact, it lasts longer than previous years. Each bite reminds you of friends and adventures, and even the bad candy tastes good. Your parents are shocked it lasts through Christmas. They are proud of your restraint -- you are growing up! Of course, if you explained the whole adventure, they would talk about kids and THEIR IMAGINATION.
 
 "Why wait? My, mate, I ATE!"
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?

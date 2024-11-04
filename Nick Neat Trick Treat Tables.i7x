@@ -101,7 +101,7 @@ a goodrhyme rule (this is the vc-treat-tree rule):
 
 this is the vr-treat-tree rule:
 	now sco-treat-tree is true;
-	say "Meeting by the treat tree should be easy, but the area is much darker than you remember. The tree even starts talking ... someone or something has cast a spell on it, so it can't enjoy Halloween, or it can't help others to. It's  trolled tree now. It nudges you north to a neighborhood you didn't know existed.[paragraph break]And you're pretty sure Strick Street isn't an avenue, as strick isn't really a word, but sadly it fits in here.[paragraph break]How to make things un-struck?";
+	say "Meeting by the treat tree should be easy, but the area is much darker than you remember. The tree even starts talking ... someone or something has cast a spell on it, so it can't enjoy Halloween, or it can't help others to. It's a trolled tree now. It nudges you north to a neighborhood you didn't know existed.[paragraph break]And you're pretty sure Strick Street isn't an avenue, as strick isn't really a word, but sadly it fits in here.[paragraph break]How to make things un-struck?";
 	move player to Strick Street;
 
 chapter strick street scoring
@@ -147,7 +147,7 @@ to ritual-item (th - a thing):
 	moot th;
 	say "[line break]";
 	if incant-score is 3:
-		say "[The plate] shatters to reveal a [face]!";
+		say "[The plate] shatters to reveal not only a [face] but also passage east!";
 		moot plate;
 		move fate face to strick street;
 	else if incant-score is 2:
@@ -193,6 +193,7 @@ this is the vr-moaner-mouse rule:
 	check-house-progress;
 
 to check-house-progress:
+	say "[line break]";
 	if house-crit-score is 1:
 		say "You sense there is one more thing you need to do here.";
 	else:
@@ -285,7 +286,7 @@ a goodrhyme rule (this is the vc-ton-tome rule):
 
 this is the vr-ton-tome rule:
 	now sco-ton-tome is true;
-	say "A very, very big and dark and intimidating book pops into existence and falls onto the fun foam.";
+	say "A very, very big and dark and intimidating book, which puts scary high school textbooks to shame, pops into existence and falls onto the fun foam.";
 	move ton tome to hun home;
 
 a goodrhyme rule (this is the vc-pun-poem rule):
@@ -434,7 +435,7 @@ a goodrhyme rule (this is the vc-wee-wold rule):
 
 this is the vr-wee-wold rule:
 	now sco-wee-wold is true;
-	say "You hear more people rustling around.";
+	say "At your suggestion, [the tree] launches into stories of the far-off Wee Wold. After a while, it apologizes for taking so long. But really, you don't mind. You're glad you took the time, even if it doesn't further your quest.";
 	if sco-see-sold is true:
 		declue-rm tree;
 
@@ -469,7 +470,7 @@ a goodrhyme rule (this is the vc-andy-ng rule):
 
 this is the vr-andy-ng rule:
 	now sco-andy-ng is true;
-	say "[randy] says, 'yes! They seem like someone quite worthy. They and their friends will be a big help.' You protest you don't know them that well so they might not help. [Randy] assures you that people do help each other, just because, and you can get to know each other, later.";
+	say "[randy] says, 'Yes! They seem like someone quite worthy. They and their friends will be a big help.' You protest you don't know them that well so they might not help. [Randy] assures you that people do help each other, just because, and you can get to know each other, later.";
 	wfak;
 	say "But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.";
 	wfak;

@@ -116,32 +116,35 @@ by one point
 
 #testcase-alt-words-table-of-verb-checks-26-andy-sandy-mandy-landy-ng-tsing-hsing-sing-ming-ling
 >sandy sing
-Randy Ring-Candy-King says, "yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
+Randy Ring-Candy-King says, "Yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
 But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.
 
 >undo
 
 #+testcase-alt-words-table-of-verb-checks-26-andy-sandy-mandy-landy-ng-tsing-hsing-sing-ming-ling
 >sandy tsing
-Randy Ring-Candy-King says, "yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
+Randy Ring-Candy-King says, "Yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
 But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.
 
 >undo
+
 #+testcase-alt-words-table-of-verb-checks-26-andy-sandy-mandy-landy-ng-tsing-hsing-sing-ming-ling
 >sandy hsing
-Randy Ring-Candy-King says, "yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
+Randy Ring-Candy-King says, "Yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
 But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.
 
 >undo
+
 #+testcase-alt-words-table-of-verb-checks-26-andy-sandy-mandy-landy-ng-tsing-hsing-sing-ming-ling
 >mandy ming
-Randy Ring-Candy-King says, "yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
+Randy Ring-Candy-King says, "Yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
 But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.
 
 >undo
+
 #+testcase-alt-words-table-of-verb-checks-26-andy-sandy-mandy-landy-ng-tsing-hsing-sing-ming-ling
 >landy ling
-Randy Ring-Candy-King says, "yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
+Randy Ring-Candy-King says, "Yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
 But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.
 >undo
 
