@@ -110,6 +110,9 @@ You have nothing to perform a transaction with!
 >me mold
 You have no reason to make an effigy of yourself yet!
 
+#testcase-think-table-of-verb-checks-vc-me-mold-rule
+#testcase-think-table-of-verb-checks-vc-re-rolled-rule
+#testcase-think-table-of-verb-checks-vc-see-sold-rule
 >think
 You can ME MOLD once you feel confident enough in your artistic ability.
 You can REROLLED once you have committed to something but want to do it a bit better.
@@ -158,9 +161,11 @@ You can make a PLURALED PLEA once you have what you need for a ritual and are in
 >ton tome
 But the ton-tome would land with such a crash if it appeared! You need a soft place for it to rest.
 
+#testcase-check-vc-pun-poem-rule-if-sco-ton-time-is-false
 >pun poem
 There is nowhere for poems to be written, to bring joy where there might be darkness!
 
+#testcase-check-vc-done-dome-rule-if-sco-pun-poem-is-false
 >done dome
 You haven't cheered the place up enough to consider it "done!"
 
@@ -228,6 +233,10 @@ by one point
 
 >a gnome
 by one point
+
+#testcase-check-vc-a-gnome-rule-if-sco-a-gnome-is-true
+>a gnome
+You already summoned a gnome!
 
 >shove shook
 There's nothing for the book to shake here.

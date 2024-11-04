@@ -1,0 +1,214 @@
+## reg-nntt-thru-alt-verbs.txt
+## GENERATOR FILE: rbr-nntt-thru.txt
+
+## walkthrough with altverb tests
+
+** game: /home/andrew/prt/debug-nick-neat-trick-treat.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>z
+
+>ick eat
+by one point
+
+>pick pete
+by one point
+
+>treat tree
+by one point
+
+>in
+
+>loner louse
+by one point
+
+>moaner mouse
+by one point
+
+>donor douse
+by one point
+
+>out
+
+>n
+
+>plank pling
+by one point
+
+>blank bling
+by one point
+
+>thank thing
+by one point
+
+>sank sing
+by one point
+
+>s
+
+>s
+
+>be bold
+by one point
+
+>re rolled
+by one point
+
+>undo
+
+>rerolled
+by one point
+
+>me mold
+by one point
+
+>see sold
+by one point
+
+>wee wold
+by one point
+
+>n
+
+>w
+
+>fun foam
+by one point
+
+>ton tome
+by one point
+
+>pun poem
+by one point
+
+>done dome
+by one point
+
+>run roam
+by one point
+
+>a gnome
+by one point
+
+>e
+
+#testcase-alt-words-table-of-verb-checks-9-pluralled-pluraled-plea
+>pluralled plea
+by one point
+
+>undo
+
+>pluraled plea
+by one point
+
+>shove shook
+by one point
+
+>get ghoul
+by one point
+
+>e
+
+>dandy ding
+by one point
+
+>andy ng
+by one point
+
+>creaky cray
+by one point
+
+>weakie way
+by one point
+
+>undo
+>undo
+
+>weakie way
+by one point
+
+>grit grins
+by one point
+Reeky Ray
+
+>undo
+>undo
+
+>creaky cray
+by one point
+
+>grit grins
+by one point
+Reeky Ray
+
+>undo
+>undo
+
+>grit grins
+by one point
+
+>creaky cray
+by one point
+Reeky Ray
+
+>undo
+
+>weakie way
+by one point
+Reeky Ray
+
+>undo
+>undo
+
+# not a full in-game use case but it calls the same function
+>creaky cray
+by one point
+
+>grit grins
+by one point
+
+>missed
+You could have labeled Che and Clay as CREAKY CRAY.
+
+>undo
+>undo
+>undo
+
+>weakie way
+by one point
+
+>creaky cray
+by one point
+
+>grit grins
+by one point
+
+>slick sleet
+by one point
+
+>streaky stray
+by one point
+
+>share shine
+by one point
+
+#testcase-alt-words-table-of-verb-checks-33-theyre-there-thine
+>theyre thine
+by one point
+
+>undo
+
+>there thine
+by one point
+
+>fair fine
+by one point
+
+>green grid
+by one point
+
+>dare dine
+by one point
+

@@ -34,12 +34,12 @@ Debug note: normal eye-scan.
 >ick eat
 by one point
 
-#testcase-values-eyevalue-of-nick-is-33
+#+testcase-values-eyevalue-of-nick-is-33
 >eye me
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
 
-#testcase-values-eyevalue-of-sick-seat-is-33
+#+testcase-values-eyevalue-of-sick-seat-is-33
 >eye
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
@@ -47,7 +47,7 @@ Debug note: normal eye-scan.
 >pick pete
 by one point
 
-#testcase-values-eyevalue-of-nick-is-33
+#+testcase-values-eyevalue-of-nick-is-33
 >eye me
 The eyes do their blinking slowly, as if to say, this is a way off...
 The left eye blinks five times, then the right eye, five.
@@ -61,7 +61,7 @@ The left eye blinks five times, then the right eye, four.
 >eye phone
 The left eye blinks five times, then the right eye, four.
 
-#testcase-values-eyevalue-of-nick-is-33
+#+testcase-values-eyevalue-of-nick-is-33
 >eye me
 The left eye blinks five times, then the right eye, five.
 The eyes do their blinking slowly, as if to say, this is a way off...
@@ -124,14 +124,14 @@ The left eye blinks five times, then the right eye, five.
 >blank bling
 by one point
 
-#testcase-values-eyevalue-of-rank-ring-is-55
+#+testcase-values-eyevalue-of-rank-ring-is-55
 >eye
 The left eye blinks five times, then the right eye, five.
 
 >thank thing
 by one point
 
-#testcase-values-eyevalue-of-rank-ring-is-55
+#+testcase-values-eyevalue-of-rank-ring-is-55
 >eye
 The left eye blinks four times, then the right eye, four.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
@@ -398,7 +398,7 @@ Odd ... the right eye seemed to squint at the end. So that counts as half?
 The left eye blinks six times, then the right eye, three.
 Odd ... the right eye seemed to squint at the end. So that counts as half?
 
-#testcase-values-eyevalue-of-twit-twins-is-55
+#testcase-values-eyevalue-of-twit-twins-is-45
 
 >eye twins
 The left eye blinks four times, then the right eye, five.

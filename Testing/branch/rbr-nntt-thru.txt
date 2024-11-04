@@ -99,7 +99,7 @@ Thanks to Wade Clarke for testing without being given a lot of time. I owe him o
 Thanks to Olaf Nowacki for finding a bug quickly during the comp itself.
 
 @gt
-#testcase-goto-table-of-noways-sick-seat
+#testcase-goto-table-of-noways-sickseat
 >w
 You don't want to go wandering through your house on Halloween when you should be going OUT! Besides, you need to eat your vegetables first.
 \\
@@ -127,7 +127,7 @@ You can cast SLICK SLEET once your final enemy is up.
 by one point
 
 @gt
-#+testcase-goto-table-of-noways-sick-seat
+#+testcase-goto-table-of-noways-sickseat
 >w
 You don't want to go wandering through your house on Halloween when you should be going OUT! Besides, you need to choose the friend who'll most help with adventure first.
 \\
@@ -135,12 +135,12 @@ You don't want to go wandering through your house on Halloween when you should b
 Need to decide who to go with first.
 
 @hint
-#testcase-values-eyevalue-of-nick-is-33
+#+testcase-values-eyevalue-of-nick-is-33
 >eye me
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
 \\
-#testcase-values-eyevalue-of-sick-seat-is-33
+#+testcase-values-eyevalue-of-sick-seat-is-33
 >eye
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
@@ -149,7 +149,7 @@ Debug note: normal eye-scan.
 by one point
 
 @hint
-#testcase-values-eyevalue-of-nick-is-33
+#+testcase-values-eyevalue-of-nick-is-33
 >eye me
 The eyes do their blinking slowly, as if to say, this is a way off...
 The left eye blinks five times, then the right eye, five.
@@ -164,7 +164,7 @@ The left eye blinks five times, then the right eye, four.
 >eye phone
 The left eye blinks five times, then the right eye, four.
 \\
-#testcase-values-eyevalue-of-nick-is-33
+#+testcase-values-eyevalue-of-nick-is-33
 >eye me
 The left eye blinks five times, then the right eye, five.
 The eyes do their blinking slowly, as if to say, this is a way off...
@@ -219,7 +219,7 @@ Perhaps back inside, the eyes might see more.
 `Honer House
 
 @gt
-#testcase-goto-table-of-noways-honer-house
+#testcase-goto-table-of-noways-honerhouse
 >w
 The secrets in this house are verbal, not physical. You can only go back out.
 
@@ -305,7 +305,7 @@ You can THANK THING once you have gotten a gift to be thankful for.
 by one point
 
 @hint
-#testcase-values-eyevalue-of-rank-ring-is-55
+#+testcase-values-eyevalue-of-rank-ring-is-55
 >eye
 The left eye blinks five times, then the right eye, five.
 
@@ -318,7 +318,7 @@ You can THANK THING now you have gotten a gift to be thankful for.
 by one point
 
 @hint
-#testcase-values-eyevalue-of-rank-ring-is-55
+#+testcase-values-eyevalue-of-rank-ring-is-55
 >eye
 The left eye blinks four times, then the right eye, four.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
@@ -377,6 +377,9 @@ You have nothing to perform a transaction with!
 >me mold
 You have no reason to make an effigy of yourself yet!
 \\
+#testcase-think-table-of-verb-checks-vc-me-mold-rule
+#testcase-think-table-of-verb-checks-vc-re-rolled-rule
+#testcase-think-table-of-verb-checks-vc-see-sold-rule
 >think
 You can ME MOLD once you feel confident enough in your artistic ability.
 You can REROLLED once you have committed to something but want to do it a bit better.
@@ -503,9 +506,11 @@ The left eye blinks three times, then the right eye, four.
 >ton tome
 But the ton-tome would land with such a crash if it appeared! You need a soft place for it to rest.
 \\
+#testcase-check-vc-pun-poem-rule-if-sco-ton-time-is-false
 >pun poem
 There is nowhere for poems to be written, to bring joy where there might be darkness!
 \\
+#testcase-check-vc-done-dome-rule-if-sco-pun-poem-is-false
 >done dome
 You haven't cheered the place up enough to consider it "done!"
 \\
@@ -648,6 +653,11 @@ Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY nee
 >a gnome
 by one point
 
+@rej
+#testcase-check-vc-a-gnome-rule-if-sco-a-gnome-is-true
+>a gnome
+You already summoned a gnome!
+
 @hint
 #testcase-values-eyevalue-of-hun-home-is-34
 >eye
@@ -694,6 +704,7 @@ Odd ... the eyes each make an eyeroll, as if to say "well, I guess that COULD be
 
 @alt
 ##balance undos
+#testcase-alt-words-table-of-verb-checks-9-pluralled-pluraled-plea
 >pluralled plea
 by one point
 \\
@@ -833,7 +844,7 @@ Odd ... the right eye seemed to squint at the end. So that counts as half?
 The left eye blinks six times, then the right eye, three.
 Odd ... the right eye seemed to squint at the end. So that counts as half?
 \\
-#testcase-values-eyevalue-of-twit-twins-is-55
+#testcase-values-eyevalue-of-twit-twins-is-45
 \\
 >eye twins
 The left eye blinks four times, then the right eye, five.
@@ -1039,6 +1050,7 @@ Debug note: normal eye-scan.
 by one point
 
 @alt
+#testcase-alt-words-table-of-verb-checks-33-theyre-there-thine
 >theyre thine
 by one point
 \\
