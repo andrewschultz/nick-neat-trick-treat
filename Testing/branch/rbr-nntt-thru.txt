@@ -126,6 +126,11 @@ You can cast SLICK SLEET once your final enemy is up.
 >ick eat
 by one point
 
+@rej
+#testcase-check-vc-ick-eat-rule-if-sco-ick-eat-is-true
+>ick eat
+You've earned enough brownie points. Time to prep to go look for candy.
+
 @gt
 #+testcase-goto-table-of-noways-sickseat
 >w
@@ -177,6 +182,11 @@ You already picked Pete. Where to meet him?
 >treat tree
 by one point
 
+@rej
+#testcase-check-vc-treat-tree-rule-if-sco-treat-tree-is-true
+>treat tree
+You can't change the treat tree back until you get to the root of all this.
+
 @all
 `Strick Street
 
@@ -223,15 +233,35 @@ Perhaps back inside, the eyes might see more.
 >w
 The secrets in this house are verbal, not physical. You can only go back out.
 
+@hint
+#testcase-values-eyevalue-of-honerhouse-is-1055
+>eye
+WRONG
+
 >loner louse
 by one point
+
+@rej
+#testcase-check-vc-loner-louse-rule-if-sco-loner-louse-is-true
+>loner louse
+Don't rub it in. Move on!
 
 >moaner mouse
 by one point
 
+@rej
+#testcase-check-vc-moaner-mouse-rule-if-sco-moaner-mouse-is-true
+>moaner mouse
+The mouse has been properly chastised.
+
 @!min
 >donor douse
 by one point
+
+@rej
+#testcase-check-vc-donor-douse-rule-if-sco-donor-douse-is-true
+>donor douse
+Don't get greedy!
 
 >out
 
@@ -289,6 +319,11 @@ You can THANK THING once you have gotten a gift to be thankful for.
 >plank pling
 by one point
 
+@rej
+#testcase-check-vc-plank-pling-rule-if-sco-plank-pling-is-true
+>plank pling
+You already found the odd-sounding plank and what was behind it!
+
 @hint
 #+testcase-values-eyevalue-of-rank-ring-is-55
 >eye
@@ -310,12 +345,22 @@ by one point
 The left eye blinks five times, then the right eye, five.
 
 @rej
+#testcase-check-vc-blank-bling-rule-if-sco-blank-bling-is-true
+>blank bling
+You already acquired bling!
+
+@rej+
 #+testcase-think-table-of-verb-checks-vc-thank-thing-rule
 >think
 You can THANK THING now you have gotten a gift to be thankful for.
 
 >thank thing
 by one point
+
+@rej
+#testcase-check-vc-thank-thing-rule-if-sco-thank-thing-is-true
+>thank thing
+You've been taught to be polite, but that'd be overkill.
 
 @hint
 #+testcase-values-eyevalue-of-rank-ring-is-55
@@ -332,6 +377,11 @@ Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY nee
 by one point
 
 @rej
+#testcase-check-vc-sank-sing-rule-if-sco-sank-sing-is-true
+>sank sing
+More than once is too cheery!
+
+@rej+
 >get ghoul
 That'd seem to work, in the "get rid of" sense, but perhaps it should be part of a ritual.
 \\
@@ -368,12 +418,14 @@ The left eye blinks two times, then the right eye, four.
 Debug note: normal eye-scan.
 
 @rej
+#testcase-check-vc-re-rolled-rule-if-sco-be-bold-is-false
 >rerolled
 But you haven't tried anything to feel less scared!
 \\
 >see sold
 You have nothing to perform a transaction with!
 \\
+#testcase-check-vc-me-mold-rule-if-sco-re-rolled-is-false
 >me mold
 You have no reason to make an effigy of yourself yet!
 \\
@@ -387,6 +439,11 @@ You can SEE SOLD once you have a creation you can swap.
 
 >be bold
 by one point
+
+@rej
+#testcase-check-vc-be-bold-rule-if-sco-be-bold-is-true
+>be bold
+You are bold enough now.
 
 @hint
 #testcase-values-eyevalue-of-tree-trolled-is-24
@@ -414,6 +471,11 @@ You can SEE SOLD once you have a creation you can swap.
 >rerolled
 by one point
 
+@rej
+#testcase-check-vc-re-rolled-rule-if-sco-re-rolled-is-true
+>rerolled
+Nah, you're doing well enough. Don't push your luck.
+
 @hint
 #testcase-values-eyevalue-of-tree-trolled-is-24
 >eye tree
@@ -434,6 +496,11 @@ You can SEE SOLD once you have a creation you can swap.
 >me mold
 by one point
 
+@rej
+#testcase-check-vc-me-mold-rule-if-sco-me-mold-is-true
+>me mold
+One you-doll is enough.
+
 @hint
 #testcase-values-eyevalue-of-tree-trolled-is-24
 >eye tree
@@ -453,6 +520,11 @@ You can SEE SOLD now you have a creation you can swap.
 >see sold
 by one point
 
+@rej
+#testcase-check-vc-see-sold-rule-if-sco-see-sold-is-true
+>see sold
+The deal has already been clinched.
+
 @hint
 #testcase-values-eyevalue-of-tree-trolled-is-24
 >eye tree
@@ -467,6 +539,11 @@ Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY nee
 @!min
 >wee wold
 by one point
+
+@rej
+#testcase-check-vc-wee-wold-rule-if-sco-wee-wold-is-true
+>wee wold
+You might get tired of the story, and so might the tree.
 
 @hint
 #testcase-values-eyevalue-of-tree-trolled-is-24
@@ -506,7 +583,7 @@ The left eye blinks three times, then the right eye, four.
 >ton tome
 But the ton-tome would land with such a crash if it appeared! You need a soft place for it to rest.
 \\
-#testcase-check-vc-pun-poem-rule-if-sco-ton-time-is-false
+#testcase-check-vc-pun-poem-rule-if-sco-ton-tome-is-false
 >pun poem
 There is nowhere for poems to be written, to bring joy where there might be darkness!
 \\
@@ -530,6 +607,11 @@ You can RUN ROAM once you need to rebel against feeling stuck.
 >fun foam
 by one point
 
+@rej
+#testcase-check-vc-fun-foam-rule-if-sco-fun-foam-is-true
+>fun foam
+Too much fun foam would be suffocating.
+
 @hint
 #testcase-values-eyevalue-of-hun-home-is-34
 >eye
@@ -552,6 +634,11 @@ You can RUN ROAM once you need to rebel against feeling stuck.
 
 >ton tome
 by one point
+
+@rej
+#testcase-check-vc-ton-tome-rule-if-sco-ton-tome-is-true
+>ton tome
+Two ton tomes are more than enough! Well, one is, in its own way.
 
 @hint
 #testcase-values-eyevalue-of-hun-home-is-34
@@ -593,6 +680,11 @@ The left eye blinks four times, then the right eye, four.
 The left eye blinks four times, then the right eye, four.
 
 @rej
+#testcase-check-vc-pun-poem-rule-if-sco-pun-poem-is-true
+>pun poem
+Too many puns get old and stale.
+
+@rej+
 #+testcase-think-table-of-verb-checks-vc-done-dome-rule
 #+testcase-think-table-of-verb-checks-vc-run-roam-rule
 >think
@@ -602,6 +694,11 @@ You can RUN ROAM once you need to rebel against feeling stuck.
 
 >done dome
 by one point
+
+@rej
+#testcase-check-vc-done-dome-rule-if-sco-done-dome-is-true
+>done dome
+You already certified completing renovation of the home/dome!
 
 @hint
 #testcase-values-eyevalue-of-hun-home-is-34
@@ -628,6 +725,11 @@ You can RUN ROAM now you need to rebel against feeling stuck.
 
 >run roam
 by one point
+
+@rej
+#testcase-check-vc-run-roam-rule-if-sco-run-roam-is-true
+>run roam
+You already exhorted yourself to get out! You need no magicking to do so.
 
 @hint
 #testcase-values-eyevalue-of-hun-home-is-34
@@ -773,6 +875,11 @@ Now the way east is opened, that's where you should go.
 @all
 `And Eee-ing
 
+@rej
+#+testcase-check-vc-treat-tree-rule-if-sco-treat-tree-is-true
+>treat tree
+You hope the tree has healed, but you have more important business right now.
+
 @gt
 #testcase-goto-table-of-noways-eee-ing
 >w
@@ -800,8 +907,40 @@ You remember Andy Ng, whom you don't know very well. Maybe you should've gotten 
 >think
 You can recall ANDY NG or any other classmate once you have hit it off with Randy.
 
+@rej+
+#testcase-check-vc-andy-ng-rule-if-sco-andy-ng-is-true-if-classmate-asked-is-classmate-chosen
+>andy ng
+You remember Andy Ng, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
+Hmph. That still doesn't quite work! You'll figure out the how and when and where, though.
+\\
+#testcase-check-vc-andy-ng-rule-if-sco-andy-ng-is-true
+>sandy sing
+You remember Sandy Hsing, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
+Hmph. That (or a functionally equivalent alternate solution) still doesn't quite work! You'll figure out the how and when and where, though.
+\\
+>sandy tsing
+You remember Sandy Hsing, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
+Hmph. That (or a functionally equivalent alternate solution) still doesn't quite work! You'll figure out the how and when and where, though.
+\\
+>sandy hsing
+You remember Sandy Hsing, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
+Hmph. That (or a functionally equivalent alternate solution) still doesn't quite work! You'll figure out the how and when and where, though.
+\\
+>mandy ming
+You remember Mandy Ming, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
+Hmph. That (or a functionally equivalent alternate solution) still doesn't quite work! You'll figure out the how and when and where, though.
+\\
+>landy ling
+You remember Landy Ling, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
+Hmph. That (or a functionally equivalent alternate solution) still doesn't quite work! You'll figure out the how and when and where, though.
+
 >dandy ding
 by one point
+
+@rej
+#testcase-check-vc-dandy-ding-rule-if-sco-dandy-ding-is-true
+>dandy ding
+You already got Randy's attention!
 
 @hint
 #testcase-values-eyevalue-of-eee-ing-is-54
@@ -816,6 +955,28 @@ The eyes are all over the places on this one. You may have several good options 
 #testcase-think-table-of-verb-checks-vc-andy-ng-rule
 >think
 You can recall ANDY NG or any other classmate now you have hit it off with Randy.
+
+@alt
+##balance undos
+>sandy sing
+WRONG
+\\
+>undo
+>sandy tsing
+WRONG
+\\
+>undo
+>sandy hsing
+WRONG
+\\
+>undo
+>mandy ming
+WRONG
+\\
+>undo
+>landy ling
+WRONG
+>undo
 
 >andy ng
 by one point
@@ -849,7 +1010,19 @@ Odd ... the right eye seemed to squint at the end. So that counts as half?
 >eye twins
 The left eye blinks four times, then the right eye, five.
 
-@hint+
+@rej
+##balance undos
+>grit grins
+by one point
+\\
+#testcase-check-vc-grit-grins-rule-if-sco-grit-grins-is-true
+>grit grins
+You already grinned grittily to stand up to the twits at once. Now look at them individually.
+\\
+>undo
+>undo
+
+@hint
 # this could be done in the flow of the walkthrough, but it is easier to keep track of if done in one place. The twins are tricky to hint.
 \\
 ##balance undo
@@ -960,7 +1133,7 @@ There's nothing to make streaky or stray, yet.
 \\
 #testcase-think-table-of-verb-checks-vc-streaky-stray-rule
 >think
-You can call out a STREAKY STRAY once combat gets really heated.
+You can call out a STREAKY STRAY once combat has gotten really heated.
 
 @alt
 # not a full in-game use case but it calls the same function
@@ -985,8 +1158,29 @@ by one point
 >creaky cray
 by one point
 
+@rej
+#testcase-check-vc-weakie-way-rule-if-sco-weakie-way-is-true
+>weakie way
+Insults lose zing the second time around.
+\\
+#testcase-check-vc-creaky-cray-rule-if-sco-creaky-cray-is-true
+>creaky cray
+Insults lose zing the second time around.
+
 >grit grins
 by one point
+
+@rej
+##balance undos
+>streaky stray
+by one point
+\\
+#testcase-check-vc-streaky-stray-rule-if-sco-streaky-stray-is-true
+>streaky stray
+You already made the reeky ray wobble a bit! Now to make Reeky Ray himself wobble.
+\\
+>undo
+>undo
 
 @hint
 #testcase-values-eyevalue-of-nick-is-33
@@ -1001,6 +1195,11 @@ You can cast SLICK SLEET now your final enemy is up.
 
 >slick sleet
 by one point
+
+@rej
+#testcase-check-vc-slick-sleet-rule-if-sco-slick-sleet-is-true
+>slick sleet
+But you already created slick sleet!
 
 @hint
 #testcase-values-eyevalue-of-nick-is-33
@@ -1021,7 +1220,7 @@ Debug note: normal eye-scan.
 @rej
 #testcase-think-table-of-verb-checks-vc-streaky-stray-rule
 >think
-You can call out a STREAKY STRAY now combat gets really heated.
+You can call out a STREAKY STRAY now combat has gotten really heated.
 
 >streaky stray
 by one point
@@ -1045,6 +1244,11 @@ Debug note: normal eye-scan.
 The left eye blinks four times, then the right eye, four.
 Debug note: normal eye-scan.
 
+@rej
+#+testcase-check-vc-treat-tree-rule-if-sco-treat-tree-is-true
+>treat tree
+You can't see it right now, but the tree is okay again, thanks to you
+
 @!min
 >share shine
 by one point
@@ -1056,11 +1260,21 @@ by one point
 \\
 >undo
 
+@rej
+#testcase-check-vc-share-shine-rule-if-sco-share-shine-is-true
+>share shine
+That'd be overdoing the gratitude!
+
 @!min
 >there thine
 by one point
 
 @rej
+#testcase-check-vc-theyre-thine-rule-if-sco-theyre-thine-is-true
+>there thine
+You decide not to overdo the role-playing.
+
+@rej+
 >dare dine
 But the dining is not equitable yet! Claire Cline would like you to try to spread the wealth.
 \\
@@ -1081,6 +1295,11 @@ You can DARE DINE once you have passed out the candy equitably and have a way ho
 
 >fair fine
 by one point
+
+@rej
+#testcase-check-vc-fair-fine-rule-if-sco-fair-fine-is-true
+>fair fine
+You already divided things equitably!
 
 @gt
 #testcase-goto-table-of-noways-lair-line
@@ -1117,6 +1336,11 @@ You can DARE DINE once you have passed out the candy equitably and have a way ho
 >green grid
 by one point
 
+@rej
+#testcase-check-vc-green-grid-rule-if-sco-green-grid-is-true
+>green grid
+You already got a been-bid-keen kid to find a portal back!
+
 @hint
 #testcase-values-eyevalue-of-kid-is-54
 >eye kid
@@ -1147,6 +1371,119 @@ There's no compass direction out. The green grid will lead you out, but why not 
 #testcase-think-table-of-verb-checks-vc-dare-dine-rule
 >think
 You can DARE DINE now you have passed out the candy equitably and have a way home.
+
+@rej+
+#testcase-reject-end-table-of-verb-checks-vc-a-gnome-rule
+>a gnome
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-andy-ng-rule
+>andy ng
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-be-bold-rule
+>be bold
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-blank-bling-rule
+>blank bling
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-creaky-cray-rule
+>creaky cray
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-dandy-ding-rule
+>dandy ding
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-done-dome-rule
+>done dome
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-donor-douse-rule
+>donor douse
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-fun-foam-rule
+>fun foam
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-get-ghoul-rule
+>get ghoul
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-grit-grins-rule
+>grit grins
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-ick-eat-rule
+>ick eat
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-loner-louse-rule
+>loner louse
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-me-mold-rule
+>me mold
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-moaner-mouse-rule
+>moaner mouse
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-plank-pling-rule
+>plank pling
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-pluraled-plea-rule
+>pluraled plea
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-pun-poem-rule
+>pun poem
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-re-rolled-rule
+>re rolled
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-run-roam-rule
+>run roam
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-sank-sing-rule
+>sank sing
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-see-sold-rule
+>see sold
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-shove-shook-rule
+>shove shook
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-streaky-stray-rule
+>streaky stray
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-thank-thing-rule
+>thank thing
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-ton-tome-rule
+>ton tome
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-weakie-way-rule
+>weakie way
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-wee-wold-rule
+>wee wold
+{$REJECT2}
 
 >dare dine
 by one point

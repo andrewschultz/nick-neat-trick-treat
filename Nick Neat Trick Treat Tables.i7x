@@ -75,12 +75,11 @@ this is the vr-ick-eat rule:
 	now eyevalue of sick seat is 44;
 
 a goodrhyme rule (this is the vc-pick-pete rule):
-	if player is not in SickSeat, unavailable;
 	if sco-ick-eat is false:
 		vcp "Pete will be fun to trick-or-treat with, but first, those vegetables. Your parents aren't wasting them.";
 		not-yet;
 	if sco-pick-pete is true:
-		vcal "You already picked Pete. Where to meet him?";
+		vcal "You already picked Pete[if sco-treat-tree is true] and met up.[else]. Where to meet him?[end if]";
 		already-done;
 	ready;
 
@@ -551,7 +550,7 @@ this is the vr-streaky-stray rule:
 
 a goodrhyme rule (this is the vc-slick-sleet rule):
 	if sco-slick-sleet is true:
-		vcal "But you already created slick sleet!!";
+		vcal "But you already created slick sleet!";
 		already-done;
 	if reeky ray is not touchable:
 		vcp "Sleet won't help you here, yet.";

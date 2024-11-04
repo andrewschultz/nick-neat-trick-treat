@@ -28,6 +28,10 @@ You can cast SLICK SLEET once your final enemy is up.
 >ick eat
 by one point
 
+#testcase-check-vc-ick-eat-rule-if-sco-ick-eat-is-true
+>ick eat
+You've earned enough brownie points. Time to prep to go look for candy.
+
 >pick pete
 by one point
 
@@ -38,16 +42,32 @@ You already picked Pete. Where to meet him?
 >treat tree
 by one point
 
+#testcase-check-vc-treat-tree-rule-if-sco-treat-tree-is-true
+>treat tree
+You can't change the treat tree back until you get to the root of all this.
+
 >in
 
 >loner louse
 by one point
 
+#testcase-check-vc-loner-louse-rule-if-sco-loner-louse-is-true
+>loner louse
+Don't rub it in. Move on!
+
 >moaner mouse
 by one point
 
+#testcase-check-vc-moaner-mouse-rule-if-sco-moaner-mouse-is-true
+>moaner mouse
+The mouse has been properly chastised.
+
 >donor douse
 by one point
+
+#testcase-check-vc-donor-douse-rule-if-sco-donor-douse-is-true
+>donor douse
+Don't get greedy!
 
 >out
 
@@ -68,6 +88,10 @@ You can THANK THING once you have gotten a gift to be thankful for.
 >plank pling
 by one point
 
+#testcase-check-vc-plank-pling-rule-if-sco-plank-pling-is-true
+>plank pling
+You already found the odd-sounding plank and what was behind it!
+
 #+testcase-think-table-of-verb-checks-vc-blank-bling-rule
 #+testcase-think-table-of-verb-checks-vc-thank-thing-rule
 >think
@@ -77,6 +101,10 @@ You can THANK THING once you have gotten a gift to be thankful for.
 >blank bling
 by one point
 
+#testcase-check-vc-blank-bling-rule-if-sco-blank-bling-is-true
+>blank bling
+You already acquired bling!
+
 #+testcase-think-table-of-verb-checks-vc-thank-thing-rule
 >think
 You can THANK THING now you have gotten a gift to be thankful for.
@@ -84,11 +112,19 @@ You can THANK THING now you have gotten a gift to be thankful for.
 >thank thing
 by one point
 
+#testcase-check-vc-thank-thing-rule-if-sco-thank-thing-is-true
+>thank thing
+You've been taught to be polite, but that'd be overkill.
+
 >think
 !THANK THING
 
 >sank sing
 by one point
+
+#testcase-check-vc-sank-sing-rule-if-sco-sank-sing-is-true
+>sank sing
+More than once is too cheery!
 
 >get ghoul
 That'd seem to work, in the "get rid of" sense, but perhaps it should be part of a ritual.
@@ -101,12 +137,14 @@ You can GET GHOUL once you have what you need for a ritual and are in the right 
 
 >s
 
+#testcase-check-vc-re-rolled-rule-if-sco-be-bold-is-false
 >rerolled
 But you haven't tried anything to feel less scared!
 
 >see sold
 You have nothing to perform a transaction with!
 
+#testcase-check-vc-me-mold-rule-if-sco-re-rolled-is-false
 >me mold
 You have no reason to make an effigy of yourself yet!
 
@@ -121,6 +159,10 @@ You can SEE SOLD once you have a creation you can swap.
 >be bold
 by one point
 
+#testcase-check-vc-be-bold-rule-if-sco-be-bold-is-true
+>be bold
+You are bold enough now.
+
 >think
 You can ME MOLD once you feel confident enough in your artistic ability.
 You can REROLLED now you have committed to something but want to do it a bit better.
@@ -128,6 +170,10 @@ You can SEE SOLD once you have a creation you can swap.
 
 >rerolled
 by one point
+
+#testcase-check-vc-re-rolled-rule-if-sco-re-rolled-is-true
+>rerolled
+Nah, you're doing well enough. Don't push your luck.
 
 >think
 You can ME MOLD now you feel confident enough in your artistic ability.
@@ -137,6 +183,10 @@ You can SEE SOLD once you have a creation you can swap.
 >me mold
 by one point
 
+#testcase-check-vc-me-mold-rule-if-sco-me-mold-is-true
+>me mold
+One you-doll is enough.
+
 >think
 You can SEE SOLD now you have a creation you can swap.
 !ME MOLD
@@ -144,8 +194,16 @@ You can SEE SOLD now you have a creation you can swap.
 >see sold
 by one point
 
+#testcase-check-vc-see-sold-rule-if-sco-see-sold-is-true
+>see sold
+The deal has already been clinched.
+
 >wee wold
 by one point
+
+#testcase-check-vc-wee-wold-rule-if-sco-wee-wold-is-true
+>wee wold
+You might get tired of the story, and so might the tree.
 
 >pluraled plea
 This is not the right place for such a plea.
@@ -161,7 +219,7 @@ You can make a PLURALED PLEA once you have what you need for a ritual and are in
 >ton tome
 But the ton-tome would land with such a crash if it appeared! You need a soft place for it to rest.
 
-#testcase-check-vc-pun-poem-rule-if-sco-ton-time-is-false
+#testcase-check-vc-pun-poem-rule-if-sco-ton-tome-is-false
 >pun poem
 There is nowhere for poems to be written, to bring joy where there might be darkness!
 
@@ -185,6 +243,10 @@ You can RUN ROAM once you need to rebel against feeling stuck.
 >fun foam
 by one point
 
+#testcase-check-vc-fun-foam-rule-if-sco-fun-foam-is-true
+>fun foam
+Too much fun foam would be suffocating.
+
 #+testcase-think-table-of-verb-checks-vc-done-dome-rule
 #+testcase-think-table-of-verb-checks-vc-pun-poem-rule
 #+testcase-think-table-of-verb-checks-vc-run-roam-rule
@@ -198,6 +260,10 @@ You can RUN ROAM once you need to rebel against feeling stuck.
 >ton tome
 by one point
 
+#testcase-check-vc-ton-tome-rule-if-sco-ton-tome-is-true
+>ton tome
+Two ton tomes are more than enough! Well, one is, in its own way.
+
 #+testcase-think-table-of-verb-checks-vc-done-dome-rule
 #+testcase-think-table-of-verb-checks-vc-pun-poem-rule
 #+testcase-think-table-of-verb-checks-vc-run-roam-rule
@@ -210,6 +276,10 @@ You can RUN ROAM once you need to rebel against feeling stuck.
 >pun poem
 by one point
 
+#testcase-check-vc-pun-poem-rule-if-sco-pun-poem-is-true
+>pun poem
+Too many puns get old and stale.
+
 #+testcase-think-table-of-verb-checks-vc-done-dome-rule
 #+testcase-think-table-of-verb-checks-vc-run-roam-rule
 >think
@@ -220,6 +290,10 @@ You can RUN ROAM once you need to rebel against feeling stuck.
 >done dome
 by one point
 
+#testcase-check-vc-done-dome-rule-if-sco-done-dome-is-true
+>done dome
+You already certified completing renovation of the home/dome!
+
 #+testcase-think-table-of-verb-checks-vc-run-roam-rule
 >think
 !DONE DOME
@@ -227,6 +301,10 @@ You can RUN ROAM now you need to rebel against feeling stuck.
 
 >run roam
 by one point
+
+#testcase-check-vc-run-roam-rule-if-sco-run-roam-is-true
+>run roam
+You already exhorted yourself to get out! You need no magicking to do so.
 
 >think
 !RUN ROAM
@@ -270,6 +348,10 @@ by one point
 
 >e
 
+#+testcase-check-vc-treat-tree-rule-if-sco-treat-tree-is-true
+>treat tree
+You hope the tree has healed, but you have more important business right now.
+
 >andy ng
 You remember Andy Ng, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
 
@@ -277,8 +359,38 @@ You remember Andy Ng, whom you don't know very well. Maybe you should've gotten 
 >think
 You can recall ANDY NG or any other classmate once you have hit it off with Randy.
 
+#testcase-check-vc-andy-ng-rule-if-sco-andy-ng-is-true-if-classmate-asked-is-classmate-chosen
+>andy ng
+You remember Andy Ng, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
+Hmph. That still doesn't quite work! You'll figure out the how and when and where, though.
+
+#testcase-check-vc-andy-ng-rule-if-sco-andy-ng-is-true
+>sandy sing
+You remember Sandy Hsing, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
+Hmph. That (or a functionally equivalent alternate solution) still doesn't quite work! You'll figure out the how and when and where, though.
+
+>sandy tsing
+You remember Sandy Hsing, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
+Hmph. That (or a functionally equivalent alternate solution) still doesn't quite work! You'll figure out the how and when and where, though.
+
+>sandy hsing
+You remember Sandy Hsing, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
+Hmph. That (or a functionally equivalent alternate solution) still doesn't quite work! You'll figure out the how and when and where, though.
+
+>mandy ming
+You remember Mandy Ming, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
+Hmph. That (or a functionally equivalent alternate solution) still doesn't quite work! You'll figure out the how and when and where, though.
+
+>landy ling
+You remember Landy Ling, whom you don't know very well. Maybe you should've gotten to know them better. They seemed okay. Maybe you could, very shortly, with Randy Ring-Candy-King to introduce you. You need Randy Ring-Candy-King's trust, first, though.
+Hmph. That (or a functionally equivalent alternate solution) still doesn't quite work! You'll figure out the how and when and where, though.
+
 >dandy ding
 by one point
+
+#testcase-check-vc-dandy-ding-rule-if-sco-dandy-ding-is-true
+>dandy ding
+You already got Randy's attention!
 
 #testcase-think-table-of-verb-checks-vc-andy-ng-rule
 >think
@@ -287,12 +399,22 @@ You can recall ANDY NG or any other classmate now you have hit it off with Randy
 >andy ng
 by one point
 
+>grit grins
+by one point
+
+#testcase-check-vc-grit-grins-rule-if-sco-grit-grins-is-true
+>grit grins
+You already grinned grittily to stand up to the twits at once. Now look at them individually.
+
+>undo
+>undo
+
 >streaky stray
 There's nothing to make streaky or stray, yet.
 
 #testcase-think-table-of-verb-checks-vc-streaky-stray-rule
 >think
-You can call out a STREAKY STRAY once combat gets really heated.
+You can call out a STREAKY STRAY once combat has gotten really heated.
 
 >weakie way
 by one point
@@ -300,8 +422,26 @@ by one point
 >creaky cray
 by one point
 
+#testcase-check-vc-weakie-way-rule-if-sco-weakie-way-is-true
+>weakie way
+Insults lose zing the second time around.
+
+#testcase-check-vc-creaky-cray-rule-if-sco-creaky-cray-is-true
+>creaky cray
+Insults lose zing the second time around.
+
 >grit grins
 by one point
+
+>streaky stray
+by one point
+
+#testcase-check-vc-streaky-stray-rule-if-sco-streaky-stray-is-true
+>streaky stray
+You already made the reeky ray wobble a bit! Now to make Reeky Ray himself wobble.
+
+>undo
+>undo
 
 #+testcase-think-table-of-verb-checks-vc-slick-sleet-rule
 >think
@@ -310,18 +450,34 @@ You can cast SLICK SLEET now your final enemy is up.
 >slick sleet
 by one point
 
+#testcase-check-vc-slick-sleet-rule-if-sco-slick-sleet-is-true
+>slick sleet
+But you already created slick sleet!
+
 #testcase-think-table-of-verb-checks-vc-streaky-stray-rule
 >think
-You can call out a STREAKY STRAY now combat gets really heated.
+You can call out a STREAKY STRAY now combat has gotten really heated.
 
 >streaky stray
 by one point
 
+#+testcase-check-vc-treat-tree-rule-if-sco-treat-tree-is-true
+>treat tree
+You can't see it right now, but the tree is okay again, thanks to you
+
 >share shine
 by one point
 
+#testcase-check-vc-share-shine-rule-if-sco-share-shine-is-true
+>share shine
+That'd be overdoing the gratitude!
+
 >there thine
 by one point
+
+#testcase-check-vc-theyre-thine-rule-if-sco-theyre-thine-is-true
+>there thine
+You decide not to overdo the role-playing.
 
 >dare dine
 But the dining is not equitable yet! Claire Cline would like you to try to spread the wealth.
@@ -342,6 +498,10 @@ You can DARE DINE once you have passed out the candy equitably and have a way ho
 >fair fine
 by one point
 
+#testcase-check-vc-fair-fine-rule-if-sco-fair-fine-is-true
+>fair fine
+You already divided things equitably!
+
 #testcase-think-table-of-verb-checks-vc-dare-dine-rule
 >think
 You can DARE DINE once you have passed out the candy equitably and have a way home.
@@ -349,9 +509,125 @@ You can DARE DINE once you have passed out the candy equitably and have a way ho
 >green grid
 by one point
 
+#testcase-check-vc-green-grid-rule-if-sco-green-grid-is-true
+>green grid
+You already got a been-bid-keen kid to find a portal back!
+
 #testcase-think-table-of-verb-checks-vc-dare-dine-rule
 >think
 You can DARE DINE now you have passed out the candy equitably and have a way home.
+
+#testcase-reject-end-table-of-verb-checks-vc-a-gnome-rule
+>a gnome
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-andy-ng-rule
+>andy ng
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-be-bold-rule
+>be bold
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-blank-bling-rule
+>blank bling
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-creaky-cray-rule
+>creaky cray
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-dandy-ding-rule
+>dandy ding
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-done-dome-rule
+>done dome
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-donor-douse-rule
+>donor douse
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-fun-foam-rule
+>fun foam
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-get-ghoul-rule
+>get ghoul
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-grit-grins-rule
+>grit grins
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-ick-eat-rule
+>ick eat
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-loner-louse-rule
+>loner louse
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-me-mold-rule
+>me mold
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-moaner-mouse-rule
+>moaner mouse
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-plank-pling-rule
+>plank pling
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-pluraled-plea-rule
+>pluraled plea
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-pun-poem-rule
+>pun poem
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-re-rolled-rule
+>re rolled
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-run-roam-rule
+>run roam
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-sank-sing-rule
+>sank sing
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-see-sold-rule
+>see sold
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-shove-shook-rule
+>shove shook
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-streaky-stray-rule
+>streaky stray
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-thank-thing-rule
+>thank thing
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-ton-tome-rule
+>ton tome
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-weakie-way-rule
+>weakie way
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+#testcase-reject-end-table-of-verb-checks-vc-wee-wold-rule
+>wee wold
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >dare dine
 by one point

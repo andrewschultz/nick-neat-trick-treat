@@ -114,6 +114,26 @@ by one point
 >dandy ding
 by one point
 
+>sandy sing
+WRONG
+
+>undo
+>sandy tsing
+WRONG
+
+>undo
+>sandy hsing
+WRONG
+
+>undo
+>mandy ming
+WRONG
+
+>undo
+>landy ling
+WRONG
+>undo
+
 >andy ng
 by one point
 

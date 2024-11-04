@@ -89,6 +89,10 @@ Perhaps back inside, the eyes might see more.
 >undo
 >undo
 
+#testcase-values-eyevalue-of-honerhouse-is-1055
+>eye
+WRONG
+
 >loner louse
 by one point
 
