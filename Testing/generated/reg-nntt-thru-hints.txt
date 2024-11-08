@@ -18,6 +18,10 @@ Most special commands are more than one word. VERBS will give a list of useful, 
 
 >x me
 
+#testcase-values-eyevalue-of-sick-seat-is-33
+>eye
+The left eye blinks three times, then the right eye, three.
+
 #testcase-values-eyevalue-of-eyes-is--1
 >eye eyes
 Physically impossible and fortunately unnecessary.
@@ -205,12 +209,12 @@ by one point
 
 #+testcase-values-eyevalue-of-tree-trolled-is-24
 >eye tree
-The left eye blinks two times, then the right eye, four.
+The left eye blinks three times, then the right eye, four.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
 
 #+testcase-values-eyevalue-of-treetrolled-is-24
 >eye
-The left eye blinks two times, then the right eye, four.
+The left eye blinks three times, then the right eye, four.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
 
 >wee wold

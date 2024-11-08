@@ -54,6 +54,8 @@ file=reg-nntt-thru-hints.txt,hin/hint/hints,walkthrough testing HINTS basic
 >z
 
 @rej
+>z
+\\
 #testcase-check-vc-a-gnome-rule-if-player-is-not-in-hun-home
 #testcase-reject-start-table-of-verb-checks-vc-a-gnome-rule
 >a gnome
@@ -64,129 +66,181 @@ file=reg-nntt-thru-hints.txt,hin/hint/hints,walkthrough testing HINTS basic
 >andy ng
 {$REJECT2}
 \\
+#testcase-check-vc-be-bold-rule-if-player-is-not-in-treetrolled
 #testcase-reject-start-table-of-verb-checks-vc-be-bold-rule
 >be bold
 {$REJECT2}
 \\
+#testcase-check-vc-blank-bling-rule-if-player-is-not-in-rank-ring
 #testcase-reject-start-table-of-verb-checks-vc-blank-bling-rule
 >blank bling
 {$REJECT2}
 \\
+#testcase-check-vc-creaky-cray-rule-if-player-is-not-in-leaky-ley
 #testcase-reject-start-table-of-verb-checks-vc-creaky-cray-rule
 >creaky cray
 {$REJECT2}
 \\
+#testcase-check-vc-dandy-ding-rule-if-player-is-not-in-eee-ing
 #testcase-reject-start-table-of-verb-checks-vc-dandy-ding-rule
 >dandy ding
 {$REJECT2}
 \\
+#testcase-check-vc-dare-dine-rule-if-player-is-not-in-lair-line
 #testcase-reject-start-table-of-verb-checks-vc-dare-dine-rule
 >dare dine
 {$REJECT2}
 \\
+#testcase-check-vc-done-dome-rule-if-player-is-not-in-hun-home
 #testcase-reject-start-table-of-verb-checks-vc-done-dome-rule
 >done dome
 {$REJECT2}
 \\
+#testcase-check-vc-donor-douse-rule-if-player-is-not-in-honerhouse
 #testcase-reject-start-table-of-verb-checks-vc-donor-douse-rule
 >donor douse
 {$REJECT2}
 \\
+#testcase-check-vc-fair-fine-rule-if-player-is-not-in-lair-line
 #testcase-reject-start-table-of-verb-checks-vc-fair-fine-rule
 >fair fine
 {$REJECT2}
 \\
+#testcase-check-vc-fun-foam-rule-if-player-is-not-in-hun-home
 #testcase-reject-start-table-of-verb-checks-vc-fun-foam-rule
 >fun foam
 {$REJECT2}
 \\
+#testcase-check-vc-get-ghoul-rule-if-player-does-not-have-jewel
 #testcase-reject-start-table-of-verb-checks-vc-get-ghoul-rule
 >get ghoul
 {$REJECT2}
 \\
+#testcase-check-vc-green-grid-rule-if-player-is-not-in-lair-line
 #testcase-reject-start-table-of-verb-checks-vc-green-grid-rule
 >green grid
 {$REJECT2}
 \\
+#testcase-check-vc-grit-grins-rule-if-player-is-not-in-leaky-ley
 #testcase-reject-start-table-of-verb-checks-vc-grit-grins-rule
 >grit grins
 {$REJECT2}
 \\
+#testcase-check-vc-loner-louse-rule-if-player-is-not-in-honerhouse
 #testcase-reject-start-table-of-verb-checks-vc-loner-louse-rule
 >loner louse
 {$REJECT2}
 \\
+#testcase-check-vc-me-mold-rule-if-player-is-not-in-treetrolled
 #testcase-reject-start-table-of-verb-checks-vc-me-mold-rule
 >me mold
 {$REJECT2}
 \\
+#testcase-check-vc-moaner-mouse-rule-if-player-is-not-in-honerhouse
 #testcase-reject-start-table-of-verb-checks-vc-moaner-mouse-rule
 >moaner mouse
 {$REJECT2}
 \\
+#testcase-check-vc-plank-pling-rule-if-player-is-not-in-rank-ring
 #testcase-reject-start-table-of-verb-checks-vc-plank-pling-rule
 >plank pling
 {$REJECT2}
 \\
+#testcase-check-vc-pluraled-plea-rule-if-player-does-not-have-whirled-key
 #testcase-reject-start-table-of-verb-checks-vc-pluraled-plea-rule
 >pluraled plea
 {$REJECT2}
 \\
+#testcase-check-vc-pun-poem-rule-if-player-is-not-in-hun-home
 #testcase-reject-start-table-of-verb-checks-vc-pun-poem-rule
 >pun poem
 {$REJECT2}
 \\
+#testcase-check-vc-re-rolled-rule-if-player-is-not-in-treetrolled
 #testcase-reject-start-table-of-verb-checks-vc-re-rolled-rule
 >re rolled
 {$REJECT2}
 \\
+#testcase-check-vc-run-roam-rule-if-player-is-not-in-hun-home
 #testcase-reject-start-table-of-verb-checks-vc-run-roam-rule
 >run roam
 {$REJECT2}
 \\
+#testcase-check-vc-sank-sing-rule-if-player-is-not-in-rank-ring
 #testcase-reject-start-table-of-verb-checks-vc-sank-sing-rule
 >sank sing
 {$REJECT2}
 \\
+#testcase-check-vc-see-sold-rule-if-player-is-not-in-treetrolled
 #testcase-reject-start-table-of-verb-checks-vc-see-sold-rule
 >see sold
 {$REJECT2}
 \\
+#testcase-check-vc-share-shine-rule-if-player-is-not-in-lair-line
 #testcase-reject-start-table-of-verb-checks-vc-share-shine-rule
 >share shine
 {$REJECT2}
 \\
+#testcase-check-vc-shove-shook-rule-if-player-does-not-have-book
 #testcase-reject-start-table-of-verb-checks-vc-shove-shook-rule
 >shove shook
 {$REJECT2}
 \\
+#testcase-check-vc-streaky-stray-rule-if-player-is-not-in-leaky-ley
 #testcase-reject-start-table-of-verb-checks-vc-streaky-stray-rule
 >streaky stray
 {$REJECT2}
 \\
+#testcase-check-vc-thank-thing-rule-if-player-is-not-in-rank-ring
 #testcase-reject-start-table-of-verb-checks-vc-thank-thing-rule
 >thank thing
 {$REJECT2}
 \\
+#testcase-check-vc-theyre-thine-rule-if-player-is-not-in-lair-line
 #testcase-reject-start-table-of-verb-checks-vc-theyre-thine-rule
 >theyre thine
 {$REJECT2}
 \\
+#testcase-check-vc-ton-tome-rule-if-player-is-not-in-hun-home
 #testcase-reject-start-table-of-verb-checks-vc-ton-tome-rule
 >ton tome
 {$REJECT2}
 \\
+#testcase-check-vc-treat-tree-rule-if-player-does-not-have-meet-me-pete-p
 #testcase-reject-start-table-of-verb-checks-vc-treat-tree-rule
 >treat tree
 {$REJECT2}
 \\
+#testcase-check-vc-weakie-way-rule-if-player-is-not-in-leaky-ley
 #testcase-reject-start-table-of-verb-checks-vc-weakie-way-rule
 >weakie way
 {$REJECT2}
 \\
+#testcase-check-vc-wee-wold-rule-if-player-is-not-in-treetrolled
 #testcase-reject-start-table-of-verb-checks-vc-wee-wold-rule
 >wee wold
 {$REJECT2}
+
+@verbs
+##balance undos
+>x me
+NOTE: the eyes can be used to EYE the room in general
+\\
+>i
+Well, aside from the some-size-'em eyes...
+!NOTE
+\\
+>undo
+>undo
+\\
+>i
+NOTE: the eyes can be used to EYE the room in general
+\\
+>x me
+!NOTE
+\\
+>undo
+>undo
 
 @hint
 >eye me
@@ -196,6 +250,10 @@ file=reg-nntt-thru-hints.txt,hin/hint/hints,walkthrough testing HINTS basic
 {$REJECT1}
 \\
 >x me
+\\
+#testcase-values-eyevalue-of-sick-seat-is-33
+>eye
+The left eye blinks three times, then the right eye, three.
 \\
 #testcase-values-eyevalue-of-eyes-is--1
 >eye eyes
@@ -251,6 +309,7 @@ Pete will be fun to trick-or-treat with, but first, those vegetables. Your paren
 You can PICK PETE as a companion once you've finished dinner.
 
 @rej+
+#testcase-check-vc-slick-sleet-rule-if-reeky-ray-is-not-touchable
 >slick sleet
 Sleet won't help you here, yet.
 \\
@@ -479,9 +538,11 @@ It's even ranker any direction but back south.
 The left eye blinks five times, then the right eye, five.
 
 @rej
+#testcase-check-vc-blank-bling-rule-if-sco-plank-pling-is-false
 >blank bling
 Nothing will materialise just because you want it to! Search for it first.
 \\
+#testcase-check-vc-thank-thing-rule-if-sco-blank-bling-is-false
 >thank thing
 You have found nothing to be grateful for, yet.
 \\
@@ -577,6 +638,7 @@ Well, whatever works. You engage in some harmless positivity. The thing seems to
 More than once is too cheery!
 
 @rej+
+#testcase-check-vc-get-ghoul-rule-if-player-is-not-in-strick-street
 >get ghoul
 That'd seem to work, in the "get rid of" sense, but perhaps it should be part of a ritual.
 \\
@@ -617,6 +679,7 @@ Debug note: normal eye-scan.
 >rerolled
 But you haven't tried anything to feel less scared!
 \\
+#testcase-check-vc-see-sold-rule-if-sco-me-mold-is-false
 >see sold
 You have nothing to perform a transaction with!
 \\
@@ -747,12 +810,12 @@ The deal has already been clinched.
 @hint
 #+testcase-values-eyevalue-of-tree-trolled-is-24
 >eye tree
-The left eye blinks two times, then the right eye, four.
+The left eye blinks three times, then the right eye, four.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
 \\
 #+testcase-values-eyevalue-of-treetrolled-is-24
 >eye
-The left eye blinks two times, then the right eye, four.
+The left eye blinks three times, then the right eye, four.
 Odd ... the eyes seem to glance at you side-eye, as if to say "Do you REALLY need to do that?"
 
 @!min
@@ -779,6 +842,7 @@ You don't need to do anything else with the tree, trolled.
 You don't need to do anything else with the general location.
 
 @rej
+#testcase-check-vc-pluraled-plea-rule-if-player-is-not-in-strick-street
 >pluraled plea
 This is not the right place for such a plea.
 \\
@@ -804,6 +868,7 @@ There are no secret passages in this home. You can only go back east.
 The left eye blinks three times, then the right eye, four.
 
 @rej
+#testcase-check-vc-ton-tome-rule-if-sco-fun-foam-is-false
 >ton tome
 But the ton-tome would land with such a crash if it appeared! You need a soft place for it to rest.
 \\
@@ -815,6 +880,7 @@ There is nowhere for poems to be written, to bring joy where there might be dark
 >done dome
 You haven't cheered the place up enough to consider it "done!"
 \\
+#testcase-check-vc-run-roam-rule-if-sco-done-dome-is-false
 >run roam
 It's a bit creepy in here, but no need to run away ... yet. Still, you file the idea for later.
 \\
@@ -1030,6 +1096,7 @@ You don't need to do anything else with the fun foam.
 You don't need to do anything else with the ton tome.
 
 @rej
+#testcase-check-vc-shove-shook-rule-if-player-is-not-in-strick-street
 >shove shook
 There's nothing for the book to shake here.
 \\
@@ -1240,35 +1307,35 @@ You can recall ANDY NG or any other classmate now you have hit it off with Randy
 ##balance undos
 #testcase-alt-words-table-of-verb-checks-26-andy-sandy-mandy-landy-ng-tsing-hsing-sing-ming-ling
 >sandy sing
-Randy Ring-Candy-King says, "yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
+Randy Ring-Candy-King says, "Yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
 But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.
 \\
 >undo
 \\
 #+testcase-alt-words-table-of-verb-checks-26-andy-sandy-mandy-landy-ng-tsing-hsing-sing-ming-ling
 >sandy tsing
-Randy Ring-Candy-King says, "yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
+Randy Ring-Candy-King says, "Yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
 But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.
 \\
 >undo
 \\
 #+testcase-alt-words-table-of-verb-checks-26-andy-sandy-mandy-landy-ng-tsing-hsing-sing-ming-ling
 >sandy hsing
-Randy Ring-Candy-King says, "yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
+Randy Ring-Candy-King says, "Yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
 But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.
 \\
 >undo
 \\
 #+testcase-alt-words-table-of-verb-checks-26-andy-sandy-mandy-landy-ng-tsing-hsing-sing-ming-ling
 >mandy ming
-Randy Ring-Candy-King says, "yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
+Randy Ring-Candy-King says, "Yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
 But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.
 \\
 >undo
 \\
 #+testcase-alt-words-table-of-verb-checks-26-andy-sandy-mandy-landy-ng-tsing-hsing-sing-ming-ling
 >landy ling
-Randy Ring-Candy-King says, "yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
+Randy Ring-Candy-King says, "Yes! They seem like someone quite worthy. They and their friends will be a big help." You protest you don't know them that well so they might not help. Randy Ring-Candy-King assures you that people do help each other, just because, and you can get to know each other, later.
 But thinking a bit more, you feel sort of bad. You always felt the Asian kids were all just sort of there and similar, but maybe they thought the same way about you and Pete P. You think of how they are different, despite similar names ... Sandy, Andy, Landy, Mandy. Perhaps they find your last names as odd as you find theirs. You never hated them, but you really tried to be friends.
 >undo
 
@@ -1429,6 +1496,7 @@ Reeky Ray
 >undo
 
 @rej
+#testcase-check-vc-streaky-stray-rule-if-reeky-ray-is-not-touchable
 >streaky stray
 There's nothing to make streaky or stray, yet.
 \\
@@ -1580,6 +1648,18 @@ Debug note: normal eye-scan.
 >treat tree
 You can't see it right now, but the tree is okay again, thanks to you
 
+@rej+
+##balance undos
+>green grid
+by one point
+\\
+#testcase-check-vc-dare-dine-rule-if-sco-green-grid-is-false
+>dare dine
+Claire Cline notes it's not time to have a celebratory meal, yet. Arrange for equitable dining, first.
+\\
+>undo
+>undo
+
 @!min
 >share shine
 by one point
@@ -1616,8 +1696,9 @@ With a small flourish, you hand a few candies to kids dressed in medieval costum
 You decide not to overdo the role-playing.
 
 @rej+
+#testcase-check-vc-dare-dine-rule-if-sco-fair-fine-is-false
 >dare dine
-But the dining is not equitable yet! Claire Cline would like you to try to spread the wealth.
+Claire Cline notes it's not time to have a celebratory meal, yet. Arrange for equitable dining and a way home, first.
 \\
 #testcase-think-table-of-verb-checks-vc-dare-dine-rule
 >think
@@ -1646,6 +1727,9 @@ You at first almost spit it out -- then you realize, everyone else deserves it, 
 #testcase-check-vc-fair-fine-rule-if-sco-fair-fine-is-true
 >fair fine
 You already divided things equitably!
+\\
+>dare dine
+Claire Cline notes it's not time to have a celebratory meal, yet. Arrange for a way home, first.
 
 @gt
 #testcase-goto-table-of-noways-lair-line
@@ -1767,10 +1851,6 @@ You can DARE DINE now you have passed out the candy equitably and have a way hom
 \\
 #testcase-reject-end-table-of-verb-checks-vc-grit-grins-rule
 >grit grins
-{$REJECT2}
-\\
-#testcase-reject-end-table-of-verb-checks-vc-ick-eat-rule
->ick eat
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-verb-checks-vc-loner-louse-rule

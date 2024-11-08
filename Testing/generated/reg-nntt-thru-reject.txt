@@ -10,6 +10,8 @@
 
 >z
 
+>z
+
 #testcase-check-vc-a-gnome-rule-if-player-is-not-in-hun-home
 #testcase-reject-start-table-of-verb-checks-vc-a-gnome-rule
 >a gnome
@@ -20,126 +22,157 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >andy ng
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-be-bold-rule-if-player-is-not-in-treetrolled
 #testcase-reject-start-table-of-verb-checks-vc-be-bold-rule
 >be bold
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-blank-bling-rule-if-player-is-not-in-rank-ring
 #testcase-reject-start-table-of-verb-checks-vc-blank-bling-rule
 >blank bling
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-creaky-cray-rule-if-player-is-not-in-leaky-ley
 #testcase-reject-start-table-of-verb-checks-vc-creaky-cray-rule
 >creaky cray
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-dandy-ding-rule-if-player-is-not-in-eee-ing
 #testcase-reject-start-table-of-verb-checks-vc-dandy-ding-rule
 >dandy ding
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-dare-dine-rule-if-player-is-not-in-lair-line
 #testcase-reject-start-table-of-verb-checks-vc-dare-dine-rule
 >dare dine
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-done-dome-rule-if-player-is-not-in-hun-home
 #testcase-reject-start-table-of-verb-checks-vc-done-dome-rule
 >done dome
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-donor-douse-rule-if-player-is-not-in-honerhouse
 #testcase-reject-start-table-of-verb-checks-vc-donor-douse-rule
 >donor douse
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-fair-fine-rule-if-player-is-not-in-lair-line
 #testcase-reject-start-table-of-verb-checks-vc-fair-fine-rule
 >fair fine
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-fun-foam-rule-if-player-is-not-in-hun-home
 #testcase-reject-start-table-of-verb-checks-vc-fun-foam-rule
 >fun foam
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-get-ghoul-rule-if-player-does-not-have-jewel
 #testcase-reject-start-table-of-verb-checks-vc-get-ghoul-rule
 >get ghoul
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-green-grid-rule-if-player-is-not-in-lair-line
 #testcase-reject-start-table-of-verb-checks-vc-green-grid-rule
 >green grid
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-grit-grins-rule-if-player-is-not-in-leaky-ley
 #testcase-reject-start-table-of-verb-checks-vc-grit-grins-rule
 >grit grins
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-loner-louse-rule-if-player-is-not-in-honerhouse
 #testcase-reject-start-table-of-verb-checks-vc-loner-louse-rule
 >loner louse
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-me-mold-rule-if-player-is-not-in-treetrolled
 #testcase-reject-start-table-of-verb-checks-vc-me-mold-rule
 >me mold
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-moaner-mouse-rule-if-player-is-not-in-honerhouse
 #testcase-reject-start-table-of-verb-checks-vc-moaner-mouse-rule
 >moaner mouse
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-plank-pling-rule-if-player-is-not-in-rank-ring
 #testcase-reject-start-table-of-verb-checks-vc-plank-pling-rule
 >plank pling
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-pluraled-plea-rule-if-player-does-not-have-whirled-key
 #testcase-reject-start-table-of-verb-checks-vc-pluraled-plea-rule
 >pluraled plea
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-pun-poem-rule-if-player-is-not-in-hun-home
 #testcase-reject-start-table-of-verb-checks-vc-pun-poem-rule
 >pun poem
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-re-rolled-rule-if-player-is-not-in-treetrolled
 #testcase-reject-start-table-of-verb-checks-vc-re-rolled-rule
 >re rolled
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-run-roam-rule-if-player-is-not-in-hun-home
 #testcase-reject-start-table-of-verb-checks-vc-run-roam-rule
 >run roam
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-sank-sing-rule-if-player-is-not-in-rank-ring
 #testcase-reject-start-table-of-verb-checks-vc-sank-sing-rule
 >sank sing
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-see-sold-rule-if-player-is-not-in-treetrolled
 #testcase-reject-start-table-of-verb-checks-vc-see-sold-rule
 >see sold
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-share-shine-rule-if-player-is-not-in-lair-line
 #testcase-reject-start-table-of-verb-checks-vc-share-shine-rule
 >share shine
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-shove-shook-rule-if-player-does-not-have-book
 #testcase-reject-start-table-of-verb-checks-vc-shove-shook-rule
 >shove shook
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-streaky-stray-rule-if-player-is-not-in-leaky-ley
 #testcase-reject-start-table-of-verb-checks-vc-streaky-stray-rule
 >streaky stray
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-thank-thing-rule-if-player-is-not-in-rank-ring
 #testcase-reject-start-table-of-verb-checks-vc-thank-thing-rule
 >thank thing
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-theyre-thine-rule-if-player-is-not-in-lair-line
 #testcase-reject-start-table-of-verb-checks-vc-theyre-thine-rule
 >theyre thine
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-ton-tome-rule-if-player-is-not-in-hun-home
 #testcase-reject-start-table-of-verb-checks-vc-ton-tome-rule
 >ton tome
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-treat-tree-rule-if-player-does-not-have-meet-me-pete-p
 #testcase-reject-start-table-of-verb-checks-vc-treat-tree-rule
 >treat tree
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-weakie-way-rule-if-player-is-not-in-leaky-ley
 #testcase-reject-start-table-of-verb-checks-vc-weakie-way-rule
 >weakie way
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-wee-wold-rule-if-player-is-not-in-treetrolled
 #testcase-reject-start-table-of-verb-checks-vc-wee-wold-rule
 >wee wold
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -152,6 +185,7 @@ Pete will be fun to trick-or-treat with, but first, those vegetables. Your paren
 >think
 You can PICK PETE as a companion once you've finished dinner.
 
+#testcase-check-vc-slick-sleet-rule-if-reeky-ray-is-not-touchable
 >slick sleet
 Sleet won't help you here, yet.
 
@@ -235,9 +269,11 @@ Don't get greedy!
 
 >n
 
+#testcase-check-vc-blank-bling-rule-if-sco-plank-pling-is-false
 >blank bling
 Nothing will materialise just because you want it to! Search for it first.
 
+#testcase-check-vc-thank-thing-rule-if-sco-blank-bling-is-false
 >thank thing
 You have found nothing to be grateful for, yet.
 
@@ -300,6 +336,7 @@ Well, whatever works. You engage in some harmless positivity. The thing seems to
 >sank sing
 More than once is too cheery!
 
+#testcase-check-vc-get-ghoul-rule-if-player-is-not-in-strick-street
 >get ghoul
 That'd seem to work, in the "get rid of" sense, but perhaps it should be part of a ritual.
 
@@ -315,6 +352,7 @@ You can GET GHOUL once you have what you need for a ritual and are in the right 
 >rerolled
 But you haven't tried anything to feel less scared!
 
+#testcase-check-vc-see-sold-rule-if-sco-me-mold-is-false
 >see sold
 You have nothing to perform a transaction with!
 
@@ -398,6 +436,7 @@ At your suggestion, the tree, trolled launches into stories of the far-off Wee W
 >wee wold
 You might get tired of the story, and so might the tree.
 
+#testcase-check-vc-pluraled-plea-rule-if-player-is-not-in-strick-street
 >pluraled plea
 This is not the right place for such a plea.
 
@@ -409,6 +448,7 @@ You can make a PLURALED PLEA once you have what you need for a ritual and are in
 
 >w
 
+#testcase-check-vc-ton-tome-rule-if-sco-fun-foam-is-false
 >ton tome
 But the ton-tome would land with such a crash if it appeared! You need a soft place for it to rest.
 
@@ -420,6 +460,7 @@ There is nowhere for poems to be written, to bring joy where there might be dark
 >done dome
 You haven't cheered the place up enough to consider it "done!"
 
+#testcase-check-vc-run-roam-rule-if-sco-done-dome-is-false
 >run roam
 It's a bit creepy in here, but no need to run away ... yet. Still, you file the idea for later.
 
@@ -529,6 +570,7 @@ Yes, yes, that's a good idea, have a gnome for upkeep once everything's fixed he
 >a gnome
 You already summoned a gnome!
 
+#testcase-check-vc-shove-shook-rule-if-player-is-not-in-strick-street
 >shove shook
 There's nothing for the book to shake here.
 
@@ -643,6 +685,7 @@ You already grinned grittily to stand up to the twits at once. Now look at them 
 >undo
 >undo
 
+#testcase-check-vc-streaky-stray-rule-if-reeky-ray-is-not-touchable
 >streaky stray
 There's nothing to make streaky or stray, yet.
 
@@ -719,6 +762,16 @@ Randy has something to show you, though.
 >treat tree
 You can't see it right now, but the tree is okay again, thanks to you
 
+>green grid
+by one point
+
+#testcase-check-vc-dare-dine-rule-if-sco-green-grid-is-false
+>dare dine
+Claire Cline notes it's not time to have a celebratory meal, yet. Arrange for equitable dining, first.
+
+>undo
+>undo
+
 >share shine
 by one point
 
@@ -739,8 +792,9 @@ With a small flourish, you hand a few candies to kids dressed in medieval costum
 >there thine
 You decide not to overdo the role-playing.
 
+#testcase-check-vc-dare-dine-rule-if-sco-fair-fine-is-false
 >dare dine
-But the dining is not equitable yet! Claire Cline would like you to try to spread the wealth.
+Claire Cline notes it's not time to have a celebratory meal, yet. Arrange for equitable dining and a way home, first.
 
 #testcase-think-table-of-verb-checks-vc-dare-dine-rule
 >think
@@ -764,6 +818,9 @@ You at first almost spit it out -- then you realize, everyone else deserves it, 
 #testcase-check-vc-fair-fine-rule-if-sco-fair-fine-is-true
 >fair fine
 You already divided things equitably!
+
+>dare dine
+Claire Cline notes it's not time to have a celebratory meal, yet. Arrange for a way home, first.
 
 #+testcase-think-table-of-verb-checks-vc-dare-dine-rule
 >think
@@ -826,10 +883,6 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 
 #testcase-reject-end-table-of-verb-checks-vc-grit-grins-rule
 >grit grins
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
-
-#testcase-reject-end-table-of-verb-checks-vc-ick-eat-rule
->ick eat
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-end-table-of-verb-checks-vc-loner-louse-rule
