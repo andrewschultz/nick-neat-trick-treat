@@ -142,6 +142,9 @@ to decide which number is house-score:
 to decide which number is house-crit-score:
 	decide on (boolval of sco-loner-louse) + (boolval of sco-moaner-mouse);
 
+to decide which number is dine-score:
+	decide on (boolval of sco-fair-fine) + (boolval of sco-green-grid);
+
 book shortcut
 
 to say once-now of (ts - a truth state):

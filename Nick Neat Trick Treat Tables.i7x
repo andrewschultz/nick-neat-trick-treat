@@ -614,11 +614,8 @@ this is the vr-theyre-thine rule:
 
 a goodrhyme rule (this is the vc-dare-dine rule):
 	if player is not in Lair Line, unavailable;
-	if sco-fair-fine is false:
-		vcp "But the dining is not equitable yet! Claire Cline would like you to try to spread the wealth.";
-		not-yet;
-	if sco-green-grid is false:
-		vcp "But you need a portal home! And you can't do it yourself.";
+	if dine-score < 2:
+		vcp "Claire Cline notes it's not time to have a celebratory meal, yet. Arrange for [if sco-fair-fine is false]equitable dining[end if][if dine-score is 0] and [end if][if sco-green-grid is false]a way home[end if], first.";
 		not-yet;
 	ready;
 
