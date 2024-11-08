@@ -493,6 +493,9 @@ volume verb modification
 the print empty inventory rule is not listed in any rulebook.
 the print standard inventory rule is not listed in any rulebook.
 
+check taking inventory:
+	if player has eyes, say "Well, aside from [the eyes]...";
+
 carry out taking inventory:
 	if sco-ick-eat is false, say "You're carrying nothing special. You're not in your costume yet. You need to finish dinner." instead;
 	if sco-treat-tree is false, say "You've got that phone message to deal with." instead;

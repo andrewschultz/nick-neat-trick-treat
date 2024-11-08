@@ -424,7 +424,7 @@ this is the vr-see-sold rule:
 	if sco-wee-wold is true:
 		declue-rm tree;
 	else:
-		rm-and tree and 2024;
+		rm-and tree and 2034;
 
 a goodrhyme rule (this is the vc-wee-wold rule):
 	if player is not in TreeTrolled, unavailable;
