@@ -62,7 +62,7 @@ report examining the player when gs-eyes-found is false:
 
 to find-the-eyes:
 	if player does not have eyes:
-		say "Wait! What's this? Some size-[']em eyes! The perfect thing to size up what weird stuff you need to do, on a weird adventure. Way better than a decoder ring.[paragraph break][i][bracket][b]NOTE[r][i]: the eyes can be used to [b]EYE[r][i] the room in general, or a thing, to tell you how long each word in the solution should  be. They don't guarantee you can do anything right now.[close bracket][r][line break]";
+		say "Wait! What's this? Some size-[']em eyes! The perfect thing to size up what weird stuff you need to do, on a weird adventure. Way better than a decoder ring.[paragraph break][i][bracket][b]NOTE[r][i]: the eyes can be used to [b]EYE[r][i] the room in general, or a thing, to tell you how long each word in the solution should be, or if you need to do anything with a room or thing.[close bracket][r][line break]";
 		now player has eyes;
 
 report taking inventory when gs-eyes-found is false:
@@ -176,7 +176,7 @@ check exiting: try going outside instead;
 
 chapter Nick
 
-Nick Neat Trick Treat is a person in SickSeat. the player is Nick Neat Trick Treat. printed name is "Nick Neat-Trick-Treat". eyevalue of nick is 33. description of nick is "You [if sco-pick-pete is false]will be[else]are[end if] dressed as your favorite character from the Blest Blue Zest Zoo, the Guest Goo. You can hardly wait for the add-on season: Nest (New). You have friends, of course, dressed as Pressed Prue and the Best Boo."
+Nick Neat Trick Treat is a person in SickSeat. the player is Nick Neat Trick Treat. printed name is "Nick Neat-Trick-Treat". eyevalue of nick is 33. description of nick is "You [if sco-pick-pete is false]will be[else]are[end if] dressed as your favorite character from the Blest Blue Zest Zoo, the Guest Goo. You can hardly wait for the add-on season: Nest (New). You have friends, of course, dressed as Pressed Prue and the Best Boo, as well as the Crest Crew."
 
 chapter sick seat scenery
 

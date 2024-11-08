@@ -62,9 +62,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 chapter sick seat scoring
 
 a goodrhyme rule (this is the vc-ick-eat rule):
-	if player is not in SickSeat, unavailable;
 	if sco-ick-eat is true:
-		vcal "You've earned enough brownie points. Time to prep to go look for candy.";
+		if strick street is visited:
+			vcal "The vegetables are in the distant past. Only sweet stuff to eat now.";
+		else:
+			vcal "You've earned enough brownie points. [if sco-pick-pete is false]Time to prep to go look for candy.[else]Now, where to look for candy?[end if]";
 		already-done;
 	ready;
 
