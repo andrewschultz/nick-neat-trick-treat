@@ -11,9 +11,9 @@ volume rooms
 
 table of eee ing guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"band|banned"	"being"	--	false	--	"<CLEVER REJECT TEXT>"
-"grand"	"greeing"	--	false	--	"<CLEVER REJECT TEXT>"
-"sand"	"seeing"	--	false	--	"<CLEVER REJECT TEXT>"
+"band|banned"	"being"	--	false	--	"Nothing illegal and/or musical pops up."
+"grand"	"greeing"	--	false	--	"You cringe at the thought of people agreeing too hard with each other."
+"sand"	"seeing"	--	false	--	"Thankfully, no giant desert appears."
 
 table of honer house guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -26,6 +26,8 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 table of lair line guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "care"	"kine"	--	false	--	"A bit too medieval with the positive emotion."
+"mare"	"mine"	--	false	--	"Medieval English, German and/or arithmetic all do hold a bit of scariness for you."
+"neer"	"nine|nein"	--	false	--	"Medieval English, German and/or arithmetic all do hold a bit of scariness for you."
 "pare|pair|pear"	"pine"	--	false	--	"Surprisingly, there are no pine trees here."
 "rare"	"rhine"	--	false	--	"It would be odd if the Rhine ran through here, yes."
 "stare"	"stein"	--	false	--	"There are no alcoholic beverages or containers here. You're not old enough!"
@@ -41,6 +43,8 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of rank ring guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"bank"	"bing"	--	false	--	"Alas, no bank with free lollipops appears. Man. You always wanted to try one of each flavor. You're still young enough to get freebies. Right?"
+"dank"	"ding"	--	false	--	"You need no creepy noises, but a cheery ding might work elsewhere, who knows?"
 "stank"	"sting"	--	false	--	"That'd make things worse."
 
 table of treetrolled guesses
@@ -70,11 +74,11 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "feet|feat"	"fee"	--	false	--	"No, you aren't going to charge for your legwork or feats."
 "heat"	"he|hee"	--	false	--	"You may give Pete a bit of random stuff for heat. He may give it back."
 "leetly"	--	--	false	--	"Meetings with Pete are always leet, though."
-"neat"	"knee"	--	false	--	"<CLEVER REJECT TEXT>"
+"neat"	"knee"	--	false	--	"Yes, the knees on your costume are not torn."
 "seat"	"c|see|sea"	--	false	--	"No, you and Pete P aren't going to a play or a beach."
 "tweet"	"twee"	--	false	--	"You hear an eerie bird-call."
 "wheat"	"whee"	--	false	--	"It's candy that's worth getting excited about."
-"yeet"	"ye"	--	false	--	"<CLEVER REJECT TEXT>"
+"yeet"	"ye"	--	false	--	"You combine medieval words and slang. It feels appropriate."
 
 table of some eyes guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -85,12 +89,12 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "from"	"fries"	--	false	--	"Fries are wonderful but tonight is the night for candy."
 "gum"	"guys"	--	false	--	"You never get excited about gum. You remember when some bright colored stuff lost its flavor quick."
 "hum"	"his|highs"	--	false	--	"You know lots of joyful tunes. You haven't figured how to whistle yet."
-"mum"	"mys"	--	false	--	"<CLEVER REJECT TEXT>"
-"numb"	"nighs"	--	false	--	"<CLEVER REJECT TEXT>"
-"plum"	"plies"	--	false	--	"<CLEVER REJECT TEXT>"
-"rum"	"rise"	--	false	--	"<CLEVER REJECT TEXT>"
-"scum"	"skies"	--	false	--	"<CLEVER REJECT TEXT>"
-"tum"	"ties"	--	false	--	"<CLEVER REJECT TEXT>"
+"mum"	"mys"	--	false	--	"You're silently impressed by the power of the eyes."
+"numb"	"nighs"	--	false	--	"You worry you may become numb to the eyes['] convenience."
+"plum"	"plies"	--	false	--	"You wonder when the best time to ply the eyes would be."
+"rum"	"rise"	--	false	--	"You're not old enough to be thinking about drinking."
+"scum"	"skies"	--	false	--	"You wonder if the eyes are too good to be true as a hint item. Maybe if you use them once, you're indebted to someone or something evil? Nah."
+"tum"	"ties"	--	false	--	"You hope any candy you get doesn't tie your stomach in knots."
 
 volume general
 
@@ -102,6 +106,8 @@ mist-1	mist-2	mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 table of general good guesses
 mist-1	mist-2	mist-cmd(topic)	mist-rule	got-yet	leet-rule	mist-txt
 "lick"	"leet"	--	--	--	--	"You aren't big on lollipops, even the purportedly top-shelf ones."
+"rest"	"rue"	--	--	--	--	"Yes, you will rue resting in your costume."
+"yessed"	"yew"	--	--	--	--	"Maybe one friend will come as the Yessed Yew."
 
 Nick Neat Trick Treat Mistakes ends here.
 
