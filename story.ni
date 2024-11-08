@@ -61,8 +61,9 @@ report examining the player when gs-eyes-found is false:
 	continue the action;
 
 to find-the-eyes:
-	say "Wait! What's this? Some size-[']em eyes! The perfect thing to size up what weird stuff you need to do, on a weird adventure. Way better than a decoder ring.[paragraph break][i][bracket][b]NOTE[r][i]: the eyes can be used to [b]EYE[r][i] the room in general, or a thing, to tell you how long each word in the solution should  be. They don't guarantee you can do anything right now.[close bracket][r][line break]";
-	now player has eyes;
+	if player does not have eyes:
+		say "Wait! What's this? Some size-[']em eyes! The perfect thing to size up what weird stuff you need to do, on a weird adventure. Way better than a decoder ring.[paragraph break][i][bracket][b]NOTE[r][i]: the eyes can be used to [b]EYE[r][i] the room in general, or a thing, to tell you how long each word in the solution should  be. They don't guarantee you can do anything right now.[close bracket][r][line break]";
+		now player has eyes;
 
 report taking inventory when gs-eyes-found is false:
 	find-the-eyes;
@@ -70,7 +71,7 @@ report taking inventory when gs-eyes-found is false:
 
 to eye-blink (nm - a number):
 	if nm is 0:
-		say "Oh dear. I should have a clue for this, even one saying you're done.";
+		say "The eyes should give a reading here, but they don't. This is a BUG.";
 		continue the action;
 	let left-eye be false;
 	let right-eye be false;
@@ -155,7 +156,7 @@ volume rooms
 
 book sick seat
 
-SickSeat is a room. printed name is "At dinner, on your sick seat". "[if sco-ick-eat is false]You're on your sick seat, sick in a positive way, though right now you are sort of sick of the vegetables you have to eat before trick-or-treating. You usually don't mind them, but today they're tough to shovel down. Some quick self-talk to pep yourself up should do the trick.[paragraph break]If it weren't Halloween, you'd find yourself daydreaming of tater tots later (lots,) but chocolate and such is even better.[else if sco-treat-tree is false]You're still on your seat here, trying to figure which friend to choose for adventure.[else]You're on your seat here, thinking of where Pete P wants you to 'meet me.'[end if]". eyevalue of sick seat is 33.
+SickSeat is a room. printed name is "At dinner, on your sick seat". "[if sco-ick-eat is false]You're on your sick seat, sick in a positive way, though right now you are sort of sick of the vegetables you have to eat before trick-or-treating. You usually don't mind them, but today they're tough to shovel down. Some quick self-talk to pep yourself up should do the trick.[paragraph break]If it weren't Halloween, you'd find yourself daydreaming of tater tots later (lots,) but chocolate and such is even better.[else if sco-treat-tree is false]You're still on your seat here, trying to figure which friend to choose for adventure.[else]You're on your seat here, thinking of where Pete P wants you to 'meet me.'[end if]". eyevalue of SickSeat is 33.
 
 every turn when sco-ick-eat is false:
 	if a random chance of 1 in 3 succeeds, say "You look at the vegetables and think [one of]'Bad bid, Dad did.' [or]'Bomb, bore, Mom. More?!' [in random order] But of course saying that would get you grounded."
