@@ -1,0 +1,428 @@
+## reg-nntt-thru-mistakes.txt
+## GENERATOR FILE: rbr-nntt-thru.txt
+
+## walkthrough testing all mistakes
+
+** game: /home/andrew/prt/debug-nick-neat-trick-treat.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>z
+
+#testcase-mistakes-table-of-some-eyes-guesses-bum-buys
+>bum buys
+Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Nick Neat-Trick-Treat has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+>x me
+
+#testcase-mistakes-table-of-some-eyes-guesses-bum-buys
+>bum buys
+You think of way you wasted your allowance. You're older and wiser now.
+
+#testcase-mistakes-table-of-some-eyes-guesses-crumb-cries
+>crumb cries
+You recall eating really good candy and crying the crumbs left weren't tasty. You're more grown up now.
+
+#testcase-mistakes-table-of-some-eyes-guesses-drum-dries
+>drum dries
+You remember banging a wet drum that made no noise.
+
+#testcase-mistakes-table-of-some-eyes-guesses-dumb-dyes-dies
+>dumb dies
+You snicker to yourself about teen punks and their death-metal t-shirt.
+
+#+testcase-mistakes-table-of-some-eyes-guesses-dumb-dyes-dies
+>dumb dyes
+You snicker to yourself about teen punks and their death-metal t-shirt.
+
+#testcase-mistakes-table-of-some-eyes-guesses-from-fries
+>from fries
+Fries are wonderful but tonight is the night for candy.
+
+#testcase-mistakes-table-of-some-eyes-guesses-gum-guys
+>gum guys
+You never get excited about gum. You remember when some bright colored stuff lost its flavor quick.
+
+#testcase-mistakes-table-of-some-eyes-guesses-hum-his-highs
+>hum his
+You know lots of joyful tunes. You haven't figured how to whistle yet.
+
+#testcase-mistakes-table-of-some-eyes-guesses-hum-his-highs
+>hum highs
+You know lots of joyful tunes. You haven't figured how to whistle yet.
+
+#testcase-mistakes-table-of-some-eyes-guesses-mum-mys
+>mum mys
+You're silently impressed by the power of the eyes.
+
+#testcase-mistakes-table-of-some-eyes-guesses-numb-nighs
+>numb nighs
+You worry you may become numb to the eyes' convenience.
+
+#testcase-mistakes-table-of-some-eyes-guesses-plum-plies
+>plum plies
+You wonder when the best time to ply the eyes would be.
+
+#testcase-mistakes-table-of-some-eyes-guesses-rum-rise
+>rum rise
+You're not old enough to be thinking about drinking.
+
+#testcase-mistakes-table-of-some-eyes-guesses-scum-skies
+>scum skies
+You wonder if the eyes are too good to be true as a hint item. Maybe if you use them once, you're indebted to someone or something evil? Nah.
+
+#testcase-mistakes-table-of-some-eyes-guesses-tum-ties
+>tum ties
+You hope any candy you get doesn't tie your stomach in knots.
+
+#testcase-mistakes-table-of-general-good-guesses-lick-leet
+>lick leet
+You aren't big on lollipops, even the purportedly top-shelf ones.
+
+#testcase-mistakes-table-of-general-good-guesses-rest-rue
+>rest rue
+Yes, you will rue resting in your costume.
+
+#testcase-mistakes-table-of-general-good-guesses-yessed-yew
+>yessed yew
+Maybe one friend will come as the Yessed Yew.
+
+>ick eat
+by one point
+
+>pick pete
+by one point
+
+#testcase-mistakes-table-of-meet-me-guesses-beat-b-bee
+>beat b
+There's no giant bee to defeat or (since you're not in school) A to achieve.
+
+#+testcase-mistakes-table-of-meet-me-guesses-beat-b-bee
+>beat bee
+There's no giant bee to defeat or (since you're not in school) A to achieve.
+
+#testcase-mistakes-table-of-meet-me-guesses-feet-feat-fee
+>feat fee
+No, you aren't going to charge for your legwork or feats.
+
+#+testcase-mistakes-table-of-meet-me-guesses-feet-feat-fee
+>feet fee
+No, you aren't going to charge for your legwork or feats.
+
+#testcase-mistakes-table-of-meet-me-guesses-heat-he-hee
+>heat he
+You may give Pete a bit of random stuff for heat. He may give it back.
+
+#+testcase-mistakes-table-of-meet-me-guesses-heat-he-hee
+>heat hee
+You may give Pete a bit of random stuff for heat. He may give it back.
+
+#testcase-mistakes-table-of-meet-me-guesses-leetly
+>leetly
+Meetings with Pete are always leet, though.
+
+#testcase-mistakes-table-of-meet-me-guesses-neat-knee
+>neat knee
+Yes, the knees on your costume are not torn.
+
+#testcase-mistakes-table-of-meet-me-guesses-seat-c-see-sea
+>seat c
+No, you and Pete P aren't going to a play or a beach.
+
+#+testcase-mistakes-table-of-meet-me-guesses-seat-c-see-sea
+>seat see
+No, you and Pete P aren't going to a play or a beach.
+
+#+testcase-mistakes-table-of-meet-me-guesses-seat-c-see-sea
+>seat sea
+No, you and Pete P aren't going to a play or a beach.
+
+#testcase-mistakes-table-of-meet-me-guesses-tweet-twee
+>tweet twee
+You hear an eerie bird-call.
+
+#testcase-mistakes-table-of-meet-me-guesses-wheat-whee
+>wheat whee
+It's candy that's worth getting excited about.
+
+#testcase-mistakes-table-of-meet-me-guesses-yeet-ye
+>yeet ye
+You combine medieval words and slang. It feels appropriate.
+
+>treat tree
+by one point
+
+>in
+
+#testcase-mistakes-table-of-honer-house-guesses-owner-ows
+>owner ows
+You don't need to hurt anyone, especially someone who provided such a safe introductory area.
+
+>loner louse
+by one point
+
+>moaner mouse
+by one point
+
+>donor douse
+by one point
+
+>out
+
+>n
+
+#testcase-mistakes-table-of-rank-ring-guesses-bank-bing
+>bank bing
+Alas, no bank with free lollipops appears. Man. You always wanted to try one of each flavor. You're still young enough to get freebies. Right?
+
+#testcase-mistakes-table-of-rank-ring-guesses-dank-ding
+>dank ding
+You need no creepy noises, but a cheery ding might work elsewhere, who knows?
+
+#testcase-mistakes-table-of-rank-ring-guesses-stank-sting
+>stank sting
+That'd make things worse.
+
+>plank pling
+by one point
+
+>blank bling
+by one point
+
+>thank thing
+by one point
+
+>sank sing
+by one point
+
+>s
+
+>s
+
+#testcase-mistakes-table-of-treetrolled-guesses-eee-old
+>eee old
+Indeed, the tree is big and old. But does it need to hear that?
+
+#testcase-mistakes-table-of-treetrolled-guesses-key-cold
+>key cold
+The tree mentions you can have the key, once you trade for it properly.
+
+#testcase-mistakes-table-of-treetrolled-guesses-peopled
+>peopled
+No, you don't need more people in here.
+
+#testcase-mistakes-table-of-treetrolled-guesses-ski-scold
+>ski scold
+Yes, skiing would be unwise here.
+
+>be bold
+by one point
+
+>rerolled
+by one point
+
+>me mold
+by one point
+
+>see sold
+by one point
+
+#testcase-mistakes-table-of-curled-key-guesses-furled-fee
+>furled fee
+No, there's no hidden charge for using the key.
+
+#testcase-mistakes-table-of-curled-key-guesses-hurled-he-hee
+>hurled he
+You were surprised to learn there was more than one meaning for hurled.
+
+#+testcase-mistakes-table-of-curled-key-guesses-hurled-he-hee
+>hurled hee
+You were surprised to learn there was more than one meaning for hurled.
+
+#testcase-mistakes-table-of-curled-key-guesses-knurled-knee
+>knurled knee
+You want to look older but not that much.
+
+#testcase-mistakes-table-of-curled-key-guesses-purled-pea
+>purled pea
+Ugh. You had enough vegetables.
+
+#+testcase-mistakes-table-of-treetrolled-guesses-key-cold
+>key cold
+You already have the key.
+
+>wee wold
+by one point
+
+>n
+
+>w
+
+>fun foam
+by one point
+
+>ton tome
+by one point
+
+>pun poem
+by one point
+
+>done dome
+by one point
+
+>run roam
+by one point
+
+#testcase-mistakes-table-of-hun-home-guesses-nun-none-gnome
+>nun gnome
+Close--mix the words up a bit different for a bonus point.
+
+>a gnome
+by one point
+
+#+testcase-mistakes-table-of-hun-home-guesses-nun-none-gnome
+>none gnome
+Already got a gnome.
+
+>e
+
+>pluraled plea
+by one point
+
+>shove shook
+by one point
+
+#testcase-mistakes-table-of-jet-jewel-guesses-net-newel
+>net newel
+You don't need a doorknob.
+
+#testcase-mistakes-table-of-jet-jewel-guesses-pet-pool
+>pet pool
+That might be for your birthday. You don't want to know what sort of pets are around on Halloween.
+
+>get ghoul
+by one point
+
+>e
+
+#testcase-mistakes-table-of-eee-ing-guesses-band-banned-being
+>band being
+Nothing illegal and/or musical pops up.
+
+#+testcase-mistakes-table-of-eee-ing-guesses-band-banned-being
+>banned being
+Nothing illegal and/or musical pops up.
+
+#testcase-mistakes-table-of-eee-ing-guesses-grand-greeing
+>grand greeing
+You cringe at the thought of people agreeing too hard with each other.
+
+#testcase-mistakes-table-of-eee-ing-guesses-sand-seeing
+>sand seeing
+Thankfully, no giant desert appears.
+
+>dandy ding
+by one point
+
+>andy ng
+by one point
+
+>weakie way
+by one point
+
+#testcase-mistakes-table-of-leaky-ley-guesses-beaky-bay
+>beaky bay
+You dream briefly of a seaside vacation.
+
+#testcase-mistakes-table-of-leaky-ley-guesses-geeky-gay
+>geeky gay
+No, no, no. Both of those are insults you know better than to use.
+
+#testcase-mistakes-table-of-leaky-ley-guesses-kiki-k
+>kiki k
+You reflect on the funny rhyme, then feel kind of sick noticing it without its vowels. Words are weird like that.
+
+#testcase-mistakes-table-of-leaky-ley-guesses-peaky-peeky-pay
+>peaky pay
+The enemies you're facing are more likely to extort from you, actually.
+
+#+testcase-mistakes-table-of-leaky-ley-guesses-peaky-peeky-pay
+>peeky pay
+The enemies you're facing are more likely to extort from you, actually.
+
+>creaky cray
+by one point
+
+>grit grins
+by one point
+
+>slick sleet
+by one point
+
+>streaky stray
+by one point
+
+#testcase-mistakes-table-of-lair-line-guesses-care-kine
+>care kine
+A bit too medieval with the positive emotion.
+
+#testcase-mistakes-table-of-lair-line-guesses-mare-mine
+>mare mine
+Medieval English, German and/or arithmetic all do hold a bit of scariness for you.
+
+#testcase-mistakes-table-of-lair-line-guesses-neer-nine-nein
+>neer nein
+Medieval English, German and/or arithmetic all do hold a bit of scariness for you.
+
+#testcase-mistakes-table-of-lair-line-guesses-neer-nine-nein
+>neer nine
+Medieval English, German and/or arithmetic all do hold a bit of scariness for you.
+
+#testcase-mistakes-table-of-lair-line-guesses-pare-pair-pear-pine
+>pare pine
+Surprisingly, there are no pine trees here.
+
+#+testcase-mistakes-table-of-lair-line-guesses-pare-pair-pear-pine
+>pair pine
+Surprisingly, there are no pine trees here.
+
+#+testcase-mistakes-table-of-lair-line-guesses-pare-pair-pear-pine
+>pear pine
+Surprisingly, there are no pine trees here.
+
+#testcase-mistakes-table-of-lair-line-guesses-rare-rhine
+>rare rhine
+It would be odd if the Rhine ran through here, yes.
+
+#testcase-mistakes-table-of-lair-line-guesses-stare-stein
+>stare stein
+There are no alcoholic beverages or containers here. You're not old enough!
+
+#testcase-mistakes-table-of-lair-line-guesses-swear-swine
+>swear swine
+Now, now, this is a wholesome after-party.
+
+#testcase-mistakes-table-of-lair-line-guesses-where-wear-whine-wine
+>wear wine
+No complaining or alcohol allowed.
+
+#+testcase-mistakes-table-of-lair-line-guesses-where-wear-whine-wine
+>where whine
+No complaining or alcohol allowed.
+
+>share shine
+by one point
+
+>there thine
+by one point
+
+>fair fine
+by one point
+
+>green grid
+by one point
+
+>dare dine
+by one point
+
